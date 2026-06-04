@@ -1,0 +1,4 @@
+*.transcript.json
+*.words.csv
+*.cue.md
+!.gitignore

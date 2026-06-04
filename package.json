@@ -1,0 +1,29 @@
+{
+  "name": "venuebot-explainer-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "preview": "remotion preview src/index.ts",
+    "still:intro": "remotion still src/index.ts VenueBotIntro --frame=900 --scale=0.5",
+    "render:intro": "remotion render src/index.ts VenueBotIntro out/venuebot-intro.mp4",
+    "render:master": "remotion render src/index.ts VenueBotMaster out/venuebot-master.mp4",
+    "transcribe": "node scripts/transcribe-audio.mjs",
+    "transcribe:intro-v3": "node scripts/transcribe-audio.mjs public/audio/intro-m1-sa-sb-v3.mp3 --id M1-SA-SB-V3"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.389",
+    "@remotion/media-utils": "^4.0.389",
+    "culori": "^4.0.2",
+    "human-signals": "^2.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.389",
+    "remotion-animated": "^2.2.0",
+    "remotion-bits": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.8.0"
+  }
+}

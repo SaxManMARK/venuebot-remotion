@@ -1,0 +1,603 @@
+import {
+  AbsoluteFill,
+  Easing,
+  Img,
+  interpolate,
+  staticFile,
+  useCurrentFrame,
+} from "remotion";
+import {font} from "../theme";
+import {seconds} from "../data/video";
+
+const clamp = {
+  extrapolateLeft: "clamp" as const,
+  extrapolateRight: "clamp" as const,
+};
+
+const ease = Easing.bezier(0.16, 1, 0.3, 1);
+
+const reveal = (frame: number, start: number, duration = seconds(0.9)) =>
+  interpolate(frame, [start, start + duration], [0, 1], {...clamp, easing: ease});
+
+const drift = (frame: number, offset = 0, amount = 12) => Math.sin((frame + offset) / 58) * amount;
+
+type SceneTone = "warm" | "fresh" | "plum" | "product" | "night";
+
+type PlateAsset = {
+  src: string;
+  alt: string;
+};
+
+type TimedSceneProps = {
+  start: number;
+  duration?: number;
+  headline: string;
+  subtitle?: string;
+  asset?: PlateAsset;
+  variant?: SceneTone;
+};
+
+type Callout = {
+  label: string;
+  value?: string;
+  detail?: string;
+  meta?: string[];
+};
+
+export const VideoShell = ({
+  children,
+  variant = "fresh",
+}: {
+  children: React.ReactNode;
+  variant?: SceneTone;
+}) => (
+  <AbsoluteFill className={`premium-scene-shell premium-scene-shell-${variant}`}>
+    <div className="premium-shell-light premium-shell-light-a" />
+    <div className="premium-shell-light premium-shell-light-b" />
+    <div className="premium-shell-lines" />
+    {children}
+  </AbsoluteFill>
+);
+
+export const CinematicPlate = ({
+  asset,
+  start,
+  variant = "fresh",
+}: {
+  asset: PlateAsset;
+  start: number;
+  variant?: SceneTone;
+}) => {
+  const frame = useCurrentFrame();
+  const intro = reveal(frame, start, seconds(1.15));
+  const push = interpolate(frame, [start, start + seconds(9)], [1.02, 1.095], clamp);
+
+  return (
+    <div className={`cinematic-plate cinematic-plate-${variant}`} style={{opacity: intro}}>
+      <Img
+        alt={asset.alt}
+        className="cinematic-plate-image"
+        src={staticFile(asset.src)}
+        style={{
+          transform: `translate3d(${drift(frame, 4, 10)}px, ${drift(frame, 33, 7)}px, 0) scale(${push})`,
+        }}
+      />
+      <div className="cinematic-plate-grade" />
+      <div className="cinematic-plate-glass" />
+    </div>
+  );
+};
+
+export const CinematicIntro = ({
+  start,
+  headline,
+  subtitle,
+  asset,
+  variant = "warm",
+}: TimedSceneProps) => {
+  const frame = useCurrentFrame();
+  const title = reveal(frame, start + seconds(0.55), seconds(0.95));
+  const hint = reveal(frame, start + seconds(1.35), seconds(0.85));
+
+  return (
+    <VideoShell variant={variant}>
+      {asset ? <CinematicPlate asset={asset} start={start} variant={variant} /> : null}
+      <div className="cinematic-intro-copy">
+        <h1
+          style={{
+            fontFamily: font.title,
+            opacity: title,
+            transform: `translateY(${(1 - title) * 34}px)`,
+          }}
+        >
+          {headline}
+        </h1>
+        {subtitle ? (
+          <p
+            style={{
+              fontFamily: font.title,
+              opacity: hint,
+              transform: `translateY(${(1 - hint) * 18}px)`,
+            }}
+          >
+            {subtitle}
+          </p>
+        ) : null}
+      </div>
+      <div
+        className="soft-ui-hint"
+        style={{
+          opacity: hint,
+          transform: `translate3d(${drift(frame, 12, 8)}px, ${drift(frame, 41, 6)}px, 0)`,
+        }}
+      >
+        <span />
+        <strong>New wedding enquiry</strong>
+        <small>Saturday 12 July 2027</small>
+        <em>120 guests · £12,000-£15,000 budget</em>
+      </div>
+    </VideoShell>
+  );
+};
+
+export const ProblemStatement = ({
+  start,
+  headline,
+  subtitle,
+  asset,
+  variant = "plum",
+  callouts = [],
+}: TimedSceneProps & {callouts?: Callout[]}) => {
+  const frame = useCurrentFrame();
+  const copy = reveal(frame, start + seconds(0.25), seconds(0.8));
+  const isJourney = callouts.length >= 4;
+  const journeyProgress = reveal(frame, start + seconds(0.55), seconds(4.4));
+
+  return (
+    <VideoShell variant={variant}>
+      {asset ? <CinematicPlate asset={asset} start={start} variant={variant} /> : null}
+      <div className="problem-copy">
+        <h2 style={{fontFamily: font.title, opacity: copy, transform: `translateY(${(1 - copy) * 30}px)`}}>
+          {headline}
+        </h2>
+        {subtitle ? <p style={{fontFamily: font.title, opacity: copy}}>{subtitle}</p> : null}
+      </div>
+      {isJourney ? (
+        <div className="opportunity-journey">
+          <i className="opportunity-journey-line" style={{transform: `scaleX(${journeyProgress})`}} />
+          <b className="opportunity-orb" style={{left: `${8 + journeyProgress * 84}%`}} />
+          {callouts.map((callout, index) => {
+            const show = reveal(frame, start + seconds(0.65 + index * 0.32), seconds(0.62));
+            return (
+              <div
+                className="opportunity-journey-card"
+                key={callout.label}
+                style={{opacity: show, transform: `translateY(${(1 - show) * 26}px)`}}
+              >
+                <span>{callout.label}</span>
+                {callout.value ? <strong>{callout.value}</strong> : null}
+                {callout.detail ? <small>{callout.detail}</small> : null}
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="problem-callouts">
+          {callouts.map((callout, index) => {
+            const show = reveal(frame, start + seconds(0.65 + index * 0.35), seconds(0.6));
+            const isOpportunity = callout.detail || callout.meta?.length;
+            return (
+              <div
+                className={`problem-callout ${isOpportunity ? "opportunity-card" : ""}`}
+                key={callout.label}
+                style={{opacity: show, transform: `translateY(${(1 - show) * 24}px)`}}
+              >
+                {isOpportunity ? (
+                  <>
+                    <span>{callout.label}</span>
+                    {callout.value ? <strong>{callout.value}</strong> : null}
+                    {callout.detail ? <small>{callout.detail}</small> : null}
+                    {callout.meta?.length ? (
+                      <div className="opportunity-meta">
+                        {callout.meta.map((item) => (
+                          <em key={item}>{item}</em>
+                        ))}
+                      </div>
+                    ) : null}
+                  </>
+                ) : (
+                  <>
+                    {callout.value ? <strong>{callout.value}</strong> : null}
+                    <span>{callout.label}</span>
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </VideoShell>
+  );
+};
+
+export const StatisticReveal = ({
+  start,
+  value,
+  label,
+  source,
+  asset,
+  variant = "fresh",
+}: {
+  start: number;
+  value: string;
+  label: string;
+  source?: string;
+  asset?: PlateAsset;
+  variant?: SceneTone;
+}) => {
+  const frame = useCurrentFrame();
+  const stat = reveal(frame, start + seconds(0.35), seconds(0.8));
+  const copy = reveal(frame, start + seconds(0.75), seconds(0.7));
+
+  return (
+    <VideoShell variant={variant}>
+      {asset ? <CinematicPlate asset={asset} start={start} variant={variant} /> : null}
+      <div className="stat-reveal">
+        <div className="stat-reveal-rings" style={{opacity: stat, transform: `scale(${0.78 + stat * 0.22})`}}>
+          <span />
+          <span />
+          <span />
+        </div>
+        <strong style={{fontFamily: font.body, opacity: stat, transform: `scale(${0.82 + stat * 0.18})`}}>
+          {value}
+        </strong>
+        <p style={{fontFamily: font.title, opacity: copy, transform: `translateY(${(1 - copy) * 20}px)`}}>
+          {label}
+        </p>
+        {source ? <small style={{opacity: copy}}>{source}</small> : null}
+      </div>
+    </VideoShell>
+  );
+};
+
+export const ShortlistCards = ({
+  start,
+  asset,
+}: {
+  start: number;
+  asset?: PlateAsset;
+}) => {
+  const frame = useCurrentFrame();
+  const cards = [
+    {title: "Venue 1", status: "Waiting", active: false},
+    {title: "Venue 2", status: "Viewing booked", active: true},
+    {title: "Venue 3", status: "Late reply", active: false},
+  ];
+
+  return (
+    <VideoShell variant="warm">
+      {asset ? <CinematicPlate asset={asset} start={start} variant="warm" /> : null}
+      <div className="luxury-shortlist">
+        {cards.map((card, index) => {
+          const show = reveal(frame, start + seconds(0.28 + index * 0.24), seconds(0.65));
+          const lift = card.active ? -42 : 0;
+          return (
+            <div
+              className={`luxury-shortlist-card ${card.active ? "is-active" : ""}`}
+              key={card.title}
+              style={{
+                opacity: show,
+                transform: `translateY(${(1 - show) * 48 + lift + drift(frame, index * 22, 4)}px) scale(${card.active ? 1.06 : 0.96})`,
+              }}
+            >
+              <div className="luxury-shortlist-thumb">
+                <span />
+              </div>
+              <div className="luxury-shortlist-meta">
+                <strong>{card.title}</strong>
+                <small>{card.status}</small>
+              </div>
+              {card.active ? <em>First choice</em> : null}
+            </div>
+          );
+        })}
+      </div>
+    </VideoShell>
+  );
+};
+
+export const SolutionIntro = ({
+  start,
+  headline,
+  subtitle,
+}: TimedSceneProps) => {
+  const frame = useCurrentFrame();
+  const show = reveal(frame, start + seconds(0.2), seconds(0.95));
+
+  return (
+    <VideoShell variant="product">
+      <div className="solution-intro">
+        <Img alt="VenueBot" src={staticFile("brand/venuebot-logo-white.png")} style={{opacity: show}} />
+        <h2 style={{fontFamily: font.title, opacity: show, transform: `translateY(${(1 - show) * 26}px)`}}>
+          {headline}
+        </h2>
+        {subtitle ? <p style={{fontFamily: font.title, opacity: show}}>{subtitle}</p> : null}
+      </div>
+    </VideoShell>
+  );
+};
+
+export const ProductScreenWrapper = ({
+  start,
+  title,
+  callouts = [],
+  asset,
+}: {
+  start: number;
+  title: string;
+  callouts?: Callout[];
+  asset?: PlateAsset;
+}) => {
+  const frame = useCurrentFrame();
+  const show = reveal(frame, start + seconds(0.2), seconds(0.8));
+
+  return (
+    <div className="product-screen-wrapper" style={{opacity: show, transform: `translateY(${(1 - show) * 34}px)`}}>
+      {asset ? <Img alt={asset.alt} src={staticFile(asset.src)} /> : <div className="product-screen-placeholder" />}
+      <div className="product-screen-topbar">
+        <span />
+        <span />
+        <span />
+        <strong>{title}</strong>
+      </div>
+      <div className="product-screen-callouts">
+        {callouts.map((callout, index) => (
+          <div className="product-callout" key={callout.label} style={{transform: `translateY(${drift(frame, index * 14, 5)}px)`}}>
+            {callout.value ? <strong>{callout.value}</strong> : null}
+            <span>{callout.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const featureCopy = {
+  studio: {
+    title: "Studio AI",
+    promise: "Generate more enquiries",
+    callouts: [{label: "Website score"}, {label: "Competitor analysis"}, {label: "Brand voice"}],
+  },
+  convert: {
+    title: "Convert",
+    promise: "Convert more couples",
+    callouts: [{label: "Instant response"}, {label: "WhatsApp nurture"}, {label: "Tour booked"}],
+  },
+  care: {
+    title: "Care",
+    promise: "Manage everything in one place",
+    callouts: [{label: "Inbox"}, {label: "Pipeline"}, {label: "Calendar"}],
+  },
+};
+
+export const StudioAISection = ({start, asset}: {start: number; asset?: PlateAsset}) => (
+  <FeatureSection start={start} asset={asset} variant="studio" />
+);
+
+export const ConvertSection = ({start, asset}: {start: number; asset?: PlateAsset}) => (
+  <FeatureSection start={start} asset={asset} variant="convert" />
+);
+
+export const CareSection = ({start, asset}: {start: number; asset?: PlateAsset}) => (
+  <FeatureSection start={start} asset={asset} variant="care" />
+);
+
+const FeatureSection = ({
+  start,
+  asset,
+  variant,
+}: {
+  start: number;
+  asset?: PlateAsset;
+  variant: keyof typeof featureCopy;
+}) => {
+  const frame = useCurrentFrame();
+  const show = reveal(frame, start + seconds(0.1), seconds(0.85));
+  const copy = featureCopy[variant];
+
+  return (
+    <VideoShell variant="product">
+      <div className="feature-section">
+        <div className="feature-copy" style={{opacity: show, transform: `translateY(${(1 - show) * 24}px)`}}>
+          <span>{copy.promise}</span>
+          <h2 style={{fontFamily: font.title}}>{copy.title}</h2>
+        </div>
+        <ProductScreenWrapper asset={asset} callouts={copy.callouts} start={start + seconds(0.35)} title={copy.title} />
+      </div>
+    </VideoShell>
+  );
+};
+
+const capabilityWorlds = [
+  {
+    meaning: "Knowledge",
+    capability: "Studio AI",
+    opener: "Before you can improve anything, you need to understand:",
+    tone: "knowledge",
+    items: ["your venue", "your positioning", "your customer", "your content performance", "your competitors"],
+  },
+  {
+    meaning: "Engagement",
+    capability: "Convert",
+    opener: "Once you know that, you need to communicate it:",
+    tone: "engagement",
+    items: ["respond", "nurture", "answer questions", "build confidence", "book tours"],
+  },
+  {
+    meaning: "Control",
+    capability: "Care",
+    opener: "Once enquiries become opportunities, you need to manage them:",
+    tone: "control",
+    items: ["visibility", "accountability", "reporting", "follow-up", "operations"],
+  },
+] as const;
+
+export const CapabilityPillarSystem = ({start}: {start: number}) => {
+  const frame = useCurrentFrame();
+  const intro = reveal(frame, start, seconds(1));
+  const connector = reveal(frame, start + seconds(1.1), seconds(1.4));
+  const worldOffsets = [10.48, 25.74, 39.32];
+  const unify = reveal(frame, start + seconds(53.8), seconds(1.4));
+  const outcome = reveal(frame, start + seconds(57.76), seconds(1.2));
+
+  return (
+    <AbsoluteFill className="capability-system">
+      <div className="capability-atmosphere">
+        <div className="capability-sky">
+          <span />
+          <span />
+          <span />
+        </div>
+        <div className="capability-lake" />
+      </div>
+      <div className="capability-paper-grain" />
+      <div className="capability-venue-arc capability-venue-arc-left" />
+      <div className="capability-venue-arc capability-venue-arc-right" />
+      <div
+        className="capability-connector"
+        style={{
+          opacity: connector * (1 - outcome),
+          transform: `translateX(-50%) scaleX(${0.12 + connector * 0.88})`,
+        }}
+      />
+      <div
+        className="capability-header"
+        style={{opacity: intro * (1 - outcome), transform: `translate(-50%, ${(1 - intro) * 26}px)`}}
+      >
+        <span>The VenueBot framework</span>
+        <h2 style={{fontFamily: font.title}}>Three Products. One Purpose.</h2>
+        <p>Knowledge → Engagement → Control</p>
+      </div>
+
+      <div className="capability-pillars" style={{opacity: 1 - outcome * 0.94}}>
+        {capabilityWorlds.map((world, index) => {
+          const worldStart = start + seconds(worldOffsets[index]);
+          const card = reveal(frame, start + seconds(1.2 + index * 0.55), seconds(0.9));
+          const focus = reveal(frame, worldStart, seconds(1));
+          const isQuiet = frame > worldStart + seconds(5.8) && index < 2;
+
+          return (
+            <div
+              className={`capability-pillar capability-pillar-${world.tone} ${isQuiet ? "is-quiet" : ""}`}
+              key={world.meaning}
+              style={{
+                opacity: card * (1 - outcome * 0.94),
+                transform: `translateY(${(1 - card) * 48 - focus * 18}px) scale(${0.96 + focus * 0.035 + unify * 0.015})`,
+              }}
+            >
+              <div className="capability-copy">
+                <em>{world.capability} →</em>
+                <strong>{world.meaning}</strong>
+                <p>{world.opener}</p>
+                <div className="capability-list">
+                  {world.items.map((item, itemIndex) => {
+                    const itemReveal = reveal(frame, worldStart + seconds(0.7 + itemIndex * 0.26), seconds(0.55));
+
+                    return (
+                      <span
+                        key={item}
+                        style={{
+                          opacity: itemReveal,
+                          transform: `translateX(${(1 - itemReveal) * -18}px)`,
+                        }}
+                      >
+                        {item}
+                      </span>
+                    );
+                  })}
+                </div>
+                <div
+                  className={`capability-metaphor capability-metaphor-${world.tone}`}
+                  style={{opacity: focus, transform: `translateY(${(1 - focus) * 18}px)`}}
+                >
+                  {world.tone === "knowledge" ? (
+                    <>
+                      <span className="metaphor-sheet metaphor-sheet-one" />
+                      <span className="metaphor-sheet metaphor-sheet-two" />
+                      <span className="metaphor-focus-ring" style={{transform: `scale(${0.82 + focus * 0.18})`}} />
+                      <i className="metaphor-understanding-line" style={{transform: `scaleX(${focus})`}} />
+                      <b className="metaphor-insight-mark" />
+                    </>
+                  ) : null}
+                  {world.tone === "engagement" ? (
+                    <>
+                      <span className="metaphor-person metaphor-person-left" />
+                      <span className="metaphor-person metaphor-person-right" />
+                      <i className="metaphor-connection-line" style={{transform: `scaleX(${focus})`}} />
+                      <b className="metaphor-connection-centre" />
+                      <em className="metaphor-warmth" />
+                    </>
+                  ) : null}
+                  {world.tone === "control" ? (
+                    <>
+                      <span className="metaphor-order-card metaphor-order-card-one" />
+                      <span className="metaphor-order-card metaphor-order-card-two" />
+                      <span className="metaphor-order-card metaphor-order-card-three" />
+                      <i className="metaphor-confidence-seal" style={{transform: `scale(${0.82 + focus * 0.18})`}} />
+                      <b className="metaphor-confidence-line" style={{transform: `scaleX(${focus})`}} />
+                    </>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div
+        className="capability-outcome"
+        style={{opacity: outcome, transform: `translate(-50%, calc(-50% + ${(1 - outcome) * 24}px))`}}
+      >
+        <span>More Bookings.</span>
+        <span>More Confidence.</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const TopTipOverlay = ({children}: {children: React.ReactNode}) => (
+  <div className="editorial-overlay top-tip-overlay">
+    <strong>Top Tip</strong>
+    <span>{children}</span>
+  </div>
+);
+
+export const DidYouKnowOverlay = ({children}: {children: React.ReactNode}) => (
+  <div className="editorial-overlay did-you-know-overlay">
+    <strong>Did You Know?</strong>
+    <span>{children}</span>
+  </div>
+);
+
+export const CTAClosingScene = ({
+  start,
+  headline,
+  subtitle,
+}: {
+  start: number;
+  headline: string;
+  subtitle: string;
+}) => {
+  const frame = useCurrentFrame();
+  const show = reveal(frame, start + seconds(0.15), seconds(0.9));
+
+  return (
+    <VideoShell variant="product">
+      <div className="cta-closing" style={{opacity: show, transform: `scale(${0.94 + show * 0.06})`}}>
+        <Img alt="VenueBot" src={staticFile("brand/venuebot-logo-white.png")} />
+        <h2 style={{fontFamily: font.title}}>{headline}</h2>
+        <p>{subtitle}</p>
+      </div>
+    </VideoShell>
+  );
+};
