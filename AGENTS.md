@@ -15,6 +15,93 @@ That file contains the current source of truth for the VenueBot film structure, 
 - Use the Remotion best-practices skill before editing Remotion code.
 - Keep the visual direction premium hospitality, editorial, documentary-led, and wedding-specific.
 
+## Creative Direction Rules
+
+VenueBot films should feel like premium hospitality documentaries, not software demonstrations.
+
+The audience is a wedding venue owner or manager making a significant commercial decision. Every scene should reinforce confidence, understanding and professionalism.
+
+### Core Principle
+
+The product is the proof, not the whole visual language.
+
+Lead with:
+
+- emotion
+- venue reality
+- customer behaviour
+- commercial insight
+
+Support with:
+
+- editorial typography
+- premium photography
+- strategic visual metaphors
+
+Prove with:
+
+- real Screen Studio recordings
+- genuine product workflows
+- authentic operational examples
+
+### Documentary Rule
+
+Every sequence should answer one of three questions:
+
+- Why does this matter?
+- How do we know?
+- What does VenueBot do about it?
+
+### Product Film Rule
+
+Never show software before explaining why it matters.
+
+Whenever possible, use this rhythm:
+
+Editorial Context
+
+↓
+
+Product Proof
+
+↓
+
+Outcome
+
+### Screen Studio Rule
+
+Screen Studio recordings are evidence.
+
+They should feel integrated into the narrative, not like a software demonstration taking over the film.
+
+### Pacing Rule
+
+Prefer:
+
+- spacious editing
+- quiet confidence
+- elegant transitions
+- premium motion
+- thoughtful pauses
+
+Avoid:
+
+- hyperactive cuts
+- flashy animation
+- startup energy
+- technology cliches
+- AI visual stereotypes
+
+### Visual Identity
+
+Studio AI = Knowledge
+
+Convert = Engagement
+
+Care = Control
+
+Every future scene should reinforce these emotional identities rather than simply displaying software features.
+
 ## Current Video Structure
 
 1. Intro / Market Reality Film
