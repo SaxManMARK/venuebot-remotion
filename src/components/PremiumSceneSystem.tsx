@@ -269,35 +269,143 @@ export const ShortlistCards = ({
 }) => {
   const frame = useCurrentFrame();
   const cards = [
-    {title: "Venue 1", status: "Waiting", active: false},
-    {title: "Venue 2", status: "Viewing booked", active: true},
-    {title: "Venue 3", status: "Late reply", active: false},
+    {
+      title: "Ravenwood Hall",
+      type: "Luxury Country House",
+      distance: "45 mins away",
+      status: "Awaiting response",
+      tone: "country",
+      image: "venues/ravenwood-hall.png",
+      active: false,
+    },
+    {
+      title: "Willow Creek Barn",
+      type: "Rustic Barn Venue",
+      distance: "30 mins away",
+      status: "Viewing booked",
+      badge: "First choice",
+      note: "Tour confirmed",
+      tone: "barn",
+      image: "venues/willow-creek-barn.png",
+      active: true,
+    },
+    {
+      title: "Oakridge Manor",
+      type: "Historic Manor",
+      distance: "60 mins away",
+      status: "Response delayed",
+      tone: "manor",
+      image: "venues/oakridge-manor.png",
+      active: false,
+    },
   ];
+  const shortlistFocus = reveal(frame, start + seconds(2.4), seconds(1.2));
+  const fieldFade = reveal(frame, start + seconds(1.55), seconds(1.35));
+  const orbMove = reveal(frame, start + seconds(2.1), seconds(1.35));
+  const venuePool = [
+    "Rosefield Estate",
+    "Ashbourne Barn",
+    "Ravenwood Hall",
+    "Hawthorn House",
+    "Meadowmere Hall",
+    "The Orchard Rooms",
+    "Larkspur Manor",
+    "Bramblewick Barn",
+    "Kingsley Court",
+    "Foxglove Farm",
+    "The Glasshouse",
+    "Cedar Lake House",
+    "Millstone Barn",
+    "Everleigh Hall",
+    "The Walled Garden",
+    "Northgate Manor",
+    "Fieldstone Lodge",
+    "Willow Creek Barn",
+    "Oakridge Manor",
+    "Fernbank House",
+    "Aster Barn",
+  ];
+  const backgroundVenues = Array.from({length: 20}, (_, index) => ({
+    label: venuePool[index],
+    reason: [
+      "Response delayed",
+      "No brochure sent",
+      "Question unanswered",
+      "No tour offered",
+      "Follow-up missed",
+    ][index % 5],
+    x: [5, 14, 24, 34, 45, 56, 67, 78, 88, 10, 21, 31, 42, 53, 64, 74, 84, 17, 48, 80][index],
+    y: [18, 12, 22, 14, 24, 13, 22, 15, 25, 42, 36, 47, 38, 50, 39, 48, 40, 65, 68, 63][index],
+    rotation: [-5, 4, -2, 5, -4, 3, -3, 4, -5, 3, -4, 5, -2, 4, -5, 3, -3, 5, -4, 3][index],
+  }));
 
   return (
     <VideoShell variant="warm">
       {asset ? <CinematicPlate asset={asset} start={start} variant="warm" /> : null}
+      <div className="shortlist-race-heading">
+        <span style={{opacity: 1 - fieldFade}}>20 venues considered</span>
+        <span style={{opacity: fieldFade}}>3 venues remain</span>
+      </div>
+      <div className="shortlist-race-field">
+        {backgroundVenues.map((venue, index) => {
+          const show = reveal(frame, start + seconds(0.12 + index * 0.035), seconds(0.45));
+          const keep = ["Ravenwood Hall", "Willow Creek Barn", "Oakridge Manor"].includes(venue.label);
+          const exit = keep ? 0 : fieldFade;
+
+          return (
+            <div
+              className={`shortlist-race-tile ${keep ? "is-survivor" : ""}`}
+              key={venue.label}
+              style={{
+                left: `${venue.x}%`,
+                top: `${venue.y}%`,
+                opacity: show * (keep ? 0.22 - fieldFade * 0.14 : 0.5 - exit * 0.42),
+                transform: `translate(-50%, -50%) translateY(${exit * 42}px) scale(${1 - exit * 0.22}) rotate(${venue.rotation}deg)`,
+              }}
+            >
+              <strong>{venue.label}</strong>
+              {!keep ? <small>{venue.reason}</small> : null}
+            </div>
+          );
+        })}
+      </div>
+      <div className="shortlist-momentum">
+        <i style={{transform: `scaleX(${orbMove})`}} />
+        <b style={{left: `${18 + orbMove * 64}%`}} />
+        <span>Enquiry</span>
+        <span>Response</span>
+        <span>Viewing booked</span>
+      </div>
       <div className="luxury-shortlist">
         {cards.map((card, index) => {
           const show = reveal(frame, start + seconds(0.28 + index * 0.24), seconds(0.65));
-          const lift = card.active ? -42 : 0;
+          const losing = !card.active;
+          const focusOpacity = card.active ? 1 : 1 - shortlistFocus * 0.45;
+          const focusX = losing ? (index === 0 ? -42 : 42) * shortlistFocus : 0;
+          const lift = card.active ? -28 - shortlistFocus * 28 : shortlistFocus * 18;
+          const scale = card.active ? 1.03 + shortlistFocus * 0.06 : 0.96 - shortlistFocus * 0.04;
           return (
             <div
-              className={`luxury-shortlist-card ${card.active ? "is-active" : ""}`}
+              className={`luxury-shortlist-card luxury-shortlist-${card.tone} ${card.active ? "is-active" : "is-receding"}`}
               key={card.title}
               style={{
-                opacity: show,
-                transform: `translateY(${(1 - show) * 48 + lift + drift(frame, index * 22, 4)}px) scale(${card.active ? 1.06 : 0.96})`,
+                opacity: show * focusOpacity,
+                transform: `translateX(${focusX}px) translateY(${(1 - show) * 48 + lift + drift(frame, index * 22, 3)}px) scale(${scale})`,
               }}
             >
               <div className="luxury-shortlist-thumb">
-                <span />
+                <Img alt={card.title} src={staticFile(card.image)} />
               </div>
               <div className="luxury-shortlist-meta">
+                <span>{card.type}</span>
                 <strong>{card.title}</strong>
-                <small>{card.status}</small>
+                <small>{card.distance}</small>
               </div>
-              {card.active ? <em>First choice</em> : null}
+              <div className="luxury-shortlist-status">
+                <small>{card.status}</small>
+                {card.note ? <b>{card.note}</b> : null}
+              </div>
+              {card.badge ? <em>{card.badge}</em> : null}
             </div>
           );
         })}

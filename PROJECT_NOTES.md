@@ -1,5 +1,18 @@
 # VenueBot Explainer Build Notes
 
+## Fresh Task Handoff
+
+Before starting Studio AI, Convert, or Care in a fresh Codex task, read `NEXT_SECTION_HANDOFF.md`.
+
+That file is the current source of truth for:
+
+- V3 intro script and cue timing
+- four-video structure
+- approved VenueBot visual direction
+- Knowledge / Engagement / Control framework
+- canonical Ravenwood Hall, Willow Creek Barn, and Oakridge Manor asset rules
+- rendering notes and current repo state
+
 ## Timing Workflow
 
 Timing cues for the Intro are now held in `src/data/introCuePoints.ts`.
@@ -10,14 +23,16 @@ I can align from the script and cue sheet. Automatic word-level transcription is
 
 ## Current Structure
 
-The video is now organised as four viewer-facing sections:
+The video is now organised as four separate viewer-facing videos:
 
 1. Intro
 2. Studio AI
 3. Convert
 4. Care
 
-The original production IDs stay in use internally. The Intro is built from `M1-SA` and `M1-SB`, while Studio AI begins at `M1-SC`.
+The original production IDs stay in use internally, but the Intro has been reset to the approved V3 voiceover: `M1-SA-SB-V3`.
+
+Older `M1-SA`, `M1-SB`, and V2 audio files remain in the project for reference only. Do not use them as the source of truth for the intro.
 
 ## Visual Direction
 
@@ -70,7 +85,7 @@ The Codex sandbox can type-check and bundle the project, but cannot currently la
 
 ## Current Review Note
 
-The latest motion pass keeps the V2 SA/SB cue timing intact, adds a four-second green-logo splash before the voiceover, and adds more product-launch movement. Review in Remotion Studio from a normal terminal session and check whether the splash exit feels classy enough before the first scene begins.
+The latest intro pass uses the V3 cue timing, adds a four-second green-logo splash before the voiceover, and includes the approved shortlist venue asset cards for Ravenwood Hall, Willow Creek Barn, and Oakridge Manor. Review in Remotion Studio from a normal terminal session before starting the next product video.
 
 Remotion Bits is installed and the CLI works. `npx remotion-bits find "fracture reassemble" --limit 3` found `bit-fracture-reassemble`, which may be useful for a more sophisticated logo breakup/reassemble treatment.
 
