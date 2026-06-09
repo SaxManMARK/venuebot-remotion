@@ -22,7 +22,9 @@ const contentStart = introSplashDurationFrames;
 const studioAiPlates = {
   opening: "plates/studio-ai/cinematic-manor-lake.png",
   couplePlanning: "plates/studio-ai/couple-planning-table.png",
-  planningContext: "plates/studio-ai/laptop-planning-context.png",
+  // NOTE: laptop-planning-context.png is the M1-SC storyboard/reference sheet, not a photo —
+  // using it as a background bled its text into the film. Point at a real photographic plate.
+  planningContext: "plates/studio-ai/couple-planning-table.png",
 } as const;
 
 const clamp = {
@@ -59,6 +61,33 @@ const transform3dCardEntrance = (progress: number, index: number) => {
 const cardSweep = (frame: number, start: number) =>
   interpolate(frame, [start - seconds(0.15), start + seconds(0.75)], [-140, 140], clamp);
 
+// Shared SVG path geometry so the base stroke and the traveling light pulse stay aligned.
+const knowledgeThreadMain =
+  "M 156 722 C 350 560, 520 610, 706 470 C 900 322, 1058 380, 1230 282 C 1430 166, 1546 236, 1744 150";
+const knowledgeThreadSoft =
+  "M 254 846 C 454 702, 612 742, 786 630 C 980 504, 1128 562, 1320 452 C 1516 338, 1602 390, 1728 298";
+const intelligenceConnector =
+  "M 650 674 C 850 566, 1000 606, 1180 468 C 1360 330, 1512 300, 1810 258";
+
+// A repeating bead pattern (in pathLength=1 units) that flows along a path to read as a current of light.
+const pulseDashLength = 0.235;
+const travelingPulseOffset = (frame: number, period: number, phase = 0) =>
+  -(((frame + phase) % period) / period) * pulseDashLength;
+
+// Snappy spring entrance with a touch of overshoot, used to make cards land with energy.
+const springPop = (fps: number, frame: number, startFrame: number) =>
+  spring({
+    fps,
+    frame: frame - startFrame,
+    config: {damping: 15, stiffness: 180, mass: 0.7},
+  });
+
+// Reuses the stat-card "spark" treatment: a glow pulse and a light sweep as a card lands.
+const sparkStyle = (frame: number, progress: number, cardStart: number) => ({
+  ["--card-pulse" as string]: `${interpolate(progress, [0, 0.7, 1], [0, 1, 0.14], clamp)}`,
+  ["--card-sweep" as string]: `${cardSweep(frame, cardStart)}%`,
+});
+
 const sources = [
   {label: "Bridebook", logo: "logos/research-sources/bridebook.svg", note: "Couple planning", at: 14.5},
   {label: "Hitched", logo: "logos/research-sources/hitched.svg", note: "Venue search", at: 15.5},
@@ -92,6 +121,45 @@ const intelligenceAreas = [
   {label: "Content Performance", icon: "document"},
   {label: "Market Intelligence", icon: "market"},
 ];
+
+const lightMotes = Array.from({length: 22}).map((_, index) => ({
+  left: (index * 47 + 9) % 100,
+  top: (index * 29 + 13) % 100,
+  size: 3 + (index % 4) * 2,
+  driftX: 14 + (index % 5) * 6,
+  driftY: 18 + (index % 4) * 7,
+  speed: 90 + (index % 6) * 22,
+  phase: (index % 7) * 18,
+  twinkle: (index % 5) * 12,
+}));
+
+const LightMotes = () => {
+  const frame = useCurrentFrame();
+
+  return (
+    <div className="studio-light-motes" aria-hidden="true">
+      {lightMotes.map((mote, index) => {
+        const x = Math.sin((frame + mote.phase) / mote.speed) * mote.driftX;
+        const y = Math.cos((frame + mote.phase) / (mote.speed * 1.3)) * mote.driftY;
+        const twinkle = 0.18 + (Math.sin((frame + mote.twinkle) / 26) * 0.5 + 0.5) * 0.5;
+
+        return (
+          <span
+            key={index}
+            style={{
+              left: `${mote.left}%`,
+              top: `${mote.top}%`,
+              width: mote.size,
+              height: mote.size,
+              opacity: twinkle,
+              transform: `translate(${x}px, ${y}px)`,
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 type IconName =
   | "behaviour"
@@ -271,9 +339,19 @@ const IntelligenceLayer = ({start}: {start: number}) => {
       </div>
       <svg className="studio-intelligence-line" viewBox="0 0 1920 1080" aria-hidden="true">
         <path
-          d="M 650 674 C 850 566, 1000 606, 1180 468 C 1360 330, 1512 300, 1810 258"
+          d={intelligenceConnector}
           pathLength={1}
           style={{strokeDashoffset: 1 - line}}
+        />
+        <path
+          className="studio-intelligence-pulse"
+          d={intelligenceConnector}
+          pathLength={1}
+          style={{
+            strokeDasharray: "0.035 0.2",
+            strokeDashoffset: travelingPulseOffset(frame, seconds(1.2)),
+            opacity: line * 0.9,
+          }}
         />
         {[930, 1260, 1636].map((cx, index) => (
           <circle
@@ -297,15 +375,27 @@ const KnowledgeThread = ({start, proofStart}: {start: number; proofStart: number
   return (
     <svg className="studio-thread" viewBox="0 0 1920 1080" style={{opacity: show}} aria-hidden="true">
       <path
-        d="M 156 722 C 350 560, 520 610, 706 470 C 900 322, 1058 380, 1230 282 C 1430 166, 1546 236, 1744 150"
+        d={knowledgeThreadMain}
         pathLength={1}
         style={{strokeDashoffset: draw}}
       />
       <path
         className="studio-thread-soft"
-        d="M 254 846 C 454 702, 612 742, 786 630 C 980 504, 1128 562, 1320 452 C 1516 338, 1602 390, 1728 298"
+        d={knowledgeThreadSoft}
         pathLength={1}
         style={{strokeDashoffset: draw}}
+      />
+      <path
+        className="studio-thread-pulse"
+        d={knowledgeThreadMain}
+        pathLength={1}
+        style={{strokeDasharray: "0.03 0.2", strokeDashoffset: travelingPulseOffset(frame, seconds(1.1))}}
+      />
+      <path
+        className="studio-thread-pulse studio-thread-pulse-soft"
+        d={knowledgeThreadSoft}
+        pathLength={1}
+        style={{strokeDasharray: "0.03 0.26", strokeDashoffset: travelingPulseOffset(frame, seconds(1.5), 14)}}
       />
       {[206, 520, 810, 1214, 1512, 1718].map((cx, index) => (
         <circle
@@ -325,13 +415,19 @@ const ResearchFoundation = ({start}: {start: number}) => {
   const {fps} = useVideoConfig();
   const show = sceneOpacity(frame, start, seconds(23.2));
   const line = reveal(frame, seconds(13.4), seconds(3.2));
+  const countProgress = interpolate(frame, [start + seconds(0.5), start + seconds(2.4)], [0, 1], {
+    ...clamp,
+    easing: ease,
+  });
+  const count = Math.round(countProgress * 120);
+  const countLabel = count >= 120 ? "120+" : `${count}`;
 
   return (
     <div className="studio-research-scene" style={{opacity: show}}>
       <div className="studio-research-board">
         <div className="studio-research-number">
           <span>Research foundation</span>
-          <strong>120+</strong>
+          <strong>{countLabel}</strong>
           <em>wedding industry, behaviour, conversion and venue performance sources</em>
         </div>
         <div className="studio-research-line">
@@ -349,11 +445,12 @@ const ResearchFoundation = ({start}: {start: number}) => {
 
             return (
               <div
-                className={`studio-source-card studio-source-${source.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                className={`studio-source-card studio-spark studio-source-${source.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                 key={source.label}
                 style={{
                   opacity: item,
                   transform: `translateY(${(1 - item) * 24}px) scale(${scale})`,
+                  ...sparkStyle(frame, item, seconds(source.at)),
                 }}
               >
                 <Img alt={source.label} src={staticFile(source.logo)} />
@@ -369,6 +466,7 @@ const ResearchFoundation = ({start}: {start: number}) => {
 
 const UnderstandingSequence = ({start}: {start: number}) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   const show = sceneOpacity(frame, start, seconds(31.4));
   const journeyIcons: IconName[] = ["search", "venue", "document", "behaviour", "insight"];
 
@@ -395,15 +493,19 @@ const UnderstandingSequence = ({start}: {start: number}) => {
       </div>
       <div className="studio-knowledge-path">
         {["Discover", "Shortlist", "Compare", "Decide", "Enquire"].map((step, index) => {
-          const item = reveal(frame, start + seconds(0.3 + index * 0.42), seconds(0.62));
+          const cardStart = start + seconds(0.3 + index * 0.42);
+          const item = reveal(frame, cardStart, seconds(0.62));
+          const pop = springPop(fps, frame, cardStart);
+          const scale = interpolate(pop, [0, 1], [0.88, 1]);
 
           return (
             <div
-              className={`studio-knowledge-node ${index === 4 ? "is-proof" : ""}`}
+              className={`studio-knowledge-node studio-spark ${index === 4 ? "is-proof" : ""}`}
               key={step}
               style={{
                 opacity: item,
-                transform: `translateY(${(1 - item) * 26 + drift(frame, index * 13, 3)}px)`,
+                transform: `translateY(${(1 - pop) * 30 + drift(frame, index * 13, 3)}px) scale(${scale})`,
+                ...sparkStyle(frame, item, cardStart),
               }}
             >
               <StudioIcon name={journeyIcons[index]} />
@@ -419,6 +521,7 @@ const UnderstandingSequence = ({start}: {start: number}) => {
 
 const FiveAreasSequence = ({start}: {start: number}) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   const show = sceneOpacity(frame, start, seconds(35.8));
 
   return (
@@ -435,19 +538,27 @@ const FiveAreasSequence = ({start}: {start: number}) => {
         <p>Studio AI connects the signals that shape every couple journey.</p>
       </div>
       <div className="studio-five-grid">
-        {intelligenceAreas.map((area, index) => (
-          <div
-            className="studio-area-card"
-            key={area.label}
-            style={{
-              opacity: reveal(frame, start + seconds(0.45 + index * 0.22), seconds(0.55)),
-              transform: `translateY(${(1 - reveal(frame, start + seconds(0.45 + index * 0.22), seconds(0.55))) * 24}px)`,
-            }}
-          >
-            <em><StudioIcon name={area.icon as IconName} /></em>
-            <span>{area.label}</span>
-          </div>
-        ))}
+        {intelligenceAreas.map((area, index) => {
+          const cardStart = start + seconds(0.45 + index * 0.22);
+          const item = reveal(frame, cardStart, seconds(0.55));
+          const pop = springPop(fps, frame, cardStart);
+          const scale = interpolate(pop, [0, 1], [0.9, 1]);
+
+          return (
+            <div
+              className="studio-area-card studio-spark"
+              key={area.label}
+              style={{
+                opacity: item,
+                transform: `translateY(${(1 - pop) * 28}px) scale(${scale})`,
+                ...sparkStyle(frame, item, cardStart),
+              }}
+            >
+              <em><StudioIcon name={area.icon as IconName} /></em>
+              <span>{area.label}</span>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -542,6 +653,7 @@ const ProductProof = ({start}: {start: number}) => {
 
 const SixTools = ({start}: {start: number}) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   const show = sceneOpacity(frame, start, scene.contentDuration);
 
   return (
@@ -559,13 +671,20 @@ const SixTools = ({start}: {start: number}) => {
       </div>
       <div className="studio-tools-grid">
         {tools.map((tool, index) => {
-          const item = reveal(frame, start + seconds(0.35 + index * 0.16), seconds(0.5));
+          const cardStart = start + seconds(0.35 + index * 0.16);
+          const item = reveal(frame, cardStart, seconds(0.5));
+          const pop = springPop(fps, frame, cardStart);
+          const scale = interpolate(pop, [0, 1], [0.92, 1]);
 
           return (
             <div
-              className="studio-tool-card"
+              className="studio-tool-card studio-spark"
               key={tool.label}
-              style={{opacity: item, transform: `translateY(${(1 - item) * 22}px) scale(${0.96 + item * 0.04})`}}
+              style={{
+                opacity: item,
+                transform: `translateY(${(1 - pop) * 24}px) scale(${scale})`,
+                ...sparkStyle(frame, item, cardStart),
+              }}
             >
               <StudioIcon name={tool.icon as IconName} />
               <em>{String(index + 1).padStart(2, "0")}</em>
@@ -603,6 +722,7 @@ export const StudioAI = () => {
             }}
           />
           <div className="studio-ai-hero-grade" />
+          <LightMotes />
           <KnowledgeThread proofStart={seconds(31)} start={seconds(0.7)} />
 
           <IntelligenceLayer start={seconds(0)} />
