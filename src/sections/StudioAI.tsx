@@ -11,6 +11,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import type {CSSProperties} from "react";
 import {PremiumBackground} from "../components/Background";
 import {VenueBotSplash} from "../components/VenueBotSplash";
 import {introSplashDurationFrames, seconds} from "../data/video";
@@ -100,9 +101,9 @@ const sources = [
 
 const intelligenceLayerCards = [
   ["120", "published sources"],
-  ["Customer", "behaviour data"],
+  ["Couple", "behaviour data"],
   ["Conversion", "best practice"],
-  ["Customer", "journey research"],
+  ["Venue", "journey research"],
 ];
 
 const tools = [
@@ -122,14 +123,17 @@ const intelligenceAreas = [
   {label: "Market Intelligence", icon: "market"},
 ];
 
-const lightMotes = Array.from({length: 22}).map((_, index) => ({
+// Ambient warm light motes — wandering golden-hour dust with a soft glow (the "fireflies"
+// idea, recoloured warm and kept whisper-soft so it reads as premium atmosphere, not tech).
+const lightMotes = Array.from({length: 26}).map((_, index) => ({
   left: (index * 47 + 9) % 100,
   top: (index * 29 + 13) % 100,
-  size: 3 + (index % 4) * 2,
-  driftX: 14 + (index % 5) * 6,
-  driftY: 18 + (index % 4) * 7,
-  speed: 90 + (index % 6) * 22,
-  phase: (index % 7) * 18,
+  size: 3 + (index % 4) * 2.4,
+  driftX: 16 + (index % 5) * 7,
+  driftY: 20 + (index % 4) * 8,
+  speed: 84 + (index % 6) * 24,
+  wanderX: (index % 3) - 1,
+  phase: (index % 7) * 17,
   twinkle: (index % 5) * 12,
 }));
 
@@ -139,9 +143,16 @@ const LightMotes = () => {
   return (
     <div className="studio-light-motes" aria-hidden="true">
       {lightMotes.map((mote, index) => {
-        const x = Math.sin((frame + mote.phase) / mote.speed) * mote.driftX;
-        const y = Math.cos((frame + mote.phase) / (mote.speed * 1.3)) * mote.driftY;
-        const twinkle = 0.18 + (Math.sin((frame + mote.twinkle) / 26) * 0.5 + 0.5) * 0.5;
+        // Wander: two out-of-phase sinusoids per axis so paths feel organic, not orbital.
+        const x =
+          Math.sin((frame + mote.phase) / mote.speed) * mote.driftX +
+          Math.sin((frame + mote.phase) / (mote.speed * 2.3)) * mote.driftX * 0.4 +
+          mote.wanderX * (frame / mote.speed) * 0.6;
+        const y =
+          Math.cos((frame + mote.phase) / (mote.speed * 1.3)) * mote.driftY +
+          Math.cos((frame + mote.phase) / (mote.speed * 0.7)) * mote.driftY * 0.3;
+        const twinkle = 0.16 + (Math.sin((frame + mote.twinkle) / 23) * 0.5 + 0.5) * 0.56;
+        const glow = 0.6 + (Math.sin((frame + mote.twinkle) / 19) * 0.5 + 0.5) * 0.8;
 
         return (
           <span
@@ -152,12 +163,59 @@ const LightMotes = () => {
               width: mote.size,
               height: mote.size,
               opacity: twinkle,
+              boxShadow: `0 0 ${mote.size * 2.6}px ${mote.size * glow}px rgba(255, 222, 170, 0.6)`,
               transform: `translate(${x}px, ${y}px)`,
             }}
           />
         );
       })}
     </div>
+  );
+};
+
+// Editorial headline reveal — words fade + un-blur + slide up, staggered. Frame-driven off the
+// ambient (content-relative) frame with a `from` offset, matching the rest of this file.
+const HeadlineReveal = ({
+  children,
+  from,
+  style,
+}: {
+  children: string;
+  from: number;
+  style?: CSSProperties;
+}) => {
+  const frame = useCurrentFrame();
+  const words = children.split(" ");
+  const stagger = seconds(0.12);
+  const duration = seconds(0.62);
+
+  return (
+    <span className="studio-rw" style={{display: "inline-block", ...style}}>
+      {words.map((word, index) => {
+        const wordStart = from + index * stagger;
+        const progress = interpolate(frame, [wordStart, wordStart + duration], [0, 1], {
+          ...clamp,
+          easing: ease,
+        });
+
+        return (
+          <span
+            className="studio-rw"
+            key={index}
+            style={{
+              display: "inline-block",
+              marginRight: "0.26em",
+              opacity: progress,
+              filter: `blur(${(1 - progress) * 12}px)`,
+              transform: `translateY(${(1 - progress) * 38}px)`,
+              willChange: "transform, opacity, filter",
+            }}
+          >
+            {word}
+          </span>
+        );
+      })}
+    </span>
   );
 };
 
@@ -311,7 +369,9 @@ const IntelligenceLayer = ({start}: {start: number}) => {
       />
       <div className="studio-intelligence-copy">
         <span>Studio AI</span>
-        <h1 style={{fontFamily: font.title}}>The intelligence layer behind every booking.</h1>
+        <h1 style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.9)}>The intelligence layer behind every booking.</HeadlineReveal>
+        </h1>
         <p>Understanding what couples care about before you improve conversion.</p>
       </div>
       <div className="studio-intelligence-card-row">
@@ -488,7 +548,9 @@ const UnderstandingSequence = ({start}: {start: number}) => {
       </div>
       <div className="studio-knowledge-title">
         <span>Modern couple behaviour</span>
-        <strong style={{fontFamily: font.title}}>From first search to final decision.</strong>
+        <strong style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.5)}>From first search to final decision.</HeadlineReveal>
+        </strong>
         <p>We map the modern couple journey to understand what influences every step.</p>
       </div>
       <div className="studio-knowledge-path">
@@ -534,7 +596,9 @@ const FiveAreasSequence = ({start}: {start: number}) => {
       />
       <div className="studio-five-slide-copy">
         <span>Venue understanding</span>
-        <strong style={{fontFamily: font.title}}>Five areas of intelligence.</strong>
+        <strong style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.5)}>Five areas of intelligence.</HeadlineReveal>
+        </strong>
         <p>Studio AI connects the signals that shape every couple journey.</p>
       </div>
       <div className="studio-five-grid">
@@ -666,7 +730,9 @@ const SixTools = ({start}: {start: number}) => {
       <div className="studio-tools-grade" />
       <div className="studio-tools-copy">
         <span>Six AI-powered tools</span>
-        <strong style={{fontFamily: font.title}}>One goal.</strong>
+        <strong style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.5)}>One goal.</HeadlineReveal>
+        </strong>
         <p>More venue tours. More bookings. More weddings.</p>
       </div>
       <div className="studio-tools-grid">
