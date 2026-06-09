@@ -161,6 +161,25 @@ The Codex sandbox has previously failed to render stills/MP4 because macOS block
 - Cards not visibly animating:
   - Increased card entrance depth, rotation, stagger, and added sweep/glow pulse.
 
+## Session Update — 2026-06-09 (read this for current state)
+
+All of the following is committed and pushed to `main` (repo `SaxManMARK/venuebot-remotion`; `main` is the default/trunk branch):
+
+- "120+" research stat now counts up before the source logos appear.
+- Traveling warm light pulses flow along the knowledge thread and intelligence connector.
+- Card entrances use a spring-overshoot pop plus a light sweep/glow on landing (`.studio-spark`).
+- Ambient warm "fireflies" light motes drift behind the editorial content (`LightMotes`).
+- Editorial headlines reveal word-by-word — fade + un-blur + slide up — via `HeadlineReveal`. Reveal spans carry `.studio-rw` so they inherit the headline type, not the kicker styling.
+- The six-module slide was rebuilt for legibility: solid tiles, terracotta top accent bar, bigger/bolder icons (thicker strokes) and labels, accent numbers, calmer background plate.
+- Intelligence-layer cards reworded to "Couple / behaviour data" and "Venue / journey research".
+- Fixed: `laptop-planning-context.png` is the M1-SC storyboard sheet (not a photo); `planningContext` now points at `couple-planning-table.png`.
+
+Important: `remotion-bits` is intentionally NOT a dependency — its npm barrel pulls a broken `Scene3D` module that crashes `remotion bundle`. The two effects we wanted from it (word-blur reveal, fireflies) are hand-rolled in `src/sections/StudioAI.tsx`.
+
+Tooling: `gh` is installed (`~/.local/bin/gh`) and authenticated. Mark reviews via Remotion Studio (hot-reload), not MP4s — start it with `npm run studio` and open `http://localhost:3000/StudioAI-M1-SC`. Renders need system Chrome + `--concurrency=1` (see the memory note `remotion-render-gotchas`).
+
+Open follow-ups (optional, Mark's call): agave-green icon discs on the module slide; single-row-of-six module layout. Scope stays M1-SC only.
+
 ## Suggested Next Claude Task
 
 Continue visual polish on M1-SC only. Use the transcript cues as timing anchors. Do not alter the splash or product reveal timing unless Mark explicitly requests it. Focus on making motion more captivating while keeping the look premium, warm, editorial, and hospitality-led.
