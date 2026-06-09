@@ -1,0 +1,840 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 73.56,
+  "text": "More importantly, Studio AI identifies what's missing. Perhaps your pricing creates uncertainty, maybe your calls to action aren't compelling enough, or perhaps you're describing your venue beautifully but not addressing the questions and concerns couples are actually thinking about. Next, Studio AI creates an improved version, side by side, so you can instantly see the difference. Nothing is hidden. Every change is transparent and reviewable. The goal isn't to replace your voice, it's to strengthen it, making your brochure more persuasive, more engaging and more aligned with the couples you're trying to attract. Like what you see, approve it, need adjustments, request a revision or download the updated version and continue refining it with your team. Great venues deserve great brochures. Because when couples are comparing five or six venues online, the venue that communicates its value most clearly often wins. Not because it's cheaper, but because it's easier to say yes to. Somebody's\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea",
+  "words": [
+    {
+      "word": "More",
+      "start": 0.0,
+      "end": 0.24
+    },
+    {
+      "word": "importantly,",
+      "start": 0.24,
+      "end": 0.86
+    },
+    {
+      "word": "Studio",
+      "start": 1.58,
+      "end": 1.9
+    },
+    {
+      "word": "AI",
+      "start": 1.9,
+      "end": 2.36
+    },
+    {
+      "word": "identifies",
+      "start": 2.36,
+      "end": 3.14
+    },
+    {
+      "word": "what's",
+      "start": 3.14,
+      "end": 3.72
+    },
+    {
+      "word": "missing.",
+      "start": 3.72,
+      "end": 4.1
+    },
+    {
+      "word": "Perhaps",
+      "start": 4.5,
+      "end": 5.08
+    },
+    {
+      "word": "your",
+      "start": 5.08,
+      "end": 5.28
+    },
+    {
+      "word": "pricing",
+      "start": 5.28,
+      "end": 5.7
+    },
+    {
+      "word": "creates",
+      "start": 5.7,
+      "end": 6.26
+    },
+    {
+      "word": "uncertainty,",
+      "start": 6.26,
+      "end": 6.98
+    },
+    {
+      "word": "maybe",
+      "start": 7.38,
+      "end": 7.82
+    },
+    {
+      "word": "your",
+      "start": 7.82,
+      "end": 8.06
+    },
+    {
+      "word": "calls",
+      "start": 8.06,
+      "end": 8.5
+    },
+    {
+      "word": "to",
+      "start": 8.5,
+      "end": 8.72
+    },
+    {
+      "word": "action",
+      "start": 8.72,
+      "end": 9.08
+    },
+    {
+      "word": "aren't",
+      "start": 9.08,
+      "end": 9.46
+    },
+    {
+      "word": "compelling",
+      "start": 9.46,
+      "end": 9.9
+    },
+    {
+      "word": "enough,",
+      "start": 9.9,
+      "end": 10.36
+    },
+    {
+      "word": "or",
+      "start": 10.58,
+      "end": 11.08
+    },
+    {
+      "word": "perhaps",
+      "start": 11.08,
+      "end": 11.46
+    },
+    {
+      "word": "you're",
+      "start": 11.46,
+      "end": 11.7
+    },
+    {
+      "word": "describing",
+      "start": 11.7,
+      "end": 12.22
+    },
+    {
+      "word": "your",
+      "start": 12.22,
+      "end": 12.46
+    },
+    {
+      "word": "venue",
+      "start": 12.46,
+      "end": 12.78
+    },
+    {
+      "word": "beautifully",
+      "start": 12.78,
+      "end": 13.32
+    },
+    {
+      "word": "but",
+      "start": 13.32,
+      "end": 13.9
+    },
+    {
+      "word": "not",
+      "start": 13.9,
+      "end": 14.08
+    },
+    {
+      "word": "addressing",
+      "start": 14.08,
+      "end": 14.48
+    },
+    {
+      "word": "the",
+      "start": 14.48,
+      "end": 14.72
+    },
+    {
+      "word": "questions",
+      "start": 14.72,
+      "end": 15.2
+    },
+    {
+      "word": "and",
+      "start": 15.2,
+      "end": 15.54
+    },
+    {
+      "word": "concerns",
+      "start": 15.54,
+      "end": 16.24
+    },
+    {
+      "word": "couples",
+      "start": 16.24,
+      "end": 16.68
+    },
+    {
+      "word": "are",
+      "start": 16.68,
+      "end": 16.88
+    },
+    {
+      "word": "actually",
+      "start": 16.88,
+      "end": 17.2
+    },
+    {
+      "word": "thinking",
+      "start": 17.2,
+      "end": 17.54
+    },
+    {
+      "word": "about.",
+      "start": 17.54,
+      "end": 17.94
+    },
+    {
+      "word": "Next,",
+      "start": 19.24,
+      "end": 20.04
+    },
+    {
+      "word": "Studio",
+      "start": 20.44,
+      "end": 20.74
+    },
+    {
+      "word": "AI",
+      "start": 20.74,
+      "end": 21.18
+    },
+    {
+      "word": "creates",
+      "start": 21.18,
+      "end": 21.68
+    },
+    {
+      "word": "an",
+      "start": 21.68,
+      "end": 21.84
+    },
+    {
+      "word": "improved",
+      "start": 21.84,
+      "end": 22.32
+    },
+    {
+      "word": "version,",
+      "start": 22.32,
+      "end": 22.88
+    },
+    {
+      "word": "side",
+      "start": 23.2,
+      "end": 23.56
+    },
+    {
+      "word": "by",
+      "start": 23.56,
+      "end": 23.72
+    },
+    {
+      "word": "side,",
+      "start": 23.72,
+      "end": 24.14
+    },
+    {
+      "word": "so",
+      "start": 24.32,
+      "end": 24.64
+    },
+    {
+      "word": "you",
+      "start": 24.64,
+      "end": 24.74
+    },
+    {
+      "word": "can",
+      "start": 24.74,
+      "end": 24.9
+    },
+    {
+      "word": "instantly",
+      "start": 24.9,
+      "end": 25.4
+    },
+    {
+      "word": "see",
+      "start": 25.4,
+      "end": 25.72
+    },
+    {
+      "word": "the",
+      "start": 25.72,
+      "end": 25.88
+    },
+    {
+      "word": "difference.",
+      "start": 25.88,
+      "end": 26.3
+    },
+    {
+      "word": "Nothing",
+      "start": 27.5,
+      "end": 28.26
+    },
+    {
+      "word": "is",
+      "start": 28.26,
+      "end": 28.72
+    },
+    {
+      "word": "hidden.",
+      "start": 28.72,
+      "end": 29.02
+    },
+    {
+      "word": "Every",
+      "start": 29.4,
+      "end": 29.94
+    },
+    {
+      "word": "change",
+      "start": 29.94,
+      "end": 30.32
+    },
+    {
+      "word": "is",
+      "start": 30.32,
+      "end": 30.58
+    },
+    {
+      "word": "transparent",
+      "start": 30.58,
+      "end": 31.22
+    },
+    {
+      "word": "and",
+      "start": 31.22,
+      "end": 31.76
+    },
+    {
+      "word": "reviewable.",
+      "start": 31.76,
+      "end": 32.4
+    },
+    {
+      "word": "The",
+      "start": 33.46,
+      "end": 34.22
+    },
+    {
+      "word": "goal",
+      "start": 34.22,
+      "end": 34.46
+    },
+    {
+      "word": "isn't",
+      "start": 34.46,
+      "end": 34.74
+    },
+    {
+      "word": "to",
+      "start": 34.74,
+      "end": 34.86
+    },
+    {
+      "word": "replace",
+      "start": 34.86,
+      "end": 35.2
+    },
+    {
+      "word": "your",
+      "start": 35.2,
+      "end": 35.4
+    },
+    {
+      "word": "voice,",
+      "start": 35.4,
+      "end": 35.82
+    },
+    {
+      "word": "it's",
+      "start": 36.02,
+      "end": 36.3
+    },
+    {
+      "word": "to",
+      "start": 36.3,
+      "end": 36.44
+    },
+    {
+      "word": "strengthen",
+      "start": 36.44,
+      "end": 36.82
+    },
+    {
+      "word": "it,",
+      "start": 36.82,
+      "end": 37.16
+    },
+    {
+      "word": "making",
+      "start": 37.4,
+      "end": 37.8
+    },
+    {
+      "word": "your",
+      "start": 37.8,
+      "end": 38.0
+    },
+    {
+      "word": "brochure",
+      "start": 38.0,
+      "end": 38.38
+    },
+    {
+      "word": "more",
+      "start": 38.38,
+      "end": 38.56
+    },
+    {
+      "word": "persuasive,",
+      "start": 38.56,
+      "end": 39.26
+    },
+    {
+      "word": "more",
+      "start": 39.46,
+      "end": 39.88
+    },
+    {
+      "word": "engaging",
+      "start": 39.88,
+      "end": 40.42
+    },
+    {
+      "word": "and",
+      "start": 40.42,
+      "end": 41.06
+    },
+    {
+      "word": "more",
+      "start": 41.06,
+      "end": 41.28
+    },
+    {
+      "word": "aligned",
+      "start": 41.28,
+      "end": 41.78
+    },
+    {
+      "word": "with",
+      "start": 41.78,
+      "end": 41.96
+    },
+    {
+      "word": "the",
+      "start": 41.96,
+      "end": 42.1
+    },
+    {
+      "word": "couples",
+      "start": 42.1,
+      "end": 42.46
+    },
+    {
+      "word": "you're",
+      "start": 42.46,
+      "end": 42.7
+    },
+    {
+      "word": "trying",
+      "start": 42.7,
+      "end": 42.96
+    },
+    {
+      "word": "to",
+      "start": 42.96,
+      "end": 43.16
+    },
+    {
+      "word": "attract.",
+      "start": 43.16,
+      "end": 43.66
+    },
+    {
+      "word": "Like",
+      "start": 45.28,
+      "end": 46.04
+    },
+    {
+      "word": "what",
+      "start": 46.04,
+      "end": 46.24
+    },
+    {
+      "word": "you",
+      "start": 46.24,
+      "end": 46.4
+    },
+    {
+      "word": "see,",
+      "start": 46.4,
+      "end": 46.78
+    },
+    {
+      "word": "approve",
+      "start": 47.04,
+      "end": 47.54
+    },
+    {
+      "word": "it,",
+      "start": 47.54,
+      "end": 47.92
+    },
+    {
+      "word": "need",
+      "start": 48.32,
+      "end": 48.56
+    },
+    {
+      "word": "adjustments,",
+      "start": 48.56,
+      "end": 49.06
+    },
+    {
+      "word": "request",
+      "start": 49.64,
+      "end": 50.06
+    },
+    {
+      "word": "a",
+      "start": 50.06,
+      "end": 50.28
+    },
+    {
+      "word": "revision",
+      "start": 50.28,
+      "end": 50.66
+    },
+    {
+      "word": "or",
+      "start": 50.66,
+      "end": 51.34
+    },
+    {
+      "word": "download",
+      "start": 51.34,
+      "end": 51.74
+    },
+    {
+      "word": "the",
+      "start": 51.74,
+      "end": 52.0
+    },
+    {
+      "word": "updated",
+      "start": 52.0,
+      "end": 52.42
+    },
+    {
+      "word": "version",
+      "start": 52.42,
+      "end": 52.86
+    },
+    {
+      "word": "and",
+      "start": 52.86,
+      "end": 53.28
+    },
+    {
+      "word": "continue",
+      "start": 53.28,
+      "end": 53.8
+    },
+    {
+      "word": "refining",
+      "start": 53.8,
+      "end": 54.32
+    },
+    {
+      "word": "it",
+      "start": 54.32,
+      "end": 54.62
+    },
+    {
+      "word": "with",
+      "start": 54.62,
+      "end": 54.96
+    },
+    {
+      "word": "your",
+      "start": 54.96,
+      "end": 55.12
+    },
+    {
+      "word": "team.",
+      "start": 55.12,
+      "end": 55.5
+    },
+    {
+      "word": "Great",
+      "start": 56.76,
+      "end": 57.5
+    },
+    {
+      "word": "venues",
+      "start": 57.5,
+      "end": 57.94
+    },
+    {
+      "word": "deserve",
+      "start": 57.94,
+      "end": 58.42
+    },
+    {
+      "word": "great",
+      "start": 58.42,
+      "end": 58.92
+    },
+    {
+      "word": "brochures.",
+      "start": 58.92,
+      "end": 59.72
+    },
+    {
+      "word": "Because",
+      "start": 60.94,
+      "end": 61.68
+    },
+    {
+      "word": "when",
+      "start": 61.68,
+      "end": 61.92
+    },
+    {
+      "word": "couples",
+      "start": 61.92,
+      "end": 62.28
+    },
+    {
+      "word": "are",
+      "start": 62.28,
+      "end": 62.46
+    },
+    {
+      "word": "comparing",
+      "start": 62.46,
+      "end": 62.94
+    },
+    {
+      "word": "five",
+      "start": 62.94,
+      "end": 63.38
+    },
+    {
+      "word": "or",
+      "start": 63.38,
+      "end": 63.6
+    },
+    {
+      "word": "six",
+      "start": 63.6,
+      "end": 63.92
+    },
+    {
+      "word": "venues",
+      "start": 63.92,
+      "end": 64.3
+    },
+    {
+      "word": "online,",
+      "start": 64.3,
+      "end": 64.8
+    },
+    {
+      "word": "the",
+      "start": 65.16,
+      "end": 65.44
+    },
+    {
+      "word": "venue",
+      "start": 65.44,
+      "end": 65.74
+    },
+    {
+      "word": "that",
+      "start": 65.74,
+      "end": 65.94
+    },
+    {
+      "word": "communicates",
+      "start": 65.94,
+      "end": 66.7
+    },
+    {
+      "word": "its",
+      "start": 66.7,
+      "end": 66.88
+    },
+    {
+      "word": "value",
+      "start": 66.88,
+      "end": 67.32
+    },
+    {
+      "word": "most",
+      "start": 67.32,
+      "end": 67.76
+    },
+    {
+      "word": "clearly",
+      "start": 67.76,
+      "end": 68.22
+    },
+    {
+      "word": "often",
+      "start": 68.22,
+      "end": 68.76
+    },
+    {
+      "word": "wins.",
+      "start": 68.76,
+      "end": 69.28
+    },
+    {
+      "word": "Not",
+      "start": 69.52,
+      "end": 70.0
+    },
+    {
+      "word": "because",
+      "start": 70.0,
+      "end": 70.28
+    },
+    {
+      "word": "it's",
+      "start": 70.28,
+      "end": 70.5
+    },
+    {
+      "word": "cheaper,",
+      "start": 70.5,
+      "end": 70.9
+    },
+    {
+      "word": "but",
+      "start": 71.14,
+      "end": 71.52
+    },
+    {
+      "word": "because",
+      "start": 71.52,
+      "end": 71.76
+    },
+    {
+      "word": "it's",
+      "start": 71.76,
+      "end": 71.98
+    },
+    {
+      "word": "easier",
+      "start": 71.98,
+      "end": 72.42
+    },
+    {
+      "word": "to",
+      "start": 72.42,
+      "end": 72.64
+    },
+    {
+      "word": "say",
+      "start": 72.64,
+      "end": 72.86
+    },
+    {
+      "word": "yes",
+      "start": 72.86,
+      "end": 73.14
+    },
+    {
+      "word": "to.",
+      "start": 73.14,
+      "end": 73.38
+    },
+    {
+      "word": "Somebody's\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea",
+      "start": 73.38,
+      "end": 73.56
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 17.94,
+      "text": " More importantly, Studio AI identifies what's missing. Perhaps your pricing creates uncertainty, maybe your calls to action aren't compelling enough, or perhaps you're describing your venue beautifully but not addressing the questions and concerns couples are actually thinking about."
+    },
+    {
+      "id": 1,
+      "start": 19.24,
+      "end": 26.3,
+      "text": " Next, Studio AI creates an improved version, side by side, so you can instantly see the difference."
+    },
+    {
+      "id": 2,
+      "start": 27.5,
+      "end": 32.4,
+      "text": " Nothing is hidden. Every change is transparent and reviewable."
+    },
+    {
+      "id": 3,
+      "start": 33.46,
+      "end": 43.66,
+      "text": " The goal isn't to replace your voice, it's to strengthen it, making your brochure more persuasive, more engaging and more aligned with the couples you're trying to attract."
+    },
+    {
+      "id": 4,
+      "start": 45.28,
+      "end": 55.5,
+      "text": " Like what you see, approve it, need adjustments, request a revision or download the updated version and continue refining it with your team."
+    },
+    {
+      "id": 5,
+      "start": 56.76,
+      "end": 59.72,
+      "text": " Great venues deserve great brochures."
+    },
+    {
+      "id": 6,
+      "start": 60.94,
+      "end": 69.28,
+      "text": " Because when couples are comparing five or six venues online, the venue that communicates its value most clearly often wins."
+    },
+    {
+      "id": 7,
+      "start": 69.52,
+      "end": 73.38,
+      "text": " Not because it's cheaper, but because it's easier to say yes to."
+    },
+    {
+      "id": 8,
+      "start": 73.38,
+      "end": 73.56,
+      "text": " Somebody's\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea\u30ea"
+    },
+    {
+      "id": 9,
+      "start": 73.54,
+      "end": 73.54,
+      "text": ""
+    }
+  ]
+}

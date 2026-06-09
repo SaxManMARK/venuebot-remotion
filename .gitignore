@@ -5,3 +5,4 @@ dist/
 .cache/
 .DS_Store
 .claude/
+.venv-whisper/

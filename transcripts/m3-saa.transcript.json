@@ -1,0 +1,594 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 41.38,
+  "text": "The most powerful feature isn't another dashboard. It's the fact you no longer need to learn the software. You simply tell it what you want, such as Show me every enquiry from the last 30 days. Create a landing page for our next wedding showcase. Send John and Sarah the autumn wedding brochure and invite them to book a tour. It can even answer the questions you'd normally need a report for. Which marketing source generated the most bookings this month? No reports to build, no menus to navigate, no hunting through screens trying to find the right button. You ask. The system does the work.",
+  "words": [
+    {
+      "word": "The",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "word": "most",
+      "start": 0.18,
+      "end": 0.36
+    },
+    {
+      "word": "powerful",
+      "start": 0.36,
+      "end": 0.8
+    },
+    {
+      "word": "feature",
+      "start": 0.8,
+      "end": 1.32
+    },
+    {
+      "word": "isn't",
+      "start": 1.32,
+      "end": 1.74
+    },
+    {
+      "word": "another",
+      "start": 1.74,
+      "end": 2.02
+    },
+    {
+      "word": "dashboard.",
+      "start": 2.02,
+      "end": 2.52
+    },
+    {
+      "word": "It's",
+      "start": 4.1,
+      "end": 4.66
+    },
+    {
+      "word": "the",
+      "start": 4.66,
+      "end": 4.78
+    },
+    {
+      "word": "fact",
+      "start": 4.78,
+      "end": 5.04
+    },
+    {
+      "word": "you",
+      "start": 5.04,
+      "end": 5.26
+    },
+    {
+      "word": "no",
+      "start": 5.26,
+      "end": 5.4
+    },
+    {
+      "word": "longer",
+      "start": 5.4,
+      "end": 5.66
+    },
+    {
+      "word": "need",
+      "start": 5.66,
+      "end": 5.86
+    },
+    {
+      "word": "to",
+      "start": 5.86,
+      "end": 6.02
+    },
+    {
+      "word": "learn",
+      "start": 6.02,
+      "end": 6.32
+    },
+    {
+      "word": "the",
+      "start": 6.32,
+      "end": 6.52
+    },
+    {
+      "word": "software.",
+      "start": 6.52,
+      "end": 6.94
+    },
+    {
+      "word": "You",
+      "start": 7.3,
+      "end": 7.56
+    },
+    {
+      "word": "simply",
+      "start": 7.56,
+      "end": 7.9
+    },
+    {
+      "word": "tell",
+      "start": 7.9,
+      "end": 8.18
+    },
+    {
+      "word": "it",
+      "start": 8.18,
+      "end": 8.3
+    },
+    {
+      "word": "what",
+      "start": 8.3,
+      "end": 8.44
+    },
+    {
+      "word": "you",
+      "start": 8.44,
+      "end": 8.58
+    },
+    {
+      "word": "want,",
+      "start": 8.58,
+      "end": 8.92
+    },
+    {
+      "word": "such",
+      "start": 9.1,
+      "end": 9.5
+    },
+    {
+      "word": "as",
+      "start": 9.5,
+      "end": 9.84
+    },
+    {
+      "word": "Show",
+      "start": 10.66,
+      "end": 11.22
+    },
+    {
+      "word": "me",
+      "start": 11.22,
+      "end": 11.38
+    },
+    {
+      "word": "every",
+      "start": 11.38,
+      "end": 11.66
+    },
+    {
+      "word": "enquiry",
+      "start": 11.66,
+      "end": 12.28
+    },
+    {
+      "word": "from",
+      "start": 12.28,
+      "end": 12.56
+    },
+    {
+      "word": "the",
+      "start": 12.56,
+      "end": 12.68
+    },
+    {
+      "word": "last",
+      "start": 12.68,
+      "end": 12.94
+    },
+    {
+      "word": "30",
+      "start": 12.94,
+      "end": 13.26
+    },
+    {
+      "word": "days.",
+      "start": 13.26,
+      "end": 13.72
+    },
+    {
+      "word": "Create",
+      "start": 14.6,
+      "end": 15.16
+    },
+    {
+      "word": "a",
+      "start": 15.16,
+      "end": 15.38
+    },
+    {
+      "word": "landing",
+      "start": 15.38,
+      "end": 15.68
+    },
+    {
+      "word": "page",
+      "start": 15.68,
+      "end": 16.12
+    },
+    {
+      "word": "for",
+      "start": 16.12,
+      "end": 16.36
+    },
+    {
+      "word": "our",
+      "start": 16.36,
+      "end": 16.5
+    },
+    {
+      "word": "next",
+      "start": 16.5,
+      "end": 16.74
+    },
+    {
+      "word": "wedding",
+      "start": 16.74,
+      "end": 17.02
+    },
+    {
+      "word": "showcase.",
+      "start": 17.02,
+      "end": 17.62
+    },
+    {
+      "word": "Send",
+      "start": 18.18,
+      "end": 18.74
+    },
+    {
+      "word": "John",
+      "start": 18.74,
+      "end": 19.02
+    },
+    {
+      "word": "and",
+      "start": 19.02,
+      "end": 19.22
+    },
+    {
+      "word": "Sarah",
+      "start": 19.22,
+      "end": 19.56
+    },
+    {
+      "word": "the",
+      "start": 19.56,
+      "end": 19.72
+    },
+    {
+      "word": "autumn",
+      "start": 19.72,
+      "end": 19.98
+    },
+    {
+      "word": "wedding",
+      "start": 19.98,
+      "end": 20.28
+    },
+    {
+      "word": "brochure",
+      "start": 20.28,
+      "end": 20.74
+    },
+    {
+      "word": "and",
+      "start": 20.74,
+      "end": 20.9
+    },
+    {
+      "word": "invite",
+      "start": 20.9,
+      "end": 21.22
+    },
+    {
+      "word": "them",
+      "start": 21.22,
+      "end": 21.42
+    },
+    {
+      "word": "to",
+      "start": 21.42,
+      "end": 21.56
+    },
+    {
+      "word": "book",
+      "start": 21.56,
+      "end": 21.72
+    },
+    {
+      "word": "a",
+      "start": 21.72,
+      "end": 21.9
+    },
+    {
+      "word": "tour.",
+      "start": 21.9,
+      "end": 22.1
+    },
+    {
+      "word": "It",
+      "start": 22.42,
+      "end": 22.96
+    },
+    {
+      "word": "can",
+      "start": 22.96,
+      "end": 23.08
+    },
+    {
+      "word": "even",
+      "start": 23.08,
+      "end": 23.26
+    },
+    {
+      "word": "answer",
+      "start": 23.26,
+      "end": 23.58
+    },
+    {
+      "word": "the",
+      "start": 23.58,
+      "end": 23.74
+    },
+    {
+      "word": "questions",
+      "start": 23.74,
+      "end": 24.12
+    },
+    {
+      "word": "you'd",
+      "start": 24.12,
+      "end": 24.44
+    },
+    {
+      "word": "normally",
+      "start": 24.44,
+      "end": 24.74
+    },
+    {
+      "word": "need",
+      "start": 24.74,
+      "end": 24.98
+    },
+    {
+      "word": "a",
+      "start": 24.98,
+      "end": 25.1
+    },
+    {
+      "word": "report",
+      "start": 25.1,
+      "end": 25.46
+    },
+    {
+      "word": "for.",
+      "start": 25.46,
+      "end": 25.8
+    },
+    {
+      "word": "Which",
+      "start": 25.8,
+      "end": 27.08
+    },
+    {
+      "word": "marketing",
+      "start": 27.08,
+      "end": 27.6
+    },
+    {
+      "word": "source",
+      "start": 27.6,
+      "end": 28.06
+    },
+    {
+      "word": "generated",
+      "start": 28.06,
+      "end": 28.64
+    },
+    {
+      "word": "the",
+      "start": 28.64,
+      "end": 28.88
+    },
+    {
+      "word": "most",
+      "start": 28.88,
+      "end": 29.1
+    },
+    {
+      "word": "bookings",
+      "start": 29.1,
+      "end": 29.5
+    },
+    {
+      "word": "this",
+      "start": 29.5,
+      "end": 29.7
+    },
+    {
+      "word": "month?",
+      "start": 29.7,
+      "end": 30.04
+    },
+    {
+      "word": "No",
+      "start": 30.54,
+      "end": 31.2
+    },
+    {
+      "word": "reports",
+      "start": 31.2,
+      "end": 31.58
+    },
+    {
+      "word": "to",
+      "start": 31.58,
+      "end": 31.78
+    },
+    {
+      "word": "build,",
+      "start": 31.78,
+      "end": 32.1
+    },
+    {
+      "word": "no",
+      "start": 32.3,
+      "end": 32.62
+    },
+    {
+      "word": "menus",
+      "start": 32.62,
+      "end": 32.96
+    },
+    {
+      "word": "to",
+      "start": 32.96,
+      "end": 33.18
+    },
+    {
+      "word": "navigate,",
+      "start": 33.18,
+      "end": 33.58
+    },
+    {
+      "word": "no",
+      "start": 34.28,
+      "end": 34.38
+    },
+    {
+      "word": "hunting",
+      "start": 34.38,
+      "end": 34.74
+    },
+    {
+      "word": "through",
+      "start": 34.74,
+      "end": 35.04
+    },
+    {
+      "word": "screens",
+      "start": 35.04,
+      "end": 35.54
+    },
+    {
+      "word": "trying",
+      "start": 35.54,
+      "end": 35.8
+    },
+    {
+      "word": "to",
+      "start": 35.8,
+      "end": 35.94
+    },
+    {
+      "word": "find",
+      "start": 35.94,
+      "end": 36.14
+    },
+    {
+      "word": "the",
+      "start": 36.14,
+      "end": 36.28
+    },
+    {
+      "word": "right",
+      "start": 36.28,
+      "end": 36.44
+    },
+    {
+      "word": "button.",
+      "start": 36.44,
+      "end": 36.8
+    },
+    {
+      "word": "You",
+      "start": 38.52,
+      "end": 39.2
+    },
+    {
+      "word": "ask.",
+      "start": 39.2,
+      "end": 39.6
+    },
+    {
+      "word": "The",
+      "start": 39.88,
+      "end": 40.28
+    },
+    {
+      "word": "system",
+      "start": 40.28,
+      "end": 40.6
+    },
+    {
+      "word": "does",
+      "start": 40.6,
+      "end": 40.84
+    },
+    {
+      "word": "the",
+      "start": 40.84,
+      "end": 40.98
+    },
+    {
+      "word": "work.",
+      "start": 40.98,
+      "end": 41.38
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 2.52,
+      "text": " The most powerful feature isn't another dashboard."
+    },
+    {
+      "id": 1,
+      "start": 4.1,
+      "end": 9.84,
+      "text": " It's the fact you no longer need to learn the software. You simply tell it what you want, such as"
+    },
+    {
+      "id": 2,
+      "start": 10.66,
+      "end": 13.72,
+      "text": " Show me every enquiry from the last 30 days."
+    },
+    {
+      "id": 3,
+      "start": 14.6,
+      "end": 17.62,
+      "text": " Create a landing page for our next wedding showcase."
+    },
+    {
+      "id": 4,
+      "start": 18.18,
+      "end": 22.1,
+      "text": " Send John and Sarah the autumn wedding brochure and invite them to book a tour."
+    },
+    {
+      "id": 5,
+      "start": 22.42,
+      "end": 25.8,
+      "text": " It can even answer the questions you'd normally need a report for."
+    },
+    {
+      "id": 6,
+      "start": 25.8,
+      "end": 30.04,
+      "text": " Which marketing source generated the most bookings this month?"
+    },
+    {
+      "id": 7,
+      "start": 30.54,
+      "end": 36.8,
+      "text": " No reports to build, no menus to navigate, no hunting through screens trying to find the right button."
+    },
+    {
+      "id": 8,
+      "start": 38.52,
+      "end": 41.38,
+      "text": " You ask. The system does the work."
+    }
+  ]
+}

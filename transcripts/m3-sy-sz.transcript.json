@@ -1,0 +1,681 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 62.48,
+  "text": "And because everything lives inside one platform, your marketing becomes dramatically simpler. Email campaigns, SMS broadcasts, landing pages, forms, website pages, social media publishing, blog content. No stitching together 15 different tools just to run your venue. Everything works from the same data, the same contacts, the same conversations. Then there's reputation, because reviews influence almost every booking decision a couple makes. Care automatically requests reviews after tours, weddings and key milestones, helping you generate more 5-star reviews without relying on the team remembering to ask. And if a review looks like it's heading in the wrong direction, you'll know before it becomes a public problem. Protect the experience. Protect the rating. Protect the reputation you've worked years to build.",
+  "words": [
+    {
+      "word": "And",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "word": "because",
+      "start": 0.18,
+      "end": 0.42
+    },
+    {
+      "word": "everything",
+      "start": 0.42,
+      "end": 0.78
+    },
+    {
+      "word": "lives",
+      "start": 0.78,
+      "end": 1.14
+    },
+    {
+      "word": "inside",
+      "start": 1.14,
+      "end": 1.58
+    },
+    {
+      "word": "one",
+      "start": 1.58,
+      "end": 1.92
+    },
+    {
+      "word": "platform,",
+      "start": 1.92,
+      "end": 2.44
+    },
+    {
+      "word": "your",
+      "start": 2.72,
+      "end": 2.92
+    },
+    {
+      "word": "marketing",
+      "start": 2.92,
+      "end": 3.32
+    },
+    {
+      "word": "becomes",
+      "start": 3.32,
+      "end": 3.82
+    },
+    {
+      "word": "dramatically",
+      "start": 3.82,
+      "end": 4.34
+    },
+    {
+      "word": "simpler.",
+      "start": 4.34,
+      "end": 4.96
+    },
+    {
+      "word": "Email",
+      "start": 6.72,
+      "end": 7.54
+    },
+    {
+      "word": "campaigns,",
+      "start": 7.54,
+      "end": 8.26
+    },
+    {
+      "word": "SMS",
+      "start": 8.7,
+      "end": 9.4
+    },
+    {
+      "word": "broadcasts,",
+      "start": 9.4,
+      "end": 10.52
+    },
+    {
+      "word": "landing",
+      "start": 10.68,
+      "end": 11.12
+    },
+    {
+      "word": "pages,",
+      "start": 11.12,
+      "end": 11.62
+    },
+    {
+      "word": "forms,",
+      "start": 11.98,
+      "end": 12.46
+    },
+    {
+      "word": "website",
+      "start": 12.84,
+      "end": 13.4
+    },
+    {
+      "word": "pages,",
+      "start": 13.4,
+      "end": 13.9
+    },
+    {
+      "word": "social",
+      "start": 14.54,
+      "end": 14.72
+    },
+    {
+      "word": "media",
+      "start": 14.72,
+      "end": 15.08
+    },
+    {
+      "word": "publishing,",
+      "start": 15.08,
+      "end": 15.6
+    },
+    {
+      "word": "blog",
+      "start": 16.24,
+      "end": 16.4
+    },
+    {
+      "word": "content.",
+      "start": 16.4,
+      "end": 16.92
+    },
+    {
+      "word": "No",
+      "start": 18.44,
+      "end": 18.86
+    },
+    {
+      "word": "stitching",
+      "start": 18.86,
+      "end": 19.26
+    },
+    {
+      "word": "together",
+      "start": 19.26,
+      "end": 19.68
+    },
+    {
+      "word": "15",
+      "start": 19.68,
+      "end": 20.14
+    },
+    {
+      "word": "different",
+      "start": 20.14,
+      "end": 20.6
+    },
+    {
+      "word": "tools",
+      "start": 20.6,
+      "end": 21.08
+    },
+    {
+      "word": "just",
+      "start": 21.08,
+      "end": 21.5
+    },
+    {
+      "word": "to",
+      "start": 21.5,
+      "end": 21.68
+    },
+    {
+      "word": "run",
+      "start": 21.68,
+      "end": 21.88
+    },
+    {
+      "word": "your",
+      "start": 21.88,
+      "end": 22.08
+    },
+    {
+      "word": "venue.",
+      "start": 22.08,
+      "end": 22.42
+    },
+    {
+      "word": "Everything",
+      "start": 22.84,
+      "end": 23.52
+    },
+    {
+      "word": "works",
+      "start": 23.52,
+      "end": 23.88
+    },
+    {
+      "word": "from",
+      "start": 23.88,
+      "end": 24.04
+    },
+    {
+      "word": "the",
+      "start": 24.04,
+      "end": 24.16
+    },
+    {
+      "word": "same",
+      "start": 24.16,
+      "end": 24.38
+    },
+    {
+      "word": "data,",
+      "start": 24.38,
+      "end": 24.82
+    },
+    {
+      "word": "the",
+      "start": 25.12,
+      "end": 25.36
+    },
+    {
+      "word": "same",
+      "start": 25.36,
+      "end": 25.6
+    },
+    {
+      "word": "contacts,",
+      "start": 25.6,
+      "end": 26.2
+    },
+    {
+      "word": "the",
+      "start": 26.58,
+      "end": 26.7
+    },
+    {
+      "word": "same",
+      "start": 26.7,
+      "end": 27.0
+    },
+    {
+      "word": "conversations.",
+      "start": 27.0,
+      "end": 27.74
+    },
+    {
+      "word": "Then",
+      "start": 30.0,
+      "end": 30.42
+    },
+    {
+      "word": "there's",
+      "start": 30.42,
+      "end": 30.72
+    },
+    {
+      "word": "reputation,",
+      "start": 30.72,
+      "end": 31.36
+    },
+    {
+      "word": "because",
+      "start": 31.76,
+      "end": 32.28
+    },
+    {
+      "word": "reviews",
+      "start": 32.28,
+      "end": 32.84
+    },
+    {
+      "word": "influence",
+      "start": 32.84,
+      "end": 33.54
+    },
+    {
+      "word": "almost",
+      "start": 33.54,
+      "end": 33.92
+    },
+    {
+      "word": "every",
+      "start": 33.92,
+      "end": 34.38
+    },
+    {
+      "word": "booking",
+      "start": 34.38,
+      "end": 34.68
+    },
+    {
+      "word": "decision",
+      "start": 34.68,
+      "end": 35.1
+    },
+    {
+      "word": "a",
+      "start": 35.1,
+      "end": 35.34
+    },
+    {
+      "word": "couple",
+      "start": 35.34,
+      "end": 35.54
+    },
+    {
+      "word": "makes.",
+      "start": 35.54,
+      "end": 36.0
+    },
+    {
+      "word": "Care",
+      "start": 37.48,
+      "end": 38.1
+    },
+    {
+      "word": "automatically",
+      "start": 38.1,
+      "end": 38.72
+    },
+    {
+      "word": "requests",
+      "start": 38.72,
+      "end": 39.34
+    },
+    {
+      "word": "reviews",
+      "start": 39.34,
+      "end": 39.88
+    },
+    {
+      "word": "after",
+      "start": 39.88,
+      "end": 40.4
+    },
+    {
+      "word": "tours,",
+      "start": 40.4,
+      "end": 40.92
+    },
+    {
+      "word": "weddings",
+      "start": 41.24,
+      "end": 41.64
+    },
+    {
+      "word": "and",
+      "start": 41.64,
+      "end": 42.16
+    },
+    {
+      "word": "key",
+      "start": 42.16,
+      "end": 42.42
+    },
+    {
+      "word": "milestones,",
+      "start": 42.42,
+      "end": 42.98
+    },
+    {
+      "word": "helping",
+      "start": 43.84,
+      "end": 44.08
+    },
+    {
+      "word": "you",
+      "start": 44.08,
+      "end": 44.28
+    },
+    {
+      "word": "generate",
+      "start": 44.28,
+      "end": 44.62
+    },
+    {
+      "word": "more",
+      "start": 44.62,
+      "end": 44.94
+    },
+    {
+      "word": "5",
+      "start": 44.94,
+      "end": 45.32
+    },
+    {
+      "word": "-star",
+      "start": 45.32,
+      "end": 45.6
+    },
+    {
+      "word": "reviews",
+      "start": 45.6,
+      "end": 46.12
+    },
+    {
+      "word": "without",
+      "start": 46.12,
+      "end": 46.66
+    },
+    {
+      "word": "relying",
+      "start": 46.66,
+      "end": 47.1
+    },
+    {
+      "word": "on",
+      "start": 47.1,
+      "end": 47.32
+    },
+    {
+      "word": "the",
+      "start": 47.32,
+      "end": 47.44
+    },
+    {
+      "word": "team",
+      "start": 47.44,
+      "end": 47.8
+    },
+    {
+      "word": "remembering",
+      "start": 47.8,
+      "end": 48.26
+    },
+    {
+      "word": "to",
+      "start": 48.26,
+      "end": 48.52
+    },
+    {
+      "word": "ask.",
+      "start": 48.52,
+      "end": 48.9
+    },
+    {
+      "word": "And",
+      "start": 50.08,
+      "end": 50.8
+    },
+    {
+      "word": "if",
+      "start": 50.8,
+      "end": 50.94
+    },
+    {
+      "word": "a",
+      "start": 50.94,
+      "end": 51.04
+    },
+    {
+      "word": "review",
+      "start": 51.04,
+      "end": 51.38
+    },
+    {
+      "word": "looks",
+      "start": 51.38,
+      "end": 51.7
+    },
+    {
+      "word": "like",
+      "start": 51.7,
+      "end": 51.9
+    },
+    {
+      "word": "it's",
+      "start": 51.9,
+      "end": 52.12
+    },
+    {
+      "word": "heading",
+      "start": 52.12,
+      "end": 52.32
+    },
+    {
+      "word": "in",
+      "start": 52.32,
+      "end": 52.52
+    },
+    {
+      "word": "the",
+      "start": 52.52,
+      "end": 52.6
+    },
+    {
+      "word": "wrong",
+      "start": 52.6,
+      "end": 52.8
+    },
+    {
+      "word": "direction,",
+      "start": 52.8,
+      "end": 53.3
+    },
+    {
+      "word": "you'll",
+      "start": 53.68,
+      "end": 54.1
+    },
+    {
+      "word": "know",
+      "start": 54.1,
+      "end": 54.34
+    },
+    {
+      "word": "before",
+      "start": 54.34,
+      "end": 54.64
+    },
+    {
+      "word": "it",
+      "start": 54.64,
+      "end": 54.84
+    },
+    {
+      "word": "becomes",
+      "start": 54.84,
+      "end": 55.16
+    },
+    {
+      "word": "a",
+      "start": 55.16,
+      "end": 55.3
+    },
+    {
+      "word": "public",
+      "start": 55.3,
+      "end": 55.56
+    },
+    {
+      "word": "problem.",
+      "start": 55.56,
+      "end": 56.04
+    },
+    {
+      "word": "Protect",
+      "start": 56.04,
+      "end": 56.76
+    },
+    {
+      "word": "the",
+      "start": 56.76,
+      "end": 57.12
+    },
+    {
+      "word": "experience.",
+      "start": 57.12,
+      "end": 57.7
+    },
+    {
+      "word": "Protect",
+      "start": 58.14,
+      "end": 58.56
+    },
+    {
+      "word": "the",
+      "start": 58.56,
+      "end": 58.8
+    },
+    {
+      "word": "rating.",
+      "start": 58.8,
+      "end": 59.16
+    },
+    {
+      "word": "Protect",
+      "start": 59.54,
+      "end": 60.02
+    },
+    {
+      "word": "the",
+      "start": 60.02,
+      "end": 60.26
+    },
+    {
+      "word": "reputation",
+      "start": 60.26,
+      "end": 60.8
+    },
+    {
+      "word": "you've",
+      "start": 60.8,
+      "end": 61.22
+    },
+    {
+      "word": "worked",
+      "start": 61.22,
+      "end": 61.52
+    },
+    {
+      "word": "years",
+      "start": 61.52,
+      "end": 61.92
+    },
+    {
+      "word": "to",
+      "start": 61.92,
+      "end": 62.16
+    },
+    {
+      "word": "build.",
+      "start": 62.16,
+      "end": 62.48
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.96,
+      "text": " And because everything lives inside one platform, your marketing becomes dramatically simpler."
+    },
+    {
+      "id": 1,
+      "start": 6.72,
+      "end": 16.92,
+      "text": " Email campaigns, SMS broadcasts, landing pages, forms, website pages, social media publishing, blog content."
+    },
+    {
+      "id": 2,
+      "start": 18.7,
+      "end": 22.42,
+      "text": " No stitching together 15 different tools just to run your venue."
+    },
+    {
+      "id": 3,
+      "start": 22.84,
+      "end": 27.74,
+      "text": " Everything works from the same data, the same contacts, the same conversations."
+    },
+    {
+      "id": 4,
+      "start": 30.0,
+      "end": 36.0,
+      "text": " Then there's reputation, because reviews influence almost every booking decision a couple makes."
+    },
+    {
+      "id": 5,
+      "start": 37.48,
+      "end": 42.98,
+      "text": " Care automatically requests reviews after tours, weddings and key milestones,"
+    },
+    {
+      "id": 6,
+      "start": 43.84,
+      "end": 48.9,
+      "text": " helping you generate more 5-star reviews without relying on the team remembering to ask."
+    },
+    {
+      "id": 7,
+      "start": 50.08,
+      "end": 56.04,
+      "text": " And if a review looks like it's heading in the wrong direction, you'll know before it becomes a public problem."
+    },
+    {
+      "id": 8,
+      "start": 56.04,
+      "end": 57.7,
+      "text": " Protect the experience."
+    },
+    {
+      "id": 9,
+      "start": 58.14,
+      "end": 59.16,
+      "text": " Protect the rating."
+    },
+    {
+      "id": 10,
+      "start": 59.54,
+      "end": 62.48,
+      "text": " Protect the reputation you've worked years to build."
+    }
+  ]
+}

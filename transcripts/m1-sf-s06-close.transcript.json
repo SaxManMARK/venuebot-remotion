@@ -1,0 +1,1107 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 98.04,
+  "text": "Then Studio AI gets to work, building every message around your venue. Not a generic template, not a copy and paste campaign, a complete nurture journey designed specifically for your enquiry process. Every message has a purpose. Acknowledge, orient, reassure, prompt action, reactivate, rescue opportunities that would otherwise disappear. The happy path guides couples from enquiry, to tour booking, to venue visit and ultimately towards choosing your venue. But not every couple is ready, straight away. That's where the recovery paths come in. Thoughtful follow-up, additional touch points and carefully timed messages that keep your venue front of mind without becoming pushy. Every email, SMS and WhatsApp message includes the strategy behind it, why it exists, what it's designed to achieve and what it should avoid. So you're never blindly trusting AI. You're reviewing a process built on proven conversion principles. Personalisation fields are mapped automatically, making it simple to export your sequence into the Venue Bot Care CRM, or other CRMs such as HubSpot, Active Campaign, MailChimp. Because great venues deserve great follow-up, and the venues that consistently win more bookings aren't always the most beautiful. They're usually the ones that stay in touch. They're usually the ones that stay in touch.",
+  "words": [
+    {
+      "word": "Then",
+      "start": 0.0,
+      "end": 0.28
+    },
+    {
+      "word": "Studio",
+      "start": 0.28,
+      "end": 0.74
+    },
+    {
+      "word": "AI",
+      "start": 0.74,
+      "end": 1.14
+    },
+    {
+      "word": "gets",
+      "start": 1.14,
+      "end": 1.5
+    },
+    {
+      "word": "to",
+      "start": 1.5,
+      "end": 1.64
+    },
+    {
+      "word": "work,",
+      "start": 1.64,
+      "end": 2.02
+    },
+    {
+      "word": "building",
+      "start": 2.28,
+      "end": 3.02
+    },
+    {
+      "word": "every",
+      "start": 3.02,
+      "end": 3.38
+    },
+    {
+      "word": "message",
+      "start": 3.38,
+      "end": 3.74
+    },
+    {
+      "word": "around",
+      "start": 3.74,
+      "end": 4.0
+    },
+    {
+      "word": "your",
+      "start": 4.0,
+      "end": 4.2
+    },
+    {
+      "word": "venue.",
+      "start": 4.2,
+      "end": 4.52
+    },
+    {
+      "word": "Not",
+      "start": 6.86,
+      "end": 7.62
+    },
+    {
+      "word": "a",
+      "start": 7.62,
+      "end": 7.76
+    },
+    {
+      "word": "generic",
+      "start": 7.76,
+      "end": 8.1
+    },
+    {
+      "word": "template,",
+      "start": 8.1,
+      "end": 8.58
+    },
+    {
+      "word": "not",
+      "start": 8.94,
+      "end": 9.16
+    },
+    {
+      "word": "a",
+      "start": 9.16,
+      "end": 9.28
+    },
+    {
+      "word": "copy",
+      "start": 9.28,
+      "end": 9.56
+    },
+    {
+      "word": "and",
+      "start": 9.56,
+      "end": 9.72
+    },
+    {
+      "word": "paste",
+      "start": 9.72,
+      "end": 10.0
+    },
+    {
+      "word": "campaign,",
+      "start": 10.0,
+      "end": 10.48
+    },
+    {
+      "word": "a",
+      "start": 10.76,
+      "end": 11.08
+    },
+    {
+      "word": "complete",
+      "start": 11.08,
+      "end": 11.48
+    },
+    {
+      "word": "nurture",
+      "start": 11.48,
+      "end": 11.86
+    },
+    {
+      "word": "journey",
+      "start": 11.86,
+      "end": 12.26
+    },
+    {
+      "word": "designed",
+      "start": 12.26,
+      "end": 12.66
+    },
+    {
+      "word": "specifically",
+      "start": 12.66,
+      "end": 13.28
+    },
+    {
+      "word": "for",
+      "start": 13.28,
+      "end": 13.6
+    },
+    {
+      "word": "your",
+      "start": 13.6,
+      "end": 13.76
+    },
+    {
+      "word": "enquiry",
+      "start": 13.76,
+      "end": 14.2
+    },
+    {
+      "word": "process.",
+      "start": 14.2,
+      "end": 14.74
+    },
+    {
+      "word": "Every",
+      "start": 16.24,
+      "end": 17.0
+    },
+    {
+      "word": "message",
+      "start": 17.0,
+      "end": 17.32
+    },
+    {
+      "word": "has",
+      "start": 17.32,
+      "end": 17.58
+    },
+    {
+      "word": "a",
+      "start": 17.58,
+      "end": 17.68
+    },
+    {
+      "word": "purpose.",
+      "start": 17.68,
+      "end": 18.14
+    },
+    {
+      "word": "Acknowledge,",
+      "start": 18.76,
+      "end": 19.22
+    },
+    {
+      "word": "orient,",
+      "start": 19.5,
+      "end": 19.92
+    },
+    {
+      "word": "reassure,",
+      "start": 20.44,
+      "end": 21.1
+    },
+    {
+      "word": "prompt",
+      "start": 21.64,
+      "end": 21.94
+    },
+    {
+      "word": "action,",
+      "start": 21.94,
+      "end": 22.44
+    },
+    {
+      "word": "reactivate,",
+      "start": 23.04,
+      "end": 23.82
+    },
+    {
+      "word": "rescue",
+      "start": 24.38,
+      "end": 24.72
+    },
+    {
+      "word": "opportunities",
+      "start": 24.72,
+      "end": 25.32
+    },
+    {
+      "word": "that",
+      "start": 25.32,
+      "end": 25.66
+    },
+    {
+      "word": "would",
+      "start": 25.66,
+      "end": 25.8
+    },
+    {
+      "word": "otherwise",
+      "start": 25.8,
+      "end": 26.26
+    },
+    {
+      "word": "disappear.",
+      "start": 26.26,
+      "end": 26.9
+    },
+    {
+      "word": "The",
+      "start": 28.08,
+      "end": 28.84
+    },
+    {
+      "word": "happy",
+      "start": 28.84,
+      "end": 29.12
+    },
+    {
+      "word": "path",
+      "start": 29.12,
+      "end": 29.52
+    },
+    {
+      "word": "guides",
+      "start": 29.52,
+      "end": 29.92
+    },
+    {
+      "word": "couples",
+      "start": 29.92,
+      "end": 30.28
+    },
+    {
+      "word": "from",
+      "start": 30.28,
+      "end": 30.56
+    },
+    {
+      "word": "enquiry,",
+      "start": 30.56,
+      "end": 31.36
+    },
+    {
+      "word": "to",
+      "start": 31.6,
+      "end": 32.04
+    },
+    {
+      "word": "tour",
+      "start": 32.04,
+      "end": 32.34
+    },
+    {
+      "word": "booking,",
+      "start": 32.34,
+      "end": 32.68
+    },
+    {
+      "word": "to",
+      "start": 33.02,
+      "end": 33.28
+    },
+    {
+      "word": "venue",
+      "start": 33.28,
+      "end": 33.64
+    },
+    {
+      "word": "visit",
+      "start": 33.64,
+      "end": 34.08
+    },
+    {
+      "word": "and",
+      "start": 34.08,
+      "end": 34.84
+    },
+    {
+      "word": "ultimately",
+      "start": 34.84,
+      "end": 35.36
+    },
+    {
+      "word": "towards",
+      "start": 35.36,
+      "end": 35.84
+    },
+    {
+      "word": "choosing",
+      "start": 35.84,
+      "end": 36.26
+    },
+    {
+      "word": "your",
+      "start": 36.26,
+      "end": 36.48
+    },
+    {
+      "word": "venue.",
+      "start": 36.48,
+      "end": 36.84
+    },
+    {
+      "word": "But",
+      "start": 38.14,
+      "end": 38.9
+    },
+    {
+      "word": "not",
+      "start": 38.9,
+      "end": 39.12
+    },
+    {
+      "word": "every",
+      "start": 39.12,
+      "end": 39.5
+    },
+    {
+      "word": "couple",
+      "start": 39.5,
+      "end": 39.82
+    },
+    {
+      "word": "is",
+      "start": 39.82,
+      "end": 40.08
+    },
+    {
+      "word": "ready,",
+      "start": 40.08,
+      "end": 40.42
+    },
+    {
+      "word": "straight",
+      "start": 40.6,
+      "end": 40.98
+    },
+    {
+      "word": "away.",
+      "start": 40.98,
+      "end": 41.38
+    },
+    {
+      "word": "That's",
+      "start": 41.78,
+      "end": 42.22
+    },
+    {
+      "word": "where",
+      "start": 42.22,
+      "end": 42.36
+    },
+    {
+      "word": "the",
+      "start": 42.36,
+      "end": 42.5
+    },
+    {
+      "word": "recovery",
+      "start": 42.5,
+      "end": 42.98
+    },
+    {
+      "word": "paths",
+      "start": 42.98,
+      "end": 43.46
+    },
+    {
+      "word": "come",
+      "start": 43.46,
+      "end": 43.78
+    },
+    {
+      "word": "in.",
+      "start": 43.78,
+      "end": 44.02
+    },
+    {
+      "word": "Thoughtful",
+      "start": 44.24,
+      "end": 44.96
+    },
+    {
+      "word": "follow",
+      "start": 44.96,
+      "end": 45.26
+    },
+    {
+      "word": "-up,",
+      "start": 45.26,
+      "end": 45.54
+    },
+    {
+      "word": "additional",
+      "start": 45.74,
+      "end": 46.32
+    },
+    {
+      "word": "touch",
+      "start": 46.32,
+      "end": 46.62
+    },
+    {
+      "word": "points",
+      "start": 46.62,
+      "end": 47.0
+    },
+    {
+      "word": "and",
+      "start": 47.0,
+      "end": 47.62
+    },
+    {
+      "word": "carefully",
+      "start": 47.62,
+      "end": 48.14
+    },
+    {
+      "word": "timed",
+      "start": 48.14,
+      "end": 48.58
+    },
+    {
+      "word": "messages",
+      "start": 48.58,
+      "end": 49.08
+    },
+    {
+      "word": "that",
+      "start": 49.08,
+      "end": 49.46
+    },
+    {
+      "word": "keep",
+      "start": 49.46,
+      "end": 49.7
+    },
+    {
+      "word": "your",
+      "start": 49.7,
+      "end": 49.9
+    },
+    {
+      "word": "venue",
+      "start": 49.9,
+      "end": 50.22
+    },
+    {
+      "word": "front",
+      "start": 50.22,
+      "end": 50.52
+    },
+    {
+      "word": "of",
+      "start": 50.52,
+      "end": 50.68
+    },
+    {
+      "word": "mind",
+      "start": 50.68,
+      "end": 51.1
+    },
+    {
+      "word": "without",
+      "start": 51.1,
+      "end": 51.56
+    },
+    {
+      "word": "becoming",
+      "start": 51.56,
+      "end": 52.06
+    },
+    {
+      "word": "pushy.",
+      "start": 52.06,
+      "end": 52.58
+    },
+    {
+      "word": "Every",
+      "start": 54.32,
+      "end": 55.12
+    },
+    {
+      "word": "email,",
+      "start": 55.12,
+      "end": 55.66
+    },
+    {
+      "word": "SMS",
+      "start": 56.04,
+      "end": 56.58
+    },
+    {
+      "word": "and",
+      "start": 56.58,
+      "end": 57.12
+    },
+    {
+      "word": "WhatsApp",
+      "start": 57.12,
+      "end": 57.48
+    },
+    {
+      "word": "message",
+      "start": 57.48,
+      "end": 58.1
+    },
+    {
+      "word": "includes",
+      "start": 58.1,
+      "end": 58.72
+    },
+    {
+      "word": "the",
+      "start": 58.72,
+      "end": 58.96
+    },
+    {
+      "word": "strategy",
+      "start": 58.96,
+      "end": 59.38
+    },
+    {
+      "word": "behind",
+      "start": 59.38,
+      "end": 59.74
+    },
+    {
+      "word": "it,",
+      "start": 59.74,
+      "end": 60.12
+    },
+    {
+      "word": "why",
+      "start": 60.32,
+      "end": 60.86
+    },
+    {
+      "word": "it",
+      "start": 60.86,
+      "end": 61.04
+    },
+    {
+      "word": "exists,",
+      "start": 61.04,
+      "end": 61.62
+    },
+    {
+      "word": "what",
+      "start": 61.86,
+      "end": 62.28
+    },
+    {
+      "word": "it's",
+      "start": 62.28,
+      "end": 62.48
+    },
+    {
+      "word": "designed",
+      "start": 62.48,
+      "end": 62.9
+    },
+    {
+      "word": "to",
+      "start": 62.9,
+      "end": 63.18
+    },
+    {
+      "word": "achieve",
+      "start": 63.18,
+      "end": 63.66
+    },
+    {
+      "word": "and",
+      "start": 63.66,
+      "end": 64.32
+    },
+    {
+      "word": "what",
+      "start": 64.32,
+      "end": 64.46
+    },
+    {
+      "word": "it",
+      "start": 64.46,
+      "end": 64.6
+    },
+    {
+      "word": "should",
+      "start": 64.6,
+      "end": 64.76
+    },
+    {
+      "word": "avoid.",
+      "start": 64.76,
+      "end": 65.16
+    },
+    {
+      "word": "So",
+      "start": 65.7,
+      "end": 66.5
+    },
+    {
+      "word": "you're",
+      "start": 66.5,
+      "end": 66.68
+    },
+    {
+      "word": "never",
+      "start": 66.68,
+      "end": 66.9
+    },
+    {
+      "word": "blindly",
+      "start": 66.9,
+      "end": 67.32
+    },
+    {
+      "word": "trusting",
+      "start": 67.32,
+      "end": 67.74
+    },
+    {
+      "word": "AI.",
+      "start": 67.74,
+      "end": 68.12
+    },
+    {
+      "word": "You're",
+      "start": 68.52,
+      "end": 68.96
+    },
+    {
+      "word": "reviewing",
+      "start": 68.96,
+      "end": 69.32
+    },
+    {
+      "word": "a",
+      "start": 69.32,
+      "end": 69.52
+    },
+    {
+      "word": "process",
+      "start": 69.52,
+      "end": 69.98
+    },
+    {
+      "word": "built",
+      "start": 69.98,
+      "end": 70.3
+    },
+    {
+      "word": "on",
+      "start": 70.3,
+      "end": 70.5
+    },
+    {
+      "word": "proven",
+      "start": 70.5,
+      "end": 70.86
+    },
+    {
+      "word": "conversion",
+      "start": 70.86,
+      "end": 71.48
+    },
+    {
+      "word": "principles.",
+      "start": 71.48,
+      "end": 71.88
+    },
+    {
+      "word": "Personalisation",
+      "start": 73.94,
+      "end": 74.62
+    },
+    {
+      "word": "fields",
+      "start": 74.62,
+      "end": 75.08
+    },
+    {
+      "word": "are",
+      "start": 75.08,
+      "end": 75.34
+    },
+    {
+      "word": "mapped",
+      "start": 75.34,
+      "end": 75.6
+    },
+    {
+      "word": "automatically,",
+      "start": 75.6,
+      "end": 76.36
+    },
+    {
+      "word": "making",
+      "start": 76.76,
+      "end": 77.22
+    },
+    {
+      "word": "it",
+      "start": 77.22,
+      "end": 77.44
+    },
+    {
+      "word": "simple",
+      "start": 77.44,
+      "end": 77.76
+    },
+    {
+      "word": "to",
+      "start": 77.76,
+      "end": 77.96
+    },
+    {
+      "word": "export",
+      "start": 77.96,
+      "end": 78.38
+    },
+    {
+      "word": "your",
+      "start": 78.38,
+      "end": 78.66
+    },
+    {
+      "word": "sequence",
+      "start": 78.66,
+      "end": 79.08
+    },
+    {
+      "word": "into",
+      "start": 79.08,
+      "end": 79.4
+    },
+    {
+      "word": "the",
+      "start": 79.4,
+      "end": 79.54
+    },
+    {
+      "word": "Venue",
+      "start": 79.54,
+      "end": 79.9
+    },
+    {
+      "word": "Bot",
+      "start": 79.9,
+      "end": 80.08
+    },
+    {
+      "word": "Care",
+      "start": 80.08,
+      "end": 80.36
+    },
+    {
+      "word": "CRM,",
+      "start": 80.36,
+      "end": 81.38
+    },
+    {
+      "word": "or",
+      "start": 81.5,
+      "end": 82.02
+    },
+    {
+      "word": "other",
+      "start": 82.02,
+      "end": 82.24
+    },
+    {
+      "word": "CRMs",
+      "start": 82.24,
+      "end": 83.06
+    },
+    {
+      "word": "such",
+      "start": 83.06,
+      "end": 83.4
+    },
+    {
+      "word": "as",
+      "start": 83.4,
+      "end": 83.56
+    },
+    {
+      "word": "HubSpot,",
+      "start": 83.56,
+      "end": 84.18
+    },
+    {
+      "word": "Active",
+      "start": 84.36,
+      "end": 84.76
+    },
+    {
+      "word": "Campaign,",
+      "start": 84.76,
+      "end": 85.26
+    },
+    {
+      "word": "MailChimp.",
+      "start": 85.62,
+      "end": 86.3
+    },
+    {
+      "word": "Because",
+      "start": 88.12,
+      "end": 88.8
+    },
+    {
+      "word": "great",
+      "start": 88.8,
+      "end": 89.1
+    },
+    {
+      "word": "venues",
+      "start": 89.1,
+      "end": 89.54
+    },
+    {
+      "word": "deserve",
+      "start": 89.54,
+      "end": 89.98
+    },
+    {
+      "word": "great",
+      "start": 89.98,
+      "end": 90.4
+    },
+    {
+      "word": "follow",
+      "start": 90.4,
+      "end": 90.76
+    },
+    {
+      "word": "-up,",
+      "start": 90.76,
+      "end": 91.06
+    },
+    {
+      "word": "and",
+      "start": 91.2,
+      "end": 91.54
+    },
+    {
+      "word": "the",
+      "start": 91.54,
+      "end": 91.66
+    },
+    {
+      "word": "venues",
+      "start": 91.66,
+      "end": 92.0
+    },
+    {
+      "word": "that",
+      "start": 92.0,
+      "end": 92.22
+    },
+    {
+      "word": "consistently",
+      "start": 92.22,
+      "end": 92.86
+    },
+    {
+      "word": "win",
+      "start": 92.86,
+      "end": 93.2
+    },
+    {
+      "word": "more",
+      "start": 93.2,
+      "end": 93.44
+    },
+    {
+      "word": "bookings",
+      "start": 93.44,
+      "end": 94.04
+    },
+    {
+      "word": "aren't",
+      "start": 94.04,
+      "end": 94.54
+    },
+    {
+      "word": "always",
+      "start": 94.54,
+      "end": 94.8
+    },
+    {
+      "word": "the",
+      "start": 94.8,
+      "end": 95.0
+    },
+    {
+      "word": "most",
+      "start": 95.0,
+      "end": 95.22
+    },
+    {
+      "word": "beautiful.",
+      "start": 95.22,
+      "end": 95.64
+    },
+    {
+      "word": "They're",
+      "start": 95.64,
+      "end": 96.4
+    },
+    {
+      "word": "usually",
+      "start": 96.4,
+      "end": 96.76
+    },
+    {
+      "word": "the",
+      "start": 96.76,
+      "end": 96.94
+    },
+    {
+      "word": "ones",
+      "start": 96.94,
+      "end": 97.22
+    },
+    {
+      "word": "that",
+      "start": 97.22,
+      "end": 97.42
+    },
+    {
+      "word": "stay",
+      "start": 97.42,
+      "end": 97.68
+    },
+    {
+      "word": "in",
+      "start": 97.68,
+      "end": 97.86
+    },
+    {
+      "word": "touch.",
+      "start": 97.86,
+      "end": 97.96
+    },
+    {
+      "word": "They're",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "usually",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "the",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "ones",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "that",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "stay",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "in",
+      "start": 97.96,
+      "end": 97.96
+    },
+    {
+      "word": "touch.",
+      "start": 97.96,
+      "end": 98.04
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.52,
+      "text": " Then Studio AI gets to work, building every message around your venue."
+    },
+    {
+      "id": 1,
+      "start": 6.86,
+      "end": 14.74,
+      "text": " Not a generic template, not a copy and paste campaign, a complete nurture journey designed specifically for your enquiry process."
+    },
+    {
+      "id": 2,
+      "start": 16.24,
+      "end": 26.9,
+      "text": " Every message has a purpose. Acknowledge, orient, reassure, prompt action, reactivate, rescue opportunities that would otherwise disappear."
+    },
+    {
+      "id": 3,
+      "start": 28.08,
+      "end": 36.84,
+      "text": " The happy path guides couples from enquiry, to tour booking, to venue visit and ultimately towards choosing your venue."
+    },
+    {
+      "id": 4,
+      "start": 38.14,
+      "end": 44.02,
+      "text": " But not every couple is ready, straight away. That's where the recovery paths come in."
+    },
+    {
+      "id": 5,
+      "start": 44.24,
+      "end": 52.58,
+      "text": " Thoughtful follow-up, additional touch points and carefully timed messages that keep your venue front of mind without becoming pushy."
+    },
+    {
+      "id": 6,
+      "start": 54.32,
+      "end": 65.16,
+      "text": " Every email, SMS and WhatsApp message includes the strategy behind it, why it exists, what it's designed to achieve and what it should avoid."
+    },
+    {
+      "id": 7,
+      "start": 65.7,
+      "end": 71.58,
+      "text": " So you're never blindly trusting AI. You're reviewing a process built on proven conversion principles."
+    },
+    {
+      "id": 8,
+      "start": 73.94,
+      "end": 86.3,
+      "text": " Personalisation fields are mapped automatically, making it simple to export your sequence into the Venue Bot Care CRM, or other CRMs such as HubSpot, Active Campaign, MailChimp."
+    },
+    {
+      "id": 9,
+      "start": 88.12,
+      "end": 95.64,
+      "text": " Because great venues deserve great follow-up, and the venues that consistently win more bookings aren't always the most beautiful."
+    },
+    {
+      "id": 10,
+      "start": 95.64,
+      "end": 97.96,
+      "text": " They're usually the ones that stay in touch."
+    },
+    {
+      "id": 11,
+      "start": 97.96,
+      "end": 98.04,
+      "text": " They're usually the ones that stay in touch."
+    }
+  ]
+}

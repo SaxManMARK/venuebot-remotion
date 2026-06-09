@@ -1,0 +1,1445 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 138.5,
+  "text": "Your couples aren't comparing you against every venue, they're comparing you against a shortlist. And if you don't understand how you stack up against that competition, you're making marketing decisions in the dark. Competitor intelligence automatically discovers nearby wedding venues based on your location, venue type and market positioning, from barns and country houses to hotels, estates and exclusive-use venues. Simply select the venues you want to track. Studio AI then analyses each competitor using the same scoring framework applied to your own venue. This creates a like-for-like comparison across the areas that influence enquiry and booking decisions, positioning, pricing, social proof, calls to action, brand strength and overall conversion effectiveness. Rather than spending hours manually reviewing competitor websites, Studio AI highlights the strengths they promote, the weaknesses they expose and the opportunities they leave behind. Every finding can be reviewed, confirmed or dismissed, giving you complete control over the final intelligence used within your reports. Once competitor analysis is complete, Studio AI produces a clear gap analysis, showing where you're leading, where you're competitive and where you're falling behind. More importantly, it explains what to do about it, turning competitive insight into practical recommendations your team can actually implement. This isn't about copying other venues, it's about understanding your market, identifying opportunities others have missed and creating a stronger reason for couples to choose you, the intelligence behind every booking. Because when you combine website performance, competitive positioning and enquiry conversion data, you start to see the complete picture. But seeing the gap is only half the job. Closing it is where Convert comes in.",
+  "words": [
+    {
+      "word": "Your",
+      "start": 0.0,
+      "end": 0.22
+    },
+    {
+      "word": "couples",
+      "start": 0.22,
+      "end": 0.56
+    },
+    {
+      "word": "aren't",
+      "start": 0.56,
+      "end": 0.8
+    },
+    {
+      "word": "comparing",
+      "start": 0.8,
+      "end": 1.28
+    },
+    {
+      "word": "you",
+      "start": 1.28,
+      "end": 1.52
+    },
+    {
+      "word": "against",
+      "start": 1.52,
+      "end": 1.8
+    },
+    {
+      "word": "every",
+      "start": 1.8,
+      "end": 2.1
+    },
+    {
+      "word": "venue,",
+      "start": 2.1,
+      "end": 2.54
+    },
+    {
+      "word": "they're",
+      "start": 2.74,
+      "end": 3.04
+    },
+    {
+      "word": "comparing",
+      "start": 3.04,
+      "end": 3.5
+    },
+    {
+      "word": "you",
+      "start": 3.5,
+      "end": 3.72
+    },
+    {
+      "word": "against",
+      "start": 3.72,
+      "end": 4.04
+    },
+    {
+      "word": "a",
+      "start": 4.04,
+      "end": 4.24
+    },
+    {
+      "word": "shortlist.",
+      "start": 4.24,
+      "end": 4.84
+    },
+    {
+      "word": "And",
+      "start": 5.98,
+      "end": 6.78
+    },
+    {
+      "word": "if",
+      "start": 6.78,
+      "end": 6.92
+    },
+    {
+      "word": "you",
+      "start": 6.92,
+      "end": 7.04
+    },
+    {
+      "word": "don't",
+      "start": 7.04,
+      "end": 7.3
+    },
+    {
+      "word": "understand",
+      "start": 7.3,
+      "end": 7.7
+    },
+    {
+      "word": "how",
+      "start": 7.7,
+      "end": 8.04
+    },
+    {
+      "word": "you",
+      "start": 8.04,
+      "end": 8.2
+    },
+    {
+      "word": "stack",
+      "start": 8.2,
+      "end": 8.48
+    },
+    {
+      "word": "up",
+      "start": 8.48,
+      "end": 8.68
+    },
+    {
+      "word": "against",
+      "start": 8.68,
+      "end": 8.94
+    },
+    {
+      "word": "that",
+      "start": 8.94,
+      "end": 9.16
+    },
+    {
+      "word": "competition,",
+      "start": 9.16,
+      "end": 9.74
+    },
+    {
+      "word": "you're",
+      "start": 10.18,
+      "end": 10.58
+    },
+    {
+      "word": "making",
+      "start": 10.58,
+      "end": 10.9
+    },
+    {
+      "word": "marketing",
+      "start": 10.9,
+      "end": 11.34
+    },
+    {
+      "word": "decisions",
+      "start": 11.34,
+      "end": 11.86
+    },
+    {
+      "word": "in",
+      "start": 11.86,
+      "end": 12.16
+    },
+    {
+      "word": "the",
+      "start": 12.16,
+      "end": 12.24
+    },
+    {
+      "word": "dark.",
+      "start": 12.24,
+      "end": 12.62
+    },
+    {
+      "word": "Competitor",
+      "start": 14.36,
+      "end": 15.16
+    },
+    {
+      "word": "intelligence",
+      "start": 15.16,
+      "end": 15.72
+    },
+    {
+      "word": "automatically",
+      "start": 15.72,
+      "end": 16.5
+    },
+    {
+      "word": "discovers",
+      "start": 16.5,
+      "end": 17.2
+    },
+    {
+      "word": "nearby",
+      "start": 17.2,
+      "end": 17.62
+    },
+    {
+      "word": "wedding",
+      "start": 17.62,
+      "end": 18.02
+    },
+    {
+      "word": "venues",
+      "start": 18.02,
+      "end": 18.54
+    },
+    {
+      "word": "based",
+      "start": 18.54,
+      "end": 19.0
+    },
+    {
+      "word": "on",
+      "start": 19.0,
+      "end": 19.18
+    },
+    {
+      "word": "your",
+      "start": 19.18,
+      "end": 19.36
+    },
+    {
+      "word": "location,",
+      "start": 19.36,
+      "end": 19.92
+    },
+    {
+      "word": "venue",
+      "start": 20.34,
+      "end": 20.6
+    },
+    {
+      "word": "type",
+      "start": 20.6,
+      "end": 20.96
+    },
+    {
+      "word": "and",
+      "start": 20.96,
+      "end": 21.38
+    },
+    {
+      "word": "market",
+      "start": 21.38,
+      "end": 21.72
+    },
+    {
+      "word": "positioning,",
+      "start": 21.72,
+      "end": 22.26
+    },
+    {
+      "word": "from",
+      "start": 22.66,
+      "end": 23.06
+    },
+    {
+      "word": "barns",
+      "start": 23.06,
+      "end": 23.62
+    },
+    {
+      "word": "and",
+      "start": 23.62,
+      "end": 23.78
+    },
+    {
+      "word": "country",
+      "start": 23.78,
+      "end": 24.16
+    },
+    {
+      "word": "houses",
+      "start": 24.16,
+      "end": 24.56
+    },
+    {
+      "word": "to",
+      "start": 24.56,
+      "end": 25.04
+    },
+    {
+      "word": "hotels,",
+      "start": 25.04,
+      "end": 25.58
+    },
+    {
+      "word": "estates",
+      "start": 25.94,
+      "end": 26.52
+    },
+    {
+      "word": "and",
+      "start": 26.52,
+      "end": 26.98
+    },
+    {
+      "word": "exclusive",
+      "start": 26.98,
+      "end": 27.62
+    },
+    {
+      "word": "-use",
+      "start": 27.62,
+      "end": 27.96
+    },
+    {
+      "word": "venues.",
+      "start": 27.96,
+      "end": 28.46
+    },
+    {
+      "word": "Simply",
+      "start": 30.0,
+      "end": 30.64
+    },
+    {
+      "word": "select",
+      "start": 30.64,
+      "end": 31.12
+    },
+    {
+      "word": "the",
+      "start": 31.12,
+      "end": 31.34
+    },
+    {
+      "word": "venues",
+      "start": 31.34,
+      "end": 31.72
+    },
+    {
+      "word": "you",
+      "start": 31.72,
+      "end": 31.92
+    },
+    {
+      "word": "want",
+      "start": 31.92,
+      "end": 32.08
+    },
+    {
+      "word": "to",
+      "start": 32.08,
+      "end": 32.24
+    },
+    {
+      "word": "track.",
+      "start": 32.24,
+      "end": 32.62
+    },
+    {
+      "word": "Studio",
+      "start": 33.5,
+      "end": 33.92
+    },
+    {
+      "word": "AI",
+      "start": 33.92,
+      "end": 34.34
+    },
+    {
+      "word": "then",
+      "start": 34.34,
+      "end": 34.7
+    },
+    {
+      "word": "analyses",
+      "start": 34.7,
+      "end": 35.22
+    },
+    {
+      "word": "each",
+      "start": 35.22,
+      "end": 35.66
+    },
+    {
+      "word": "competitor",
+      "start": 35.66,
+      "end": 36.32
+    },
+    {
+      "word": "using",
+      "start": 36.32,
+      "end": 36.94
+    },
+    {
+      "word": "the",
+      "start": 36.94,
+      "end": 37.14
+    },
+    {
+      "word": "same",
+      "start": 37.14,
+      "end": 37.44
+    },
+    {
+      "word": "scoring",
+      "start": 37.44,
+      "end": 37.92
+    },
+    {
+      "word": "framework",
+      "start": 37.92,
+      "end": 38.56
+    },
+    {
+      "word": "applied",
+      "start": 38.56,
+      "end": 39.16
+    },
+    {
+      "word": "to",
+      "start": 39.16,
+      "end": 39.42
+    },
+    {
+      "word": "your",
+      "start": 39.42,
+      "end": 39.64
+    },
+    {
+      "word": "own",
+      "start": 39.64,
+      "end": 39.8
+    },
+    {
+      "word": "venue.",
+      "start": 39.8,
+      "end": 40.2
+    },
+    {
+      "word": "This",
+      "start": 41.4,
+      "end": 42.24
+    },
+    {
+      "word": "creates",
+      "start": 42.24,
+      "end": 42.64
+    },
+    {
+      "word": "a",
+      "start": 42.64,
+      "end": 42.82
+    },
+    {
+      "word": "like",
+      "start": 42.82,
+      "end": 43.08
+    },
+    {
+      "word": "-for",
+      "start": 43.08,
+      "end": 43.26
+    },
+    {
+      "word": "-like",
+      "start": 43.26,
+      "end": 43.48
+    },
+    {
+      "word": "comparison",
+      "start": 43.48,
+      "end": 44.14
+    },
+    {
+      "word": "across",
+      "start": 44.14,
+      "end": 44.72
+    },
+    {
+      "word": "the",
+      "start": 44.72,
+      "end": 44.98
+    },
+    {
+      "word": "areas",
+      "start": 44.98,
+      "end": 45.38
+    },
+    {
+      "word": "that",
+      "start": 45.38,
+      "end": 45.6
+    },
+    {
+      "word": "influence",
+      "start": 45.6,
+      "end": 46.08
+    },
+    {
+      "word": "enquiry",
+      "start": 46.08,
+      "end": 46.72
+    },
+    {
+      "word": "and",
+      "start": 46.72,
+      "end": 46.98
+    },
+    {
+      "word": "booking",
+      "start": 46.98,
+      "end": 47.26
+    },
+    {
+      "word": "decisions,",
+      "start": 47.26,
+      "end": 47.88
+    },
+    {
+      "word": "positioning,",
+      "start": 48.12,
+      "end": 49.02
+    },
+    {
+      "word": "pricing,",
+      "start": 49.44,
+      "end": 50.02
+    },
+    {
+      "word": "social",
+      "start": 50.4,
+      "end": 50.92
+    },
+    {
+      "word": "proof,",
+      "start": 50.92,
+      "end": 51.28
+    },
+    {
+      "word": "calls",
+      "start": 51.82,
+      "end": 52.06
+    },
+    {
+      "word": "to",
+      "start": 52.06,
+      "end": 52.22
+    },
+    {
+      "word": "action,",
+      "start": 52.22,
+      "end": 52.62
+    },
+    {
+      "word": "brand",
+      "start": 53.18,
+      "end": 53.56
+    },
+    {
+      "word": "strength",
+      "start": 53.56,
+      "end": 54.02
+    },
+    {
+      "word": "and",
+      "start": 54.02,
+      "end": 54.66
+    },
+    {
+      "word": "overall",
+      "start": 54.66,
+      "end": 55.18
+    },
+    {
+      "word": "conversion",
+      "start": 55.18,
+      "end": 56.0
+    },
+    {
+      "word": "effectiveness.",
+      "start": 56.0,
+      "end": 56.86
+    },
+    {
+      "word": "Rather",
+      "start": 58.14,
+      "end": 59.06
+    },
+    {
+      "word": "than",
+      "start": 59.06,
+      "end": 59.3
+    },
+    {
+      "word": "spending",
+      "start": 59.3,
+      "end": 59.72
+    },
+    {
+      "word": "hours",
+      "start": 59.72,
+      "end": 60.16
+    },
+    {
+      "word": "manually",
+      "start": 60.16,
+      "end": 60.64
+    },
+    {
+      "word": "reviewing",
+      "start": 60.64,
+      "end": 61.28
+    },
+    {
+      "word": "competitor",
+      "start": 61.28,
+      "end": 61.86
+    },
+    {
+      "word": "websites,",
+      "start": 61.86,
+      "end": 62.52
+    },
+    {
+      "word": "Studio",
+      "start": 63.1,
+      "end": 63.42
+    },
+    {
+      "word": "AI",
+      "start": 63.42,
+      "end": 63.86
+    },
+    {
+      "word": "highlights",
+      "start": 63.86,
+      "end": 64.5
+    },
+    {
+      "word": "the",
+      "start": 64.5,
+      "end": 64.72
+    },
+    {
+      "word": "strengths",
+      "start": 64.72,
+      "end": 65.16
+    },
+    {
+      "word": "they",
+      "start": 65.16,
+      "end": 65.42
+    },
+    {
+      "word": "promote,",
+      "start": 65.42,
+      "end": 65.86
+    },
+    {
+      "word": "the",
+      "start": 66.16,
+      "end": 66.66
+    },
+    {
+      "word": "weaknesses",
+      "start": 66.66,
+      "end": 67.14
+    },
+    {
+      "word": "they",
+      "start": 67.14,
+      "end": 67.48
+    },
+    {
+      "word": "expose",
+      "start": 67.48,
+      "end": 68.1
+    },
+    {
+      "word": "and",
+      "start": 68.1,
+      "end": 68.78
+    },
+    {
+      "word": "the",
+      "start": 68.78,
+      "end": 68.94
+    },
+    {
+      "word": "opportunities",
+      "start": 68.94,
+      "end": 69.56
+    },
+    {
+      "word": "they",
+      "start": 69.56,
+      "end": 69.88
+    },
+    {
+      "word": "leave",
+      "start": 69.88,
+      "end": 70.18
+    },
+    {
+      "word": "behind.",
+      "start": 70.18,
+      "end": 70.7
+    },
+    {
+      "word": "Every",
+      "start": 72.36,
+      "end": 72.82
+    },
+    {
+      "word": "finding",
+      "start": 72.82,
+      "end": 73.28
+    },
+    {
+      "word": "can",
+      "start": 73.28,
+      "end": 73.56
+    },
+    {
+      "word": "be",
+      "start": 73.56,
+      "end": 73.72
+    },
+    {
+      "word": "reviewed,",
+      "start": 73.72,
+      "end": 74.2
+    },
+    {
+      "word": "confirmed",
+      "start": 74.62,
+      "end": 75.18
+    },
+    {
+      "word": "or",
+      "start": 75.18,
+      "end": 75.74
+    },
+    {
+      "word": "dismissed,",
+      "start": 75.74,
+      "end": 76.24
+    },
+    {
+      "word": "giving",
+      "start": 76.76,
+      "end": 77.2
+    },
+    {
+      "word": "you",
+      "start": 77.2,
+      "end": 77.38
+    },
+    {
+      "word": "complete",
+      "start": 77.38,
+      "end": 77.84
+    },
+    {
+      "word": "control",
+      "start": 77.84,
+      "end": 78.36
+    },
+    {
+      "word": "over",
+      "start": 78.36,
+      "end": 78.72
+    },
+    {
+      "word": "the",
+      "start": 78.72,
+      "end": 78.88
+    },
+    {
+      "word": "final",
+      "start": 78.88,
+      "end": 79.22
+    },
+    {
+      "word": "intelligence",
+      "start": 79.22,
+      "end": 79.82
+    },
+    {
+      "word": "used",
+      "start": 79.82,
+      "end": 80.3
+    },
+    {
+      "word": "within",
+      "start": 80.3,
+      "end": 80.56
+    },
+    {
+      "word": "your",
+      "start": 80.56,
+      "end": 80.78
+    },
+    {
+      "word": "reports.",
+      "start": 80.78,
+      "end": 81.38
+    },
+    {
+      "word": "Once",
+      "start": 82.62,
+      "end": 83.46
+    },
+    {
+      "word": "competitor",
+      "start": 83.46,
+      "end": 84.0
+    },
+    {
+      "word": "analysis",
+      "start": 84.0,
+      "end": 84.56
+    },
+    {
+      "word": "is",
+      "start": 84.56,
+      "end": 84.88
+    },
+    {
+      "word": "complete,",
+      "start": 84.88,
+      "end": 85.38
+    },
+    {
+      "word": "Studio",
+      "start": 85.98,
+      "end": 86.32
+    },
+    {
+      "word": "AI",
+      "start": 86.32,
+      "end": 86.82
+    },
+    {
+      "word": "produces",
+      "start": 86.82,
+      "end": 87.46
+    },
+    {
+      "word": "a",
+      "start": 87.46,
+      "end": 87.68
+    },
+    {
+      "word": "clear",
+      "start": 87.68,
+      "end": 88.06
+    },
+    {
+      "word": "gap",
+      "start": 88.06,
+      "end": 88.38
+    },
+    {
+      "word": "analysis,",
+      "start": 88.38,
+      "end": 88.94
+    },
+    {
+      "word": "showing",
+      "start": 89.38,
+      "end": 89.92
+    },
+    {
+      "word": "where",
+      "start": 89.92,
+      "end": 90.22
+    },
+    {
+      "word": "you're",
+      "start": 90.22,
+      "end": 90.44
+    },
+    {
+      "word": "leading,",
+      "start": 90.44,
+      "end": 90.78
+    },
+    {
+      "word": "where",
+      "start": 91.16,
+      "end": 91.54
+    },
+    {
+      "word": "you're",
+      "start": 91.54,
+      "end": 91.74
+    },
+    {
+      "word": "competitive",
+      "start": 91.74,
+      "end": 92.34
+    },
+    {
+      "word": "and",
+      "start": 92.34,
+      "end": 93.12
+    },
+    {
+      "word": "where",
+      "start": 93.12,
+      "end": 93.3
+    },
+    {
+      "word": "you're",
+      "start": 93.3,
+      "end": 93.52
+    },
+    {
+      "word": "falling",
+      "start": 93.52,
+      "end": 93.8
+    },
+    {
+      "word": "behind.",
+      "start": 93.8,
+      "end": 94.34
+    },
+    {
+      "word": "More",
+      "start": 95.7,
+      "end": 96.54
+    },
+    {
+      "word": "importantly,",
+      "start": 96.54,
+      "end": 97.2
+    },
+    {
+      "word": "it",
+      "start": 97.64,
+      "end": 97.98
+    },
+    {
+      "word": "explains",
+      "start": 97.98,
+      "end": 98.56
+    },
+    {
+      "word": "what",
+      "start": 98.56,
+      "end": 98.9
+    },
+    {
+      "word": "to",
+      "start": 98.9,
+      "end": 99.06
+    },
+    {
+      "word": "do",
+      "start": 99.06,
+      "end": 99.26
+    },
+    {
+      "word": "about",
+      "start": 99.26,
+      "end": 99.54
+    },
+    {
+      "word": "it,",
+      "start": 99.54,
+      "end": 99.86
+    },
+    {
+      "word": "turning",
+      "start": 100.24,
+      "end": 100.86
+    },
+    {
+      "word": "competitive",
+      "start": 100.86,
+      "end": 101.46
+    },
+    {
+      "word": "insight",
+      "start": 101.46,
+      "end": 102.04
+    },
+    {
+      "word": "into",
+      "start": 102.04,
+      "end": 102.4
+    },
+    {
+      "word": "practical",
+      "start": 102.4,
+      "end": 102.94
+    },
+    {
+      "word": "recommendations",
+      "start": 102.94,
+      "end": 103.78
+    },
+    {
+      "word": "your",
+      "start": 103.78,
+      "end": 104.18
+    },
+    {
+      "word": "team",
+      "start": 104.18,
+      "end": 104.56
+    },
+    {
+      "word": "can",
+      "start": 104.56,
+      "end": 104.82
+    },
+    {
+      "word": "actually",
+      "start": 104.82,
+      "end": 105.3
+    },
+    {
+      "word": "implement.",
+      "start": 105.3,
+      "end": 105.8
+    },
+    {
+      "word": "This",
+      "start": 107.08,
+      "end": 107.88
+    },
+    {
+      "word": "isn't",
+      "start": 107.88,
+      "end": 108.16
+    },
+    {
+      "word": "about",
+      "start": 108.16,
+      "end": 108.42
+    },
+    {
+      "word": "copying",
+      "start": 108.42,
+      "end": 108.88
+    },
+    {
+      "word": "other",
+      "start": 108.88,
+      "end": 109.18
+    },
+    {
+      "word": "venues,",
+      "start": 109.18,
+      "end": 109.64
+    },
+    {
+      "word": "it's",
+      "start": 109.98,
+      "end": 110.4
+    },
+    {
+      "word": "about",
+      "start": 110.4,
+      "end": 110.68
+    },
+    {
+      "word": "understanding",
+      "start": 110.68,
+      "end": 111.26
+    },
+    {
+      "word": "your",
+      "start": 111.26,
+      "end": 111.54
+    },
+    {
+      "word": "market,",
+      "start": 111.54,
+      "end": 112.02
+    },
+    {
+      "word": "identifying",
+      "start": 112.48,
+      "end": 113.06
+    },
+    {
+      "word": "opportunities",
+      "start": 113.06,
+      "end": 113.82
+    },
+    {
+      "word": "others",
+      "start": 113.82,
+      "end": 114.22
+    },
+    {
+      "word": "have",
+      "start": 114.22,
+      "end": 114.46
+    },
+    {
+      "word": "missed",
+      "start": 114.46,
+      "end": 114.9
+    },
+    {
+      "word": "and",
+      "start": 114.9,
+      "end": 115.42
+    },
+    {
+      "word": "creating",
+      "start": 115.42,
+      "end": 115.82
+    },
+    {
+      "word": "a",
+      "start": 115.82,
+      "end": 116.02
+    },
+    {
+      "word": "stronger",
+      "start": 116.02,
+      "end": 116.36
+    },
+    {
+      "word": "reason",
+      "start": 116.36,
+      "end": 116.76
+    },
+    {
+      "word": "for",
+      "start": 116.76,
+      "end": 117.0
+    },
+    {
+      "word": "couples",
+      "start": 117.0,
+      "end": 117.36
+    },
+    {
+      "word": "to",
+      "start": 117.36,
+      "end": 117.58
+    },
+    {
+      "word": "choose",
+      "start": 117.58,
+      "end": 117.9
+    },
+    {
+      "word": "you,",
+      "start": 117.9,
+      "end": 118.12
+    },
+    {
+      "word": "the",
+      "start": 118.38,
+      "end": 118.8
+    },
+    {
+      "word": "intelligence",
+      "start": 118.8,
+      "end": 119.34
+    },
+    {
+      "word": "behind",
+      "start": 119.34,
+      "end": 120.06
+    },
+    {
+      "word": "every",
+      "start": 120.06,
+      "end": 120.62
+    },
+    {
+      "word": "booking.",
+      "start": 120.62,
+      "end": 120.96
+    },
+    {
+      "word": "Because",
+      "start": 122.2,
+      "end": 123.0
+    },
+    {
+      "word": "when",
+      "start": 123.0,
+      "end": 123.26
+    },
+    {
+      "word": "you",
+      "start": 123.26,
+      "end": 123.4
+    },
+    {
+      "word": "combine",
+      "start": 123.4,
+      "end": 123.86
+    },
+    {
+      "word": "website",
+      "start": 123.86,
+      "end": 124.34
+    },
+    {
+      "word": "performance,",
+      "start": 124.34,
+      "end": 125.04
+    },
+    {
+      "word": "competitive",
+      "start": 125.52,
+      "end": 125.96
+    },
+    {
+      "word": "positioning",
+      "start": 125.96,
+      "end": 126.62
+    },
+    {
+      "word": "and",
+      "start": 126.62,
+      "end": 127.24
+    },
+    {
+      "word": "enquiry",
+      "start": 127.24,
+      "end": 127.78
+    },
+    {
+      "word": "conversion",
+      "start": 127.78,
+      "end": 128.26
+    },
+    {
+      "word": "data,",
+      "start": 128.26,
+      "end": 128.7
+    },
+    {
+      "word": "you",
+      "start": 129.1,
+      "end": 129.48
+    },
+    {
+      "word": "start",
+      "start": 129.48,
+      "end": 129.78
+    },
+    {
+      "word": "to",
+      "start": 129.78,
+      "end": 129.96
+    },
+    {
+      "word": "see",
+      "start": 129.96,
+      "end": 130.14
+    },
+    {
+      "word": "the",
+      "start": 130.14,
+      "end": 130.3
+    },
+    {
+      "word": "complete",
+      "start": 130.3,
+      "end": 130.66
+    },
+    {
+      "word": "picture.",
+      "start": 130.66,
+      "end": 131.14
+    },
+    {
+      "word": "But",
+      "start": 133.12,
+      "end": 133.64
+    },
+    {
+      "word": "seeing",
+      "start": 133.64,
+      "end": 133.98
+    },
+    {
+      "word": "the",
+      "start": 133.98,
+      "end": 134.16
+    },
+    {
+      "word": "gap",
+      "start": 134.16,
+      "end": 134.42
+    },
+    {
+      "word": "is",
+      "start": 134.42,
+      "end": 134.74
+    },
+    {
+      "word": "only",
+      "start": 134.74,
+      "end": 134.96
+    },
+    {
+      "word": "half",
+      "start": 134.96,
+      "end": 135.2
+    },
+    {
+      "word": "the",
+      "start": 135.2,
+      "end": 135.4
+    },
+    {
+      "word": "job.",
+      "start": 135.4,
+      "end": 135.76
+    },
+    {
+      "word": "Closing",
+      "start": 136.16,
+      "end": 136.68
+    },
+    {
+      "word": "it",
+      "start": 136.68,
+      "end": 136.92
+    },
+    {
+      "word": "is",
+      "start": 136.92,
+      "end": 137.18
+    },
+    {
+      "word": "where",
+      "start": 137.18,
+      "end": 137.4
+    },
+    {
+      "word": "Convert",
+      "start": 137.4,
+      "end": 137.84
+    },
+    {
+      "word": "comes",
+      "start": 137.84,
+      "end": 138.12
+    },
+    {
+      "word": "in.",
+      "start": 138.12,
+      "end": 138.4
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.84,
+      "text": " Your couples aren't comparing you against every venue, they're comparing you against a shortlist."
+    },
+    {
+      "id": 1,
+      "start": 5.98,
+      "end": 12.62,
+      "text": " And if you don't understand how you stack up against that competition, you're making marketing decisions in the dark."
+    },
+    {
+      "id": 2,
+      "start": 14.36,
+      "end": 28.46,
+      "text": " Competitor intelligence automatically discovers nearby wedding venues based on your location, venue type and market positioning, from barns and country houses to hotels, estates and exclusive-use venues."
+    },
+    {
+      "id": 3,
+      "start": 30.0,
+      "end": 32.62,
+      "text": " Simply select the venues you want to track."
+    },
+    {
+      "id": 4,
+      "start": 33.5,
+      "end": 40.2,
+      "text": " Studio AI then analyses each competitor using the same scoring framework applied to your own venue."
+    },
+    {
+      "id": 5,
+      "start": 41.4,
+      "end": 56.86,
+      "text": " This creates a like-for-like comparison across the areas that influence enquiry and booking decisions, positioning, pricing, social proof, calls to action, brand strength and overall conversion effectiveness."
+    },
+    {
+      "id": 6,
+      "start": 58.14,
+      "end": 70.7,
+      "text": " Rather than spending hours manually reviewing competitor websites, Studio AI highlights the strengths they promote, the weaknesses they expose and the opportunities they leave behind."
+    },
+    {
+      "id": 7,
+      "start": 72.52,
+      "end": 81.38,
+      "text": " Every finding can be reviewed, confirmed or dismissed, giving you complete control over the final intelligence used within your reports."
+    },
+    {
+      "id": 8,
+      "start": 82.62,
+      "end": 94.34,
+      "text": " Once competitor analysis is complete, Studio AI produces a clear gap analysis, showing where you're leading, where you're competitive and where you're falling behind."
+    },
+    {
+      "id": 9,
+      "start": 95.7,
+      "end": 105.8,
+      "text": " More importantly, it explains what to do about it, turning competitive insight into practical recommendations your team can actually implement."
+    },
+    {
+      "id": 10,
+      "start": 107.08,
+      "end": 120.96,
+      "text": " This isn't about copying other venues, it's about understanding your market, identifying opportunities others have missed and creating a stronger reason for couples to choose you, the intelligence behind every booking."
+    },
+    {
+      "id": 11,
+      "start": 122.2,
+      "end": 131.14,
+      "text": " Because when you combine website performance, competitive positioning and enquiry conversion data, you start to see the complete picture."
+    },
+    {
+      "id": 12,
+      "start": 133.12,
+      "end": 135.76,
+      "text": " But seeing the gap is only half the job."
+    },
+    {
+      "id": 13,
+      "start": 136.16,
+      "end": 138.4,
+      "text": " Closing it is where Convert comes in."
+    },
+    {
+      "id": 14,
+      "start": 138.5,
+      "end": 138.5,
+      "text": ""
+    }
+  ]
+}

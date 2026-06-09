@@ -1,0 +1,266 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 27.78,
+  "text": "VenueBot, Convert. Respond first, follow up consistently, win more bookings. Studio AI helps you understand where opportunities are being lost. Convert helps you recover them. But every enquiry, conversation, tour and booking still needs a home, somewhere your team can see exactly what's happening. That's where VenueBot Care comes in.",
+  "words": [
+    {
+      "word": "VenueBot,",
+      "start": 0.0,
+      "end": 0.64
+    },
+    {
+      "word": "Convert.",
+      "start": 0.76,
+      "end": 1.26
+    },
+    {
+      "word": "Respond",
+      "start": 2.72,
+      "end": 3.4
+    },
+    {
+      "word": "first,",
+      "start": 3.4,
+      "end": 3.8
+    },
+    {
+      "word": "follow",
+      "start": 4.14,
+      "end": 4.44
+    },
+    {
+      "word": "up",
+      "start": 4.44,
+      "end": 4.64
+    },
+    {
+      "word": "consistently,",
+      "start": 4.64,
+      "end": 5.32
+    },
+    {
+      "word": "win",
+      "start": 5.9,
+      "end": 6.12
+    },
+    {
+      "word": "more",
+      "start": 6.12,
+      "end": 6.38
+    },
+    {
+      "word": "bookings.",
+      "start": 6.38,
+      "end": 6.92
+    },
+    {
+      "word": "Studio",
+      "start": 8.74,
+      "end": 9.42
+    },
+    {
+      "word": "AI",
+      "start": 9.42,
+      "end": 9.84
+    },
+    {
+      "word": "helps",
+      "start": 9.84,
+      "end": 10.24
+    },
+    {
+      "word": "you",
+      "start": 10.24,
+      "end": 10.38
+    },
+    {
+      "word": "understand",
+      "start": 10.38,
+      "end": 10.8
+    },
+    {
+      "word": "where",
+      "start": 10.8,
+      "end": 11.08
+    },
+    {
+      "word": "opportunities",
+      "start": 11.08,
+      "end": 11.66
+    },
+    {
+      "word": "are",
+      "start": 11.66,
+      "end": 12.02
+    },
+    {
+      "word": "being",
+      "start": 12.02,
+      "end": 12.22
+    },
+    {
+      "word": "lost.",
+      "start": 12.22,
+      "end": 12.64
+    },
+    {
+      "word": "Convert",
+      "start": 12.94,
+      "end": 13.58
+    },
+    {
+      "word": "helps",
+      "start": 13.58,
+      "end": 13.98
+    },
+    {
+      "word": "you",
+      "start": 13.98,
+      "end": 14.14
+    },
+    {
+      "word": "recover",
+      "start": 14.14,
+      "end": 14.46
+    },
+    {
+      "word": "them.",
+      "start": 14.46,
+      "end": 14.7
+    },
+    {
+      "word": "But",
+      "start": 15.82,
+      "end": 16.5
+    },
+    {
+      "word": "every",
+      "start": 16.5,
+      "end": 16.74
+    },
+    {
+      "word": "enquiry,",
+      "start": 16.74,
+      "end": 17.32
+    },
+    {
+      "word": "conversation,",
+      "start": 17.56,
+      "end": 18.14
+    },
+    {
+      "word": "tour",
+      "start": 18.46,
+      "end": 18.78
+    },
+    {
+      "word": "and",
+      "start": 18.78,
+      "end": 19.04
+    },
+    {
+      "word": "booking",
+      "start": 19.04,
+      "end": 19.42
+    },
+    {
+      "word": "still",
+      "start": 19.42,
+      "end": 20.02
+    },
+    {
+      "word": "needs",
+      "start": 20.02,
+      "end": 20.4
+    },
+    {
+      "word": "a",
+      "start": 20.4,
+      "end": 20.52
+    },
+    {
+      "word": "home,",
+      "start": 20.52,
+      "end": 20.86
+    },
+    {
+      "word": "somewhere",
+      "start": 21.2,
+      "end": 21.74
+    },
+    {
+      "word": "your",
+      "start": 21.74,
+      "end": 21.98
+    },
+    {
+      "word": "team",
+      "start": 21.98,
+      "end": 22.26
+    },
+    {
+      "word": "can",
+      "start": 22.26,
+      "end": 22.48
+    },
+    {
+      "word": "see",
+      "start": 22.48,
+      "end": 22.72
+    },
+    {
+      "word": "exactly",
+      "start": 22.72,
+      "end": 23.36
+    },
+    {
+      "word": "what's",
+      "start": 23.36,
+      "end": 23.7
+    },
+    {
+      "word": "happening.",
+      "start": 23.7,
+      "end": 24.04
+    },
+    {
+      "word": "That's",
+      "start": 25.48,
+      "end": 26.16
+    },
+    {
+      "word": "where",
+      "start": 26.16,
+      "end": 26.32
+    },
+    {
+      "word": "VenueBot",
+      "start": 26.32,
+      "end": 26.9
+    },
+    {
+      "word": "Care",
+      "start": 26.9,
+      "end": 27.16
+    },
+    {
+      "word": "comes",
+      "start": 27.16,
+      "end": 27.56
+    },
+    {
+      "word": "in.",
+      "start": 27.56,
+      "end": 27.78
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 27.78,
+      "text": " VenueBot, Convert. Respond first, follow up consistently, win more bookings. Studio AI helps you understand where opportunities are being lost. Convert helps you recover them. But every enquiry, conversation, tour and booking still needs a home, somewhere your team can see exactly what's happening. That's where VenueBot Care comes in."
+    }
+  ]
+}

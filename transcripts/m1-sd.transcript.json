@@ -1,0 +1,423 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 40.28,
+  "text": "Start with Venue Intelligence. Think of it as building a digital blueprint of your venue. Not just what your venue is, but who it's for. Studio AI learns your spaces, your packages, your pricing, your story. And the couples most likely to book, their priorities, their preferences, their buying journey. Added once, used everywhere. So every piece of content, every nurture message, every recommendation and every conversation is tailored to your venue and the couples you want more of.",
+  "words": [
+    {
+      "word": "Start",
+      "start": 0.0,
+      "end": 0.3
+    },
+    {
+      "word": "with",
+      "start": 0.3,
+      "end": 0.56
+    },
+    {
+      "word": "Venue",
+      "start": 0.56,
+      "end": 0.92
+    },
+    {
+      "word": "Intelligence.",
+      "start": 0.92,
+      "end": 1.4
+    },
+    {
+      "word": "Think",
+      "start": 3.48,
+      "end": 4.12
+    },
+    {
+      "word": "of",
+      "start": 4.12,
+      "end": 4.26
+    },
+    {
+      "word": "it",
+      "start": 4.26,
+      "end": 4.36
+    },
+    {
+      "word": "as",
+      "start": 4.36,
+      "end": 4.5
+    },
+    {
+      "word": "building",
+      "start": 4.5,
+      "end": 4.76
+    },
+    {
+      "word": "a",
+      "start": 4.76,
+      "end": 4.96
+    },
+    {
+      "word": "digital",
+      "start": 4.96,
+      "end": 5.3
+    },
+    {
+      "word": "blueprint",
+      "start": 5.3,
+      "end": 5.74
+    },
+    {
+      "word": "of",
+      "start": 5.74,
+      "end": 6.06
+    },
+    {
+      "word": "your",
+      "start": 6.06,
+      "end": 6.18
+    },
+    {
+      "word": "venue.",
+      "start": 6.18,
+      "end": 6.5
+    },
+    {
+      "word": "Not",
+      "start": 7.22,
+      "end": 7.86
+    },
+    {
+      "word": "just",
+      "start": 7.86,
+      "end": 8.08
+    },
+    {
+      "word": "what",
+      "start": 8.08,
+      "end": 8.26
+    },
+    {
+      "word": "your",
+      "start": 8.26,
+      "end": 8.4
+    },
+    {
+      "word": "venue",
+      "start": 8.4,
+      "end": 8.68
+    },
+    {
+      "word": "is,",
+      "start": 8.68,
+      "end": 9.08
+    },
+    {
+      "word": "but",
+      "start": 9.24,
+      "end": 9.52
+    },
+    {
+      "word": "who",
+      "start": 9.52,
+      "end": 9.72
+    },
+    {
+      "word": "it's",
+      "start": 9.72,
+      "end": 9.9
+    },
+    {
+      "word": "for.",
+      "start": 9.9,
+      "end": 10.2
+    },
+    {
+      "word": "Studio",
+      "start": 11.94,
+      "end": 12.58
+    },
+    {
+      "word": "AI",
+      "start": 12.58,
+      "end": 13.04
+    },
+    {
+      "word": "learns",
+      "start": 13.04,
+      "end": 13.54
+    },
+    {
+      "word": "your",
+      "start": 13.54,
+      "end": 13.7
+    },
+    {
+      "word": "spaces,",
+      "start": 13.7,
+      "end": 14.12
+    },
+    {
+      "word": "your",
+      "start": 14.44,
+      "end": 14.7
+    },
+    {
+      "word": "packages,",
+      "start": 14.7,
+      "end": 15.1
+    },
+    {
+      "word": "your",
+      "start": 15.56,
+      "end": 15.74
+    },
+    {
+      "word": "pricing,",
+      "start": 15.74,
+      "end": 16.2
+    },
+    {
+      "word": "your",
+      "start": 16.64,
+      "end": 16.82
+    },
+    {
+      "word": "story.",
+      "start": 16.82,
+      "end": 17.24
+    },
+    {
+      "word": "And",
+      "start": 18.74,
+      "end": 19.38
+    },
+    {
+      "word": "the",
+      "start": 19.38,
+      "end": 19.5
+    },
+    {
+      "word": "couples",
+      "start": 19.5,
+      "end": 19.82
+    },
+    {
+      "word": "most",
+      "start": 19.82,
+      "end": 20.12
+    },
+    {
+      "word": "likely",
+      "start": 20.12,
+      "end": 20.44
+    },
+    {
+      "word": "to",
+      "start": 20.44,
+      "end": 20.62
+    },
+    {
+      "word": "book,",
+      "start": 20.62,
+      "end": 20.92
+    },
+    {
+      "word": "their",
+      "start": 21.1,
+      "end": 21.42
+    },
+    {
+      "word": "priorities,",
+      "start": 21.42,
+      "end": 22.0
+    },
+    {
+      "word": "their",
+      "start": 22.48,
+      "end": 22.68
+    },
+    {
+      "word": "preferences,",
+      "start": 22.68,
+      "end": 23.22
+    },
+    {
+      "word": "their",
+      "start": 23.8,
+      "end": 23.98
+    },
+    {
+      "word": "buying",
+      "start": 23.98,
+      "end": 24.34
+    },
+    {
+      "word": "journey.",
+      "start": 24.34,
+      "end": 24.82
+    },
+    {
+      "word": "Added",
+      "start": 26.72,
+      "end": 27.44
+    },
+    {
+      "word": "once,",
+      "start": 27.44,
+      "end": 27.9
+    },
+    {
+      "word": "used",
+      "start": 28.16,
+      "end": 28.72
+    },
+    {
+      "word": "everywhere.",
+      "start": 28.72,
+      "end": 29.28
+    },
+    {
+      "word": "So",
+      "start": 30.66,
+      "end": 31.38
+    },
+    {
+      "word": "every",
+      "start": 31.38,
+      "end": 31.64
+    },
+    {
+      "word": "piece",
+      "start": 31.64,
+      "end": 31.88
+    },
+    {
+      "word": "of",
+      "start": 31.88,
+      "end": 32.02
+    },
+    {
+      "word": "content,",
+      "start": 32.02,
+      "end": 32.44
+    },
+    {
+      "word": "every",
+      "start": 32.82,
+      "end": 33.28
+    },
+    {
+      "word": "nurture",
+      "start": 33.28,
+      "end": 33.66
+    },
+    {
+      "word": "message,",
+      "start": 33.66,
+      "end": 34.2
+    },
+    {
+      "word": "every",
+      "start": 34.62,
+      "end": 34.84
+    },
+    {
+      "word": "recommendation",
+      "start": 34.84,
+      "end": 35.52
+    },
+    {
+      "word": "and",
+      "start": 35.52,
+      "end": 36.28
+    },
+    {
+      "word": "every",
+      "start": 36.28,
+      "end": 36.52
+    },
+    {
+      "word": "conversation",
+      "start": 36.52,
+      "end": 37.06
+    },
+    {
+      "word": "is",
+      "start": 37.06,
+      "end": 37.36
+    },
+    {
+      "word": "tailored",
+      "start": 37.36,
+      "end": 37.72
+    },
+    {
+      "word": "to",
+      "start": 37.72,
+      "end": 38.02
+    },
+    {
+      "word": "your",
+      "start": 38.02,
+      "end": 38.18
+    },
+    {
+      "word": "venue",
+      "start": 38.18,
+      "end": 38.56
+    },
+    {
+      "word": "and",
+      "start": 38.56,
+      "end": 38.92
+    },
+    {
+      "word": "the",
+      "start": 38.92,
+      "end": 39.04
+    },
+    {
+      "word": "couples",
+      "start": 39.04,
+      "end": 39.4
+    },
+    {
+      "word": "you",
+      "start": 39.4,
+      "end": 39.6
+    },
+    {
+      "word": "want",
+      "start": 39.6,
+      "end": 39.78
+    },
+    {
+      "word": "more",
+      "start": 39.78,
+      "end": 40.0
+    },
+    {
+      "word": "of.",
+      "start": 40.0,
+      "end": 40.28
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 24.82,
+      "text": " Start with Venue Intelligence. Think of it as building a digital blueprint of your venue. Not just what your venue is, but who it's for. Studio AI learns your spaces, your packages, your pricing, your story. And the couples most likely to book, their priorities, their preferences, their buying journey."
+    },
+    {
+      "id": 1,
+      "start": 26.72,
+      "end": 29.28,
+      "text": " Added once, used everywhere."
+    },
+    {
+      "id": 2,
+      "start": 30.66,
+      "end": 40.28,
+      "text": " So every piece of content, every nurture message, every recommendation and every conversation is tailored to your venue and the couples you want more of."
+    }
+  ]
+}

@@ -1,0 +1,1824 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 109.14,
+  "text": "Every wedding venue starts the same way. A few enquiries, a few spreadsheets, a shared inbox. Then the business grows. Email here, WhatsApp there, Facebook on someone's phone, Instagram on someone else's, notes in a spreadsheet, bookings in a diary. And before long nobody knows where everything lives. Care brings it all together. One system, one team, one source of truth. For the first time, you can see exactly what's happening across the entire venue. Live dashboards, showing lead sources, conversion rates, tour bookings, marketing performance, revenue pipelines. No manual reports, no spreadsheet gymnastics, just the numbers that matter, updated automatically. Then there's communication, every conversation, every enquiry, every message, in one timeline. Email, SMS, WhatsApp, Facebook, Instagram, phone call transcripts, website chatbot conversations. Everything stored against the couple's record. No more hunting through six different inboxes trying to find what somebody said three weeks ago. Every member of your team works from exactly the same information. Your wedding coordinators, sales team, owners, event managers. Everyone sees the same conversations, the same notes, the same history. No private inboxes. No duplicated records. No losing years of knowledge when a team member leaves. No leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving",
+  "words": [
+    {
+      "word": "Every",
+      "start": 0.0,
+      "end": 0.38
+    },
+    {
+      "word": "wedding",
+      "start": 0.38,
+      "end": 0.72
+    },
+    {
+      "word": "venue",
+      "start": 0.72,
+      "end": 1.12
+    },
+    {
+      "word": "starts",
+      "start": 1.12,
+      "end": 1.52
+    },
+    {
+      "word": "the",
+      "start": 1.52,
+      "end": 1.72
+    },
+    {
+      "word": "same",
+      "start": 1.72,
+      "end": 1.98
+    },
+    {
+      "word": "way.",
+      "start": 1.98,
+      "end": 2.3
+    },
+    {
+      "word": "A",
+      "start": 2.66,
+      "end": 3.02
+    },
+    {
+      "word": "few",
+      "start": 3.02,
+      "end": 3.2
+    },
+    {
+      "word": "enquiries,",
+      "start": 3.2,
+      "end": 3.8
+    },
+    {
+      "word": "a",
+      "start": 4.14,
+      "end": 4.28
+    },
+    {
+      "word": "few",
+      "start": 4.28,
+      "end": 4.42
+    },
+    {
+      "word": "spreadsheets,",
+      "start": 4.42,
+      "end": 5.14
+    },
+    {
+      "word": "a",
+      "start": 5.4,
+      "end": 5.56
+    },
+    {
+      "word": "shared",
+      "start": 5.56,
+      "end": 5.9
+    },
+    {
+      "word": "inbox.",
+      "start": 5.9,
+      "end": 6.36
+    },
+    {
+      "word": "Then",
+      "start": 7.72,
+      "end": 8.44
+    },
+    {
+      "word": "the",
+      "start": 8.44,
+      "end": 8.58
+    },
+    {
+      "word": "business",
+      "start": 8.58,
+      "end": 8.94
+    },
+    {
+      "word": "grows.",
+      "start": 8.94,
+      "end": 9.4
+    },
+    {
+      "word": "Email",
+      "start": 10.02,
+      "end": 10.32
+    },
+    {
+      "word": "here,",
+      "start": 10.32,
+      "end": 10.68
+    },
+    {
+      "word": "WhatsApp",
+      "start": 11.04,
+      "end": 11.44
+    },
+    {
+      "word": "there,",
+      "start": 11.44,
+      "end": 11.84
+    },
+    {
+      "word": "Facebook",
+      "start": 12.44,
+      "end": 12.74
+    },
+    {
+      "word": "on",
+      "start": 12.74,
+      "end": 13.0
+    },
+    {
+      "word": "someone's",
+      "start": 13.0,
+      "end": 13.44
+    },
+    {
+      "word": "phone,",
+      "start": 13.44,
+      "end": 13.8
+    },
+    {
+      "word": "Instagram",
+      "start": 14.58,
+      "end": 14.96
+    },
+    {
+      "word": "on",
+      "start": 14.96,
+      "end": 15.34
+    },
+    {
+      "word": "someone",
+      "start": 15.34,
+      "end": 15.64
+    },
+    {
+      "word": "else's,",
+      "start": 15.64,
+      "end": 16.16
+    },
+    {
+      "word": "notes",
+      "start": 16.62,
+      "end": 16.9
+    },
+    {
+      "word": "in",
+      "start": 16.9,
+      "end": 17.08
+    },
+    {
+      "word": "a",
+      "start": 17.08,
+      "end": 17.18
+    },
+    {
+      "word": "spreadsheet,",
+      "start": 17.18,
+      "end": 17.64
+    },
+    {
+      "word": "bookings",
+      "start": 18.26,
+      "end": 18.7
+    },
+    {
+      "word": "in",
+      "start": 18.7,
+      "end": 18.88
+    },
+    {
+      "word": "a",
+      "start": 18.88,
+      "end": 18.96
+    },
+    {
+      "word": "diary.",
+      "start": 18.96,
+      "end": 19.34
+    },
+    {
+      "word": "And",
+      "start": 20.84,
+      "end": 21.2
+    },
+    {
+      "word": "before",
+      "start": 21.2,
+      "end": 21.44
+    },
+    {
+      "word": "long",
+      "start": 21.44,
+      "end": 21.78
+    },
+    {
+      "word": "nobody",
+      "start": 21.78,
+      "end": 22.06
+    },
+    {
+      "word": "knows",
+      "start": 22.06,
+      "end": 22.4
+    },
+    {
+      "word": "where",
+      "start": 22.4,
+      "end": 22.62
+    },
+    {
+      "word": "everything",
+      "start": 22.62,
+      "end": 23.06
+    },
+    {
+      "word": "lives.",
+      "start": 23.06,
+      "end": 23.5
+    },
+    {
+      "word": "Care",
+      "start": 25.04,
+      "end": 25.8
+    },
+    {
+      "word": "brings",
+      "start": 25.8,
+      "end": 26.18
+    },
+    {
+      "word": "it",
+      "start": 26.18,
+      "end": 26.3
+    },
+    {
+      "word": "all",
+      "start": 26.3,
+      "end": 26.46
+    },
+    {
+      "word": "together.",
+      "start": 26.46,
+      "end": 26.78
+    },
+    {
+      "word": "One",
+      "start": 27.34,
+      "end": 27.52
+    },
+    {
+      "word": "system,",
+      "start": 27.52,
+      "end": 27.96
+    },
+    {
+      "word": "one",
+      "start": 28.36,
+      "end": 28.6
+    },
+    {
+      "word": "team,",
+      "start": 28.6,
+      "end": 28.96
+    },
+    {
+      "word": "one",
+      "start": 29.42,
+      "end": 29.62
+    },
+    {
+      "word": "source",
+      "start": 29.62,
+      "end": 30.0
+    },
+    {
+      "word": "of",
+      "start": 30.0,
+      "end": 30.18
+    },
+    {
+      "word": "truth.",
+      "start": 30.18,
+      "end": 30.48
+    },
+    {
+      "word": "For",
+      "start": 31.52,
+      "end": 32.28
+    },
+    {
+      "word": "the",
+      "start": 32.28,
+      "end": 32.4
+    },
+    {
+      "word": "first",
+      "start": 32.4,
+      "end": 32.62
+    },
+    {
+      "word": "time,",
+      "start": 32.62,
+      "end": 33.0
+    },
+    {
+      "word": "you",
+      "start": 33.22,
+      "end": 33.4
+    },
+    {
+      "word": "can",
+      "start": 33.4,
+      "end": 33.52
+    },
+    {
+      "word": "see",
+      "start": 33.52,
+      "end": 33.7
+    },
+    {
+      "word": "exactly",
+      "start": 33.7,
+      "end": 34.12
+    },
+    {
+      "word": "what's",
+      "start": 34.12,
+      "end": 34.44
+    },
+    {
+      "word": "happening",
+      "start": 34.44,
+      "end": 34.72
+    },
+    {
+      "word": "across",
+      "start": 34.72,
+      "end": 35.02
+    },
+    {
+      "word": "the",
+      "start": 35.02,
+      "end": 35.24
+    },
+    {
+      "word": "entire",
+      "start": 35.24,
+      "end": 35.64
+    },
+    {
+      "word": "venue.",
+      "start": 35.64,
+      "end": 36.04
+    },
+    {
+      "word": "Live",
+      "start": 37.68,
+      "end": 38.44
+    },
+    {
+      "word": "dashboards,",
+      "start": 38.44,
+      "end": 39.14
+    },
+    {
+      "word": "showing",
+      "start": 39.6,
+      "end": 39.74
+    },
+    {
+      "word": "lead",
+      "start": 39.74,
+      "end": 40.08
+    },
+    {
+      "word": "sources,",
+      "start": 40.08,
+      "end": 40.52
+    },
+    {
+      "word": "conversion",
+      "start": 40.94,
+      "end": 41.3
+    },
+    {
+      "word": "rates,",
+      "start": 41.3,
+      "end": 41.68
+    },
+    {
+      "word": "tour",
+      "start": 42.06,
+      "end": 42.24
+    },
+    {
+      "word": "bookings,",
+      "start": 42.24,
+      "end": 42.76
+    },
+    {
+      "word": "marketing",
+      "start": 43.16,
+      "end": 43.46
+    },
+    {
+      "word": "performance,",
+      "start": 43.46,
+      "end": 44.02
+    },
+    {
+      "word": "revenue",
+      "start": 44.58,
+      "end": 44.92
+    },
+    {
+      "word": "pipelines.",
+      "start": 44.92,
+      "end": 45.52
+    },
+    {
+      "word": "No",
+      "start": 46.64,
+      "end": 47.4
+    },
+    {
+      "word": "manual",
+      "start": 47.4,
+      "end": 47.82
+    },
+    {
+      "word": "reports,",
+      "start": 47.82,
+      "end": 48.42
+    },
+    {
+      "word": "no",
+      "start": 48.7,
+      "end": 49.04
+    },
+    {
+      "word": "spreadsheet",
+      "start": 49.04,
+      "end": 49.48
+    },
+    {
+      "word": "gymnastics,",
+      "start": 49.48,
+      "end": 50.0
+    },
+    {
+      "word": "just",
+      "start": 50.48,
+      "end": 50.78
+    },
+    {
+      "word": "the",
+      "start": 50.78,
+      "end": 50.94
+    },
+    {
+      "word": "numbers",
+      "start": 50.94,
+      "end": 51.18
+    },
+    {
+      "word": "that",
+      "start": 51.18,
+      "end": 51.34
+    },
+    {
+      "word": "matter,",
+      "start": 51.34,
+      "end": 51.66
+    },
+    {
+      "word": "updated",
+      "start": 52.18,
+      "end": 52.62
+    },
+    {
+      "word": "automatically.",
+      "start": 52.62,
+      "end": 53.22
+    },
+    {
+      "word": "Then",
+      "start": 54.94,
+      "end": 55.66
+    },
+    {
+      "word": "there's",
+      "start": 55.66,
+      "end": 55.88
+    },
+    {
+      "word": "communication,",
+      "start": 55.88,
+      "end": 56.48
+    },
+    {
+      "word": "every",
+      "start": 56.78,
+      "end": 57.16
+    },
+    {
+      "word": "conversation,",
+      "start": 57.16,
+      "end": 57.72
+    },
+    {
+      "word": "every",
+      "start": 58.16,
+      "end": 58.38
+    },
+    {
+      "word": "enquiry,",
+      "start": 58.38,
+      "end": 58.96
+    },
+    {
+      "word": "every",
+      "start": 59.22,
+      "end": 59.52
+    },
+    {
+      "word": "message,",
+      "start": 59.52,
+      "end": 60.0
+    },
+    {
+      "word": "in",
+      "start": 60.16,
+      "end": 60.48
+    },
+    {
+      "word": "one",
+      "start": 60.48,
+      "end": 60.66
+    },
+    {
+      "word": "timeline.",
+      "start": 60.66,
+      "end": 61.16
+    },
+    {
+      "word": "Email,",
+      "start": 63.04,
+      "end": 63.76
+    },
+    {
+      "word": "SMS,",
+      "start": 63.76,
+      "end": 64.48
+    },
+    {
+      "word": "WhatsApp,",
+      "start": 65.08,
+      "end": 65.4
+    },
+    {
+      "word": "Facebook,",
+      "start": 65.96,
+      "end": 66.28
+    },
+    {
+      "word": "Instagram,",
+      "start": 66.76,
+      "end": 67.14
+    },
+    {
+      "word": "phone",
+      "start": 67.62,
+      "end": 67.84
+    },
+    {
+      "word": "call",
+      "start": 67.84,
+      "end": 68.02
+    },
+    {
+      "word": "transcripts,",
+      "start": 68.02,
+      "end": 68.72
+    },
+    {
+      "word": "website",
+      "start": 69.04,
+      "end": 69.4
+    },
+    {
+      "word": "chatbot",
+      "start": 69.4,
+      "end": 69.86
+    },
+    {
+      "word": "conversations.",
+      "start": 69.86,
+      "end": 70.48
+    },
+    {
+      "word": "Everything",
+      "start": 72.16,
+      "end": 72.88
+    },
+    {
+      "word": "stored",
+      "start": 72.88,
+      "end": 73.24
+    },
+    {
+      "word": "against",
+      "start": 73.24,
+      "end": 73.54
+    },
+    {
+      "word": "the",
+      "start": 73.54,
+      "end": 73.68
+    },
+    {
+      "word": "couple's",
+      "start": 73.68,
+      "end": 74.04
+    },
+    {
+      "word": "record.",
+      "start": 74.04,
+      "end": 74.44
+    },
+    {
+      "word": "No",
+      "start": 74.74,
+      "end": 75.12
+    },
+    {
+      "word": "more",
+      "start": 75.12,
+      "end": 75.34
+    },
+    {
+      "word": "hunting",
+      "start": 75.34,
+      "end": 75.7
+    },
+    {
+      "word": "through",
+      "start": 75.7,
+      "end": 76.08
+    },
+    {
+      "word": "six",
+      "start": 76.08,
+      "end": 76.46
+    },
+    {
+      "word": "different",
+      "start": 76.46,
+      "end": 76.8
+    },
+    {
+      "word": "inboxes",
+      "start": 76.8,
+      "end": 77.44
+    },
+    {
+      "word": "trying",
+      "start": 77.44,
+      "end": 77.64
+    },
+    {
+      "word": "to",
+      "start": 77.64,
+      "end": 77.8
+    },
+    {
+      "word": "find",
+      "start": 77.8,
+      "end": 78.02
+    },
+    {
+      "word": "what",
+      "start": 78.02,
+      "end": 78.2
+    },
+    {
+      "word": "somebody",
+      "start": 78.2,
+      "end": 78.56
+    },
+    {
+      "word": "said",
+      "start": 78.56,
+      "end": 79.02
+    },
+    {
+      "word": "three",
+      "start": 79.02,
+      "end": 79.44
+    },
+    {
+      "word": "weeks",
+      "start": 79.44,
+      "end": 79.72
+    },
+    {
+      "word": "ago.",
+      "start": 79.72,
+      "end": 80.0
+    },
+    {
+      "word": "Every",
+      "start": 82.7,
+      "end": 83.52
+    },
+    {
+      "word": "member",
+      "start": 83.52,
+      "end": 83.86
+    },
+    {
+      "word": "of",
+      "start": 83.86,
+      "end": 84.08
+    },
+    {
+      "word": "your",
+      "start": 84.08,
+      "end": 84.26
+    },
+    {
+      "word": "team",
+      "start": 84.26,
+      "end": 84.66
+    },
+    {
+      "word": "works",
+      "start": 84.66,
+      "end": 85.2
+    },
+    {
+      "word": "from",
+      "start": 85.2,
+      "end": 85.4
+    },
+    {
+      "word": "exactly",
+      "start": 85.4,
+      "end": 85.88
+    },
+    {
+      "word": "the",
+      "start": 85.88,
+      "end": 86.14
+    },
+    {
+      "word": "same",
+      "start": 86.14,
+      "end": 86.36
+    },
+    {
+      "word": "information.",
+      "start": 86.36,
+      "end": 86.96
+    },
+    {
+      "word": "Your",
+      "start": 87.32,
+      "end": 87.78
+    },
+    {
+      "word": "wedding",
+      "start": 87.78,
+      "end": 88.1
+    },
+    {
+      "word": "coordinators,",
+      "start": 88.1,
+      "end": 89.0
+    },
+    {
+      "word": "sales",
+      "start": 89.38,
+      "end": 89.84
+    },
+    {
+      "word": "team,",
+      "start": 89.84,
+      "end": 90.24
+    },
+    {
+      "word": "owners,",
+      "start": 90.72,
+      "end": 91.1
+    },
+    {
+      "word": "event",
+      "start": 91.64,
+      "end": 91.94
+    },
+    {
+      "word": "managers.",
+      "start": 91.94,
+      "end": 92.4
+    },
+    {
+      "word": "Everyone",
+      "start": 94.44,
+      "end": 95.26
+    },
+    {
+      "word": "sees",
+      "start": 95.26,
+      "end": 95.82
+    },
+    {
+      "word": "the",
+      "start": 95.82,
+      "end": 96.04
+    },
+    {
+      "word": "same",
+      "start": 96.04,
+      "end": 96.34
+    },
+    {
+      "word": "conversations,",
+      "start": 96.34,
+      "end": 97.1
+    },
+    {
+      "word": "the",
+      "start": 97.58,
+      "end": 97.72
+    },
+    {
+      "word": "same",
+      "start": 97.72,
+      "end": 98.02
+    },
+    {
+      "word": "notes,",
+      "start": 98.02,
+      "end": 98.44
+    },
+    {
+      "word": "the",
+      "start": 98.86,
+      "end": 98.98
+    },
+    {
+      "word": "same",
+      "start": 98.98,
+      "end": 99.28
+    },
+    {
+      "word": "history.",
+      "start": 99.28,
+      "end": 99.74
+    },
+    {
+      "word": "No",
+      "start": 101.02,
+      "end": 101.86
+    },
+    {
+      "word": "private",
+      "start": 101.86,
+      "end": 102.34
+    },
+    {
+      "word": "inboxes.",
+      "start": 102.34,
+      "end": 103.14
+    },
+    {
+      "word": "No",
+      "start": 103.36,
+      "end": 103.82
+    },
+    {
+      "word": "duplicated",
+      "start": 103.82,
+      "end": 104.54
+    },
+    {
+      "word": "records.",
+      "start": 104.54,
+      "end": 105.12
+    },
+    {
+      "word": "No",
+      "start": 105.5,
+      "end": 105.94
+    },
+    {
+      "word": "losing",
+      "start": 105.94,
+      "end": 106.36
+    },
+    {
+      "word": "years",
+      "start": 106.36,
+      "end": 106.78
+    },
+    {
+      "word": "of",
+      "start": 106.78,
+      "end": 107.0
+    },
+    {
+      "word": "knowledge",
+      "start": 107.0,
+      "end": 107.34
+    },
+    {
+      "word": "when",
+      "start": 107.34,
+      "end": 107.64
+    },
+    {
+      "word": "a",
+      "start": 107.64,
+      "end": 107.8
+    },
+    {
+      "word": "team",
+      "start": 107.8,
+      "end": 108.0
+    },
+    {
+      "word": "member",
+      "start": 108.0,
+      "end": 108.3
+    },
+    {
+      "word": "leaves.",
+      "start": 108.3,
+      "end": 108.74
+    },
+    {
+      "word": "No",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "leaving,",
+      "start": 108.74,
+      "end": 108.74
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "leaving,",
+      "start": 108.8,
+      "end": 108.8
+    },
+    {
+      "word": "no",
+      "start": 108.86,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "leaving,",
+      "start": 108.88,
+      "end": 108.88
+    },
+    {
+      "word": "no",
+      "start": 108.88,
+      "end": 109.14
+    },
+    {
+      "word": "leaving",
+      "start": 109.14,
+      "end": 109.14
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.36,
+      "text": " Every wedding venue starts the same way. A few enquiries, a few spreadsheets, a shared inbox."
+    },
+    {
+      "id": 1,
+      "start": 7.72,
+      "end": 19.34,
+      "text": " Then the business grows. Email here, WhatsApp there, Facebook on someone's phone, Instagram on someone else's, notes in a spreadsheet, bookings in a diary."
+    },
+    {
+      "id": 2,
+      "start": 21.02,
+      "end": 23.5,
+      "text": " And before long nobody knows where everything lives."
+    },
+    {
+      "id": 3,
+      "start": 25.04,
+      "end": 30.48,
+      "text": " Care brings it all together. One system, one team, one source of truth."
+    },
+    {
+      "id": 4,
+      "start": 31.52,
+      "end": 36.04,
+      "text": " For the first time, you can see exactly what's happening across the entire venue."
+    },
+    {
+      "id": 5,
+      "start": 37.68,
+      "end": 45.52,
+      "text": " Live dashboards, showing lead sources, conversion rates, tour bookings, marketing performance, revenue pipelines."
+    },
+    {
+      "id": 6,
+      "start": 46.64,
+      "end": 53.22,
+      "text": " No manual reports, no spreadsheet gymnastics, just the numbers that matter, updated automatically."
+    },
+    {
+      "id": 7,
+      "start": 54.94,
+      "end": 61.16,
+      "text": " Then there's communication, every conversation, every enquiry, every message, in one timeline."
+    },
+    {
+      "id": 8,
+      "start": 63.04,
+      "end": 70.48,
+      "text": " Email, SMS, WhatsApp, Facebook, Instagram, phone call transcripts, website chatbot conversations."
+    },
+    {
+      "id": 9,
+      "start": 72.16,
+      "end": 74.44,
+      "text": " Everything stored against the couple's record."
+    },
+    {
+      "id": 10,
+      "start": 74.74,
+      "end": 80.0,
+      "text": " No more hunting through six different inboxes trying to find what somebody said three weeks ago."
+    },
+    {
+      "id": 11,
+      "start": 82.7,
+      "end": 86.96,
+      "text": " Every member of your team works from exactly the same information."
+    },
+    {
+      "id": 12,
+      "start": 87.32,
+      "end": 92.4,
+      "text": " Your wedding coordinators, sales team, owners, event managers."
+    },
+    {
+      "id": 13,
+      "start": 94.44,
+      "end": 99.74,
+      "text": " Everyone sees the same conversations, the same notes, the same history."
+    },
+    {
+      "id": 14,
+      "start": 101.02,
+      "end": 103.14,
+      "text": " No private inboxes."
+    },
+    {
+      "id": 15,
+      "start": 103.36,
+      "end": 105.12,
+      "text": " No duplicated records."
+    },
+    {
+      "id": 16,
+      "start": 105.5,
+      "end": 108.74,
+      "text": " No losing years of knowledge when a team member leaves."
+    },
+    {
+      "id": 17,
+      "start": 108.74,
+      "end": 109.14,
+      "text": " No leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving, no leaving"
+    },
+    {
+      "id": 18,
+      "start": 109.12,
+      "end": 109.12,
+      "text": ""
+    }
+  ]
+}

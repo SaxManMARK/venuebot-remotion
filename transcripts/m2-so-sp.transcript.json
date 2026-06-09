@@ -1,0 +1,627 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 59.26,
+  "text": "And it isn't only SMS. The same AI can support enquiries through your website, Facebook, Instagram, WhatsApp and other messaging channels. Wherever a couple starts a conversation, VenueBot is ready to continue it, trained on your venue and how you actually talk about it, providing helpful, accurate answers around the clock. More conversations, more venue tours, more opportunities progressing through your pipeline. Venues using Convert typically see tour conversion rates increase by 30 to 50%. Not because they suddenly receive more enquiries, but because fewer enquiries are lost. No missed opportunities. No forgotten follow-up. No couple booking another venue simply because they replied first. No missed. No missed.",
+  "words": [
+    {
+      "word": "And",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "word": "it",
+      "start": 0.18,
+      "end": 0.3
+    },
+    {
+      "word": "isn't",
+      "start": 0.3,
+      "end": 0.58
+    },
+    {
+      "word": "only",
+      "start": 0.58,
+      "end": 0.9
+    },
+    {
+      "word": "SMS.",
+      "start": 0.9,
+      "end": 1.6
+    },
+    {
+      "word": "The",
+      "start": 3.06,
+      "end": 3.78
+    },
+    {
+      "word": "same",
+      "start": 3.78,
+      "end": 4.08
+    },
+    {
+      "word": "AI",
+      "start": 4.08,
+      "end": 4.44
+    },
+    {
+      "word": "can",
+      "start": 4.44,
+      "end": 4.8
+    },
+    {
+      "word": "support",
+      "start": 4.8,
+      "end": 5.38
+    },
+    {
+      "word": "enquiries",
+      "start": 5.38,
+      "end": 6.12
+    },
+    {
+      "word": "through",
+      "start": 6.12,
+      "end": 6.4
+    },
+    {
+      "word": "your",
+      "start": 6.4,
+      "end": 6.6
+    },
+    {
+      "word": "website,",
+      "start": 6.6,
+      "end": 7.12
+    },
+    {
+      "word": "Facebook,",
+      "start": 7.46,
+      "end": 8.12
+    },
+    {
+      "word": "Instagram,",
+      "start": 8.56,
+      "end": 9.0
+    },
+    {
+      "word": "WhatsApp",
+      "start": 9.56,
+      "end": 10.0
+    },
+    {
+      "word": "and",
+      "start": 10.0,
+      "end": 10.72
+    },
+    {
+      "word": "other",
+      "start": 10.72,
+      "end": 11.02
+    },
+    {
+      "word": "messaging",
+      "start": 11.02,
+      "end": 11.46
+    },
+    {
+      "word": "channels.",
+      "start": 11.46,
+      "end": 12.0
+    },
+    {
+      "word": "Wherever",
+      "start": 13.76,
+      "end": 14.48
+    },
+    {
+      "word": "a",
+      "start": 14.48,
+      "end": 14.76
+    },
+    {
+      "word": "couple",
+      "start": 14.76,
+      "end": 15.0
+    },
+    {
+      "word": "starts",
+      "start": 15.0,
+      "end": 15.38
+    },
+    {
+      "word": "a",
+      "start": 15.38,
+      "end": 15.52
+    },
+    {
+      "word": "conversation,",
+      "start": 15.52,
+      "end": 16.2
+    },
+    {
+      "word": "VenueBot",
+      "start": 16.7,
+      "end": 17.34
+    },
+    {
+      "word": "is",
+      "start": 17.34,
+      "end": 17.6
+    },
+    {
+      "word": "ready",
+      "start": 17.6,
+      "end": 17.9
+    },
+    {
+      "word": "to",
+      "start": 17.9,
+      "end": 18.1
+    },
+    {
+      "word": "continue",
+      "start": 18.1,
+      "end": 18.52
+    },
+    {
+      "word": "it,",
+      "start": 18.52,
+      "end": 18.86
+    },
+    {
+      "word": "trained",
+      "start": 19.24,
+      "end": 19.78
+    },
+    {
+      "word": "on",
+      "start": 19.78,
+      "end": 20.0
+    },
+    {
+      "word": "your",
+      "start": 20.0,
+      "end": 20.14
+    },
+    {
+      "word": "venue",
+      "start": 20.14,
+      "end": 20.5
+    },
+    {
+      "word": "and",
+      "start": 20.5,
+      "end": 20.92
+    },
+    {
+      "word": "how",
+      "start": 20.92,
+      "end": 21.08
+    },
+    {
+      "word": "you",
+      "start": 21.08,
+      "end": 21.24
+    },
+    {
+      "word": "actually",
+      "start": 21.24,
+      "end": 21.6
+    },
+    {
+      "word": "talk",
+      "start": 21.6,
+      "end": 21.9
+    },
+    {
+      "word": "about",
+      "start": 21.9,
+      "end": 22.2
+    },
+    {
+      "word": "it,",
+      "start": 22.2,
+      "end": 22.5
+    },
+    {
+      "word": "providing",
+      "start": 22.82,
+      "end": 23.48
+    },
+    {
+      "word": "helpful,",
+      "start": 23.48,
+      "end": 24.06
+    },
+    {
+      "word": "accurate",
+      "start": 24.3,
+      "end": 24.7
+    },
+    {
+      "word": "answers",
+      "start": 24.7,
+      "end": 25.18
+    },
+    {
+      "word": "around",
+      "start": 25.18,
+      "end": 25.5
+    },
+    {
+      "word": "the",
+      "start": 25.5,
+      "end": 25.68
+    },
+    {
+      "word": "clock.",
+      "start": 25.68,
+      "end": 26.06
+    },
+    {
+      "word": "More",
+      "start": 27.24,
+      "end": 28.12
+    },
+    {
+      "word": "conversations,",
+      "start": 28.12,
+      "end": 28.82
+    },
+    {
+      "word": "more",
+      "start": 29.4,
+      "end": 29.86
+    },
+    {
+      "word": "venue",
+      "start": 29.86,
+      "end": 30.22
+    },
+    {
+      "word": "tours,",
+      "start": 30.22,
+      "end": 30.66
+    },
+    {
+      "word": "more",
+      "start": 31.02,
+      "end": 31.46
+    },
+    {
+      "word": "opportunities",
+      "start": 31.46,
+      "end": 32.16
+    },
+    {
+      "word": "progressing",
+      "start": 32.16,
+      "end": 32.82
+    },
+    {
+      "word": "through",
+      "start": 32.82,
+      "end": 33.12
+    },
+    {
+      "word": "your",
+      "start": 33.12,
+      "end": 33.32
+    },
+    {
+      "word": "pipeline.",
+      "start": 33.32,
+      "end": 33.9
+    },
+    {
+      "word": "Venues",
+      "start": 36.4,
+      "end": 37.28
+    },
+    {
+      "word": "using",
+      "start": 37.28,
+      "end": 37.64
+    },
+    {
+      "word": "Convert",
+      "start": 37.64,
+      "end": 38.24
+    },
+    {
+      "word": "typically",
+      "start": 38.24,
+      "end": 38.86
+    },
+    {
+      "word": "see",
+      "start": 38.86,
+      "end": 39.22
+    },
+    {
+      "word": "tour",
+      "start": 39.22,
+      "end": 39.52
+    },
+    {
+      "word": "conversion",
+      "start": 39.52,
+      "end": 40.04
+    },
+    {
+      "word": "rates",
+      "start": 40.04,
+      "end": 40.48
+    },
+    {
+      "word": "increase",
+      "start": 40.48,
+      "end": 40.94
+    },
+    {
+      "word": "by",
+      "start": 40.94,
+      "end": 41.32
+    },
+    {
+      "word": "30",
+      "start": 41.32,
+      "end": 41.8
+    },
+    {
+      "word": "to",
+      "start": 41.8,
+      "end": 42.2
+    },
+    {
+      "word": "50%.",
+      "start": 42.2,
+      "end": 42.9
+    },
+    {
+      "word": "Not",
+      "start": 44.14,
+      "end": 45.02
+    },
+    {
+      "word": "because",
+      "start": 45.02,
+      "end": 45.36
+    },
+    {
+      "word": "they",
+      "start": 45.36,
+      "end": 45.56
+    },
+    {
+      "word": "suddenly",
+      "start": 45.56,
+      "end": 45.96
+    },
+    {
+      "word": "receive",
+      "start": 45.96,
+      "end": 46.5
+    },
+    {
+      "word": "more",
+      "start": 46.5,
+      "end": 46.76
+    },
+    {
+      "word": "enquiries,",
+      "start": 46.76,
+      "end": 47.42
+    },
+    {
+      "word": "but",
+      "start": 47.68,
+      "end": 47.98
+    },
+    {
+      "word": "because",
+      "start": 47.98,
+      "end": 48.3
+    },
+    {
+      "word": "fewer",
+      "start": 48.3,
+      "end": 48.7
+    },
+    {
+      "word": "enquiries",
+      "start": 48.7,
+      "end": 49.38
+    },
+    {
+      "word": "are",
+      "start": 49.38,
+      "end": 49.56
+    },
+    {
+      "word": "lost.",
+      "start": 49.56,
+      "end": 49.98
+    },
+    {
+      "word": "No",
+      "start": 51.2,
+      "end": 51.92
+    },
+    {
+      "word": "missed",
+      "start": 51.92,
+      "end": 52.26
+    },
+    {
+      "word": "opportunities.",
+      "start": 52.26,
+      "end": 52.96
+    },
+    {
+      "word": "No",
+      "start": 53.48,
+      "end": 53.84
+    },
+    {
+      "word": "forgotten",
+      "start": 53.84,
+      "end": 54.24
+    },
+    {
+      "word": "follow",
+      "start": 54.24,
+      "end": 54.62
+    },
+    {
+      "word": "-up.",
+      "start": 54.62,
+      "end": 54.94
+    },
+    {
+      "word": "No",
+      "start": 55.12,
+      "end": 55.42
+    },
+    {
+      "word": "couple",
+      "start": 55.42,
+      "end": 55.76
+    },
+    {
+      "word": "booking",
+      "start": 55.76,
+      "end": 56.14
+    },
+    {
+      "word": "another",
+      "start": 56.14,
+      "end": 56.46
+    },
+    {
+      "word": "venue",
+      "start": 56.46,
+      "end": 56.9
+    },
+    {
+      "word": "simply",
+      "start": 56.9,
+      "end": 57.32
+    },
+    {
+      "word": "because",
+      "start": 57.32,
+      "end": 57.66
+    },
+    {
+      "word": "they",
+      "start": 57.66,
+      "end": 57.88
+    },
+    {
+      "word": "replied",
+      "start": 57.88,
+      "end": 58.3
+    },
+    {
+      "word": "first.",
+      "start": 58.3,
+      "end": 58.64
+    },
+    {
+      "word": "No",
+      "start": 58.64,
+      "end": 58.66
+    },
+    {
+      "word": "missed.",
+      "start": 58.66,
+      "end": 58.92
+    },
+    {
+      "word": "No",
+      "start": 58.98,
+      "end": 59.26
+    },
+    {
+      "word": "missed.",
+      "start": 59.26,
+      "end": 59.26
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 1.6,
+      "text": " And it isn't only SMS."
+    },
+    {
+      "id": 1,
+      "start": 3.06,
+      "end": 12.0,
+      "text": " The same AI can support enquiries through your website, Facebook, Instagram, WhatsApp and other messaging channels."
+    },
+    {
+      "id": 2,
+      "start": 13.76,
+      "end": 26.06,
+      "text": " Wherever a couple starts a conversation, VenueBot is ready to continue it, trained on your venue and how you actually talk about it, providing helpful, accurate answers around the clock."
+    },
+    {
+      "id": 3,
+      "start": 27.24,
+      "end": 33.9,
+      "text": " More conversations, more venue tours, more opportunities progressing through your pipeline."
+    },
+    {
+      "id": 4,
+      "start": 36.4,
+      "end": 42.9,
+      "text": " Venues using Convert typically see tour conversion rates increase by 30 to 50%."
+    },
+    {
+      "id": 5,
+      "start": 44.14,
+      "end": 49.98,
+      "text": " Not because they suddenly receive more enquiries, but because fewer enquiries are lost."
+    },
+    {
+      "id": 6,
+      "start": 51.2,
+      "end": 52.96,
+      "text": " No missed opportunities."
+    },
+    {
+      "id": 7,
+      "start": 53.7,
+      "end": 54.94,
+      "text": " No forgotten follow-up."
+    },
+    {
+      "id": 8,
+      "start": 55.12,
+      "end": 58.64,
+      "text": " No couple booking another venue simply because they replied first."
+    },
+    {
+      "id": 9,
+      "start": 58.64,
+      "end": 58.92,
+      "text": " No missed."
+    },
+    {
+      "id": 10,
+      "start": 58.98,
+      "end": 59.26,
+      "text": " No missed."
+    },
+    {
+      "id": 11,
+      "start": 59.26,
+      "end": 59.26,
+      "text": ""
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 95.22,
+  "text": "Your brochure is often the first real piece of your venue a couple takes away with them, the thing they read on the sofa, share with their partner, compare against every other venue on their shortlist. Yet most brochures are never reviewed, tested or measured against what modern couples actually want to see. Studio AI changes that. We've analysed wedding buyer behaviour, conversion psychology, content strategy and user experience research to create a brochure scoring framework built specifically for wedding venues. Simply upload your existing brochure, PDF, Word document or your current sales pack. Studio AI extracts the content, scores it against eight conversion categories, identifies weaknesses, then creates a rewritten version designed to strengthen the areas most likely to influence enquiries and bookings. Within moments, you receive a complete performance score, not based on opinion, based on proven conversion principles and wedding venue best practice. Every brochure is analysed across the factors that influence buying decisions. Emotional connection, venue differentiation, social proof, call to action clarity, pricing confidence, visual storytelling, practical information and alignment with your ideal couple.",
+  "words": [
+    {
+      "word": "Your",
+      "start": 0.0,
+      "end": 0.24
+    },
+    {
+      "word": "brochure",
+      "start": 0.24,
+      "end": 0.7
+    },
+    {
+      "word": "is",
+      "start": 0.7,
+      "end": 0.9
+    },
+    {
+      "word": "often",
+      "start": 0.9,
+      "end": 1.1
+    },
+    {
+      "word": "the",
+      "start": 1.1,
+      "end": 1.28
+    },
+    {
+      "word": "first",
+      "start": 1.28,
+      "end": 1.68
+    },
+    {
+      "word": "real",
+      "start": 1.68,
+      "end": 2.06
+    },
+    {
+      "word": "piece",
+      "start": 2.06,
+      "end": 2.44
+    },
+    {
+      "word": "of",
+      "start": 2.44,
+      "end": 2.6
+    },
+    {
+      "word": "your",
+      "start": 2.6,
+      "end": 2.74
+    },
+    {
+      "word": "venue",
+      "start": 2.74,
+      "end": 3.08
+    },
+    {
+      "word": "a",
+      "start": 3.08,
+      "end": 3.36
+    },
+    {
+      "word": "couple",
+      "start": 3.36,
+      "end": 3.62
+    },
+    {
+      "word": "takes",
+      "start": 3.62,
+      "end": 3.96
+    },
+    {
+      "word": "away",
+      "start": 3.96,
+      "end": 4.22
+    },
+    {
+      "word": "with",
+      "start": 4.22,
+      "end": 4.44
+    },
+    {
+      "word": "them,",
+      "start": 4.44,
+      "end": 4.64
+    },
+    {
+      "word": "the",
+      "start": 4.86,
+      "end": 5.24
+    },
+    {
+      "word": "thing",
+      "start": 5.24,
+      "end": 5.48
+    },
+    {
+      "word": "they",
+      "start": 5.48,
+      "end": 5.66
+    },
+    {
+      "word": "read",
+      "start": 5.66,
+      "end": 6.04
+    },
+    {
+      "word": "on",
+      "start": 6.04,
+      "end": 6.2
+    },
+    {
+      "word": "the",
+      "start": 6.2,
+      "end": 6.3
+    },
+    {
+      "word": "sofa,",
+      "start": 6.3,
+      "end": 6.72
+    },
+    {
+      "word": "share",
+      "start": 7.16,
+      "end": 7.72
+    },
+    {
+      "word": "with",
+      "start": 7.72,
+      "end": 7.96
+    },
+    {
+      "word": "their",
+      "start": 7.96,
+      "end": 8.16
+    },
+    {
+      "word": "partner,",
+      "start": 8.16,
+      "end": 8.64
+    },
+    {
+      "word": "compare",
+      "start": 9.24,
+      "end": 9.54
+    },
+    {
+      "word": "against",
+      "start": 9.54,
+      "end": 9.96
+    },
+    {
+      "word": "every",
+      "start": 9.96,
+      "end": 10.38
+    },
+    {
+      "word": "other",
+      "start": 10.38,
+      "end": 10.64
+    },
+    {
+      "word": "venue",
+      "start": 10.64,
+      "end": 11.0
+    },
+    {
+      "word": "on",
+      "start": 11.0,
+      "end": 11.24
+    },
+    {
+      "word": "their",
+      "start": 11.24,
+      "end": 11.4
+    },
+    {
+      "word": "shortlist.",
+      "start": 11.4,
+      "end": 12.04
+    },
+    {
+      "word": "Yet",
+      "start": 12.96,
+      "end": 13.66
+    },
+    {
+      "word": "most",
+      "start": 13.66,
+      "end": 14.1
+    },
+    {
+      "word": "brochures",
+      "start": 14.1,
+      "end": 14.8
+    },
+    {
+      "word": "are",
+      "start": 14.8,
+      "end": 15.12
+    },
+    {
+      "word": "never",
+      "start": 15.12,
+      "end": 15.36
+    },
+    {
+      "word": "reviewed,",
+      "start": 15.36,
+      "end": 15.86
+    },
+    {
+      "word": "tested",
+      "start": 16.3,
+      "end": 16.7
+    },
+    {
+      "word": "or",
+      "start": 16.7,
+      "end": 17.34
+    },
+    {
+      "word": "measured",
+      "start": 17.34,
+      "end": 17.78
+    },
+    {
+      "word": "against",
+      "start": 17.78,
+      "end": 18.2
+    },
+    {
+      "word": "what",
+      "start": 18.2,
+      "end": 18.48
+    },
+    {
+      "word": "modern",
+      "start": 18.48,
+      "end": 18.8
+    },
+    {
+      "word": "couples",
+      "start": 18.8,
+      "end": 19.24
+    },
+    {
+      "word": "actually",
+      "start": 19.24,
+      "end": 19.74
+    },
+    {
+      "word": "want",
+      "start": 19.74,
+      "end": 20.02
+    },
+    {
+      "word": "to",
+      "start": 20.02,
+      "end": 20.18
+    },
+    {
+      "word": "see.",
+      "start": 20.18,
+      "end": 20.48
+    },
+    {
+      "word": "Studio",
+      "start": 22.2,
+      "end": 22.9
+    },
+    {
+      "word": "AI",
+      "start": 22.9,
+      "end": 23.34
+    },
+    {
+      "word": "changes",
+      "start": 23.34,
+      "end": 23.94
+    },
+    {
+      "word": "that.",
+      "start": 23.94,
+      "end": 24.38
+    },
+    {
+      "word": "We've",
+      "start": 25.56,
+      "end": 26.48
+    },
+    {
+      "word": "analysed",
+      "start": 26.48,
+      "end": 27.02
+    },
+    {
+      "word": "wedding",
+      "start": 27.02,
+      "end": 27.32
+    },
+    {
+      "word": "buyer",
+      "start": 27.32,
+      "end": 27.66
+    },
+    {
+      "word": "behaviour,",
+      "start": 27.66,
+      "end": 28.14
+    },
+    {
+      "word": "conversion",
+      "start": 28.62,
+      "end": 29.16
+    },
+    {
+      "word": "psychology,",
+      "start": 29.16,
+      "end": 29.86
+    },
+    {
+      "word": "content",
+      "start": 30.4,
+      "end": 30.72
+    },
+    {
+      "word": "strategy",
+      "start": 30.72,
+      "end": 31.3
+    },
+    {
+      "word": "and",
+      "start": 31.3,
+      "end": 31.92
+    },
+    {
+      "word": "user",
+      "start": 31.92,
+      "end": 32.34
+    },
+    {
+      "word": "experience",
+      "start": 32.34,
+      "end": 33.02
+    },
+    {
+      "word": "research",
+      "start": 33.02,
+      "end": 33.68
+    },
+    {
+      "word": "to",
+      "start": 33.68,
+      "end": 34.16
+    },
+    {
+      "word": "create",
+      "start": 34.16,
+      "end": 34.42
+    },
+    {
+      "word": "a",
+      "start": 34.42,
+      "end": 34.58
+    },
+    {
+      "word": "brochure",
+      "start": 34.58,
+      "end": 35.04
+    },
+    {
+      "word": "scoring",
+      "start": 35.04,
+      "end": 35.46
+    },
+    {
+      "word": "framework",
+      "start": 35.46,
+      "end": 36.06
+    },
+    {
+      "word": "built",
+      "start": 36.06,
+      "end": 36.48
+    },
+    {
+      "word": "specifically",
+      "start": 36.48,
+      "end": 37.14
+    },
+    {
+      "word": "for",
+      "start": 37.14,
+      "end": 37.58
+    },
+    {
+      "word": "wedding",
+      "start": 37.58,
+      "end": 37.86
+    },
+    {
+      "word": "venues.",
+      "start": 37.86,
+      "end": 38.34
+    },
+    {
+      "word": "Simply",
+      "start": 39.46,
+      "end": 40.38
+    },
+    {
+      "word": "upload",
+      "start": 40.38,
+      "end": 40.8
+    },
+    {
+      "word": "your",
+      "start": 40.8,
+      "end": 41.1
+    },
+    {
+      "word": "existing",
+      "start": 41.1,
+      "end": 41.6
+    },
+    {
+      "word": "brochure,",
+      "start": 41.6,
+      "end": 42.06
+    },
+    {
+      "word": "PDF,",
+      "start": 42.46,
+      "end": 43.0
+    },
+    {
+      "word": "Word",
+      "start": 43.64,
+      "end": 43.82
+    },
+    {
+      "word": "document",
+      "start": 43.82,
+      "end": 44.24
+    },
+    {
+      "word": "or",
+      "start": 44.24,
+      "end": 45.0
+    },
+    {
+      "word": "your",
+      "start": 45.0,
+      "end": 45.18
+    },
+    {
+      "word": "current",
+      "start": 45.18,
+      "end": 45.5
+    },
+    {
+      "word": "sales",
+      "start": 45.5,
+      "end": 45.86
+    },
+    {
+      "word": "pack.",
+      "start": 45.86,
+      "end": 46.22
+    },
+    {
+      "word": "Studio",
+      "start": 48.84,
+      "end": 49.68
+    },
+    {
+      "word": "AI",
+      "start": 49.68,
+      "end": 50.22
+    },
+    {
+      "word": "extracts",
+      "start": 50.22,
+      "end": 51.06
+    },
+    {
+      "word": "the",
+      "start": 51.06,
+      "end": 51.18
+    },
+    {
+      "word": "content,",
+      "start": 51.18,
+      "end": 51.68
+    },
+    {
+      "word": "scores",
+      "start": 52.04,
+      "end": 52.56
+    },
+    {
+      "word": "it",
+      "start": 52.56,
+      "end": 52.72
+    },
+    {
+      "word": "against",
+      "start": 52.72,
+      "end": 53.04
+    },
+    {
+      "word": "eight",
+      "start": 53.04,
+      "end": 53.4
+    },
+    {
+      "word": "conversion",
+      "start": 53.4,
+      "end": 53.94
+    },
+    {
+      "word": "categories,",
+      "start": 53.94,
+      "end": 54.58
+    },
+    {
+      "word": "identifies",
+      "start": 55.02,
+      "end": 55.44
+    },
+    {
+      "word": "weaknesses,",
+      "start": 55.44,
+      "end": 56.2
+    },
+    {
+      "word": "then",
+      "start": 56.64,
+      "end": 57.02
+    },
+    {
+      "word": "creates",
+      "start": 57.02,
+      "end": 57.52
+    },
+    {
+      "word": "a",
+      "start": 57.52,
+      "end": 57.7
+    },
+    {
+      "word": "rewritten",
+      "start": 57.7,
+      "end": 58.14
+    },
+    {
+      "word": "version",
+      "start": 58.14,
+      "end": 58.62
+    },
+    {
+      "word": "designed",
+      "start": 58.62,
+      "end": 59.02
+    },
+    {
+      "word": "to",
+      "start": 59.02,
+      "end": 59.32
+    },
+    {
+      "word": "strengthen",
+      "start": 59.32,
+      "end": 59.74
+    },
+    {
+      "word": "the",
+      "start": 59.74,
+      "end": 60.0
+    },
+    {
+      "word": "areas",
+      "start": 60.0,
+      "end": 60.4
+    },
+    {
+      "word": "most",
+      "start": 60.4,
+      "end": 60.72
+    },
+    {
+      "word": "likely",
+      "start": 60.72,
+      "end": 61.1
+    },
+    {
+      "word": "to",
+      "start": 61.1,
+      "end": 61.34
+    },
+    {
+      "word": "influence",
+      "start": 61.34,
+      "end": 61.94
+    },
+    {
+      "word": "enquiries",
+      "start": 61.94,
+      "end": 62.82
+    },
+    {
+      "word": "and",
+      "start": 62.82,
+      "end": 63.4
+    },
+    {
+      "word": "bookings.",
+      "start": 63.4,
+      "end": 63.96
+    },
+    {
+      "word": "Within",
+      "start": 65.06,
+      "end": 65.9
+    },
+    {
+      "word": "moments,",
+      "start": 65.9,
+      "end": 66.48
+    },
+    {
+      "word": "you",
+      "start": 66.66,
+      "end": 66.82
+    },
+    {
+      "word": "receive",
+      "start": 66.82,
+      "end": 67.2
+    },
+    {
+      "word": "a",
+      "start": 67.2,
+      "end": 67.36
+    },
+    {
+      "word": "complete",
+      "start": 67.36,
+      "end": 67.78
+    },
+    {
+      "word": "performance",
+      "start": 67.78,
+      "end": 68.3
+    },
+    {
+      "word": "score,",
+      "start": 68.3,
+      "end": 68.8
+    },
+    {
+      "word": "not",
+      "start": 69.12,
+      "end": 69.5
+    },
+    {
+      "word": "based",
+      "start": 69.5,
+      "end": 69.84
+    },
+    {
+      "word": "on",
+      "start": 69.84,
+      "end": 70.02
+    },
+    {
+      "word": "opinion,",
+      "start": 70.02,
+      "end": 70.42
+    },
+    {
+      "word": "based",
+      "start": 70.66,
+      "end": 71.08
+    },
+    {
+      "word": "on",
+      "start": 71.08,
+      "end": 71.26
+    },
+    {
+      "word": "proven",
+      "start": 71.26,
+      "end": 71.7
+    },
+    {
+      "word": "conversion",
+      "start": 71.7,
+      "end": 72.28
+    },
+    {
+      "word": "principles",
+      "start": 72.28,
+      "end": 72.84
+    },
+    {
+      "word": "and",
+      "start": 72.84,
+      "end": 73.22
+    },
+    {
+      "word": "wedding",
+      "start": 73.22,
+      "end": 73.54
+    },
+    {
+      "word": "venue",
+      "start": 73.54,
+      "end": 73.92
+    },
+    {
+      "word": "best",
+      "start": 73.92,
+      "end": 74.2
+    },
+    {
+      "word": "practice.",
+      "start": 74.2,
+      "end": 74.66
+    },
+    {
+      "word": "Every",
+      "start": 76.22,
+      "end": 76.78
+    },
+    {
+      "word": "brochure",
+      "start": 76.78,
+      "end": 77.44
+    },
+    {
+      "word": "is",
+      "start": 77.44,
+      "end": 77.64
+    },
+    {
+      "word": "analysed",
+      "start": 77.64,
+      "end": 78.28
+    },
+    {
+      "word": "across",
+      "start": 78.28,
+      "end": 78.48
+    },
+    {
+      "word": "the",
+      "start": 78.48,
+      "end": 78.74
+    },
+    {
+      "word": "factors",
+      "start": 78.74,
+      "end": 79.12
+    },
+    {
+      "word": "that",
+      "start": 79.12,
+      "end": 79.4
+    },
+    {
+      "word": "influence",
+      "start": 79.4,
+      "end": 80.0
+    },
+    {
+      "word": "buying",
+      "start": 80.0,
+      "end": 80.42
+    },
+    {
+      "word": "decisions.",
+      "start": 80.42,
+      "end": 81.0
+    },
+    {
+      "word": "Emotional",
+      "start": 81.38,
+      "end": 82.12
+    },
+    {
+      "word": "connection,",
+      "start": 82.12,
+      "end": 82.6
+    },
+    {
+      "word": "venue",
+      "start": 82.94,
+      "end": 83.52
+    },
+    {
+      "word": "differentiation,",
+      "start": 83.52,
+      "end": 84.16
+    },
+    {
+      "word": "social",
+      "start": 85.0,
+      "end": 85.48
+    },
+    {
+      "word": "proof,",
+      "start": 85.48,
+      "end": 85.82
+    },
+    {
+      "word": "call",
+      "start": 86.46,
+      "end": 86.72
+    },
+    {
+      "word": "to",
+      "start": 86.72,
+      "end": 86.92
+    },
+    {
+      "word": "action",
+      "start": 86.92,
+      "end": 87.3
+    },
+    {
+      "word": "clarity,",
+      "start": 87.3,
+      "end": 87.76
+    },
+    {
+      "word": "pricing",
+      "start": 88.36,
+      "end": 88.76
+    },
+    {
+      "word": "confidence,",
+      "start": 88.76,
+      "end": 89.3
+    },
+    {
+      "word": "visual",
+      "start": 89.9,
+      "end": 90.26
+    },
+    {
+      "word": "storytelling,",
+      "start": 90.26,
+      "end": 90.92
+    },
+    {
+      "word": "practical",
+      "start": 91.62,
+      "end": 91.94
+    },
+    {
+      "word": "information",
+      "start": 91.94,
+      "end": 92.64
+    },
+    {
+      "word": "and",
+      "start": 92.64,
+      "end": 93.3
+    },
+    {
+      "word": "alignment",
+      "start": 93.3,
+      "end": 93.84
+    },
+    {
+      "word": "with",
+      "start": 93.84,
+      "end": 94.2
+    },
+    {
+      "word": "your",
+      "start": 94.2,
+      "end": 94.38
+    },
+    {
+      "word": "ideal",
+      "start": 94.38,
+      "end": 94.82
+    },
+    {
+      "word": "couple.",
+      "start": 94.82,
+      "end": 95.22
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 12.04,
+      "text": " Your brochure is often the first real piece of your venue a couple takes away with them, the thing they read on the sofa, share with their partner, compare against every other venue on their shortlist."
+    },
+    {
+      "id": 1,
+      "start": 12.96,
+      "end": 20.48,
+      "text": " Yet most brochures are never reviewed, tested or measured against what modern couples actually want to see."
+    },
+    {
+      "id": 2,
+      "start": 22.2,
+      "end": 24.38,
+      "text": " Studio AI changes that."
+    },
+    {
+      "id": 3,
+      "start": 25.56,
+      "end": 38.34,
+      "text": " We've analysed wedding buyer behaviour, conversion psychology, content strategy and user experience research to create a brochure scoring framework built specifically for wedding venues."
+    },
+    {
+      "id": 4,
+      "start": 39.46,
+      "end": 46.22,
+      "text": " Simply upload your existing brochure, PDF, Word document or your current sales pack."
+    },
+    {
+      "id": 5,
+      "start": 48.84,
+      "end": 63.96,
+      "text": " Studio AI extracts the content, scores it against eight conversion categories, identifies weaknesses, then creates a rewritten version designed to strengthen the areas most likely to influence enquiries and bookings."
+    },
+    {
+      "id": 6,
+      "start": 65.06,
+      "end": 74.66,
+      "text": " Within moments, you receive a complete performance score, not based on opinion, based on proven conversion principles and wedding venue best practice."
+    },
+    {
+      "id": 7,
+      "start": 76.22,
+      "end": 81.0,
+      "text": " Every brochure is analysed across the factors that influence buying decisions."
+    },
+    {
+      "id": 8,
+      "start": 81.38,
+      "end": 95.22,
+      "text": " Emotional connection, venue differentiation, social proof, call to action clarity, pricing confidence, visual storytelling, practical information and alignment with your ideal couple."
+    }
+  ]
+}

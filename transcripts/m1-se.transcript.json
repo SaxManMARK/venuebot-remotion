@@ -1,0 +1,414 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 38.38,
+  "text": "Then define your brand voice. Because every venue is unique, Studio AI learns the personality behind your venue, the words you use, the words you avoid, the tone you want across your website, brochures, emails and social media. Historic charm, effortless luxury, relaxed and rustic, modern and minimalist. Whatever makes your venue distinctive, every piece of content is written in a voice that feels unmistakably yours. Not generic, not robotic, because couples can tell the difference.",
+  "words": [
+    {
+      "word": "Then",
+      "start": 0.0,
+      "end": 0.22
+    },
+    {
+      "word": "define",
+      "start": 0.22,
+      "end": 0.62
+    },
+    {
+      "word": "your",
+      "start": 0.62,
+      "end": 0.88
+    },
+    {
+      "word": "brand",
+      "start": 0.88,
+      "end": 1.2
+    },
+    {
+      "word": "voice.",
+      "start": 1.2,
+      "end": 1.72
+    },
+    {
+      "word": "Because",
+      "start": 1.92,
+      "end": 2.46
+    },
+    {
+      "word": "every",
+      "start": 2.46,
+      "end": 2.72
+    },
+    {
+      "word": "venue",
+      "start": 2.72,
+      "end": 3.04
+    },
+    {
+      "word": "is",
+      "start": 3.04,
+      "end": 3.26
+    },
+    {
+      "word": "unique,",
+      "start": 3.26,
+      "end": 3.76
+    },
+    {
+      "word": "Studio",
+      "start": 4.32,
+      "end": 4.58
+    },
+    {
+      "word": "AI",
+      "start": 4.58,
+      "end": 5.04
+    },
+    {
+      "word": "learns",
+      "start": 5.04,
+      "end": 5.48
+    },
+    {
+      "word": "the",
+      "start": 5.48,
+      "end": 5.64
+    },
+    {
+      "word": "personality",
+      "start": 5.64,
+      "end": 6.24
+    },
+    {
+      "word": "behind",
+      "start": 6.24,
+      "end": 6.6
+    },
+    {
+      "word": "your",
+      "start": 6.6,
+      "end": 6.88
+    },
+    {
+      "word": "venue,",
+      "start": 6.88,
+      "end": 7.24
+    },
+    {
+      "word": "the",
+      "start": 7.5,
+      "end": 7.8
+    },
+    {
+      "word": "words",
+      "start": 7.8,
+      "end": 8.1
+    },
+    {
+      "word": "you",
+      "start": 8.1,
+      "end": 8.28
+    },
+    {
+      "word": "use,",
+      "start": 8.28,
+      "end": 8.72
+    },
+    {
+      "word": "the",
+      "start": 8.96,
+      "end": 9.24
+    },
+    {
+      "word": "words",
+      "start": 9.24,
+      "end": 9.48
+    },
+    {
+      "word": "you",
+      "start": 9.48,
+      "end": 9.62
+    },
+    {
+      "word": "avoid,",
+      "start": 9.62,
+      "end": 10.02
+    },
+    {
+      "word": "the",
+      "start": 10.42,
+      "end": 10.68
+    },
+    {
+      "word": "tone",
+      "start": 10.68,
+      "end": 10.98
+    },
+    {
+      "word": "you",
+      "start": 10.98,
+      "end": 11.16
+    },
+    {
+      "word": "want",
+      "start": 11.16,
+      "end": 11.36
+    },
+    {
+      "word": "across",
+      "start": 11.36,
+      "end": 11.62
+    },
+    {
+      "word": "your",
+      "start": 11.62,
+      "end": 11.88
+    },
+    {
+      "word": "website,",
+      "start": 11.88,
+      "end": 12.38
+    },
+    {
+      "word": "brochures,",
+      "start": 12.74,
+      "end": 13.4
+    },
+    {
+      "word": "emails",
+      "start": 13.76,
+      "end": 14.16
+    },
+    {
+      "word": "and",
+      "start": 14.16,
+      "end": 14.44
+    },
+    {
+      "word": "social",
+      "start": 14.44,
+      "end": 14.8
+    },
+    {
+      "word": "media.",
+      "start": 14.8,
+      "end": 15.24
+    },
+    {
+      "word": "Historic",
+      "start": 16.36,
+      "end": 17.08
+    },
+    {
+      "word": "charm,",
+      "start": 17.08,
+      "end": 17.54
+    },
+    {
+      "word": "effortless",
+      "start": 18.06,
+      "end": 18.6
+    },
+    {
+      "word": "luxury,",
+      "start": 18.6,
+      "end": 19.1
+    },
+    {
+      "word": "relaxed",
+      "start": 19.7,
+      "end": 20.14
+    },
+    {
+      "word": "and",
+      "start": 20.14,
+      "end": 20.4
+    },
+    {
+      "word": "rustic,",
+      "start": 20.4,
+      "end": 21.0
+    },
+    {
+      "word": "modern",
+      "start": 21.42,
+      "end": 21.82
+    },
+    {
+      "word": "and",
+      "start": 21.82,
+      "end": 22.32
+    },
+    {
+      "word": "minimalist.",
+      "start": 22.32,
+      "end": 22.88
+    },
+    {
+      "word": "Whatever",
+      "start": 24.94,
+      "end": 25.66
+    },
+    {
+      "word": "makes",
+      "start": 25.66,
+      "end": 26.02
+    },
+    {
+      "word": "your",
+      "start": 26.02,
+      "end": 26.16
+    },
+    {
+      "word": "venue",
+      "start": 26.16,
+      "end": 26.48
+    },
+    {
+      "word": "distinctive,",
+      "start": 26.48,
+      "end": 27.04
+    },
+    {
+      "word": "every",
+      "start": 27.5,
+      "end": 28.06
+    },
+    {
+      "word": "piece",
+      "start": 28.06,
+      "end": 28.36
+    },
+    {
+      "word": "of",
+      "start": 28.36,
+      "end": 28.52
+    },
+    {
+      "word": "content",
+      "start": 28.52,
+      "end": 28.94
+    },
+    {
+      "word": "is",
+      "start": 28.94,
+      "end": 29.26
+    },
+    {
+      "word": "written",
+      "start": 29.26,
+      "end": 29.54
+    },
+    {
+      "word": "in",
+      "start": 29.54,
+      "end": 29.76
+    },
+    {
+      "word": "a",
+      "start": 29.76,
+      "end": 29.86
+    },
+    {
+      "word": "voice",
+      "start": 29.86,
+      "end": 30.14
+    },
+    {
+      "word": "that",
+      "start": 30.14,
+      "end": 30.32
+    },
+    {
+      "word": "feels",
+      "start": 30.32,
+      "end": 30.76
+    },
+    {
+      "word": "unmistakably",
+      "start": 30.76,
+      "end": 31.82
+    },
+    {
+      "word": "yours.",
+      "start": 31.82,
+      "end": 32.28
+    },
+    {
+      "word": "Not",
+      "start": 33.68,
+      "end": 34.4
+    },
+    {
+      "word": "generic,",
+      "start": 34.4,
+      "end": 34.88
+    },
+    {
+      "word": "not",
+      "start": 35.4,
+      "end": 35.66
+    },
+    {
+      "word": "robotic,",
+      "start": 35.66,
+      "end": 36.18
+    },
+    {
+      "word": "because",
+      "start": 36.64,
+      "end": 37.08
+    },
+    {
+      "word": "couples",
+      "start": 37.08,
+      "end": 37.46
+    },
+    {
+      "word": "can",
+      "start": 37.46,
+      "end": 37.68
+    },
+    {
+      "word": "tell",
+      "start": 37.68,
+      "end": 37.88
+    },
+    {
+      "word": "the",
+      "start": 37.88,
+      "end": 38.02
+    },
+    {
+      "word": "difference.",
+      "start": 38.02,
+      "end": 38.38
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 15.24,
+      "text": " Then define your brand voice. Because every venue is unique, Studio AI learns the personality behind your venue, the words you use, the words you avoid, the tone you want across your website, brochures, emails and social media."
+    },
+    {
+      "id": 1,
+      "start": 16.36,
+      "end": 22.88,
+      "text": " Historic charm, effortless luxury, relaxed and rustic, modern and minimalist."
+    },
+    {
+      "id": 2,
+      "start": 24.94,
+      "end": 32.28,
+      "text": " Whatever makes your venue distinctive, every piece of content is written in a voice that feels unmistakably yours."
+    },
+    {
+      "id": 3,
+      "start": 33.68,
+      "end": 38.38,
+      "text": " Not generic, not robotic, because couples can tell the difference."
+    }
+  ]
+}

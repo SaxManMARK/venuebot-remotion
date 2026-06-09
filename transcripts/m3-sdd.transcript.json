@@ -1,0 +1,239 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 23.24,
+  "text": "Studio AI brings more couples to your venue, Convert turns more enquiries into tours, Care gives your entire team one place to run the business. Three modules, one platform, one goal, more bookings. VenueBot. Stop losing enquiries, start booking more tours.",
+  "words": [
+    {
+      "word": "Studio",
+      "start": 0.0,
+      "end": 0.44
+    },
+    {
+      "word": "AI",
+      "start": 0.44,
+      "end": 0.86
+    },
+    {
+      "word": "brings",
+      "start": 0.86,
+      "end": 1.26
+    },
+    {
+      "word": "more",
+      "start": 1.26,
+      "end": 1.5
+    },
+    {
+      "word": "couples",
+      "start": 1.5,
+      "end": 1.86
+    },
+    {
+      "word": "to",
+      "start": 1.86,
+      "end": 2.06
+    },
+    {
+      "word": "your",
+      "start": 2.06,
+      "end": 2.22
+    },
+    {
+      "word": "venue,",
+      "start": 2.22,
+      "end": 2.6
+    },
+    {
+      "word": "Convert",
+      "start": 3.0,
+      "end": 3.44
+    },
+    {
+      "word": "turns",
+      "start": 3.44,
+      "end": 3.8
+    },
+    {
+      "word": "more",
+      "start": 3.8,
+      "end": 4.08
+    },
+    {
+      "word": "enquiries",
+      "start": 4.08,
+      "end": 4.82
+    },
+    {
+      "word": "into",
+      "start": 4.82,
+      "end": 5.1
+    },
+    {
+      "word": "tours,",
+      "start": 5.1,
+      "end": 5.54
+    },
+    {
+      "word": "Care",
+      "start": 6.18,
+      "end": 6.34
+    },
+    {
+      "word": "gives",
+      "start": 6.34,
+      "end": 6.68
+    },
+    {
+      "word": "your",
+      "start": 6.68,
+      "end": 6.84
+    },
+    {
+      "word": "entire",
+      "start": 6.84,
+      "end": 7.24
+    },
+    {
+      "word": "team",
+      "start": 7.24,
+      "end": 7.64
+    },
+    {
+      "word": "one",
+      "start": 7.64,
+      "end": 8.04
+    },
+    {
+      "word": "place",
+      "start": 8.04,
+      "end": 8.4
+    },
+    {
+      "word": "to",
+      "start": 8.4,
+      "end": 8.54
+    },
+    {
+      "word": "run",
+      "start": 8.54,
+      "end": 8.72
+    },
+    {
+      "word": "the",
+      "start": 8.72,
+      "end": 8.86
+    },
+    {
+      "word": "business.",
+      "start": 8.86,
+      "end": 9.34
+    },
+    {
+      "word": "Three",
+      "start": 11.02,
+      "end": 11.4
+    },
+    {
+      "word": "modules,",
+      "start": 11.4,
+      "end": 11.88
+    },
+    {
+      "word": "one",
+      "start": 12.22,
+      "end": 12.48
+    },
+    {
+      "word": "platform,",
+      "start": 12.48,
+      "end": 12.96
+    },
+    {
+      "word": "one",
+      "start": 13.3,
+      "end": 13.68
+    },
+    {
+      "word": "goal,",
+      "start": 13.68,
+      "end": 14.04
+    },
+    {
+      "word": "more",
+      "start": 14.3,
+      "end": 14.62
+    },
+    {
+      "word": "bookings.",
+      "start": 14.62,
+      "end": 15.22
+    },
+    {
+      "word": "VenueBot.",
+      "start": 17.36,
+      "end": 18.12
+    },
+    {
+      "word": "Stop",
+      "start": 19.44,
+      "end": 20.2
+    },
+    {
+      "word": "losing",
+      "start": 20.2,
+      "end": 20.6
+    },
+    {
+      "word": "enquiries,",
+      "start": 20.6,
+      "end": 21.62
+    },
+    {
+      "word": "start",
+      "start": 22.02,
+      "end": 22.34
+    },
+    {
+      "word": "booking",
+      "start": 22.34,
+      "end": 22.6
+    },
+    {
+      "word": "more",
+      "start": 22.6,
+      "end": 22.88
+    },
+    {
+      "word": "tours.",
+      "start": 22.88,
+      "end": 23.24
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 9.34,
+      "text": " Studio AI brings more couples to your venue, Convert turns more enquiries into tours, Care gives your entire team one place to run the business."
+    },
+    {
+      "id": 1,
+      "start": 11.22,
+      "end": 15.22,
+      "text": " Three modules, one platform, one goal, more bookings."
+    },
+    {
+      "id": 2,
+      "start": 17.36,
+      "end": 18.12,
+      "text": " VenueBot."
+    },
+    {
+      "id": 3,
+      "start": 19.44,
+      "end": 23.24,
+      "text": " Stop losing enquiries, start booking more tours."
+    }
+  ]
+}

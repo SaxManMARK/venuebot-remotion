@@ -1,0 +1,968 @@
+{
+  "task": "transcribe",
+  "language": "english",
+  "duration": 71.5999984741211,
+  "text": "VenueBot isn't a chatbot and it isn't just another CRM. It's a complete enquiry-to-booking system built specifically for wedding venues. Everything is organised around three connected modules, Studio AI, Convert and Care. Studio AI helps you generate more enquiries by analysing your website, benchmarking competitors, identifying conversion gaps and showing exactly where opportunities are being lost. Convert helps you turn more enquiries into tours, responding instantly, nurturing couples automatically, answering questions day and night and making sure no enquiry goes cold. Care gives your team one place to run the entire venue operation. Conversations, bookings, automations, reporting, marketing and AI-powered assistance. Generate more enquiries, convert more couples, manage everything in one place. That's VenueBot and this is how it works.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0,
+      "end": 3.640000104904175,
+      "text": " VenueBot isn't a chatbot and it isn't just another CRM.",
+      "tokens": [
+        50414,
+        11182,
+        622,
+        33,
+        310,
+        1943,
+        380,
+        257,
+        5081,
+        18870,
+        293,
+        309,
+        1943,
+        380,
+        445,
+        1071,
+        14123,
+        44,
+        13,
+        50564
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2580093741416931,
+      "compression_ratio": 1.4654377698898315,
+      "no_speech_prob": 0.0013855713186785579
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 5.159999847412109,
+      "end": 9.119999885559082,
+      "text": " It's a complete enquiry-to-booking system built specifically for wedding venues.",
+      "tokens": [
+        50614,
+        467,
+        311,
+        257,
+        3566,
+        21304,
+        12781,
+        12,
+        1353,
+        12,
+        2939,
+        278,
+        1185,
+        3094,
+        4682,
+        337,
+        8523,
+        32882,
+        13,
+        50814
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2580093741416931,
+      "compression_ratio": 1.4654377698898315,
+      "no_speech_prob": 0.0013855713186785579
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 10.739999771118164,
+      "end": 18.299999237060547,
+      "text": " Everything is organised around three connected modules, Studio AI, Convert and Care.",
+      "tokens": [
+        50864,
+        5471,
+        307,
+        36866,
+        926,
+        1045,
+        4582,
+        16679,
+        11,
+        13500,
+        7318,
+        11,
+        2656,
+        3281,
+        293,
+        9532,
+        13,
+        51264
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2580093741416931,
+      "compression_ratio": 1.4654377698898315,
+      "no_speech_prob": 0.0013855713186785579
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 20.239999771118164,
+      "end": 26.079999923706055,
+      "text": " Studio AI helps you generate more enquiries by analysing your website, benchmarking competitors,",
+      "tokens": [
+        51364,
+        13500,
+        7318,
+        3665,
+        291,
+        8460,
+        544,
+        21304,
+        38619,
+        538,
+        23014,
+        278,
+        428,
+        3144,
+        11,
+        18927,
+        278,
+        18333,
+        11,
+        51664
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.2580093741416931,
+      "compression_ratio": 1.4654377698898315,
+      "no_speech_prob": 0.0013855713186785579
+    },
+    {
+      "id": 4,
+      "seek": 2608,
+      "start": 26.079999923706055,
+      "end": 31.15999984741211,
+      "text": " identifying conversion gaps and showing exactly where opportunities are being lost.",
+      "tokens": [
+        50364,
+        16696,
+        14298,
+        15031,
+        293,
+        4099,
+        2293,
+        689,
+        4786,
+        366,
+        885,
+        2731,
+        13,
+        50614
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.21720640361309052,
+      "compression_ratio": 1.582524299621582,
+      "no_speech_prob": 0.019100118428468704
+    },
+    {
+      "id": 5,
+      "seek": 2608,
+      "start": 33.2400016784668,
+      "end": 40.15999984741211,
+      "text": " Convert helps you turn more enquiries into tours, responding instantly, nurturing couples automatically,",
+      "tokens": [
+        50664,
+        2656,
+        3281,
+        3665,
+        291,
+        1261,
+        544,
+        21304,
+        38619,
+        666,
+        22911,
+        11,
+        16670,
+        13518,
+        11,
+        48116,
+        20368,
+        6772,
+        11,
+        51064
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.21720640361309052,
+      "compression_ratio": 1.582524299621582,
+      "no_speech_prob": 0.019100118428468704
+    },
+    {
+      "id": 6,
+      "seek": 2608,
+      "start": 41.279998779296875,
+      "end": 45.619998931884766,
+      "text": " answering questions day and night and making sure no enquiry goes cold.",
+      "tokens": [
+        51114,
+        13430,
+        1651,
+        786,
+        293,
+        1818,
+        293,
+        1455,
+        988,
+        572,
+        21304,
+        12781,
+        1709,
+        3554,
+        13,
+        51364
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.21720640361309052,
+      "compression_ratio": 1.582524299621582,
+      "no_speech_prob": 0.019100118428468704
+    },
+    {
+      "id": 7,
+      "seek": 2608,
+      "start": 47.619998931884766,
+      "end": 51.18000030517578,
+      "text": " Care gives your team one place to run the entire venue operation.",
+      "tokens": [
+        51414,
+        9532,
+        2709,
+        428,
+        1469,
+        472,
+        1081,
+        281,
+        1190,
+        264,
+        2302,
+        21645,
+        6916,
+        13,
+        51614
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.21720640361309052,
+      "compression_ratio": 1.582524299621582,
+      "no_speech_prob": 0.019100118428468704
+    },
+    {
+      "id": 8,
+      "seek": 5118,
+      "start": 51.18000030517578,
+      "end": 59.02000045776367,
+      "text": " Conversations, bookings, automations, reporting, marketing and AI-powered assistance.",
+      "tokens": [
+        50364,
+        33247,
+        763,
+        11,
+        1446,
+        1109,
+        11,
+        3553,
+        763,
+        11,
+        10031,
+        11,
+        6370,
+        293,
+        7318,
+        12,
+        27178,
+        9683,
+        13,
+        50764
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.1921997219324112,
+      "compression_ratio": 1.3642383813858032,
+      "no_speech_prob": 0.1749427318572998
+    },
+    {
+      "id": 9,
+      "seek": 5118,
+      "start": 61.540000915527344,
+      "end": 66.5999984741211,
+      "text": " Generate more enquiries, convert more couples, manage everything in one place.",
+      "tokens": [
+        50814,
+        15409,
+        473,
+        544,
+        21304,
+        38619,
+        11,
+        7620,
+        544,
+        20368,
+        11,
+        3067,
+        1203,
+        294,
+        472,
+        1081,
+        13,
+        51114
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.1921997219324112,
+      "compression_ratio": 1.3642383813858032,
+      "no_speech_prob": 0.1749427318572998
+    },
+    {
+      "id": 10,
+      "seek": 5118,
+      "start": 67.77999877929688,
+      "end": 71.19999694824219,
+      "text": " That's VenueBot and this is how it works.",
+      "tokens": [
+        51164,
+        663,
+        311,
+        11182,
+        622,
+        33,
+        310,
+        293,
+        341,
+        307,
+        577,
+        309,
+        1985,
+        13,
+        51364
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.1921997219324112,
+      "compression_ratio": 1.3642383813858032,
+      "no_speech_prob": 0.1749427318572998
+    }
+  ],
+  "words": [
+    {
+      "word": "VenueBot",
+      "start": 0,
+      "end": 0.6000000238418579
+    },
+    {
+      "word": "isn't",
+      "start": 0.6000000238418579,
+      "end": 0.9599999785423279
+    },
+    {
+      "word": "a",
+      "start": 0.9599999785423279,
+      "end": 1.2599999904632568
+    },
+    {
+      "word": "chatbot",
+      "start": 1.2599999904632568,
+      "end": 1.559999942779541
+    },
+    {
+      "word": "and",
+      "start": 1.559999942779541,
+      "end": 2.0799999237060547
+    },
+    {
+      "word": "it",
+      "start": 2.0799999237060547,
+      "end": 2.259999990463257
+    },
+    {
+      "word": "isn't",
+      "start": 2.259999990463257,
+      "end": 2.380000114440918
+    },
+    {
+      "word": "just",
+      "start": 2.380000114440918,
+      "end": 2.640000104904175
+    },
+    {
+      "word": "another",
+      "start": 2.640000104904175,
+      "end": 2.9200000762939453
+    },
+    {
+      "word": "CRM",
+      "start": 2.9200000762939453,
+      "end": 3.640000104904175
+    },
+    {
+      "word": "It's",
+      "start": 5.159999847412109,
+      "end": 5.21999979019165
+    },
+    {
+      "word": "a",
+      "start": 5.21999979019165,
+      "end": 5.420000076293945
+    },
+    {
+      "word": "complete",
+      "start": 5.420000076293945,
+      "end": 5.739999771118164
+    },
+    {
+      "word": "enquiry",
+      "start": 5.739999771118164,
+      "end": 6.300000190734863
+    },
+    {
+      "word": "to",
+      "start": 6.300000190734863,
+      "end": 6.539999961853027
+    },
+    {
+      "word": "booking",
+      "start": 6.539999961853027,
+      "end": 6.860000133514404
+    },
+    {
+      "word": "system",
+      "start": 6.860000133514404,
+      "end": 7.260000228881836
+    },
+    {
+      "word": "built",
+      "start": 7.260000228881836,
+      "end": 7.619999885559082
+    },
+    {
+      "word": "specifically",
+      "start": 7.619999885559082,
+      "end": 8.199999809265137
+    },
+    {
+      "word": "for",
+      "start": 8.199999809265137,
+      "end": 8.539999961853027
+    },
+    {
+      "word": "wedding",
+      "start": 8.539999961853027,
+      "end": 8.739999771118164
+    },
+    {
+      "word": "venues",
+      "start": 8.739999771118164,
+      "end": 9.119999885559082
+    },
+    {
+      "word": "Everything",
+      "start": 10.739999771118164,
+      "end": 10.9399995803833
+    },
+    {
+      "word": "is",
+      "start": 10.9399995803833,
+      "end": 11.180000305175781
+    },
+    {
+      "word": "organised",
+      "start": 11.180000305175781,
+      "end": 11.539999961853027
+    },
+    {
+      "word": "around",
+      "start": 11.539999961853027,
+      "end": 11.84000015258789
+    },
+    {
+      "word": "three",
+      "start": 11.84000015258789,
+      "end": 12.199999809265137
+    },
+    {
+      "word": "connected",
+      "start": 12.199999809265137,
+      "end": 12.65999984741211
+    },
+    {
+      "word": "modules",
+      "start": 12.65999984741211,
+      "end": 13.0600004196167
+    },
+    {
+      "word": "Studio",
+      "start": 13.65999984741211,
+      "end": 13.760000228881836
+    },
+    {
+      "word": "AI",
+      "start": 13.760000228881836,
+      "end": 14.15999984741211
+    },
+    {
+      "word": "Convert",
+      "start": 16.040000915527344,
+      "end": 16.079999923706055
+    },
+    {
+      "word": "and",
+      "start": 16.079999923706055,
+      "end": 17.799999237060547
+    },
+    {
+      "word": "Care",
+      "start": 17.799999237060547,
+      "end": 18.299999237060547
+    },
+    {
+      "word": "Studio",
+      "start": 20.239999771118164,
+      "end": 20.399999618530273
+    },
+    {
+      "word": "AI",
+      "start": 20.399999618530273,
+      "end": 20.719999313354492
+    },
+    {
+      "word": "helps",
+      "start": 20.719999313354492,
+      "end": 21
+    },
+    {
+      "word": "you",
+      "start": 21,
+      "end": 21.260000228881836
+    },
+    {
+      "word": "generate",
+      "start": 21.260000228881836,
+      "end": 21.520000457763672
+    },
+    {
+      "word": "more",
+      "start": 21.520000457763672,
+      "end": 21.899999618530273
+    },
+    {
+      "word": "enquiries",
+      "start": 21.899999618530273,
+      "end": 22.34000015258789
+    },
+    {
+      "word": "by",
+      "start": 22.34000015258789,
+      "end": 23.18000030517578
+    },
+    {
+      "word": "analysing",
+      "start": 23.18000030517578,
+      "end": 23.65999984741211
+    },
+    {
+      "word": "your",
+      "start": 23.65999984741211,
+      "end": 23.899999618530273
+    },
+    {
+      "word": "website",
+      "start": 23.899999618530273,
+      "end": 24.440000534057617
+    },
+    {
+      "word": "benchmarking",
+      "start": 25,
+      "end": 25.520000457763672
+    },
+    {
+      "word": "competitors",
+      "start": 25.520000457763672,
+      "end": 26.079999923706055
+    },
+    {
+      "word": "identifying",
+      "start": 26.079999923706055,
+      "end": 27.100000381469727
+    },
+    {
+      "word": "conversion",
+      "start": 27.100000381469727,
+      "end": 27.719999313354492
+    },
+    {
+      "word": "gaps",
+      "start": 27.719999313354492,
+      "end": 28.059999465942383
+    },
+    {
+      "word": "and",
+      "start": 28.059999465942383,
+      "end": 28.600000381469727
+    },
+    {
+      "word": "showing",
+      "start": 28.600000381469727,
+      "end": 28.799999237060547
+    },
+    {
+      "word": "exactly",
+      "start": 28.799999237060547,
+      "end": 29.34000015258789
+    },
+    {
+      "word": "where",
+      "start": 29.34000015258789,
+      "end": 29.68000030517578
+    },
+    {
+      "word": "opportunities",
+      "start": 29.68000030517578,
+      "end": 30.15999984741211
+    },
+    {
+      "word": "are",
+      "start": 30.15999984741211,
+      "end": 30.559999465942383
+    },
+    {
+      "word": "being",
+      "start": 30.559999465942383,
+      "end": 30.799999237060547
+    },
+    {
+      "word": "lost",
+      "start": 30.799999237060547,
+      "end": 31.15999984741211
+    },
+    {
+      "word": "Convert",
+      "start": 33.2400016784668,
+      "end": 33.2400016784668
+    },
+    {
+      "word": "helps",
+      "start": 33.2400016784668,
+      "end": 33.560001373291016
+    },
+    {
+      "word": "you",
+      "start": 33.560001373291016,
+      "end": 33.779998779296875
+    },
+    {
+      "word": "turn",
+      "start": 33.779998779296875,
+      "end": 33.959999084472656
+    },
+    {
+      "word": "more",
+      "start": 33.959999084472656,
+      "end": 34.34000015258789
+    },
+    {
+      "word": "enquiries",
+      "start": 34.34000015258789,
+      "end": 34.720001220703125
+    },
+    {
+      "word": "into",
+      "start": 34.720001220703125,
+      "end": 35.13999938964844
+    },
+    {
+      "word": "tours",
+      "start": 35.13999938964844,
+      "end": 35.63999938964844
+    },
+    {
+      "word": "responding",
+      "start": 37.02000045776367,
+      "end": 37.02000045776367
+    },
+    {
+      "word": "instantly",
+      "start": 37.02000045776367,
+      "end": 37.779998779296875
+    },
+    {
+      "word": "nurturing",
+      "start": 38.880001068115234,
+      "end": 38.880001068115234
+    },
+    {
+      "word": "couples",
+      "start": 38.880001068115234,
+      "end": 39.41999816894531
+    },
+    {
+      "word": "automatically",
+      "start": 39.41999816894531,
+      "end": 40.15999984741211
+    },
+    {
+      "word": "answering",
+      "start": 41.279998779296875,
+      "end": 41.279998779296875
+    },
+    {
+      "word": "questions",
+      "start": 41.279998779296875,
+      "end": 41.91999816894531
+    },
+    {
+      "word": "day",
+      "start": 41.91999816894531,
+      "end": 42.29999923706055
+    },
+    {
+      "word": "and",
+      "start": 42.29999923706055,
+      "end": 42.58000183105469
+    },
+    {
+      "word": "night",
+      "start": 42.58000183105469,
+      "end": 42.79999923706055
+    },
+    {
+      "word": "and",
+      "start": 42.79999923706055,
+      "end": 43.380001068115234
+    },
+    {
+      "word": "making",
+      "start": 43.380001068115234,
+      "end": 43.619998931884766
+    },
+    {
+      "word": "sure",
+      "start": 43.619998931884766,
+      "end": 44.040000915527344
+    },
+    {
+      "word": "no",
+      "start": 44.040000915527344,
+      "end": 44.400001525878906
+    },
+    {
+      "word": "enquiry",
+      "start": 44.400001525878906,
+      "end": 44.81999969482422
+    },
+    {
+      "word": "goes",
+      "start": 44.81999969482422,
+      "end": 45.119998931884766
+    },
+    {
+      "word": "cold",
+      "start": 45.119998931884766,
+      "end": 45.619998931884766
+    },
+    {
+      "word": "Care",
+      "start": 47.619998931884766,
+      "end": 47.619998931884766
+    },
+    {
+      "word": "gives",
+      "start": 47.619998931884766,
+      "end": 47.84000015258789
+    },
+    {
+      "word": "your",
+      "start": 47.84000015258789,
+      "end": 48.08000183105469
+    },
+    {
+      "word": "team",
+      "start": 48.08000183105469,
+      "end": 48.29999923706055
+    },
+    {
+      "word": "one",
+      "start": 48.29999923706055,
+      "end": 48.7400016784668
+    },
+    {
+      "word": "place",
+      "start": 48.7400016784668,
+      "end": 49.02000045776367
+    },
+    {
+      "word": "to",
+      "start": 49.02000045776367,
+      "end": 49.31999969482422
+    },
+    {
+      "word": "run",
+      "start": 49.31999969482422,
+      "end": 49.41999816894531
+    },
+    {
+      "word": "the",
+      "start": 49.41999816894531,
+      "end": 49.619998931884766
+    },
+    {
+      "word": "entire",
+      "start": 49.619998931884766,
+      "end": 50.13999938964844
+    },
+    {
+      "word": "venue",
+      "start": 50.13999938964844,
+      "end": 50.47999954223633
+    },
+    {
+      "word": "operation",
+      "start": 50.47999954223633,
+      "end": 51.18000030517578
+    },
+    {
+      "word": "Conversations",
+      "start": 51.18000030517578,
+      "end": 52.68000030517578
+    },
+    {
+      "word": "bookings",
+      "start": 53.52000045776367,
+      "end": 53.52000045776367
+    },
+    {
+      "word": "automations",
+      "start": 54.15999984741211,
+      "end": 54.70000076293945
+    },
+    {
+      "word": "reporting",
+      "start": 55.70000076293945,
+      "end": 55.70000076293945
+    },
+    {
+      "word": "marketing",
+      "start": 56.619998931884766,
+      "end": 56.619998931884766
+    },
+    {
+      "word": "and",
+      "start": 56.619998931884766,
+      "end": 57.380001068115234
+    },
+    {
+      "word": "AI",
+      "start": 57.380001068115234,
+      "end": 57.900001525878906
+    },
+    {
+      "word": "powered",
+      "start": 57.900001525878906,
+      "end": 58.2400016784668
+    },
+    {
+      "word": "assistance",
+      "start": 58.2400016784668,
+      "end": 59.02000045776367
+    },
+    {
+      "word": "Generate",
+      "start": 61.540000915527344,
+      "end": 61.779998779296875
+    },
+    {
+      "word": "more",
+      "start": 61.779998779296875,
+      "end": 62.08000183105469
+    },
+    {
+      "word": "enquiries",
+      "start": 62.08000183105469,
+      "end": 62.7599983215332
+    },
+    {
+      "word": "convert",
+      "start": 63.65999984741211,
+      "end": 63.65999984741211
+    },
+    {
+      "word": "more",
+      "start": 63.65999984741211,
+      "end": 64.04000091552734
+    },
+    {
+      "word": "couples",
+      "start": 64.04000091552734,
+      "end": 64.45999908447266
+    },
+    {
+      "word": "manage",
+      "start": 65.16000366210938,
+      "end": 65.18000030517578
+    },
+    {
+      "word": "everything",
+      "start": 65.18000030517578,
+      "end": 65.77999877929688
+    },
+    {
+      "word": "in",
+      "start": 65.77999877929688,
+      "end": 66.04000091552734
+    },
+    {
+      "word": "one",
+      "start": 66.04000091552734,
+      "end": 66.23999786376953
+    },
+    {
+      "word": "place",
+      "start": 66.23999786376953,
+      "end": 66.5999984741211
+    },
+    {
+      "word": "That's",
+      "start": 67.77999877929688,
+      "end": 68.81999969482422
+    },
+    {
+      "word": "VenueBot",
+      "start": 68.81999969482422,
+      "end": 69.33999633789062
+    },
+    {
+      "word": "and",
+      "start": 69.33999633789062,
+      "end": 70.13999938964844
+    },
+    {
+      "word": "this",
+      "start": 70.13999938964844,
+      "end": 70.33999633789062
+    },
+    {
+      "word": "is",
+      "start": 70.33999633789062,
+      "end": 70.55999755859375
+    },
+    {
+      "word": "how",
+      "start": 70.55999755859375,
+      "end": 70.63999938964844
+    },
+    {
+      "word": "it",
+      "start": 70.63999938964844,
+      "end": 70.83999633789062
+    },
+    {
+      "word": "works",
+      "start": 70.83999633789062,
+      "end": 71.19999694824219
+    }
+  ],
+  "usage": {
+    "type": "duration",
+    "seconds": 72
+  }
+}

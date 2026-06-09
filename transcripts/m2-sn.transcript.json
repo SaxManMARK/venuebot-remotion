@@ -1,0 +1,808 @@
+{
+  "task": "transcribe",
+  "language": "en",
+  "duration": 70.12,
+  "text": "Every message gives couples the opportunity to ask questions, just as they would with a member of your team. The difference is they don't need to wait for office hours. Questions are answered instantly, day or night, without the enquiry being left waiting. Whether they're asking about guest numbers, accommodation, availability, pricing, or whether the family dog can be part of the day. The conversation keeps moving. And when a couple is ready to take the next step, VenueBot doesn't just suggest a tour. It books one. Convert integrates directly with Google Calendar, Outlook, HubSpot, and your existing wedding operational systems. So the moment a couple chooses a time, the tour is in your diary. The couple gets a confirmation. Your team gets a notification. No back and forth. No double bookings. No couples slipping through because nobody was free to take the call.",
+  "words": [
+    {
+      "word": "Every",
+      "start": 0.0,
+      "end": 0.34
+    },
+    {
+      "word": "message",
+      "start": 0.34,
+      "end": 0.72
+    },
+    {
+      "word": "gives",
+      "start": 0.72,
+      "end": 1.18
+    },
+    {
+      "word": "couples",
+      "start": 1.18,
+      "end": 1.58
+    },
+    {
+      "word": "the",
+      "start": 1.58,
+      "end": 1.82
+    },
+    {
+      "word": "opportunity",
+      "start": 1.82,
+      "end": 2.3
+    },
+    {
+      "word": "to",
+      "start": 2.3,
+      "end": 2.7
+    },
+    {
+      "word": "ask",
+      "start": 2.7,
+      "end": 2.96
+    },
+    {
+      "word": "questions,",
+      "start": 2.96,
+      "end": 3.52
+    },
+    {
+      "word": "just",
+      "start": 3.84,
+      "end": 4.22
+    },
+    {
+      "word": "as",
+      "start": 4.22,
+      "end": 4.4
+    },
+    {
+      "word": "they",
+      "start": 4.4,
+      "end": 4.58
+    },
+    {
+      "word": "would",
+      "start": 4.58,
+      "end": 4.8
+    },
+    {
+      "word": "with",
+      "start": 4.8,
+      "end": 5.0
+    },
+    {
+      "word": "a",
+      "start": 5.0,
+      "end": 5.1
+    },
+    {
+      "word": "member",
+      "start": 5.1,
+      "end": 5.3
+    },
+    {
+      "word": "of",
+      "start": 5.3,
+      "end": 5.5
+    },
+    {
+      "word": "your",
+      "start": 5.5,
+      "end": 5.62
+    },
+    {
+      "word": "team.",
+      "start": 5.62,
+      "end": 6.06
+    },
+    {
+      "word": "The",
+      "start": 7.78,
+      "end": 8.46
+    },
+    {
+      "word": "difference",
+      "start": 8.46,
+      "end": 8.76
+    },
+    {
+      "word": "is",
+      "start": 8.76,
+      "end": 9.16
+    },
+    {
+      "word": "they",
+      "start": 9.16,
+      "end": 9.4
+    },
+    {
+      "word": "don't",
+      "start": 9.4,
+      "end": 9.68
+    },
+    {
+      "word": "need",
+      "start": 9.68,
+      "end": 9.84
+    },
+    {
+      "word": "to",
+      "start": 9.84,
+      "end": 10.0
+    },
+    {
+      "word": "wait",
+      "start": 10.0,
+      "end": 10.26
+    },
+    {
+      "word": "for",
+      "start": 10.26,
+      "end": 10.46
+    },
+    {
+      "word": "office",
+      "start": 10.46,
+      "end": 10.8
+    },
+    {
+      "word": "hours.",
+      "start": 10.8,
+      "end": 11.2
+    },
+    {
+      "word": "Questions",
+      "start": 11.52,
+      "end": 12.12
+    },
+    {
+      "word": "are",
+      "start": 12.12,
+      "end": 12.54
+    },
+    {
+      "word": "answered",
+      "start": 12.54,
+      "end": 13.06
+    },
+    {
+      "word": "instantly,",
+      "start": 13.06,
+      "end": 13.8
+    },
+    {
+      "word": "day",
+      "start": 14.2,
+      "end": 14.66
+    },
+    {
+      "word": "or",
+      "start": 14.66,
+      "end": 15.14
+    },
+    {
+      "word": "night,",
+      "start": 15.14,
+      "end": 15.54
+    },
+    {
+      "word": "without",
+      "start": 16.14,
+      "end": 16.32
+    },
+    {
+      "word": "the",
+      "start": 16.32,
+      "end": 16.58
+    },
+    {
+      "word": "enquiry",
+      "start": 16.58,
+      "end": 17.12
+    },
+    {
+      "word": "being",
+      "start": 17.12,
+      "end": 17.44
+    },
+    {
+      "word": "left",
+      "start": 17.44,
+      "end": 17.72
+    },
+    {
+      "word": "waiting.",
+      "start": 17.72,
+      "end": 18.22
+    },
+    {
+      "word": "Whether",
+      "start": 19.12,
+      "end": 19.76
+    },
+    {
+      "word": "they're",
+      "start": 19.76,
+      "end": 20.02
+    },
+    {
+      "word": "asking",
+      "start": 20.02,
+      "end": 20.34
+    },
+    {
+      "word": "about",
+      "start": 20.34,
+      "end": 20.64
+    },
+    {
+      "word": "guest",
+      "start": 20.64,
+      "end": 20.92
+    },
+    {
+      "word": "numbers,",
+      "start": 20.92,
+      "end": 21.42
+    },
+    {
+      "word": "accommodation,",
+      "start": 21.82,
+      "end": 23.02
+    },
+    {
+      "word": "availability,",
+      "start": 23.86,
+      "end": 24.84
+    },
+    {
+      "word": "pricing,",
+      "start": 25.78,
+      "end": 26.54
+    },
+    {
+      "word": "or",
+      "start": 26.78,
+      "end": 27.88
+    },
+    {
+      "word": "whether",
+      "start": 27.88,
+      "end": 28.1
+    },
+    {
+      "word": "the",
+      "start": 28.1,
+      "end": 28.3
+    },
+    {
+      "word": "family",
+      "start": 28.3,
+      "end": 28.68
+    },
+    {
+      "word": "dog",
+      "start": 28.68,
+      "end": 28.98
+    },
+    {
+      "word": "can",
+      "start": 28.98,
+      "end": 29.18
+    },
+    {
+      "word": "be",
+      "start": 29.18,
+      "end": 29.32
+    },
+    {
+      "word": "part",
+      "start": 29.32,
+      "end": 29.58
+    },
+    {
+      "word": "of",
+      "start": 29.58,
+      "end": 29.7
+    },
+    {
+      "word": "the",
+      "start": 29.7,
+      "end": 29.82
+    },
+    {
+      "word": "day.",
+      "start": 29.82,
+      "end": 30.12
+    },
+    {
+      "word": "The",
+      "start": 31.9,
+      "end": 32.54
+    },
+    {
+      "word": "conversation",
+      "start": 32.54,
+      "end": 33.12
+    },
+    {
+      "word": "keeps",
+      "start": 33.12,
+      "end": 33.54
+    },
+    {
+      "word": "moving.",
+      "start": 33.54,
+      "end": 33.96
+    },
+    {
+      "word": "And",
+      "start": 35.4,
+      "end": 36.04
+    },
+    {
+      "word": "when",
+      "start": 36.04,
+      "end": 36.18
+    },
+    {
+      "word": "a",
+      "start": 36.18,
+      "end": 36.32
+    },
+    {
+      "word": "couple",
+      "start": 36.32,
+      "end": 36.54
+    },
+    {
+      "word": "is",
+      "start": 36.54,
+      "end": 36.74
+    },
+    {
+      "word": "ready",
+      "start": 36.74,
+      "end": 36.98
+    },
+    {
+      "word": "to",
+      "start": 36.98,
+      "end": 37.18
+    },
+    {
+      "word": "take",
+      "start": 37.18,
+      "end": 37.38
+    },
+    {
+      "word": "the",
+      "start": 37.38,
+      "end": 37.52
+    },
+    {
+      "word": "next",
+      "start": 37.52,
+      "end": 37.76
+    },
+    {
+      "word": "step,",
+      "start": 37.76,
+      "end": 38.18
+    },
+    {
+      "word": "VenueBot",
+      "start": 38.58,
+      "end": 39.14
+    },
+    {
+      "word": "doesn't",
+      "start": 39.14,
+      "end": 39.5
+    },
+    {
+      "word": "just",
+      "start": 39.5,
+      "end": 39.68
+    },
+    {
+      "word": "suggest",
+      "start": 39.68,
+      "end": 40.02
+    },
+    {
+      "word": "a",
+      "start": 40.02,
+      "end": 40.24
+    },
+    {
+      "word": "tour.",
+      "start": 40.24,
+      "end": 40.48
+    },
+    {
+      "word": "It",
+      "start": 42.86,
+      "end": 43.5
+    },
+    {
+      "word": "books",
+      "start": 43.5,
+      "end": 43.8
+    },
+    {
+      "word": "one.",
+      "start": 43.8,
+      "end": 44.14
+    },
+    {
+      "word": "Convert",
+      "start": 47.14,
+      "end": 47.74
+    },
+    {
+      "word": "integrates",
+      "start": 47.74,
+      "end": 48.34
+    },
+    {
+      "word": "directly",
+      "start": 48.34,
+      "end": 48.84
+    },
+    {
+      "word": "with",
+      "start": 48.84,
+      "end": 49.12
+    },
+    {
+      "word": "Google",
+      "start": 49.12,
+      "end": 49.44
+    },
+    {
+      "word": "Calendar,",
+      "start": 49.44,
+      "end": 49.94
+    },
+    {
+      "word": "Outlook,",
+      "start": 50.34,
+      "end": 50.82
+    },
+    {
+      "word": "HubSpot,",
+      "start": 51.06,
+      "end": 51.62
+    },
+    {
+      "word": "and",
+      "start": 51.74,
+      "end": 52.04
+    },
+    {
+      "word": "your",
+      "start": 52.04,
+      "end": 52.22
+    },
+    {
+      "word": "existing",
+      "start": 52.22,
+      "end": 52.66
+    },
+    {
+      "word": "wedding",
+      "start": 52.66,
+      "end": 53.02
+    },
+    {
+      "word": "operational",
+      "start": 53.02,
+      "end": 53.6
+    },
+    {
+      "word": "systems.",
+      "start": 53.6,
+      "end": 54.24
+    },
+    {
+      "word": "So",
+      "start": 54.44,
+      "end": 54.98
+    },
+    {
+      "word": "the",
+      "start": 54.98,
+      "end": 55.1
+    },
+    {
+      "word": "moment",
+      "start": 55.1,
+      "end": 55.36
+    },
+    {
+      "word": "a",
+      "start": 55.36,
+      "end": 55.58
+    },
+    {
+      "word": "couple",
+      "start": 55.58,
+      "end": 55.76
+    },
+    {
+      "word": "chooses",
+      "start": 55.76,
+      "end": 56.14
+    },
+    {
+      "word": "a",
+      "start": 56.14,
+      "end": 56.4
+    },
+    {
+      "word": "time,",
+      "start": 56.4,
+      "end": 56.74
+    },
+    {
+      "word": "the",
+      "start": 56.96,
+      "end": 57.16
+    },
+    {
+      "word": "tour",
+      "start": 57.16,
+      "end": 57.4
+    },
+    {
+      "word": "is",
+      "start": 57.4,
+      "end": 57.6
+    },
+    {
+      "word": "in",
+      "start": 57.6,
+      "end": 57.72
+    },
+    {
+      "word": "your",
+      "start": 57.72,
+      "end": 57.86
+    },
+    {
+      "word": "diary.",
+      "start": 57.86,
+      "end": 58.26
+    },
+    {
+      "word": "The",
+      "start": 58.54,
+      "end": 58.92
+    },
+    {
+      "word": "couple",
+      "start": 58.92,
+      "end": 59.14
+    },
+    {
+      "word": "gets",
+      "start": 59.14,
+      "end": 59.4
+    },
+    {
+      "word": "a",
+      "start": 59.4,
+      "end": 59.52
+    },
+    {
+      "word": "confirmation.",
+      "start": 59.52,
+      "end": 60.1
+    },
+    {
+      "word": "Your",
+      "start": 60.46,
+      "end": 60.82
+    },
+    {
+      "word": "team",
+      "start": 60.82,
+      "end": 61.12
+    },
+    {
+      "word": "gets",
+      "start": 61.12,
+      "end": 61.38
+    },
+    {
+      "word": "a",
+      "start": 61.38,
+      "end": 61.5
+    },
+    {
+      "word": "notification.",
+      "start": 61.5,
+      "end": 62.16
+    },
+    {
+      "word": "No",
+      "start": 63.58,
+      "end": 64.18
+    },
+    {
+      "word": "back",
+      "start": 64.18,
+      "end": 64.44
+    },
+    {
+      "word": "and",
+      "start": 64.44,
+      "end": 64.56
+    },
+    {
+      "word": "forth.",
+      "start": 64.56,
+      "end": 64.96
+    },
+    {
+      "word": "No",
+      "start": 65.22,
+      "end": 65.66
+    },
+    {
+      "word": "double",
+      "start": 65.66,
+      "end": 65.94
+    },
+    {
+      "word": "bookings.",
+      "start": 65.94,
+      "end": 66.52
+    },
+    {
+      "word": "No",
+      "start": 66.76,
+      "end": 67.14
+    },
+    {
+      "word": "couples",
+      "start": 67.14,
+      "end": 67.5
+    },
+    {
+      "word": "slipping",
+      "start": 67.5,
+      "end": 67.8
+    },
+    {
+      "word": "through",
+      "start": 67.8,
+      "end": 68.14
+    },
+    {
+      "word": "because",
+      "start": 68.14,
+      "end": 68.48
+    },
+    {
+      "word": "nobody",
+      "start": 68.48,
+      "end": 68.82
+    },
+    {
+      "word": "was",
+      "start": 68.82,
+      "end": 69.06
+    },
+    {
+      "word": "free",
+      "start": 69.06,
+      "end": 69.28
+    },
+    {
+      "word": "to",
+      "start": 69.28,
+      "end": 69.46
+    },
+    {
+      "word": "take",
+      "start": 69.46,
+      "end": 69.66
+    },
+    {
+      "word": "the",
+      "start": 69.66,
+      "end": 69.78
+    },
+    {
+      "word": "call.",
+      "start": 69.78,
+      "end": 70.12
+    }
+  ],
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.06,
+      "text": " Every message gives couples the opportunity to ask questions, just as they would with a member of your team."
+    },
+    {
+      "id": 1,
+      "start": 7.78,
+      "end": 18.22,
+      "text": " The difference is they don't need to wait for office hours. Questions are answered instantly, day or night, without the enquiry being left waiting."
+    },
+    {
+      "id": 2,
+      "start": 19.12,
+      "end": 30.12,
+      "text": " Whether they're asking about guest numbers, accommodation, availability, pricing, or whether the family dog can be part of the day."
+    },
+    {
+      "id": 3,
+      "start": 31.9,
+      "end": 33.96,
+      "text": " The conversation keeps moving."
+    },
+    {
+      "id": 4,
+      "start": 35.4,
+      "end": 40.48,
+      "text": " And when a couple is ready to take the next step, VenueBot doesn't just suggest a tour."
+    },
+    {
+      "id": 5,
+      "start": 42.86,
+      "end": 44.14,
+      "text": " It books one."
+    },
+    {
+      "id": 6,
+      "start": 47.14,
+      "end": 54.24,
+      "text": " Convert integrates directly with Google Calendar, Outlook, HubSpot, and your existing wedding operational systems."
+    },
+    {
+      "id": 7,
+      "start": 54.44,
+      "end": 58.26,
+      "text": " So the moment a couple chooses a time, the tour is in your diary."
+    },
+    {
+      "id": 8,
+      "start": 58.54,
+      "end": 60.1,
+      "text": " The couple gets a confirmation."
+    },
+    {
+      "id": 9,
+      "start": 60.46,
+      "end": 62.16,
+      "text": " Your team gets a notification."
+    },
+    {
+      "id": 10,
+      "start": 63.58,
+      "end": 64.96,
+      "text": " No back and forth."
+    },
+    {
+      "id": 11,
+      "start": 65.22,
+      "end": 66.52,
+      "text": " No double bookings."
+    },
+    {
+      "id": 12,
+      "start": 66.76,
+      "end": 70.12,
+      "text": " No couples slipping through because nobody was free to take the call."
+    }
+  ]
+}
