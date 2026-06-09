@@ -11,4 +11,12 @@ export const studioAiScenes = {
     contentDuration: seconds(53.4),
     duration: introSplashDurationFrames + seconds(53.4),
   },
+  m1Sd: {
+    id: "M1-SD",
+    title: "Venue Intelligence",
+    audio: "audio/studio-ai/m1-sd-transcript-tail.m4a",
+    // 42s = 40.28s transcript + clean silent tail (apad), matching the M1-SC approach.
+    contentDuration: seconds(42),
+    duration: seconds(42),
+  },
 } as const;

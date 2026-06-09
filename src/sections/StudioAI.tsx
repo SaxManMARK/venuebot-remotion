@@ -35,7 +35,7 @@ const clamp = {
 
 const ease = Easing.bezier(0.16, 1, 0.3, 1);
 
-const reveal = (frame: number, start: number, duration = seconds(0.8)) =>
+export const reveal = (frame: number, start: number, duration = seconds(0.8)) =>
   interpolate(frame, [start, start + duration], [0, 1], {
     ...clamp,
     easing: ease,
@@ -44,7 +44,7 @@ const reveal = (frame: number, start: number, duration = seconds(0.8)) =>
 const sceneOpacity = (frame: number, start: number, end: number) =>
   interpolate(frame, [start, start + seconds(1), end - seconds(1), end], [0, 1, 1, 0], clamp);
 
-const drift = (frame: number, offset = 0, amount = 8) => Math.sin((frame + offset) / 78) * amount;
+export const drift = (frame: number, offset = 0, amount = 8) => Math.sin((frame + offset) / 78) * amount;
 
 const transform3dCardEntrance = (progress: number, index: number) => {
   const eased = Easing.bezier(0.16, 1, 0.3, 1)(progress);
@@ -137,7 +137,7 @@ const lightMotes = Array.from({length: 26}).map((_, index) => ({
   twinkle: (index % 5) * 12,
 }));
 
-const LightMotes = () => {
+export const LightMotes = () => {
   const frame = useCurrentFrame();
 
   return (
@@ -175,7 +175,7 @@ const LightMotes = () => {
 
 // Editorial headline reveal — words fade + un-blur + slide up, staggered. Frame-driven off the
 // ambient (content-relative) frame with a `from` offset, matching the rest of this file.
-const HeadlineReveal = ({
+export const HeadlineReveal = ({
   children,
   from,
   style,

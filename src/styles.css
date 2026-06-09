@@ -5922,3 +5922,189 @@ body {
   pointer-events: none;
   transform: translateX(var(--card-sweep, -140%));
 }
+
+/* --- M1-SD Venue Intelligence (recording-led editorial frame) ----------- */
+
+.studio-sd-stage {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(255, 230, 180, 0.3), transparent 26%),
+    radial-gradient(circle at 84% 86%, rgba(124, 145, 138, 0.22), transparent 32%),
+    linear-gradient(135deg, rgba(255, 250, 243, 0.96), rgba(244, 240, 237, 0.82));
+}
+
+.studio-sd-plate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.16;
+  object-fit: cover;
+  filter: saturate(0.92) brightness(1.08);
+}
+
+.studio-sd-grade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.7), rgba(255, 250, 243, 0.16) 38%, rgba(81, 67, 76, 0.16));
+}
+
+.studio-sd-header {
+  position: absolute;
+  left: 104px;
+  top: 34px;
+  z-index: 8;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+
+.studio-sd-header span {
+  color: #d5a798;
+  font-size: 15px;
+  font-weight: 920;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.studio-sd-header strong {
+  color: var(--plum);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* The recording is the hero: a wide editorial screen card with a warm ring. */
+.studio-sd-screen {
+  position: absolute;
+  left: 50%;
+  top: 92px;
+  z-index: 6;
+  width: 1440px;
+  height: 935px;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #fffefb;
+  box-shadow:
+    0 46px 110px rgba(81, 67, 76, 0.34),
+    0 10px 26px rgba(81, 67, 76, 0.18);
+  transform: translateX(-50%);
+}
+
+.studio-sd-screen-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  box-shadow:
+    inset 0 0 0 1px rgba(181, 111, 82, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  pointer-events: none;
+}
+
+.studio-sd-chips {
+  position: absolute;
+  left: 50%;
+  bottom: 96px;
+  z-index: 9;
+  display: flex;
+  gap: 16px;
+  transform: translateX(-50%);
+}
+
+.studio-sd-chips span {
+  display: block;
+  padding: 14px 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 145, 138, 0.5);
+  color: #2f3f39;
+  font-size: 21px;
+  font-weight: 850;
+  letter-spacing: 0.03em;
+  background: linear-gradient(160deg, rgba(255, 254, 251, 0.96), rgba(214, 226, 221, 0.92));
+  box-shadow:
+    0 18px 40px rgba(47, 63, 57, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.studio-sd-stamp {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: radial-gradient(circle at 50% 48%, rgba(244, 240, 237, 0.88), rgba(244, 240, 237, 0.42) 56%, transparent 76%);
+}
+
+.studio-sd-stamp strong {
+  color: var(--plum);
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 1.04;
+}
+
+.studio-sd-closing {
+  position: absolute;
+  left: 50%;
+  bottom: 78px;
+  z-index: 9;
+  width: 1280px;
+  padding: 22px 38px;
+  border-radius: 18px;
+  text-align: center;
+  color: var(--plum);
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 760;
+  background: linear-gradient(160deg, rgba(255, 250, 243, 0.94), rgba(244, 240, 237, 0.86));
+  box-shadow: 0 22px 54px rgba(81, 67, 76, 0.24);
+  transform: translateX(-50%);
+}
+
+.studio-sd-chapter {
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at 22% 24%, rgba(255, 230, 180, 0.34), transparent 30%),
+    radial-gradient(circle at 80% 82%, rgba(124, 145, 138, 0.26), transparent 34%),
+    linear-gradient(135deg, rgba(255, 250, 243, 0.985), rgba(244, 240, 237, 0.97));
+}
+
+.studio-sd-chapter-kicker {
+  color: #b1572e;
+  font-size: 17px;
+  font-weight: 920;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.studio-sd-chapter h1 {
+  margin: 26px 0 0;
+  color: var(--plum);
+  font-size: 118px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.studio-sd-chapter-rule {
+  width: 280px;
+  height: 3px;
+  margin-top: 34px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, #7c918a, transparent);
+  transform-origin: center;
+}
+
+.studio-sd-chapter p {
+  margin: 30px 0 0;
+  color: rgba(81, 67, 76, 0.76);
+  font-size: 30px;
+  font-weight: 650;
+}

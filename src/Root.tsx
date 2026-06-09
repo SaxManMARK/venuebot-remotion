@@ -2,6 +2,7 @@ import {Composition} from "remotion";
 import {Intro} from "./sections/Intro";
 import {ChapterCard} from "./sections/ChapterCard";
 import {StudioAI} from "./sections/StudioAI";
+import {StudioAIVenueIntelligence} from "./sections/StudioAIVenueIntelligence";
 import {
   chapterCardDurationFrames,
   introDurationFrames,
@@ -43,6 +44,14 @@ export const Root = () => {
         id="StudioAI-M1-SC"
         component={StudioAI}
         durationInFrames={studioAiScenes.m1Sc.duration}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+      />
+      <Composition
+        id="StudioAI-M1-SD"
+        component={StudioAIVenueIntelligence}
+        durationInFrames={studioAiScenes.m1Sd.duration}
         fps={videoFps}
         width={videoWidth}
         height={videoHeight}
