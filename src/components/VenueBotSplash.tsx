@@ -52,7 +52,7 @@ const fragments = Array.from({length: 56}).map((_, index) => {
   };
 });
 
-export const VenueBotSplash = () => {
+export const VenueBotSplash = ({showStudioAi = false}: {showStudioAi?: boolean}) => {
   const frame = useCurrentFrame();
   const exitStart = seconds(3.05);
   const exitEnd = seconds(4);
@@ -89,6 +89,12 @@ export const VenueBotSplash = () => {
           style={{opacity: 0}}
         >
           <Img className="splash-logo" src={staticFile("brand/venuebot-logo-agave.png")} />
+          {showStudioAi ? (
+            <Img
+              className="splash-studio-ai-logo"
+              src={staticFile("brand/venuebot-studio-ai-logo.png")}
+            />
+          ) : null}
         </Animated>
       </div>
       <div

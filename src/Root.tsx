@@ -1,6 +1,7 @@
 import {Composition} from "remotion";
 import {Intro} from "./sections/Intro";
 import {ChapterCard} from "./sections/ChapterCard";
+import {StudioAI} from "./sections/StudioAI";
 import {
   chapterCardDurationFrames,
   introDurationFrames,
@@ -8,6 +9,7 @@ import {
   videoHeight,
   videoWidth,
 } from "./data/video";
+import {studioAiScenes} from "./data/studioAi";
 import "./styles.css";
 
 export const Root = () => {
@@ -31,17 +33,19 @@ export const Root = () => {
       />
       <Composition
         id="StudioAI"
-        component={ChapterCard}
-        durationInFrames={chapterCardDurationFrames}
+        component={StudioAI}
+        durationInFrames={studioAiScenes.m1Sc.duration}
         fps={videoFps}
         width={videoWidth}
         height={videoHeight}
-        defaultProps={{
-          sectionNumber: "2",
-          title: "Studio AI",
-          description: "The intelligence layer that learns the venue, audits the marketing, and helps create content modern couples respond to.",
-          tone: "intelligence",
-        }}
+      />
+      <Composition
+        id="StudioAI-M1-SC"
+        component={StudioAI}
+        durationInFrames={studioAiScenes.m1Sc.duration}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
       />
       <Composition
         id="Convert"

@@ -1,0 +1,801 @@
+{
+  "task": "transcribe",
+  "language": "english",
+  "duration": 50.75,
+  "text": "Studio AI is built on more than 120 sources of wedding industry research, customer behaviour data, conversion best practice and real-world venue performance. Drawing on insights from Bridebook, Hitched, Google, Salesforce, HubSpot, Harvard Business Review and our own wedding venue benchmark research. Because better results don't come from guesswork, they come from understanding what today's couples actually respond to. Studio AI analyses what's working, identifies what's not, and helps you improve every stage of the couple journey. From first impression, to first enquiry, to booked tour, six AI-powered tools. One goal, more venue tours, more bookings, more weddings.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0,
+      "end": 6.880000114440918,
+      "text": " Studio AI is built on more than 120 sources of wedding industry research, customer behaviour",
+      "tokens": [
+        50364,
+        13500,
+        7318,
+        307,
+        3094,
+        322,
+        544,
+        813,
+        10411,
+        7139,
+        295,
+        8523,
+        3518,
+        2132,
+        11,
+        5474,
+        17229,
+        50708
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.27228930592536926,
+      "compression_ratio": 1.5057470798492432,
+      "no_speech_prob": 0.013388415798544884
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 6.880000114440918,
+      "end": 11.640000343322754,
+      "text": " data, conversion best practice and real-world venue performance.",
+      "tokens": [
+        50708,
+        1412,
+        11,
+        14298,
+        1151,
+        3124,
+        293,
+        957,
+        12,
+        13217,
+        21645,
+        3389,
+        13,
+        51020
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.27228930592536926,
+      "compression_ratio": 1.5057470798492432,
+      "no_speech_prob": 0.013388415798544884
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 13.380000114440918,
+      "end": 19.399999618530273,
+      "text": " Drawing on insights from Bridebook, Hitched, Google, Salesforce, HubSpot, Harvard Business",
+      "tokens": [
+        51020,
+        20386,
+        278,
+        322,
+        14310,
+        490,
+        1603,
+        482,
+        2939,
+        11,
+        389,
+        41328,
+        11,
+        3329,
+        11,
+        40398,
+        11,
+        18986,
+        14014,
+        310,
+        11,
+        13378,
+        10715,
+        51328
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.27228930592536926,
+      "compression_ratio": 1.5057470798492432,
+      "no_speech_prob": 0.013388415798544884
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 19.399999618530273,
+      "end": 22.739999771118164,
+      "text": " Review and our own wedding venue benchmark research.",
+      "tokens": [
+        51328,
+        19954,
+        293,
+        527,
+        1065,
+        8523,
+        21645,
+        18927,
+        2132,
+        13,
+        51540
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.27228930592536926,
+      "compression_ratio": 1.5057470798492432,
+      "no_speech_prob": 0.013388415798544884
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 23.700000762939453,
+      "end": 28.239999771118164,
+      "text": " Because better results don't come from guesswork, they come from understanding what today's",
+      "tokens": [
+        51540,
+        1436,
+        1101,
+        3542,
+        500,
+        380,
+        808,
+        490,
+        2041,
+        1902,
+        11,
+        436,
+        808,
+        490,
+        3701,
+        437,
+        965,
+        311,
+        51776
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.27228930592536926,
+      "compression_ratio": 1.5057470798492432,
+      "no_speech_prob": 0.013388415798544884
+    },
+    {
+      "id": 5,
+      "seek": 2838,
+      "start": 28.3799991607666,
+      "end": 30.360000610351562,
+      "text": " couples actually respond to.",
+      "tokens": [
+        50364,
+        20368,
+        767,
+        4196,
+        281,
+        13,
+        50464
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.3407389521598816,
+      "compression_ratio": 1.4736841917037964,
+      "no_speech_prob": 0.5613625049591064
+    },
+    {
+      "id": 6,
+      "seek": 2838,
+      "start": 31,
+      "end": 37.15999984741211,
+      "text": " Studio AI analyses what's working, identifies what's not, and helps you improve every stage",
+      "tokens": [
+        50464,
+        13500,
+        7318,
+        37560,
+        437,
+        311,
+        1364,
+        11,
+        34597,
+        437,
+        311,
+        406,
+        11,
+        293,
+        3665,
+        291,
+        3470,
+        633,
+        3233,
+        50800
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.3407389521598816,
+      "compression_ratio": 1.4736841917037964,
+      "no_speech_prob": 0.5613625049591064
+    },
+    {
+      "id": 7,
+      "seek": 2838,
+      "start": 37.15999984741211,
+      "end": 38.13999938964844,
+      "text": " of the couple journey.",
+      "tokens": [
+        50800,
+        295,
+        264,
+        1916,
+        4671,
+        13,
+        50882
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.3407389521598816,
+      "compression_ratio": 1.4736841917037964,
+      "no_speech_prob": 0.5613625049591064
+    },
+    {
+      "id": 8,
+      "seek": 2838,
+      "start": 38.65999984741211,
+      "end": 45.459999084472656,
+      "text": " From first impression, to first enquiry, to booked tour, six AI-powered tools.",
+      "tokens": [
+        50882,
+        3358,
+        700,
+        9995,
+        11,
+        281,
+        700,
+        21304,
+        12781,
+        11,
+        281,
+        26735,
+        3512,
+        11,
+        2309,
+        7318,
+        12,
+        27178,
+        3873,
+        13,
+        51252
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.3407389521598816,
+      "compression_ratio": 1.4736841917037964,
+      "no_speech_prob": 0.5613625049591064
+    },
+    {
+      "id": 9,
+      "seek": 2838,
+      "start": 46.040000915527344,
+      "end": 50.18000030517578,
+      "text": " One goal, more venue tours, more bookings, more weddings.",
+      "tokens": [
+        51252,
+        1485,
+        3387,
+        11,
+        544,
+        21645,
+        22911,
+        11,
+        544,
+        1446,
+        1109,
+        11,
+        544,
+        39617,
+        13,
+        51468
+      ],
+      "temperature": 0,
+      "avg_logprob": -0.3407389521598816,
+      "compression_ratio": 1.4736841917037964,
+      "no_speech_prob": 0.5613625049591064
+    }
+  ],
+  "words": [
+    {
+      "word": "Studio",
+      "start": 0,
+      "end": 0.6399999856948853
+    },
+    {
+      "word": "AI",
+      "start": 0.6399999856948853,
+      "end": 1.059999942779541
+    },
+    {
+      "word": "is",
+      "start": 1.059999942779541,
+      "end": 1.4800000190734863
+    },
+    {
+      "word": "built",
+      "start": 1.4800000190734863,
+      "end": 1.600000023841858
+    },
+    {
+      "word": "on",
+      "start": 1.600000023841858,
+      "end": 1.8799999952316284
+    },
+    {
+      "word": "more",
+      "start": 1.8799999952316284,
+      "end": 2.059999942779541
+    },
+    {
+      "word": "than",
+      "start": 2.059999942779541,
+      "end": 2.240000009536743
+    },
+    {
+      "word": "120",
+      "start": 2.240000009536743,
+      "end": 3.359999895095825
+    },
+    {
+      "word": "sources",
+      "start": 3.359999895095825,
+      "end": 3.880000114440918
+    },
+    {
+      "word": "of",
+      "start": 3.880000114440918,
+      "end": 4.360000133514404
+    },
+    {
+      "word": "wedding",
+      "start": 4.360000133514404,
+      "end": 4.480000019073486
+    },
+    {
+      "word": "industry",
+      "start": 4.480000019073486,
+      "end": 4.920000076293945
+    },
+    {
+      "word": "research",
+      "start": 4.920000076293945,
+      "end": 5.599999904632568
+    },
+    {
+      "word": "customer",
+      "start": 6.400000095367432,
+      "end": 6.400000095367432
+    },
+    {
+      "word": "behaviour",
+      "start": 6.400000095367432,
+      "end": 6.880000114440918
+    },
+    {
+      "word": "data",
+      "start": 6.880000114440918,
+      "end": 7.400000095367432
+    },
+    {
+      "word": "conversion",
+      "start": 8.15999984741211,
+      "end": 8.300000190734863
+    },
+    {
+      "word": "best",
+      "start": 8.300000190734863,
+      "end": 8.680000305175781
+    },
+    {
+      "word": "practice",
+      "start": 8.680000305175781,
+      "end": 9.199999809265137
+    },
+    {
+      "word": "and",
+      "start": 9.199999809265137,
+      "end": 9.800000190734863
+    },
+    {
+      "word": "real",
+      "start": 9.800000190734863,
+      "end": 10.279999732971191
+    },
+    {
+      "word": "world",
+      "start": 10.279999732971191,
+      "end": 10.600000381469727
+    },
+    {
+      "word": "venue",
+      "start": 10.600000381469727,
+      "end": 10.9399995803833
+    },
+    {
+      "word": "performance",
+      "start": 10.9399995803833,
+      "end": 11.640000343322754
+    },
+    {
+      "word": "Drawing",
+      "start": 13.380000114440918,
+      "end": 13.479999542236328
+    },
+    {
+      "word": "on",
+      "start": 13.479999542236328,
+      "end": 13.859999656677246
+    },
+    {
+      "word": "insights",
+      "start": 13.859999656677246,
+      "end": 14.15999984741211
+    },
+    {
+      "word": "from",
+      "start": 14.15999984741211,
+      "end": 14.5
+    },
+    {
+      "word": "Bridebook",
+      "start": 14.5,
+      "end": 15.100000381469727
+    },
+    {
+      "word": "Hitched",
+      "start": 15.479999542236328,
+      "end": 15.680000305175781
+    },
+    {
+      "word": "Google",
+      "start": 15.779999732971191,
+      "end": 16.219999313354492
+    },
+    {
+      "word": "Salesforce",
+      "start": 16.6200008392334,
+      "end": 17.260000228881836
+    },
+    {
+      "word": "HubSpot",
+      "start": 17.799999237060547,
+      "end": 18.260000228881836
+    },
+    {
+      "word": "Harvard",
+      "start": 18.860000610351562,
+      "end": 18.959999084472656
+    },
+    {
+      "word": "Business",
+      "start": 18.959999084472656,
+      "end": 19.399999618530273
+    },
+    {
+      "word": "Review",
+      "start": 19.399999618530273,
+      "end": 19.780000686645508
+    },
+    {
+      "word": "and",
+      "start": 19.780000686645508,
+      "end": 20.31999969482422
+    },
+    {
+      "word": "our",
+      "start": 20.31999969482422,
+      "end": 20.579999923706055
+    },
+    {
+      "word": "own",
+      "start": 20.579999923706055,
+      "end": 21
+    },
+    {
+      "word": "wedding",
+      "start": 21,
+      "end": 21.139999389648438
+    },
+    {
+      "word": "venue",
+      "start": 21.139999389648438,
+      "end": 21.520000457763672
+    },
+    {
+      "word": "benchmark",
+      "start": 21.520000457763672,
+      "end": 22.079999923706055
+    },
+    {
+      "word": "research",
+      "start": 22.079999923706055,
+      "end": 22.739999771118164
+    },
+    {
+      "word": "Because",
+      "start": 23.700000762939453,
+      "end": 23.84000015258789
+    },
+    {
+      "word": "better",
+      "start": 23.84000015258789,
+      "end": 24.18000030517578
+    },
+    {
+      "word": "results",
+      "start": 24.18000030517578,
+      "end": 24.540000915527344
+    },
+    {
+      "word": "don't",
+      "start": 24.540000915527344,
+      "end": 24.8799991607666
+    },
+    {
+      "word": "come",
+      "start": 24.8799991607666,
+      "end": 25.1200008392334
+    },
+    {
+      "word": "from",
+      "start": 25.1200008392334,
+      "end": 25.420000076293945
+    },
+    {
+      "word": "guesswork",
+      "start": 25.420000076293945,
+      "end": 26
+    },
+    {
+      "word": "they",
+      "start": 26.360000610351562,
+      "end": 26.579999923706055
+    },
+    {
+      "word": "come",
+      "start": 26.579999923706055,
+      "end": 26.760000228881836
+    },
+    {
+      "word": "from",
+      "start": 26.760000228881836,
+      "end": 27.18000030517578
+    },
+    {
+      "word": "understanding",
+      "start": 27.18000030517578,
+      "end": 27.639999389648438
+    },
+    {
+      "word": "what",
+      "start": 27.639999389648438,
+      "end": 27.959999084472656
+    },
+    {
+      "word": "today's",
+      "start": 27.959999084472656,
+      "end": 28.3799991607666
+    },
+    {
+      "word": "couples",
+      "start": 28.3799991607666,
+      "end": 28.760000228881836
+    },
+    {
+      "word": "actually",
+      "start": 28.760000228881836,
+      "end": 29.299999237060547
+    },
+    {
+      "word": "respond",
+      "start": 29.299999237060547,
+      "end": 29.719999313354492
+    },
+    {
+      "word": "to",
+      "start": 29.719999313354492,
+      "end": 30.360000610351562
+    },
+    {
+      "word": "Studio",
+      "start": 31,
+      "end": 31
+    },
+    {
+      "word": "AI",
+      "start": 31,
+      "end": 31.34000015258789
+    },
+    {
+      "word": "analyses",
+      "start": 31.34000015258789,
+      "end": 31.940000534057617
+    },
+    {
+      "word": "what's",
+      "start": 31.940000534057617,
+      "end": 32.52000045776367
+    },
+    {
+      "word": "working",
+      "start": 32.52000045776367,
+      "end": 32.900001525878906
+    },
+    {
+      "word": "identifies",
+      "start": 33.79999923706055,
+      "end": 33.84000015258789
+    },
+    {
+      "word": "what's",
+      "start": 33.84000015258789,
+      "end": 34.5
+    },
+    {
+      "word": "not",
+      "start": 34.5,
+      "end": 34.79999923706055
+    },
+    {
+      "word": "and",
+      "start": 35.29999923706055,
+      "end": 35.459999084472656
+    },
+    {
+      "word": "helps",
+      "start": 35.459999084472656,
+      "end": 35.619998931884766
+    },
+    {
+      "word": "you",
+      "start": 35.619998931884766,
+      "end": 35.91999816894531
+    },
+    {
+      "word": "improve",
+      "start": 35.91999816894531,
+      "end": 36.220001220703125
+    },
+    {
+      "word": "every",
+      "start": 36.220001220703125,
+      "end": 36.79999923706055
+    },
+    {
+      "word": "stage",
+      "start": 36.79999923706055,
+      "end": 37.15999984741211
+    },
+    {
+      "word": "of",
+      "start": 37.15999984741211,
+      "end": 37.5
+    },
+    {
+      "word": "the",
+      "start": 37.5,
+      "end": 37.540000915527344
+    },
+    {
+      "word": "couple",
+      "start": 37.540000915527344,
+      "end": 37.720001220703125
+    },
+    {
+      "word": "journey",
+      "start": 37.720001220703125,
+      "end": 38.13999938964844
+    },
+    {
+      "word": "From",
+      "start": 38.65999984741211,
+      "end": 38.84000015258789
+    },
+    {
+      "word": "first",
+      "start": 38.84000015258789,
+      "end": 39.29999923706055
+    },
+    {
+      "word": "impression",
+      "start": 39.29999923706055,
+      "end": 39.7400016784668
+    },
+    {
+      "word": "to",
+      "start": 40.220001220703125,
+      "end": 40.47999954223633
+    },
+    {
+      "word": "first",
+      "start": 40.47999954223633,
+      "end": 40.939998626708984
+    },
+    {
+      "word": "enquiry",
+      "start": 40.939998626708984,
+      "end": 41.459999084472656
+    },
+    {
+      "word": "to",
+      "start": 42,
+      "end": 42.2599983215332
+    },
+    {
+      "word": "booked",
+      "start": 42.2599983215332,
+      "end": 42.459999084472656
+    },
+    {
+      "word": "tour",
+      "start": 42.459999084472656,
+      "end": 42.959999084472656
+    },
+    {
+      "word": "six",
+      "start": 43.619998931884766,
+      "end": 44.02000045776367
+    },
+    {
+      "word": "AI",
+      "start": 44.02000045776367,
+      "end": 44.47999954223633
+    },
+    {
+      "word": "powered",
+      "start": 44.47999954223633,
+      "end": 44.84000015258789
+    },
+    {
+      "word": "tools",
+      "start": 44.84000015258789,
+      "end": 45.459999084472656
+    },
+    {
+      "word": "One",
+      "start": 46.040000915527344,
+      "end": 46.2599983215332
+    },
+    {
+      "word": "goal",
+      "start": 46.2599983215332,
+      "end": 46.560001373291016
+    },
+    {
+      "word": "more",
+      "start": 46.959999084472656,
+      "end": 47.18000030517578
+    },
+    {
+      "word": "venue",
+      "start": 47.18000030517578,
+      "end": 47.58000183105469
+    },
+    {
+      "word": "tours",
+      "start": 47.58000183105469,
+      "end": 47.97999954223633
+    },
+    {
+      "word": "more",
+      "start": 48.47999954223633,
+      "end": 48.7599983215332
+    },
+    {
+      "word": "bookings",
+      "start": 48.7599983215332,
+      "end": 49.279998779296875
+    },
+    {
+      "word": "more",
+      "start": 49.70000076293945,
+      "end": 49.900001525878906
+    },
+    {
+      "word": "weddings",
+      "start": 49.900001525878906,
+      "end": 50.18000030517578
+    }
+  ],
+  "usage": {
+    "type": "duration",
+    "seconds": 51
+  }
+}
