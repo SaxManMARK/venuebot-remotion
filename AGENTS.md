@@ -6,6 +6,12 @@ Before planning, editing, rendering, or reviewing this Remotion project, read:
 
 That file contains the current source of truth for the VenueBot film structure, V3 intro script, cue timing, approved asset library, product-proof rules, and next-section guidance.
 
+For positioning, messaging, brand voice, and how to talk about VenueBot across all creative (films, website, ads, social, email, decks), read:
+
+`VENUEBOT_POSITIONING.md`
+
+It is mirrored at `.agents/product-marketing-context.md`, which the marketing skills load automatically.
+
 ## Non-Negotiables
 
 - VenueBot is SWAS: Software With A Service. Do not describe it as SaaS.
