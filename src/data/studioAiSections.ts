@@ -318,3 +318,144 @@ export const m1Sg: ModuleSectionConfig = {
     },
   ],
 };
+
+// M1-SH Website Analyser: single VO covering S01 through the close + the
+// Competitor Intel teaser. Audio trimmed at 179.4s (hallucination tail).
+export const m1Sh: ModuleSectionConfig = {
+  id: "M1-SH",
+  moduleNumber: "05",
+  title: "Website Analyser",
+  tagline: "A beautiful website isn't enough.",
+  audio: "audio/studio-ai/m1-sh-transcript-tail.m4a",
+  duration: 182,
+  chapterUntil: 3.2,
+  clips: [
+    // Dashboard -> Website Analyser nav under "designed to guide couples towards taking action"
+    {src: "proof/studio-ai/m1-sh-nav.mp4", at: 3.2, until: 10.7, zoom: 1.42},
+    // "reviews your website against proven conversion principles" (10.7-21.5)
+    {src: "proof/studio-ai/m1-sh-analyser.mp4", at: 10.7, until: 22.0, zoom: 1.42},
+    // "Simply enter your website address." (22.0-24.2)
+    {src: "proof/studio-ai/m1-sh-url.mp4", at: 22.0, until: 24.7, zoom: 1},
+    // "analyses your content, UX, lead capture..." (24.7-34.7)
+    {src: "proof/studio-ai/m1-sh-analyses.mp4", at: 24.7, until: 35.9, zoom: 1},
+    // "complete website performance score" (35.9-50.7) - hold on the 72 wheel
+    {src: "proof/studio-ai/m1-sh-scorehold.mp4", at: 35.9, until: 51.4, zoom: 1.42},
+    // "The Executive Summary highlights strengths, weaknesses..." (51.8-61.7)
+    {src: "proof/studio-ai/m1-sh-exec.mp4", at: 51.4, until: 63.0, zoom: 1},
+    // "prioritised by impact: quick wins, medium effort, strategic investments" (63.4-74.8)
+    {src: "proof/studio-ai/m1-sh-priorities.mp4", at: 63.0, until: 75.6, zoom: 1.2},
+    // "Not every issue carries the same weight" (76.1-86.4)
+    {src: "proof/studio-ai/m1-sh-weights.mp4", at: 75.6, until: 86.6, zoom: 1},
+    // "the areas that matter most" - six categories (86.8-104.8)
+    {src: "proof/studio-ai/m1-sh-areas.mp4", at: 86.6, until: 105.5, zoom: 1.45},
+    // "a complete picture" - performance radar (106.0-112.6)
+    {src: "proof/studio-ai/m1-sh-radar.mp4", at: 105.5, until: 112.6, zoom: 1.42},
+    // "Every score is backed by detailed analysis" (112.6-122.2)
+    {src: "proof/studio-ai/m1-sh-detail.mp4", at: 112.6, until: 123.2, zoom: 1},
+    // "where VenueBot's conversion systems could further strengthen" (123.4-139.8)
+    {src: "proof/studio-ai/m1-sh-venuebot.mp4", at: 123.2, until: 141.2, zoom: 1},
+    // (141.2-157.5: editorial - conversion problem + 30-50% stat)
+    // "once you can see those issues, you can start fixing them" (157.7-162.5)
+    {src: "proof/studio-ai/m1-sh-fixing.mp4", at: 157.5, until: 163.5, zoom: 1.42},
+    // (163.5-182: editorial close + Competitor Intel teaser)
+  ],
+  chipGroups: [
+    {
+      // "content, user experience, lead capture, pricing transparency, trust signals, technical performance"
+      from: 26.2,
+      until: 35.7,
+      chips: [
+        {label: "Content", at: 26.5},
+        {label: "User experience", at: 27.74},
+        {label: "Lead capture", at: 29.3},
+        {label: "Pricing transparency", at: 30.0},
+        {label: "Trust signals", at: 31.88},
+        {label: "Technical", at: 33.5},
+      ],
+    },
+    {
+      // "quick wins, medium effort improvements and strategic investments"
+      from: 66.5,
+      until: 74.6,
+      chips: [
+        {label: "Quick wins", at: 66.92},
+        {label: "Medium effort", at: 68.46},
+        {label: "Strategic investments", at: 70.38},
+      ],
+    },
+    {
+      // "first impressions, mobile experience, pricing transparency, lead capture, trust..."
+      from: 94.6,
+      until: 105.2,
+      chips: [
+        {label: "First impressions", at: 95.06},
+        {label: "Mobile experience", at: 96.06},
+        {label: "Pricing transparency", at: 98.48},
+        {label: "Lead capture", at: 100.2},
+        {label: "Trust & credibility", at: 101.2},
+        {label: "Enquiry journey", at: 103.5},
+      ],
+    },
+    {
+      // "what it found, why it matters, and exactly what should be improved"
+      from: 117.6,
+      until: 123.0,
+      chips: [
+        {label: "What it found", at: 118.02},
+        {label: "Why it matters", at: 119.26},
+        {label: "What to improve", at: 121.68},
+      ],
+    },
+  ],
+  stamps: [
+    {
+      // "not a generic SEO audit. A venue-specific conversion review" (39.8-46.2)
+      from: 39.5,
+      until: 47.0,
+      lines: [
+        {text: "Not a generic SEO audit.", at: 39.9, variant: "caps"},
+        {text: "A conversion review for venues.", at: 43.8, variant: "serif"},
+      ],
+    },
+    {
+      // "Most venues don't have a traffic problem. They have a conversion problem." (143.4-147.6)
+      from: 141.6,
+      until: 148.0,
+      mode: "full",
+      lines: [
+        {text: "Not a traffic problem.", at: 143.3, variant: "serif"},
+        {text: "A conversion problem.", at: 145.6, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "lose between 30 and 50% of potential enquiries" (148.0-156.4)
+      from: 148.0,
+      until: 157.3,
+      mode: "full",
+      lines: [
+        {text: "30–50%", at: 150.6, variant: "display"},
+        {text: "of enquiries lost before a couple ever gets in touch", at: 152.8, variant: "caps"},
+      ],
+    },
+    {
+      // "your website doesn't exist in isolation. Couples are comparing..." (163.8-170.7)
+      from: 163.7,
+      until: 172.0,
+      mode: "full",
+      lines: [
+        {text: "Your website doesn't exist in isolation.", at: 164.4, variant: "serif"},
+        {text: "Couples compare.", at: 168.0, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "Next, competitor intel..." (172.2-179.3)
+      from: 172.0,
+      until: 181.6,
+      mode: "full",
+      lines: [
+        {text: "Next: Competitor Intel.", at: 172.6, variant: "serif"},
+        {text: "Where does your venue really stand?", at: 175.8, variant: "caps"},
+      ],
+    },
+  ],
+};

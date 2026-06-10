@@ -36,7 +36,7 @@ export type StampLine = {
   text: string;
   at: number;
   /** Typographic voice for editorial variety. */
-  variant?: "serif" | "serif-italic" | "caps" | "thin-caps";
+  variant?: "serif" | "serif-italic" | "caps" | "thin-caps" | "display";
 };
 
 export type Stamp = {
@@ -70,8 +70,10 @@ const crossfade = 0.45;
 const lineStyle: Record<NonNullable<StampLine["variant"]>, CSSProperties> = {
   serif: {fontFamily: font.title, fontWeight: 800},
   "serif-italic": {fontFamily: font.title, fontWeight: 700, fontStyle: "italic"},
-  caps: {fontFamily: font.body, fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.14em", fontSize: "0.62em"},
-  "thin-caps": {fontFamily: font.body, fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.3em", fontSize: "0.56em"},
+  caps: {fontFamily: font.body, fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.14em", fontSize: "54px"},
+  "thin-caps": {fontFamily: font.body, fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.3em", fontSize: "50px"},
+  // Oversized stat punch, e.g. "30-50%"
+  display: {fontFamily: font.title, fontWeight: 900, fontSize: "190px", letterSpacing: "-0.01em"},
 };
 
 const ChipRow = ({group}: {group: ChipGroup}) => {
