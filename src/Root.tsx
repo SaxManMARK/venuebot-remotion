@@ -4,6 +4,7 @@ import {ChapterCard} from "./sections/ChapterCard";
 import {StudioAI} from "./sections/StudioAI";
 import {StudioAIVenueIntelligence} from "./sections/StudioAIVenueIntelligence";
 import {StudioModuleSection} from "./sections/StudioModuleSection";
+import {StudioAIFull, studioAiFullDuration} from "./sections/StudioAIFull";
 import {m1Se, m1Sf, m1Sg, m1Sh, m1Si} from "./data/studioAiSections";
 import {seconds} from "./data/video";
 import {
@@ -47,6 +48,14 @@ export const Root = () => {
         id="StudioAI-M1-SC"
         component={StudioAI}
         durationInFrames={studioAiScenes.m1Sc.duration}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+      />
+      <Composition
+        id="StudioAI-Full"
+        component={StudioAIFull}
+        durationInFrames={studioAiFullDuration}
         fps={videoFps}
         width={videoWidth}
         height={videoHeight}
