@@ -9,7 +9,10 @@ Start Studio (`npm run studio`) and open:
 - **`StudioAI-Full`** — the complete film, ~13m25s: splash → M1-SC overview → modules 01–06 → Studio AI end card → Convert teaser.
 - Individual sections for focused review: `StudioAI-M1-SC`, `-SD`, `-SE`, `-SF`, `-SG`, `-SH`, `-SI`.
 
-If audio/video won't play in Studio, fully quit and reopen Chrome first (⌘Q) — a wedged Chrome media process ate an evening once already.
+**Playback rules (learned the hard way):**
+- The **full film (`StudioAI-Full`) does not play reliably in Studio in any browser** — 20+ media tracks streamed through the dev server exceeds what a browser will sustain. Watch the full film as an MP4 render (`out/studio-ai-full-draft.mp4`, or re-render with the command at the bottom).
+- **Per-section comps play fine in Studio** — use them for scrubbing and giving notes.
+- Mark's main Chrome profile additionally strangles media loading generally (suspected Coupert/Privacy Shield extension); a clean-profile instance (`open -na "Google Chrome" --args --user-data-dir=/tmp/chrome-review`) sidesteps it. Incognito does NOT (same process).
 
 ## What was built (all sections recording-led, transcript-anchored)
 
