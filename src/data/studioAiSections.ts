@@ -459,3 +459,142 @@ export const m1Sh: ModuleSectionConfig = {
     },
   ],
 };
+
+// M1-SI Competitor Intel - the VO also carries the M1-SJ end card ("the
+// intelligence behind every booking") and the T1 transition into Convert.
+export const m1Si: ModuleSectionConfig = {
+  id: "M1-SI",
+  moduleNumber: "06",
+  title: "Competitor Intel",
+  tagline: "Stop making marketing decisions in the dark.",
+  audio: "audio/studio-ai/m1-si-transcript-tail.m4a",
+  duration: 141,
+  chapterUntil: 3.0,
+  clips: [
+    // (0-14.2: editorial open - shortlist / in the dark)
+    // "automatically discovers nearby wedding venues..." (14.4-28.5)
+    {src: "proof/studio-ai/m1-si-discover.mp4", at: 14.2, until: 29.5, zoom: 1.35},
+    // "Simply select the venues you want to track." (30.0-32.6)
+    {src: "proof/studio-ai/m1-si-select.mp4", at: 29.5, until: 33.5, zoom: 1},
+    // "the same scoring framework applied to your own venue" (33.5-40.2)
+    {src: "proof/studio-ai/m1-si-scoring.mp4", at: 33.5, until: 41.5, zoom: 1.42},
+    // "a like-for-like comparison across the areas that influence..." (41.4-56.9)
+    {src: "proof/studio-ai/m1-si-comparison.mp4", at: 41.5, until: 57.5, zoom: 1.42},
+    // "the strengths they promote, the weaknesses they expose..." (58.1-70.7)
+    {src: "proof/studio-ai/m1-si-insights.mp4", at: 57.5, until: 71.5, zoom: 1},
+    // "reviewed, confirmed or dismissed - complete control" (72.5-81.4)
+    {src: "proof/studio-ai/m1-si-control.mp4", at: 71.5, until: 82.0, zoom: 1.15},
+    // "a clear gap analysis - leading, competitive, falling behind" (82.6-94.3)
+    {src: "proof/studio-ai/m1-si-gap.mp4", at: 82.0, until: 95.0, zoom: 1},
+    // "practical recommendations your team can actually implement" (95.7-105.8)
+    {src: "proof/studio-ai/m1-si-recs.mp4", at: 95.0, until: 106.5, zoom: 1},
+    // (106.5-141: editorial - not copying / end card / T1 into Convert)
+  ],
+  chipGroups: [
+    {
+      // "from barns and country houses to hotels, estates and exclusive-use venues"
+      from: 22.7,
+      until: 29.3,
+      chips: [
+        {label: "Barns", at: 23.06},
+        {label: "Country houses", at: 24.16},
+        {label: "Hotels", at: 25.04},
+        {label: "Estates", at: 25.94},
+        {label: "Exclusive-use", at: 26.98},
+      ],
+    },
+    {
+      // "positioning, pricing, social proof, calls to action, brand strength, conversion effectiveness"
+      from: 47.7,
+      until: 57.3,
+      chips: [
+        {label: "Positioning", at: 48.12},
+        {label: "Pricing", at: 49.44},
+        {label: "Social proof", at: 50.4},
+        {label: "Calls to action", at: 52.22},
+        {label: "Brand strength", at: 53.18},
+        {label: "Conversion", at: 55.18},
+      ],
+    },
+    {
+      // "the strengths they promote, the weaknesses they expose, the opportunities they leave behind"
+      from: 64.8,
+      until: 71.3,
+      chips: [
+        {label: "Strengths promoted", at: 65.42},
+        {label: "Weaknesses exposed", at: 67.48},
+        {label: "Opportunities left behind", at: 70.0},
+      ],
+    },
+    {
+      // "reviewed, confirmed or dismissed"
+      from: 73.3,
+      until: 80.5,
+      chips: [
+        {label: "Review", at: 73.72},
+        {label: "Confirm", at: 74.62},
+        {label: "Dismiss", at: 75.74},
+      ],
+    },
+    {
+      // "where you're leading, where you're competitive and where you're falling behind"
+      from: 90.0,
+      until: 95.0,
+      chips: [
+        {label: "Leading", at: 90.44},
+        {label: "Competitive", at: 91.74},
+        {label: "Falling behind", at: 93.52},
+      ],
+    },
+  ],
+  stamps: [
+    {
+      // "comparing you against a shortlist... marketing decisions in the dark" (0-12.6)
+      from: 3.0,
+      until: 14.2,
+      mode: "full",
+      lines: [
+        {text: "Compared against a shortlist.", at: 3.6, variant: "serif"},
+        {text: "Don't market in the dark.", at: 10.2, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "This isn't about copying other venues..." (107.1-114.9)
+      from: 106.8,
+      until: 114.4,
+      mode: "full",
+      lines: [
+        {text: "Not about copying.", at: 107.9, variant: "serif"},
+        {text: "About understanding your market.", at: 110.4, variant: "serif-italic"},
+      ],
+    },
+    {
+      // M1-SJ end card: "...the intelligence behind every booking." (118.8-121.0)
+      from: 114.4,
+      until: 122.0,
+      mode: "full",
+      logo: "brand/venuebot-studio-ai-logo.png",
+      lines: [{text: "The intelligence behind every booking", at: 118.5, variant: "caps"}],
+    },
+    {
+      // T1: "website performance, competitive positioning and enquiry conversion data" (122.2-131.1)
+      from: 122.0,
+      until: 132.4,
+      mode: "full",
+      lines: [
+        {text: "Performance. Positioning. Conversion.", at: 123.86, variant: "caps"},
+        {text: "The complete picture.", at: 128.6, variant: "serif"},
+      ],
+    },
+    {
+      // T1: "Seeing the gap is only half the job. Closing it is where Convert comes in." (133.1-138.4)
+      from: 132.4,
+      until: 140.6,
+      mode: "full",
+      lines: [
+        {text: "Seeing the gap is half the job.", at: 133.4, variant: "serif"},
+        {text: "Closing it is where Convert comes in.", at: 136.2, variant: "serif-italic"},
+      ],
+    },
+  ],
+};

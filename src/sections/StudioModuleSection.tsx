@@ -45,6 +45,8 @@ export type Stamp = {
   lines: StampLine[];
   /** "dim" floats lines over a porcelain wash on the recording; "full" hides the recording. */
   mode?: "dim" | "full";
+  /** Brand image (staticFile path) shown above the lines, e.g. an end-card logo lockup. */
+  logo?: string;
 };
 
 export type ModuleSectionConfig = {
@@ -115,8 +117,22 @@ const StampOverlay = ({stamp}: {stamp: Stamp}) => {
     clamp,
   );
 
+  const logoPop = reveal(frame, seconds(stamp.from + 0.35), seconds(0.7));
+
   return (
     <div className="studio-sd-stamp" style={{opacity}}>
+      {stamp.logo ? (
+        <Img
+          alt="VenueBot Studio AI"
+          src={staticFile(stamp.logo)}
+          style={{
+            width: 640,
+            marginBottom: 34,
+            opacity: logoPop,
+            transform: `translateY(${(1 - logoPop) * 26}px) scale(${0.96 + logoPop * 0.04})`,
+          }}
+        />
+      ) : null}
       {stamp.lines.map((line) => {
         const pop = reveal(frame, seconds(line.at), seconds(0.5));
 
