@@ -3,6 +3,9 @@ import {Intro} from "./sections/Intro";
 import {ChapterCard} from "./sections/ChapterCard";
 import {StudioAI} from "./sections/StudioAI";
 import {StudioAIVenueIntelligence} from "./sections/StudioAIVenueIntelligence";
+import {StudioModuleSection} from "./sections/StudioModuleSection";
+import {m1Se} from "./data/studioAiSections";
+import {seconds} from "./data/video";
 import {
   chapterCardDurationFrames,
   introDurationFrames,
@@ -55,6 +58,15 @@ export const Root = () => {
         fps={videoFps}
         width={videoWidth}
         height={videoHeight}
+      />
+      <Composition
+        id="StudioAI-M1-SE"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m1Se.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m1Se}}
       />
       <Composition
         id="Convert"
