@@ -194,3 +194,127 @@ export const m1Sf: ModuleSectionConfig = {
     },
   ],
 };
+
+// M1-SG: part A (S01-S06, 95.2s) at 0; part B (S07-Close, trimmed at 73.5s
+// before a Whisper hallucination tail) at 97.5.
+const sgB = 97.5;
+
+export const m1Sg: ModuleSectionConfig = {
+  id: "M1-SG",
+  moduleNumber: "04",
+  title: "Brochure Analyser",
+  tagline: "The first real piece of your venue couples take home.",
+  audio: "audio/studio-ai/m1-sg-a-tail.m4a",
+  audioMore: [{src: "audio/studio-ai/m1-sg-b-tail.m4a", at: sgB}],
+  duration: 173.5,
+  chapterUntil: 3.0,
+  clips: [
+    // (0-12.6: editorial open - sofa / partner / shortlist)
+    // "Yet most brochures are never reviewed..." + "Studio AI changes that." (13.0-24.4)
+    {src: "proof/studio-ai/m1-sg-landing.mp4", at: 12.6, until: 25.0, zoom: 1.15},
+    // "We've analysed wedding buyer behaviour..." (25.6-38.3) - hold on the 45+ sources banner
+    {src: "proof/studio-ai/m1-sg-research.mp4", at: 25.0, until: 39.5, zoom: 1.45},
+    // "Simply upload your existing brochure..." (39.5-46.2)
+    {src: "proof/studio-ai/m1-sg-upload.mp4", at: 39.5, until: 48.4, zoom: 1.15},
+    // "extracts... scores... identifies... rewritten version" (48.8-64.0)
+    {src: "proof/studio-ai/m1-sg-progress.mp4", at: 48.4, until: 64.6, zoom: 1.2},
+    // "a complete performance score" (65.1-74.7)
+    {src: "proof/studio-ai/m1-sg-score.mp4", at: 64.6, until: 75.8, zoom: 1.15},
+    // "analysed across the factors..." + the eight categories (76.2-95.2)
+    {src: "proof/studio-ai/m1-sg-categories.mp4", at: 75.8, until: sgB, zoom: 1},
+    // Part B: "identifies what's missing..." (B 0-17.9) - Needs Work cards
+    {src: "proof/studio-ai/m1-sg-weaknesses.mp4", at: sgB, until: sgB + 18.6, zoom: 1.42},
+    // "improved version, side by side" + "nothing is hidden" (B 19.2-32.4)
+    {src: "proof/studio-ai/m1-sg-sidebyside.mp4", at: sgB + 18.6, until: sgB + 33, zoom: 1},
+    // "the goal isn't to replace your voice..." (B 33.5-43.7)
+    {src: "proof/studio-ai/m1-sg-rewrite.mp4", at: sgB + 33, until: sgB + 45, zoom: 1},
+    // "approve it... request a revision... download" (B 45.3-55.5)
+    {src: "proof/studio-ai/m1-sg-approve.mp4", at: sgB + 45, until: sgB + 56.2, zoom: 1.42},
+    // (B 56.2-76: editorial close)
+  ],
+  chipGroups: [
+    {
+      // "PDF, Word document or your current sales pack"
+      from: 42.0,
+      until: 48.2,
+      chips: [
+        {label: "PDF", at: 42.46},
+        {label: "Word doc", at: 43.64},
+        {label: "Sales pack", at: 45.5},
+      ],
+    },
+    {
+      // "extracts the content, scores it... identifies weaknesses... rewritten version"
+      from: 49.8,
+      until: 60.5,
+      chips: [
+        {label: "Extract", at: 50.22},
+        {label: "Score", at: 52.04},
+        {label: "Identify weaknesses", at: 55.02},
+        {label: "Rewrite", at: 57.7},
+      ],
+    },
+    {
+      // The eight scoring categories, first four
+      from: 81.0,
+      until: 88.2,
+      chips: [
+        {label: "Emotional connection", at: 81.38},
+        {label: "Differentiation", at: 83.52},
+        {label: "Social proof", at: 85.0},
+        {label: "CTA clarity", at: 86.92},
+      ],
+    },
+    {
+      // ...and the second four
+      from: 88.2,
+      until: 95.8,
+      chips: [
+        {label: "Pricing confidence", at: 88.36},
+        {label: "Visual storytelling", at: 89.9},
+        {label: "Practical info", at: 91.62},
+        {label: "Ideal couple fit", at: 93.3},
+      ],
+    },
+  ],
+  stamps: [
+    {
+      // "...read on the sofa, share with their partner, compare against..." (6.3-12.0)
+      from: 3.0,
+      until: 12.6,
+      mode: "full",
+      lines: [
+        {text: "Read on the sofa.", at: 5.9, variant: "serif"},
+        {text: "Shared with their partner.", at: 7.7, variant: "serif"},
+        {text: "Compared against every shortlist.", at: 10.2, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "Studio AI changes that." (22.2-24.4)
+      from: 22.0,
+      until: 25.4,
+      lines: [{text: "Studio AI changes that.", at: 22.5, variant: "serif"}],
+    },
+    {
+      // "Nothing is hidden. Every change is transparent and reviewable." (B 27.5-32.4)
+      from: sgB + 28.0,
+      until: sgB + 33.0,
+      lines: [
+        {text: "Nothing hidden.", at: sgB + 28.5, variant: "serif"},
+        {text: "Transparent. Reviewable.", at: sgB + 30.4, variant: "caps"},
+      ],
+    },
+    {
+      // Closing: "Great venues deserve great brochures... easier to say yes to."
+      from: sgB + 56.2,
+      until: sgB + 75.4,
+      mode: "full",
+      lines: [
+        {text: "Great venues deserve great brochures.", at: sgB + 57.2, variant: "serif"},
+        {text: "The clearest venue often wins.", at: sgB + 65.8, variant: "serif-italic"},
+        {text: "Not because it's cheaper.", at: sgB + 70.0, variant: "caps"},
+        {text: "Because it's easier to say yes to.", at: sgB + 71.7, variant: "serif"},
+      ],
+    },
+  ],
+};
