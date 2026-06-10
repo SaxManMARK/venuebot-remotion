@@ -98,7 +98,7 @@ export const m1Sf: ModuleSectionConfig = {
     {src: "proof/studio-ai/m1-sf-questions.mp4", at: 55.5, until: 68, zoom: 1},
     // -- Part B: generation, the sequence, strategy, export, close --
     // "Then Studio AI gets to work" (B 0-4.5)
-    {src: "proof/studio-ai/m1-sf-generating.mp4", at: sfB + 0.2, until: sfB + 5.5, zoom: 1},
+    {src: "proof/studio-ai/m1-sf-generating.mp4", at: sfB, until: sfB + 5.5, zoom: 1},
     // "Not a generic template... complete nurture journey" (B 6.9-14.7)
     {src: "proof/studio-ai/m1-sf-reveal.mp4", at: sfB + 5.5, until: sfB + 16.2, zoom: 1.15},
     // "Every message has a purpose..." (B 16.2-26.9)
@@ -483,7 +483,7 @@ export const m1Si: ModuleSectionConfig = {
     // "the strengths they promote, the weaknesses they expose..." (58.1-70.7)
     {src: "proof/studio-ai/m1-si-insights.mp4", at: 57.5, until: 71.5, zoom: 1},
     // "reviewed, confirmed or dismissed - complete control" (72.5-81.4)
-    {src: "proof/studio-ai/m1-si-control.mp4", at: 71.5, until: 82.0, zoom: 1.15},
+    {src: "proof/studio-ai/m1-si-control.mp4", at: 71.5, until: 82.0, zoom: 1.3},
     // "a clear gap analysis - leading, competitive, falling behind" (82.6-94.3)
     {src: "proof/studio-ai/m1-si-gap.mp4", at: 82.0, until: 95.0, zoom: 1},
     // "practical recommendations your team can actually implement" (95.7-105.8)

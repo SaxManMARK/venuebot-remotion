@@ -31,11 +31,15 @@ If audio/video won't play in Studio, fully quit and reopen Chrome first (⌘Q) �
 - Proof clips: `public/proof/studio-ai/m1-s[d-i]-*.mp4` — pre-trimmed 30fps re-encodes (never seek the long ScreenStudio sources at runtime; Studio hangs). `zoom` in config crops the macOS desktop out of wide shots. Recut recipes are in the session git history.
 - Audio: `public/audio/studio-ai/m1-s*-tail.m4a`, apad-padded to each section duration. Three source VOs had Whisper-hallucinated tails and are trimmed (SF-A at 65.9s, SG-B at 73.5s, SH at 179.4s).
 
-## Known rough edges / morning review list
+## QA pass (2026-06-10, pre-review)
 
-1. **Watch the full film end to end with sound** — stills were verified throughout, but pacing of crossfades and chip timing deserve a real-time pass.
-2. Some wide shots retain a faint browser tab-strip edge at the top (kept zoom moderate to avoid over-cropping content).
-3. M1-SF "happy path" beat reuses wide stage footage at high zoom (1.5) — check legibility in motion.
-4. The discover-competitors modal beat (M1-SI ~14–29s) has the app's own dark modal backdrop — looks intentional but check it feels on-brand.
-5. SC→SD handoff: SC ends on the six-module slide, SD opens with its chapter card — consider whether a beat of breathing room is wanted.
-6. No MP4 rendered (Mark reviews live in Studio). For a shareable file: `npx remotion render src/index.ts StudioAI-Full out/studio-ai-full.mp4 --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --concurrency=1` (expect a long render).
+A full half-scale render of the film was reviewed end to end before handover:
+
+- **Word-sync verified in the final render** at four points (transcribed the rendered audio and matched it to the on-screen overlay): "Added once / Used everywhere", the purpose chips, the 30–50% stat, the end-card line.
+- **All ~220 contact-sheet frames reviewed**; nine issues found and fixed — freezes landing on a blank page-transition, the macOS Finder dialog, or zoomed-out desktop views (SF audit/build/questions, SG research, SH exec, SI recs/control), two clips short for their crossfade tails, and a 0.2s coverage gap that blinked the screen card.
+- **Silence map checked**: no dead air at any section join; only the splash, the SC tail, and natural VO pauses exceed 2.8s.
+- **`scripts/qa-sections.py`** now audits the configs automatically (clip coverage/overlaps/lengths vs slots, chips inside windows and over live footage, stamps inside duration). Run it after any retiming.
+
+Remaining judgement calls for Mark: the M1-SI discover-modal beat uses the app's own dark modal backdrop (~14–29s in); a faint browser tab-strip edge survives on a few wide shots (zoom kept moderate to protect content); SC→SD handoff has no breathing beat between the six-module slide and the chapter card.
+
+For a shareable MP4: `npx remotion render src/index.ts StudioAI-Full out/studio-ai-full.mp4 --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --concurrency=1` (long render).
