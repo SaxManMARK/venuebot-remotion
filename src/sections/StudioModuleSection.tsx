@@ -53,6 +53,8 @@ export type ModuleSectionConfig = {
   title: string;
   tagline: string;
   audio: string;
+  /** Additional VO files for sections recorded in multiple parts. `at` in seconds. */
+  audioMore?: {src: string; at: number}[];
   /** Total section length in seconds (VO + clean tail). */
   duration: number;
   /** When the chapter overlay finishes fading and the recording owns the frame. */
@@ -186,6 +188,11 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
   return (
     <AbsoluteFill style={{backgroundColor: palette.porcelain}}>
       <Audio src={staticFile(config.audio)} />
+      {(config.audioMore ?? []).map((extra) => (
+        <Sequence from={seconds(extra.at)} key={extra.src}>
+          <Audio src={staticFile(extra.src)} />
+        </Sequence>
+      ))}
 
       <AbsoluteFill className="studio-sd-stage">
         <Img

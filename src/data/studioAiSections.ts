@@ -68,3 +68,129 @@ export const m1Se: ModuleSectionConfig = {
   ],
   closing: {text: "Because couples can tell the difference.", at: 37.4},
 };
+
+// M1-SF spans two VO recordings: part A (S01-S05, trimmed at 65.9s where real
+// content ends) plays at 0; part B (S06-Close, 98s) plays at 68. Part-B word
+// timings below are VO-relative + 68.
+const sfB = 68;
+
+export const m1Sf: ModuleSectionConfig = {
+  id: "M1-SF",
+  moduleNumber: "03",
+  title: "Nurture Sequences",
+  tagline: "Because the conversation should never stop.",
+  audio: "audio/studio-ai/m1-sf-a-tail.m4a",
+  audioMore: [{src: "audio/studio-ai/m1-sf-b-tail.m4a", at: sfB}],
+  duration: 168,
+  chapterUntil: 3.2,
+  clips: [
+    // -- Part A: the problem, the research, build vs audit, configuration --
+    // (0-17.6: editorial problem beat, no screen)
+    // "We analysed wedding industry research..." (18.0-28.0) over the 60+ sources banner
+    {src: "proof/studio-ai/m1-sf-research.mp4", at: 17.8, until: 29.8, zoom: 1.42},
+    // "Already have a nurture sequence? Audit it." (30.0-37.8)
+    {src: "proof/studio-ai/m1-sf-audit.mp4", at: 29.8, until: 38.8, zoom: 1},
+    // "Starting from scratch... automatically" (39.2-45.2)
+    {src: "proof/studio-ai/m1-sf-build.mp4", at: 38.8, until: 46.0, zoom: 1},
+    // "We already know your venue, ideal couple, pricing, brand voice" (46.8-54.7)
+    {src: "proof/studio-ai/m1-sf-readiness.mp4", at: 46.0, until: 55.5, zoom: 1},
+    // "Do you collect wedding dates?..." (55.9-65.8)
+    {src: "proof/studio-ai/m1-sf-questions.mp4", at: 55.5, until: 68, zoom: 1},
+    // -- Part B: generation, the sequence, strategy, export, close --
+    // "Then Studio AI gets to work" (B 0-4.5)
+    {src: "proof/studio-ai/m1-sf-generating.mp4", at: sfB + 0.2, until: sfB + 5.5, zoom: 1},
+    // "Not a generic template... complete nurture journey" (B 6.9-14.7)
+    {src: "proof/studio-ai/m1-sf-reveal.mp4", at: sfB + 5.5, until: sfB + 16.2, zoom: 1.15},
+    // "Every message has a purpose..." (B 16.2-26.9)
+    {src: "proof/studio-ai/m1-sf-purpose.mp4", at: sfB + 16.2, until: sfB + 27.5, zoom: 1},
+    // "The happy path guides couples..." (B 28.1-36.8)
+    {src: "proof/studio-ai/m1-sf-happypath.mp4", at: sfB + 27.5, until: sfB + 38, zoom: 1.5},
+    // "Recovery paths... without becoming pushy" (B 38.1-52.6)
+    {src: "proof/studio-ai/m1-sf-recovery.mp4", at: sfB + 38, until: sfB + 53.5, zoom: 1},
+    // "Every email, SMS and WhatsApp message includes the strategy" (B 54.3-65.2)
+    {src: "proof/studio-ai/m1-sf-strategy.mp4", at: sfB + 53.5, until: sfB + 65.5, zoom: 1},
+    // "Never blindly trusting AI" (B 65.7-71.6)
+    {src: "proof/studio-ai/m1-sf-whyexists.mp4", at: sfB + 65.5, until: sfB + 73.5, zoom: 1},
+    // "Personalisation fields are mapped automatically... export" (B 73.9-86.3)
+    {src: "proof/studio-ai/m1-sf-fields.mp4", at: sfB + 73.5, until: sfB + 87, zoom: 1},
+    // (B 87-100: editorial closing stamp, no screen)
+  ],
+  chipGroups: [
+    {
+      // "Do you collect wedding dates? Do you offer virtual tours?..."
+      from: 57.0,
+      until: 67.0,
+      chips: [
+        {label: "Wedding dates?", at: 57.58},
+        {label: "Virtual tours?", at: 59.5},
+        {label: "Which channels?", at: 61.54},
+        {label: "An intro call?", at: 65.26},
+      ],
+    },
+    {
+      // "Acknowledge, orient, reassure, prompt action, reactivate, rescue"
+      from: sfB + 18.4,
+      until: sfB + 27.2,
+      chips: [
+        {label: "Acknowledge", at: sfB + 18.76},
+        {label: "Orient", at: sfB + 19.5},
+        {label: "Reassure", at: sfB + 20.44},
+        {label: "Prompt action", at: sfB + 21.64},
+        {label: "Reactivate", at: sfB + 23.04},
+        {label: "Rescue", at: sfB + 24.38},
+      ],
+    },
+    {
+      // "from enquiry, to tour booking, to venue visit... choosing your venue"
+      from: sfB + 30.2,
+      until: sfB + 37.8,
+      chips: [
+        {label: "Enquiry", at: sfB + 30.56},
+        {label: "Tour booked", at: sfB + 32.04},
+        {label: "Venue visit", at: sfB + 33.64},
+        {label: "Your venue chosen", at: sfB + 35.84},
+      ],
+    },
+    {
+      // "...export your sequence into the VenueBot Care CRM, HubSpot, ActiveCampaign, MailChimp"
+      from: sfB + 79.6,
+      until: sfB + 87,
+      chips: [
+        {label: "VenueBot Care", at: sfB + 80.08},
+        {label: "HubSpot", at: sfB + 83.56},
+        {label: "ActiveCampaign", at: sfB + 84.36},
+        {label: "MailChimp", at: sfB + 85.62},
+      ],
+    },
+  ],
+  stamps: [
+    {
+      // "They lose bookings because the conversation stops." (5.4-5.9)
+      from: 3.2,
+      until: 7.2,
+      lines: [{text: "The conversation stops.", at: 5.0, variant: "serif"}],
+    },
+    {
+      // "An enquiry arrives, a brochure gets sent, then nothing." (8.6-16.5)
+      from: 7.4,
+      until: 17.6,
+      mode: "full",
+      lines: [
+        {text: "An enquiry arrives.", at: 8.5, variant: "serif"},
+        {text: "A brochure gets sent.", at: 9.6, variant: "serif"},
+        {text: "Then… nothing.", at: 11.3, variant: "serif-italic"},
+        {text: "For days. Sometimes weeks.", at: 14.6, variant: "caps"},
+      ],
+    },
+    {
+      // "...aren't always the most beautiful. They're usually the ones that stay in touch."
+      from: sfB + 87.6,
+      until: sfB + 99.4,
+      mode: "full",
+      lines: [
+        {text: "Not always the most beautiful.", at: sfB + 92.4, variant: "serif-italic"},
+        {text: "The ones that stay in touch.", at: sfB + 95.8, variant: "serif"},
+      ],
+    },
+  ],
+};
