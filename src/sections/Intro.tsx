@@ -565,10 +565,11 @@ export const Intro = () => {
         <section className="film-scene clock-scene" style={{opacity: saSceneF}}>
           <StatisticReveal
             asset={plates.afterHours}
-            label="Of enquiries happen outside normal office hours."
+            label="of enquiries happen outside normal office hours."
+            qualifier="Almost"
             source="VenueBot sector benchmark"
             start={cue.saStat68}
-            value="Almost 70%"
+            value="70%"
             variant="night"
           />
         </section>
@@ -594,13 +595,14 @@ export const Intro = () => {
           <ProblemStatement
             asset={plates.shortlist}
             callouts={[
-              {label: "Closer to booking", value: "1"},
-              {label: "Closer to a competitor", value: "2"},
+              {label: "Closer to booking"},
+              {label: "Closer to a competitor"},
             ]}
             headline="Closer to booking, or closer to somebody else."
             start={cue.saCompetitorRisk}
             subtitle="The follow-up experience becomes part of the venue experience."
             variant="plum"
+            visual="fork"
           />
         </section>
 

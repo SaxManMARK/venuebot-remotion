@@ -136,6 +136,146 @@ export const CinematicIntro = ({
   );
 };
 
+// The decision fork: one shared path that splits toward two outcomes. The warm
+// route lands on the venue's booking; the muted route drifts to a competitor.
+// Both paths draw on (dash-offset), a courier dot rides each draw tip, and the
+// outcome chips land with the usual rise + de-blur + tilt.
+const forkCurves = {
+  booking: {p0: [70, 380], c1: [320, 380], c2: [400, 150], p1: [688, 132]},
+  competitor: {p0: [70, 380], c1: [320, 380], c2: [400, 610], p1: [688, 628]},
+} as const;
+
+const forkPoint = (curve: (typeof forkCurves)[keyof typeof forkCurves], t: number) => {
+  const u = 1 - t;
+  const x = u * u * u * curve.p0[0] + 3 * u * u * t * curve.c1[0] + 3 * u * t * t * curve.c2[0] + t * t * t * curve.p1[0];
+  const y = u * u * u * curve.p0[1] + 3 * u * u * t * curve.c1[1] + 3 * u * t * t * curve.c2[1] + t * t * t * curve.p1[1];
+  return {x, y};
+};
+
+const forkPath = (curve: (typeof forkCurves)[keyof typeof forkCurves]) =>
+  `M ${curve.p0[0]} ${curve.p0[1]} C ${curve.c1[0]} ${curve.c1[1]}, ${curve.c2[0]} ${curve.c2[1]}, ${curve.p1[0]} ${curve.p1[1]}`;
+
+const ForkDecision = ({start, labels}: {start: number; labels: [string, string]}) => {
+  const frame = useCurrentFrame();
+  const node = reveal(frame, start + seconds(0.55), seconds(0.6));
+  const drawA = reveal(frame, start + seconds(0.95), seconds(1.35));
+  const drawB = reveal(frame, start + seconds(2.75), seconds(1.35));
+  const chipA = reveal(frame, start + seconds(2.0), seconds(0.55));
+  const chipB = reveal(frame, start + seconds(3.8), seconds(0.55));
+  const dotA = forkPoint(forkCurves.booking, drawA);
+  const dotB = forkPoint(forkCurves.competitor, drawB);
+
+  return (
+    <div className="fork-decision">
+      <svg viewBox="0 0 860 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="fork-warm" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#7c918a" />
+            <stop offset="0.62" stopColor="#d5a798" />
+            <stop offset="1" stopColor="#ffe6b4" />
+          </linearGradient>
+          <linearGradient id="fork-cool" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="rgba(140, 141, 142, 0.66)" />
+            <stop offset="1" stopColor="rgba(106, 90, 96, 0.4)" />
+          </linearGradient>
+        </defs>
+        <path
+          d={forkPath(forkCurves.booking)}
+          stroke="rgba(255, 230, 180, 0.22)"
+          strokeWidth={16}
+          strokeLinecap="round"
+          pathLength={1}
+          strokeDasharray={1}
+          strokeDashoffset={1 - drawA}
+          style={{filter: "blur(7px)"}}
+        />
+        <path
+          d={forkPath(forkCurves.booking)}
+          stroke="url(#fork-warm)"
+          strokeWidth={5}
+          strokeLinecap="round"
+          pathLength={1}
+          strokeDasharray={1}
+          strokeDashoffset={1 - drawA}
+        />
+        <path
+          d={forkPath(forkCurves.competitor)}
+          stroke="url(#fork-cool)"
+          strokeWidth={4}
+          strokeLinecap="round"
+          pathLength={1}
+          strokeDasharray={1}
+          strokeDashoffset={1 - drawB}
+        />
+        {/* The shared moment both outcomes grow from */}
+        <circle
+          cx={70}
+          cy={380}
+          r={26}
+          stroke="rgba(255, 246, 228, 0.5)"
+          strokeWidth={1.6}
+          style={{opacity: node, transform: `scale(${0.7 + node * 0.3})`, transformOrigin: "70px 380px"}}
+        />
+        <circle cx={70} cy={380} r={9} fill="#ffe6b4" style={{opacity: node}} />
+        {/* Courier dots riding each draw tip */}
+        {drawA > 0.02 ? (
+          <circle cx={dotA.x} cy={dotA.y} r={10} fill="#ffe6b4" style={{opacity: 0.55 + drawA * 0.45}} />
+        ) : null}
+        {drawB > 0.02 ? (
+          <circle cx={dotB.x} cy={dotB.y} r={7} fill="rgba(140, 141, 142, 0.85)" />
+        ) : null}
+        {/* Outcome nodes */}
+        <circle
+          cx={688}
+          cy={132}
+          r={20}
+          stroke="rgba(255, 230, 180, 0.85)"
+          strokeWidth={2}
+          fill="rgba(255, 230, 180, 0.16)"
+          style={{opacity: chipA}}
+        />
+        <circle
+          cx={688}
+          cy={628}
+          r={16}
+          stroke="rgba(140, 141, 142, 0.6)"
+          strokeWidth={1.6}
+          style={{opacity: chipB}}
+        />
+      </svg>
+      <div
+        className="fork-chip fork-chip-booking"
+        style={{
+          opacity: chipA,
+          filter: `blur(${(1 - chipA) * 10}px)`,
+          transform: `perspective(900px) translateY(${(1 - chipA) * 24 + drift(frame, 8, 4)}px) rotateX(${(1 - chipA) * 14}deg)`,
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+          <circle cx={12} cy={12} r={9} />
+          <path d="M8 12.2l2.7 2.8L16 9.4" />
+        </svg>
+        <span>{labels[0]}</span>
+      </div>
+      <div
+        className="fork-chip fork-chip-competitor"
+        style={{
+          opacity: chipB,
+          filter: `blur(${(1 - chipB) * 10}px)`,
+          transform: `perspective(900px) translateY(${(1 - chipB) * 24 + drift(frame, 36, 4)}px) rotateX(${(1 - chipB) * 14}deg)`,
+        }}
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14 5h5v14h-5" />
+          <path d="M4 12h11" />
+          <path d="M11 8l4 4-4 4" />
+        </svg>
+        <span>{labels[1]}</span>
+      </div>
+    </div>
+  );
+};
+
 export const ProblemStatement = ({
   start,
   headline,
@@ -143,7 +283,8 @@ export const ProblemStatement = ({
   asset,
   variant = "plum",
   callouts = [],
-}: TimedSceneProps & {callouts?: Callout[]}) => {
+  visual,
+}: TimedSceneProps & {callouts?: Callout[]; visual?: "fork"}) => {
   const frame = useCurrentFrame();
   const copy = reveal(frame, start + seconds(0.25), seconds(0.8));
   const isJourney = callouts.length >= 4;
@@ -160,7 +301,9 @@ export const ProblemStatement = ({
           <p style={{fontFamily: font.title, opacity: copy, filter: `blur(${(1 - copy) * 8}px)`}}>{subtitle}</p>
         ) : null}
       </div>
-      {isJourney ? (
+      {visual === "fork" ? (
+        <ForkDecision start={start} labels={[callouts[0]?.label ?? "", callouts[1]?.label ?? ""]} />
+      ) : isJourney ? (
         <div className="opportunity-journey">
           <i className="opportunity-journey-line" style={{transform: `scaleX(${journeyProgress})`}} />
           <b className="opportunity-orb" style={{left: `${8 + journeyProgress * 84}%`}} />
@@ -229,6 +372,7 @@ export const ProblemStatement = ({
 export const StatisticReveal = ({
   start,
   value,
+  qualifier,
   label,
   source,
   asset,
@@ -236,6 +380,7 @@ export const StatisticReveal = ({
 }: {
   start: number;
   value: string;
+  qualifier?: string;
   label: string;
   source?: string;
   asset?: PlateAsset;
@@ -254,6 +399,18 @@ export const StatisticReveal = ({
           <span />
           <span />
         </div>
+        {qualifier ? (
+          <em
+            style={{
+              fontFamily: font.title,
+              opacity: stat,
+              filter: `blur(${(1 - stat) * 10}px)`,
+              transform: `translateY(${(1 - stat) * 18}px)`,
+            }}
+          >
+            {qualifier}
+          </em>
+        ) : null}
         <strong
           style={{
             fontFamily: font.title,
@@ -582,6 +739,9 @@ export const CapabilityPillarSystem = ({start}: {start: number}) => {
   const worldOffsets = [10.48, 25.74, 39.32];
   const unify = reveal(frame, start + seconds(53.8), seconds(1.4));
   const outcome = reveal(frame, start + seconds(57.76), seconds(1.2));
+  // The strapline has done its job once the first world focuses - and the
+  // focused pillar's kicker lifts into its line, so it must clear the stage.
+  const strapFade = reveal(frame, start + seconds(worldOffsets[0] - 0.6), seconds(0.7));
 
   return (
     <AbsoluteFill className="capability-system">
@@ -611,7 +771,7 @@ export const CapabilityPillarSystem = ({start}: {start: number}) => {
         <h2 style={{fontFamily: font.title}}>
           <HeadlineReveal from={start + seconds(0.1)}>Three Products. One Purpose.</HeadlineReveal>
         </h2>
-        <p>Knowledge → Engagement → Control</p>
+        <p style={{opacity: 1 - strapFade}}>Knowledge → Engagement → Control</p>
       </div>
 
       <div className="capability-pillars" style={{opacity: 1 - outcome * 0.94}}>
