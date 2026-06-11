@@ -24,6 +24,8 @@ export type ModuleClip = {
   until: number;
   /** Crops the macOS desktop out of wide shots. 1 = modal/zoomed source. */
   zoom: number;
+  /** Where the zoom aims, e.g. "50% 36%" to focus an upper-page banner. Default "50% 46%". */
+  origin?: string;
 };
 
 export type ChipGroup = {
@@ -303,7 +305,7 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
                     objectFit: "cover",
                     opacity: fadeIn,
                     transform: `scale(${clip.zoom})`,
-                    transformOrigin: "50% 46%",
+                    transformOrigin: clip.origin ?? "50% 46%",
                   }}
                 />
               </Sequence>
