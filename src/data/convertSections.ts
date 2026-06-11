@@ -244,3 +244,151 @@ export const m2Sn: ModuleSectionConfig = {
     },
   ],
 };
+
+// M2-SO "AI everywhere" + M2-SP outcome share one VO (m2-so-sp). The source
+// recording had a re-take artifact ("No missed. No missed.") at 58.6-59.3;
+// the section audio is trimmed at 58.45.
+export const m2So: ModuleSectionConfig = {
+  id: "M2-SO",
+  moduleNumber: "03",
+  title: "Every Channel",
+  tagline: "Wherever a couple starts the conversation.",
+  product: "Convert",
+  theme: "convert",
+  plate: "plates/venuebot-after-hours.png",
+  audio: "audio/convert/m2-so-sp-tail.m4a",
+  duration: 62,
+  chapterUntil: 2.8, // "The same AI can support..." starts at 3.1
+  clips: [],
+  beats: [
+    {
+      // "your website, Facebook, Instagram, WhatsApp and other messaging
+      // channels... trained on your venue... around the clock" (3.1-26.1)
+      type: "channel-grid",
+      from: 2.8,
+      until: 26.6,
+      events: [
+        {id: "website", at: 6.62},
+        {id: "facebook", at: 7.5},
+        {id: "instagram", at: 8.6},
+        {id: "whatsapp", at: 9.6},
+        {id: "line1", at: 17.86}, // "trained on your venue and how you actually talk"
+        {id: "line2", at: 24.7}, // "around the clock"
+      ],
+    },
+  ],
+  stamps: [
+    {
+      // "More conversations, more venue tours, more opportunities progressing
+      // through your pipeline." (27.2-33.9)
+      from: 26.6,
+      until: 35.2,
+      mode: "full",
+      lines: [
+        {text: "More conversations.", at: 27.24, variant: "serif"},
+        {text: "More venue tours.", at: 29.4, variant: "serif"},
+        {text: "More momentum in your pipeline.", at: 31.02, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "tour conversion rates increase by 30 to 50%" (36.4-42.9)
+      from: 35.2,
+      until: 43.8,
+      mode: "full",
+      lines: [
+        {text: "30–50%", at: 41.32, variant: "display"},
+        {text: "Typical tour conversion increase", at: 42.3, variant: "caps"},
+      ],
+    },
+    {
+      // "Not because they suddenly receive more enquiries, but because fewer
+      // enquiries are lost." (44.1-50.0)
+      from: 43.8,
+      until: 50.6,
+      mode: "full",
+      lines: [
+        {text: "Not more enquiries.", at: 44.5, variant: "serif"},
+        {text: "Fewer enquiries lost.", at: 47.98, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "No missed opportunities. No forgotten follow-up. No couple booking
+      // another venue simply because they replied first." (51.2-58.3)
+      from: 50.6,
+      until: 61.4,
+      mode: "full",
+      lines: [
+        {text: "No missed opportunities.", at: 51.2, variant: "serif"},
+        {text: "No forgotten follow-up.", at: 53.48, variant: "serif"},
+        {text: "No couple booking another venue", at: 55.12, variant: "serif-italic"},
+        {text: "because they replied first.", at: 57.32, variant: "serif-italic"},
+      ],
+    },
+  ],
+};
+
+// M2-SQ end card + T2 transition into Care. Pure editorial: the Convert
+// lockup, the three-beat promise, the Studio AI / Convert recap, and the
+// Care teaser with the wordmark landing on the spoken brand name.
+export const m2Sq: ModuleSectionConfig = {
+  id: "M2-SQ",
+  moduleNumber: "04",
+  title: "Respond First",
+  tagline: "Respond first, follow up consistently, win more bookings.",
+  product: "Convert",
+  theme: "convert",
+  plate: "plates/venuebot-after-hours.png",
+  audio: "audio/convert/m2-sq-t2-tail.m4a",
+  duration: 31,
+  chapterUntil: 0, // end card: no chapter open, straight into the lockup
+  clips: [],
+  stamps: [
+    {
+      // "VenueBot, Convert. Respond first, follow up consistently, win more
+      // bookings." (0-6.9)
+      from: 0,
+      until: 8.6,
+      mode: "full",
+      logo: "brand/venuebot-convert-logo.png",
+      lines: [
+        {text: "Respond first.", at: 2.7, variant: "caps"},
+        {text: "Follow up consistently.", at: 4.1, variant: "caps"},
+        {text: "Win more bookings.", at: 5.9, variant: "serif"},
+      ],
+    },
+    {
+      // "Studio AI helps you understand where opportunities are being lost.
+      // Convert helps you recover them." (8.7-14.7)
+      from: 8.6,
+      until: 15.5,
+      mode: "full",
+      lines: [
+        {text: "Studio AI shows what's being lost.", at: 8.7, variant: "serif"},
+        {text: "Convert recovers them.", at: 12.94, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "But every enquiry, conversation, tour and booking still needs a
+      // home, somewhere your team can see exactly what's happening." (15.8-24.0)
+      from: 15.5,
+      until: 24.8,
+      mode: "full",
+      lines: [
+        {text: "Every enquiry. Every conversation.", at: 16.5, variant: "serif"},
+        {text: "Every tour. Every booking.", at: 18.46, variant: "serif"},
+        {text: "They all need a home.", at: 20.52, variant: "serif-italic"},
+      ],
+    },
+    {
+      // "That's where VenueBot Care comes in." (25.5-27.8)
+      from: 24.8,
+      until: 30.6,
+      mode: "full",
+      lines: [
+        {text: "That's where", at: 25.48, variant: "serif-italic"},
+        {text: "VenueBot Care", at: 26.32, image: "brand/venuebot-care-logo.png", imageWidth: 640},
+        {text: "comes in.", at: 27.16, variant: "serif-italic"},
+      ],
+    },
+  ],
+};

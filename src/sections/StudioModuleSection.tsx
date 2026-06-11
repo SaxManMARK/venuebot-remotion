@@ -207,7 +207,7 @@ const StampOverlay = ({stamp}: {stamp: Stamp}) => {
     <div className="studio-sd-stamp" style={{opacity}}>
       {stamp.logo ? (
         <Img
-          alt="VenueBot Studio AI"
+          alt="VenueBot"
           src={staticFile(stamp.logo)}
           style={{
             width: 640,
