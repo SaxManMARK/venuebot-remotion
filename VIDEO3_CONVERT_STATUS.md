@@ -1,35 +1,44 @@
 # Video 3: Convert — Build Status
 
-Last updated: 2026-06-11. Build started. Full plan and rules: `VIDEO3_CONVERT_HANDOFF.md`.
+Last updated: 2026-06-11 (evening). **All four sections built and self-QA'd; full draft render in `out/convert-full-draft.mp4` awaiting Mark's review.** Plan and rules: `VIDEO3_CONVERT_HANDOFF.md`. Nurture cadence source: `NURTURE_SEQUENCE_V3.md`.
 
-## Section status
+## Watch it
 
-| Section | Comp | VO (transcripts slug) | Length | Status |
-|---|---|---|---|---|
-| M2-SK cold open + M2-SL speed-to-lead + M2-SM 50-day journey | `Convert-M2-SK` | `m2-sk-sm` | 81s | **Built, self-QA'd, awaiting Mark's review** |
-| M2-SN conversation experience | – | `m2-sn` | 70.1s | Not started. Screen-proof section: **waiting on Mark to confirm whether recordings exist** (Drive `Convert/Screen Shot Vids/` was empty 2026-06-11) |
-| M2-SO AI everywhere + M2-SP outcome | – | `m2-so-sp` | 59.3s | Not started. M2-SO needs the four-up recordings question answered; M2-SP (30–50% stat) is editorial and buildable |
-| M2-SQ end card + T2 Care teaser | – | `m2-sq-t2` | 27.8s | Not started, fully editorial, buildable now. Care logo needed for T2 (ask Mark) |
+- **`Convert-Full`** — the complete film, ~4m07s: Speed to Lead → The Conversation → Every Channel → end card + Care teaser. Watch as MP4 (`out/convert-full-draft.mp4`); per-section comps play fine in Studio.
+- Individual sections: `Convert-M2-SK`, `-M2-SN`, `-M2-SO`, `-M2-SQ`.
 
-## What M2-SK contains (all transcript-anchored, fully editorial, no recordings)
+## Section summary (all transcript-anchored)
 
-- Chapter open: "Convert · Module 01 — Speed to Lead", dusty-rose theme (`theme-convert`), after-hours plate (`plates/venuebot-after-hours.png`).
-- Stamp beats: "Not always the best venue / The one that responds first / THE FIRST RESPONSE WINS THE TOUR"; Convert wordmark lands on its own line on the spoken "VenueBot Convert" (17.1s); "reality is very different"; "Follow up once. Maybe twice."; £10,000–£20,000 display stat.
-- **After-hours clock beat** (26.5–47.2s): Saturday 22:14 enquiry notification (Emma & James · September 2027), six word-timed chips (Evenings → Away from the office), the clock racing to 04:09 with a "still waiting" bar, then the Convert payoff: snap back to 22:14, "Replied · 22:14, Seconds later" peach card.
-- **Nurture timeline beat** (60.4–78.6s): "Every enquiry, nurtured for 50+ days" stat, Day 1 → Day 50+ rail drawing on, channel-coloured nodes, Email/SMS/WhatsApp legend pills landing on their spoken words, "Not repetitive reminders." → "Timely, relevant conversations." crossfade.
-- Closing line: "Momentum, moving towards a tour." (76.28s).
+| Section | Comp | Length | What's in it |
+|---|---|---|---|
+| 01 Speed to Lead (SK/SL/SM) | Convert-M2-SK | 81s | Convert wordmark on spoken brand name; after-hours clock beat (22:14 enquiry, racing clock, instant-reply payoff); £10–20k display stat; nurture timeline on the **real V3 cadence** (Day-0 trio, D3–D14 pre-tour, D18–D50 recovery, stage labels, channel-true colours) |
+| 02 The Conversation (SN) | Convert-M2-SN | 73s | The Kirby Manor SMS demo in a right-side phone bezel (8 versioned clips, exchange-synced: accommodation/pricing/dog land on their spoken words; "Perfect! 10:00" holds through "It books one."); left-column word-timed callouts; tour-diary beat (Saturday slot drop + couple/team cards); integration chips |
+| 03 Every Channel (SO/SP) | Convert-M2-SO | 62s | Four-up channel mockup grid (Website/Facebook/Instagram/WhatsApp) landing word-timed; "Trained on your venue / Around the clock"; 30–50% display stat; "replied first" close |
+| 04 End card + T2 (SQ) | Convert-M2-SQ | 31s | Convert lockup + Respond first / Follow up consistently / Win more bookings; Studio AI ↔ Convert recap; **Care teaser with the new Care logo** (public/brand/venuebot-care-logo.png) |
 
-## Architecture added for Convert
+## Architecture added for Convert (framework remains Video 2-compatible)
 
-- `src/sections/StudioModuleSection.tsx` gained optional config fields (all default to Studio AI values, Video 2 untouched): `product` (kicker/header), `theme` (accent class, `theme-convert`), `plate` (background), `beats` (bespoke animated beats).
-- `src/sections/ConvertBeats.tsx` — beat components registry: `after-hours-clock`, `nurture-timeline`. Beats read word-timed anchors from `events` in the config, so every timing stays in `src/data/convertSections.ts`.
-- `src/data/convertSections.ts` — Convert section configs.
-- `scripts/qa-sections.py` now audits both data files and treats beat windows as screen coverage.
-- Convert CSS lives at the end of `src/styles.css` (theme overrides + beat styles), same glass language as the 2026 polish pass.
-- Audio: `public/audio/convert/m2-sk-sm-tail.m4a` (trimmed at 78.8s, clean silence verified, padded to 81s).
+- `StudioModuleSection` config: optional `product` / `theme` / `plate` / `beats`, and `mode: "phone"` on clips (right-side bezel, source pre-cropped above the input bar to hide the recording cursor). `chapterUntil: 0` suppresses the chapter open for end cards.
+- `src/sections/ConvertBeats.tsx` — beat registry: `after-hours-clock`, `nurture-timeline` (cadence data inside mirrors NURTURE_SEQUENCE_V3.md), `side-callouts` (word-timed left-column copy/chips via event labels), `tour-diary`, `channel-grid`.
+- All beat timings live in `src/data/convertSections.ts` as `events` (word times); beat components read them by id.
+- Convert CSS at the end of `src/styles.css` (`theme-convert` + beat styles).
+- `scripts/qa-sections.py`: audits both data files; beats count as coverage; clip regex handles `fit`/`mode` fields.
 
-## Open questions for Mark
+## Audio facts
 
-1. Do ScreenStudio recordings exist for M2-SN (WhatsApp conversation + diary booking) and M2-SO (website/Facebook/Instagram/WhatsApp four-up)? Drive folders were empty; the tracker's Drive links may be unsynced. If not, they need capturing (or M2-SN can be built as an animated chat-thread beat in the same style as the clock, pending Mark's preference).
-2. A Care logo lockup is needed for the T2 teaser and Video 4.
-3. Care (M3) is walkthrough-heavy and has no recordings at all; recording should start in parallel (see handoff §6).
+- `m2-sk-sm` trimmed at 78.8s (clean), `m2-sn` at 70.6s (clean), **`m2-so-sp` at 58.45s — the source has a real re-take artifact ("No missed. No missed.") at 58.6–59.3, never extend past the trim**, `m2-sq-t2` at 27.95s (clean). All padded `.m4a` in `public/audio/convert/`.
+
+## QA performed per section (Video 2 standard)
+
+tsc + qa-sections clean → full-res still crops of every text moment → half-scale render → contact sheet → silence map vs transcript → mlx-whisper word-sync of rendered audio (all anchors within 0.05s).
+
+## Source material (do not alter)
+
+- `Kirby Manor Chatbot SMS demo video.mp4` (repo root, untracked by design): Mark's SMS walkthrough, the source for the M2-SN proof clips. Bubble timeline: A1 5.4, A2 9.8, A3 17.9, Q4 28.2, A4 31.2, Q5 41.6, A5 43.1, Q6 48.2, A6 49.4, Q7 55.5, A7 57.9, 10:00 sent 65.4, "Perfect!" 67.5.
+- VO mp3s in Drive `Convert/Vox/`.
+
+## Known open items
+
+- "10:00 AM.?" typo in the demo's typed message: accepted as authentic user typing (Mark's call if he wants a re-record; clips are versioned drop-ins).
+- If Mark later records real captures for M2-SO's four channels, the channel-grid beat swaps for clips without touching the rest.
+- Care (Video 4) is out of scope until Video 3 is approved; Care recordings still need capturing.
