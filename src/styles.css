@@ -6840,19 +6840,26 @@ body {
 .convert-grid-card header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
 }
 
+/* Bold brand-mark disc: white glyph on the channel's own colour. */
 .convert-grid-card header i {
-  width: 13px;
-  height: 13px;
-  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  box-shadow:
+    0 10px 24px rgba(81, 67, 76, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .convert-grid-card header span {
-  color: rgba(81, 67, 76, 0.66);
-  font-size: 18px;
-  font-weight: 660;
+  color: rgba(81, 67, 76, 0.72);
+  font-size: 20px;
+  font-weight: 680;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
