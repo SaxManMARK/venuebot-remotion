@@ -5,6 +5,7 @@ import {StudioAI} from "./sections/StudioAI";
 import {StudioAIVenueIntelligence} from "./sections/StudioAIVenueIntelligence";
 import {StudioModuleSection} from "./sections/StudioModuleSection";
 import {StudioAIFull, studioAiFullDuration} from "./sections/StudioAIFull";
+import {ConvertFull, convertFullDuration} from "./sections/ConvertFull";
 import {m1Se, m1Sf, m1Sg, m1Sh, m1Si} from "./data/studioAiSections";
 import {m2Sk, m2Sn, m2So, m2Sq} from "./data/convertSections";
 import {seconds} from "./data/video";
@@ -113,6 +114,14 @@ export const Root = () => {
         width={videoWidth}
         height={videoHeight}
         defaultProps={{config: m1Si}}
+      />
+      <Composition
+        id="Convert-Full"
+        component={ConvertFull}
+        durationInFrames={convertFullDuration}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
       />
       <Composition
         id="Convert-M2-SK"
