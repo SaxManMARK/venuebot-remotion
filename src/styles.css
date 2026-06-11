@@ -7037,6 +7037,12 @@ body {
   background: linear-gradient(135deg, rgba(213, 167, 152, 0.92), rgba(255, 230, 180, 0.85));
 }
 
+/* Pale rose labels fail on light glass: drop to the approved dusty rose. */
+.luxury-shortlist-barn .luxury-shortlist-meta span,
+.luxury-shortlist-barn .luxury-shortlist-status small {
+  color: #c08e7c;
+}
+
 /* --- Capability system (light surface): kicker to dusty rose, 650s ------- */
 .capability-header span {
   color: #c08e7c;
@@ -7050,6 +7056,11 @@ body {
 
 .capability-copy em {
   font-weight: 660;
+}
+
+/* Pale rose kicker fails on the porcelain surface: approved dusty rose. */
+.capability-pillar-engagement .capability-copy em {
+  color: #c08e7c;
 }
 
 .capability-list span {
