@@ -1,5 +1,12 @@
 # Handover: Intro (Video 1) design-system retrofit
 
+> **Status 2026-06-11 (late evening): BUILT.** Retrofit applied across every scene
+> (glass card families, 540-680 label weights, dusty-rose kickers, HeadlineReveal
+> word de-blur, tilt entrances, chip caption, Playfair stat numerals) and verified
+> with full-res still crops. Draft render `out/intro-retrofit-v1.mp4` (156.2s)
+> awaiting Mark's timecoded notes. CSS lives in the "Video 1: Intro retrofit"
+> layer at the end of `src/styles.css`. No cue/audio changes.
+
 **Goal:** bring the Intro film up to the approved Video 2 design system — visual updates only.
 Do NOT change the Intro's narrative, timings, cue points, or audio. The VO timing anchor stays
 `transcripts/m1-sa-sb-v3.*` and `src/data/introCuePoints.ts`.
