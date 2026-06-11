@@ -26,6 +26,8 @@ export type ModuleClip = {
   zoom: number;
   /** Where the zoom aims, e.g. "50% 36%" to focus an upper-page banner. Default "50% 46%". */
   origin?: string;
+  /** "contain" letterboxes the full frame inside the card (for full-width statements). Default "cover". */
+  fit?: "cover" | "contain";
 };
 
 export type ChipGroup = {
@@ -302,7 +304,7 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
                   style={{
                     width: "100%",
                     height: "100%",
-                    objectFit: "cover",
+                    objectFit: clip.fit ?? "cover",
                     opacity: fadeIn,
                     transform: `scale(${clip.zoom})`,
                     transformOrigin: clip.origin ?? "50% 46%",

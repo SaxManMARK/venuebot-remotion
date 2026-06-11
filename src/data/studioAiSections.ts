@@ -218,7 +218,7 @@ export const m1Sg: ModuleSectionConfig = {
     // "Yet most brochures are never reviewed..." + "Studio AI changes that." (13.0-24.4)
     {src: "proof/studio-ai/m1-sg-landing.mp4", at: 12.6, until: 25.0, zoom: 1.15},
     // "We've analysed wedding buyer behaviour..." (25.6-38.3) - hold on the 45+ sources banner
-    {src: "proof/studio-ai/m1-sg-research.mp4", at: 25.0, until: 39.5, zoom: 1.45},
+    {src: "proof/studio-ai/m1-sg-research-v4.mp4", at: 25.0, until: 39.5, zoom: 1, fit: "contain"},
     // "Simply upload your existing brochure..." (39.5-46.2)
     {src: "proof/studio-ai/m1-sg-upload.mp4", at: 39.5, until: 48.4, zoom: 1.15},
     // "extracts... scores... identifies... rewritten version" (48.8-64.0)
@@ -236,6 +236,11 @@ export const m1Sg: ModuleSectionConfig = {
     // "approve it... request a revision... download" (B 45.3-55.5)
     {src: "proof/studio-ai/m1-sg-approve.mp4", at: sgB + 45, until: sgB + 56.2, zoom: 1.42},
     // (B 56.2-76: editorial close)
+  ],
+  spotlights: [
+    // "We've analysed wedding buyer behaviour..." (25.6-38.3) - the 45+
+    // authoritative sources banner, same treatment as M1-SF.
+    {from: 26.0, until: 38.0, left: 240, top: 358, width: 1452, height: 98},
   ],
   chipGroups: [
     {
