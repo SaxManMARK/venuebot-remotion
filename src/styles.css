@@ -6291,6 +6291,12 @@ body {
 
 /* --- 01:14 chips: from web buttons to frosted editorial pills ------------ */
 .studio-sd-chips span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 320px;
+  text-align: center;
+  line-height: 1.18;
   padding: 15px 30px;
   border: 1px solid rgba(255, 250, 243, 0.16);
   color: #f7f1ea;
@@ -6302,4 +6308,14 @@ body {
   box-shadow:
     0 18px 44px rgba(47, 31, 41, 0.38),
     inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+
+/* Spotlight: dims everything around a region of the recording and rings it
+   with a warm glow, to pull the eye to one statement. Frame-driven opacity. */
+.studio-spotlight {
+  position: absolute;
+  z-index: 8;
+  border-radius: 14px;
+  pointer-events: none;
 }

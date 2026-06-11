@@ -49,6 +49,16 @@ export type Stamp = {
   logo?: string;
 };
 
+export type Spotlight = {
+  from: number;
+  until: number;
+  /** Region in 1920x1080 stage coordinates. */
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+};
+
 export type ModuleSectionConfig = {
   id: string;
   moduleNumber: string;
@@ -64,6 +74,8 @@ export type ModuleSectionConfig = {
   clips: ModuleClip[];
   chipGroups?: ChipGroup[];
   stamps?: Stamp[];
+  /** Dim the frame around a region of the recording and ring it with a warm glow. */
+  spotlights?: Spotlight[];
   closing?: {text: string; at: number};
 };
 
@@ -76,6 +88,31 @@ const lineStyle: Record<NonNullable<StampLine["variant"]>, CSSProperties> = {
   "thin-caps": {fontFamily: font.body, fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.3em", fontSize: "50px"},
   // Oversized stat punch, e.g. "30-50%"
   display: {fontFamily: font.title, fontWeight: 900, fontSize: "190px", letterSpacing: "-0.01em"},
+};
+
+const SpotlightOverlay = ({spot}: {spot: Spotlight}) => {
+  const frame = useCurrentFrame();
+  const on = interpolate(
+    frame,
+    [seconds(spot.from), seconds(spot.from + 0.55), seconds(spot.until - 0.55), seconds(spot.until)],
+    [0, 1, 1, 0],
+    clamp,
+  );
+  const breathe = 0.5 + Math.sin(frame / 16) * 0.5;
+
+  return (
+    <div
+      className="studio-spotlight"
+      style={{
+        left: spot.left,
+        top: spot.top,
+        width: spot.width,
+        height: spot.height,
+        opacity: on,
+        boxShadow: `0 0 0 9999px rgba(47, 31, 41, ${0.34 * on}), 0 0 0 2px rgba(255, 230, 180, ${0.55 + breathe * 0.3}), 0 0 ${38 + breathe * 18}px ${8 + breathe * 5}px rgba(255, 230, 180, ${0.3 + breathe * 0.16})`,
+      }}
+    />
+  );
 };
 
 const ChipRow = ({group}: {group: ChipGroup}) => {
@@ -274,6 +311,10 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
           })}
           <div className="studio-sd-screen-ring" />
         </div>
+
+        {(config.spotlights ?? []).map((spot, index) => (
+          <SpotlightOverlay key={index} spot={spot} />
+        ))}
 
         {(config.chipGroups ?? []).map((group, index) => (
           <ChipRow group={group} key={index} />

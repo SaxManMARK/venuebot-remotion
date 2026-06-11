@@ -100,7 +100,7 @@ export const m1Sf: ModuleSectionConfig = {
     // "Then Studio AI gets to work" (B 0-4.5)
     {src: "proof/studio-ai/m1-sf-generating.mp4", at: sfB, until: sfB + 5.5, zoom: 1},
     // "Not a generic template... complete nurture journey" (B 6.9-14.7)
-    {src: "proof/studio-ai/m1-sf-reveal.mp4", at: sfB + 5.5, until: sfB + 16.2, zoom: 1.15},
+    {src: "proof/studio-ai/m1-sf-reveal.mp4", at: sfB + 5.5, until: sfB + 16.2, zoom: 1.55},
     // "Every message has a purpose..." (B 16.2-26.9)
     {src: "proof/studio-ai/m1-sf-purpose.mp4", at: sfB + 16.2, until: sfB + 27.5, zoom: 1},
     // "The happy path guides couples..." (B 28.1-36.8)
@@ -114,6 +114,11 @@ export const m1Sf: ModuleSectionConfig = {
     // "Personalisation fields are mapped automatically... export" (B 73.9-86.3)
     {src: "proof/studio-ai/m1-sf-fields.mp4", at: sfB + 73.5, until: sfB + 87, zoom: 1},
     // (B 87-100: editorial closing stamp, no screen)
+  ],
+  spotlights: [
+    // "We analysed wedding industry research..." (18.0-28.0) - pull the eye to
+    // the green "Built on analysis of 60+ published sources" banner.
+    {from: 19.2, until: 28.8, left: 535, top: 338, width: 1145, height: 100},
   ],
   chipGroups: [
     {
