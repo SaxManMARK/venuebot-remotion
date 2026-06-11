@@ -1,6 +1,6 @@
 # Video 2: Studio AI — Build Status
 
-Last updated: 2026-06-11 — **VIDEO 2 APPROVED.** All six module sections signed off by Mark individually (SF, SG, SH, SI explicitly; SC/SD/SE carry all polish rounds). Final approved master render: `out/studio-ai-full-v2.mp4`. Orphaned clip versions swept; QA clean.
+Last updated: 2026-06-11 — **VIDEO 2 APPROVED.** All six module sections signed off by Mark individually (SF, SG, SH, SI explicitly; SC/SD/SE carry all polish rounds). Final approved master render: `out/studio-ai-full-v3.mp4` (v3 adds the two watch-through fixes: Titchwell-free weaknesses beat, centred 30-50% caption). Orphaned clip versions swept; QA clean.
 
 **Next: Video 3 (Convert) and Video 4 (Care) in fresh threads — see `VIDEO3_CONVERT_HANDOFF.md`** for the complete handover (context, build plan, design system, workflow rules, asset status). Key headline: Convert/Care Drive folders have VO only, no recordings — Convert is largely motion-design-buildable now; Care needs Mark to record ScreenStudio captures first.
 
