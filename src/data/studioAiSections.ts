@@ -444,7 +444,8 @@ export const m1Sh: ModuleSectionConfig = {
       mode: "full",
       lines: [
         {text: "30–50%", at: 150.6, variant: "display"},
-        {text: "of enquiries lost before a couple ever gets in touch", at: 152.8, variant: "caps"},
+        {text: "of enquiries lost before", at: 152.8, variant: "caps"},
+        {text: "a couple ever gets in touch", at: 153.6, variant: "caps"},
       ],
     },
     {

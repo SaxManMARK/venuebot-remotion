@@ -6040,10 +6040,12 @@ body {
 }
 
 .studio-sd-stamp strong {
+  max-width: 1560px;
   color: var(--plum);
   font-size: 92px;
   font-weight: 800;
   line-height: 1.04;
+  text-align: center;
 }
 
 .studio-sd-closing {
