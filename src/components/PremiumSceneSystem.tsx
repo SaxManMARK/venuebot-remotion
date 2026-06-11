@@ -8,6 +8,7 @@ import {
 } from "remotion";
 import {font} from "../theme";
 import {seconds} from "../data/video";
+import {HeadlineReveal} from "../sections/StudioAI";
 
 const clamp = {
   extrapolateLeft: "clamp" as const,
@@ -96,27 +97,21 @@ export const CinematicIntro = ({
   variant = "warm",
 }: TimedSceneProps) => {
   const frame = useCurrentFrame();
-  const title = reveal(frame, start + seconds(0.55), seconds(0.95));
   const hint = reveal(frame, start + seconds(1.35), seconds(0.85));
 
   return (
     <VideoShell variant={variant}>
       {asset ? <CinematicPlate asset={asset} start={start} variant={variant} /> : null}
       <div className="cinematic-intro-copy">
-        <h1
-          style={{
-            fontFamily: font.title,
-            opacity: title,
-            transform: `translateY(${(1 - title) * 34}px)`,
-          }}
-        >
-          {headline}
+        <h1 style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.55)}>{headline}</HeadlineReveal>
         </h1>
         {subtitle ? (
           <p
             style={{
               fontFamily: font.title,
               opacity: hint,
+              filter: `blur(${(1 - hint) * 8}px)`,
               transform: `translateY(${(1 - hint) * 18}px)`,
             }}
           >
@@ -128,7 +123,8 @@ export const CinematicIntro = ({
         className="soft-ui-hint"
         style={{
           opacity: hint,
-          transform: `translate3d(${drift(frame, 12, 8)}px, ${drift(frame, 41, 6)}px, 0)`,
+          filter: `blur(${(1 - hint) * 10}px)`,
+          transform: `perspective(900px) translate3d(${drift(frame, 12, 8)}px, ${drift(frame, 41, 6) + (1 - hint) * 30}px, 0) rotateX(${(1 - hint) * 12}deg)`,
         }}
       >
         <span />
@@ -157,10 +153,12 @@ export const ProblemStatement = ({
     <VideoShell variant={variant}>
       {asset ? <CinematicPlate asset={asset} start={start} variant={variant} /> : null}
       <div className="problem-copy">
-        <h2 style={{fontFamily: font.title, opacity: copy, transform: `translateY(${(1 - copy) * 30}px)`}}>
-          {headline}
+        <h2 style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.25)}>{headline}</HeadlineReveal>
         </h2>
-        {subtitle ? <p style={{fontFamily: font.title, opacity: copy}}>{subtitle}</p> : null}
+        {subtitle ? (
+          <p style={{fontFamily: font.title, opacity: copy, filter: `blur(${(1 - copy) * 8}px)`}}>{subtitle}</p>
+        ) : null}
       </div>
       {isJourney ? (
         <div className="opportunity-journey">
@@ -172,7 +170,11 @@ export const ProblemStatement = ({
               <div
                 className="opportunity-journey-card"
                 key={callout.label}
-                style={{opacity: show, transform: `translateY(${(1 - show) * 26}px)`}}
+                style={{
+                  opacity: show,
+                  filter: `blur(${(1 - show) * 10}px)`,
+                  transform: `perspective(900px) translateY(${(1 - show) * 26}px) rotateX(${(1 - show) * 14}deg)`,
+                }}
               >
                 <span>{callout.label}</span>
                 {callout.value ? <strong>{callout.value}</strong> : null}
@@ -190,7 +192,11 @@ export const ProblemStatement = ({
               <div
                 className={`problem-callout ${isOpportunity ? "opportunity-card" : ""}`}
                 key={callout.label}
-                style={{opacity: show, transform: `translateY(${(1 - show) * 24}px)`}}
+                style={{
+                  opacity: show,
+                  filter: `blur(${(1 - show) * 10}px)`,
+                  transform: `perspective(900px) translateY(${(1 - show) * 24}px) rotateX(${(1 - show) * 14}deg)`,
+                }}
               >
                 {isOpportunity ? (
                   <>
@@ -248,10 +254,24 @@ export const StatisticReveal = ({
           <span />
           <span />
         </div>
-        <strong style={{fontFamily: font.body, opacity: stat, transform: `scale(${0.82 + stat * 0.18})`}}>
+        <strong
+          style={{
+            fontFamily: font.title,
+            opacity: stat,
+            filter: `blur(${(1 - stat) * 14}px)`,
+            transform: `scale(${0.82 + stat * 0.18})`,
+          }}
+        >
           {value}
         </strong>
-        <p style={{fontFamily: font.title, opacity: copy, transform: `translateY(${(1 - copy) * 20}px)`}}>
+        <p
+          style={{
+            fontFamily: font.title,
+            opacity: copy,
+            filter: `blur(${(1 - copy) * 8}px)`,
+            transform: `translateY(${(1 - copy) * 20}px)`,
+          }}
+        >
           {label}
         </p>
         {source ? <small style={{opacity: copy}}>{source}</small> : null}
@@ -360,6 +380,7 @@ export const ShortlistCards = ({
                 left: `${venue.x}%`,
                 top: `${venue.y}%`,
                 opacity: show * (keep ? 0.22 - fieldFade * 0.14 : 0.5 - exit * 0.42),
+                filter: `blur(${(1 - show) * 8}px)`,
                 transform: `translate(-50%, -50%) translateY(${exit * 42}px) scale(${1 - exit * 0.22}) rotate(${venue.rotation}deg)`,
               }}
             >
@@ -390,7 +411,9 @@ export const ShortlistCards = ({
               key={card.title}
               style={{
                 opacity: show * focusOpacity,
-                transform: `translateX(${focusX}px) translateY(${(1 - show) * 48 + lift + drift(frame, index * 22, 3)}px) scale(${scale})`,
+                // Yield to the .is-receding class filter once the entrance settles.
+                filter: show < 1 ? `blur(${(1 - show) * 10}px)` : undefined,
+                transform: `perspective(1200px) translateX(${focusX}px) translateY(${(1 - show) * 48 + lift + drift(frame, index * 22, 3)}px) rotateX(${(1 - show) * 12}deg) scale(${scale})`,
               }}
             >
               <div className="luxury-shortlist-thumb">
@@ -426,10 +449,12 @@ export const SolutionIntro = ({
     <VideoShell variant="product">
       <div className="solution-intro">
         <Img alt="VenueBot" src={staticFile("brand/venuebot-logo-white.png")} style={{opacity: show}} />
-        <h2 style={{fontFamily: font.title, opacity: show, transform: `translateY(${(1 - show) * 26}px)`}}>
-          {headline}
+        <h2 style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.2)}>{headline}</HeadlineReveal>
         </h2>
-        {subtitle ? <p style={{fontFamily: font.title, opacity: show}}>{subtitle}</p> : null}
+        {subtitle ? (
+          <p style={{fontFamily: font.title, opacity: show, filter: `blur(${(1 - show) * 8}px)`}}>{subtitle}</p>
+        ) : null}
       </div>
     </VideoShell>
   );
@@ -583,7 +608,9 @@ export const CapabilityPillarSystem = ({start}: {start: number}) => {
         style={{opacity: intro * (1 - outcome), transform: `translate(-50%, ${(1 - intro) * 26}px)`}}
       >
         <span>The VenueBot framework</span>
-        <h2 style={{fontFamily: font.title}}>Three Products. One Purpose.</h2>
+        <h2 style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.1)}>Three Products. One Purpose.</HeadlineReveal>
+        </h2>
         <p>Knowledge → Engagement → Control</p>
       </div>
 
@@ -600,7 +627,9 @@ export const CapabilityPillarSystem = ({start}: {start: number}) => {
               key={world.meaning}
               style={{
                 opacity: card * (1 - outcome * 0.94),
-                transform: `translateY(${(1 - card) * 48 - focus * 18}px) scale(${0.96 + focus * 0.035 + unify * 0.015})`,
+                // Yield to the .is-quiet class filter once the entrance settles.
+                filter: card < 1 ? `blur(${(1 - card) * 10}px)` : undefined,
+                transform: `perspective(1100px) translateY(${(1 - card) * 48 - focus * 18}px) rotateX(${(1 - card) * 12}deg) scale(${0.96 + focus * 0.035 + unify * 0.015})`,
               }}
             >
               <div className="capability-copy">
@@ -616,6 +645,7 @@ export const CapabilityPillarSystem = ({start}: {start: number}) => {
                         key={item}
                         style={{
                           opacity: itemReveal,
+                          filter: `blur(${(1 - itemReveal) * 6}px)`,
                           transform: `translateX(${(1 - itemReveal) * -18}px)`,
                         }}
                       >
@@ -664,10 +694,24 @@ export const CapabilityPillarSystem = ({start}: {start: number}) => {
 
       <div
         className="capability-outcome"
-        style={{opacity: outcome, transform: `translate(-50%, calc(-50% + ${(1 - outcome) * 24}px))`}}
+        style={{transform: `translate(-50%, calc(-50% + ${(1 - outcome) * 24}px))`}}
       >
-        <span>More Bookings.</span>
-        <span>More Confidence.</span>
+        {["More Bookings.", "More Confidence."].map((line, index) => {
+          const lineReveal = reveal(frame, start + seconds(57.76 + index * 0.24), seconds(1.1));
+
+          return (
+            <span
+              key={line}
+              style={{
+                opacity: lineReveal,
+                filter: `blur(${(1 - lineReveal) * 12}px)`,
+                transform: `translateY(${(1 - lineReveal) * 22}px)`,
+              }}
+            >
+              {line}
+            </span>
+          );
+        })}
       </div>
     </AbsoluteFill>
   );
@@ -703,7 +747,9 @@ export const CTAClosingScene = ({
     <VideoShell variant="product">
       <div className="cta-closing" style={{opacity: show, transform: `scale(${0.94 + show * 0.06})`}}>
         <Img alt="VenueBot" src={staticFile("brand/venuebot-logo-white.png")} />
-        <h2 style={{fontFamily: font.title}}>{headline}</h2>
+        <h2 style={{fontFamily: font.title}}>
+          <HeadlineReveal from={start + seconds(0.35)}>{headline}</HeadlineReveal>
+        </h2>
         <p>{subtitle}</p>
       </div>
     </VideoShell>

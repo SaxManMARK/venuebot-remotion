@@ -6905,3 +6905,169 @@ body {
   font-style: italic;
   font-weight: 700;
 }
+
+/* ===== Video 1: Intro retrofit (approved Video 2 design system) ===========
+   Same glass, type weights and motion language as the "2026 polish pass"
+   layer above. Visual-only overrides: no positions, timings or copy move.
+   The Intro keeps its dark cinematic shells; cards on them pick up the
+   frosted-glass recipe, labels drop from 900/950 to 540-680.
+   ========================================================================= */
+
+/* --- Light glass card family (cream slabs become frosted glass) --------- */
+.soft-ui-hint,
+.opportunity-card,
+.opportunity-journey-card,
+.luxury-shortlist-card {
+  border: 1px solid rgba(81, 67, 76, 0.14);
+  border-radius: 22px;
+  background: linear-gradient(170deg, rgba(255, 253, 250, 0.82), rgba(249, 243, 236, 0.62));
+  backdrop-filter: blur(20px) saturate(1.1);
+  box-shadow:
+    0 26px 64px rgba(20, 32, 30, 0.24),
+    0 2px 8px rgba(20, 32, 30, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.shortlist-race-tile {
+  border: 1px solid rgba(81, 67, 76, 0.13);
+  border-radius: 16px;
+  background: linear-gradient(170deg, rgba(255, 253, 250, 0.74), rgba(249, 243, 236, 0.5));
+  backdrop-filter: blur(14px) saturate(1.05);
+  box-shadow:
+    0 18px 48px rgba(20, 32, 30, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* --- Dark callouts join the frosted plum chip family ---------------------
+   :not(.opportunity-card) keeps the light-glass treatment above winning on
+   the cards that carry both classes. */
+.problem-callout:not(.opportunity-card) {
+  border: 1px solid rgba(255, 250, 243, 0.14);
+  border-radius: 22px;
+  background: rgba(56, 45, 52, 0.6);
+  backdrop-filter: blur(20px) saturate(1.05);
+  box-shadow:
+    0 24px 60px rgba(47, 31, 41, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.problem-callout:not(.opportunity-card) strong {
+  font-weight: 680;
+}
+
+.problem-callout:not(.opportunity-card) span {
+  font-weight: 560;
+  color: rgba(255, 246, 228, 0.84);
+}
+
+/* --- Typography: labels and captions lose the black-bold weight ---------- */
+.soft-ui-hint strong {
+  font-weight: 660;
+  letter-spacing: 0.14em;
+}
+
+.soft-ui-hint small {
+  font-weight: 640;
+}
+
+.soft-ui-hint em {
+  font-weight: 560;
+  color: rgba(20, 32, 30, 0.66);
+}
+
+.opportunity-card span {
+  color: #51434c;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+}
+
+.opportunity-card small {
+  font-weight: 560;
+}
+
+.opportunity-meta em {
+  font-weight: 620;
+}
+
+.opportunity-journey-card span {
+  color: #51434c;
+  font-weight: 650;
+}
+
+.opportunity-journey-card small {
+  font-weight: 560;
+}
+
+.stat-reveal small {
+  font-weight: 640;
+  letter-spacing: 0.16em;
+}
+
+.shortlist-race-tile strong {
+  font-weight: 660;
+}
+
+.shortlist-race-tile small {
+  font-weight: 540;
+}
+
+.shortlist-momentum span {
+  font-weight: 650;
+}
+
+.luxury-shortlist-meta span {
+  font-weight: 650;
+}
+
+.luxury-shortlist-meta small {
+  font-weight: 560;
+}
+
+.luxury-shortlist-status small {
+  font-weight: 660;
+}
+
+.luxury-shortlist-status b {
+  font-weight: 620;
+}
+
+.luxury-shortlist-card em {
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  background: linear-gradient(135deg, rgba(213, 167, 152, 0.92), rgba(255, 230, 180, 0.85));
+}
+
+/* --- Capability system (light surface): kicker to dusty rose, 650s ------- */
+.capability-header span {
+  color: #c08e7c;
+  font-weight: 650;
+  letter-spacing: 0.3em;
+}
+
+.capability-header p {
+  font-weight: 650;
+}
+
+.capability-copy em {
+  font-weight: 660;
+}
+
+.capability-list span {
+  font-weight: 650;
+}
+
+/* --- Bottom caption becomes the approved frosted plum chip --------------- */
+.scene-bottom-caption {
+  padding: 15px 30px;
+  border: 1px solid rgba(255, 250, 243, 0.16);
+  color: #f7f1ea;
+  font-size: 24px;
+  font-weight: 540;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  background-color: rgba(56, 45, 52, 0.72);
+  backdrop-filter: blur(18px) saturate(1.1);
+  box-shadow:
+    0 18px 44px rgba(47, 31, 41, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}

@@ -26,7 +26,7 @@ Last updated: 2026-06-11 (evening). **All four sections built and self-QA'd; ful
 
 ## Audio facts
 
-- `m2-sk-sm` trimmed at 78.8s (clean), `m2-sn` at 70.6s (clean), **`m2-so-sp` at 58.45s — the source has a real re-take artifact ("No missed. No missed.") at 58.6–59.3, never extend past the trim**, `m2-sq-t2` at 27.95s (clean). All padded `.m4a` in `public/audio/convert/`.
+- `m2-sk-sm` trimmed at 78.8s (clean), `m2-sn` at 70.6s (clean), **`m2-so-sp` at 59.2s — speech truly ends at 58.96s; the transcript's trailing "No missed. No missed." was a Whisper hallucination over the silent tail, and an earlier 58.45s trim clipped the word "first." (caught by Mark at 3:31). Tail-audit every trim against silencedetect, not Whisper word ends**, `m2-sq-t2` at 27.95s (clean). All padded `.m4a` in `public/audio/convert/`.
 
 ## QA performed per section (Video 2 standard)
 

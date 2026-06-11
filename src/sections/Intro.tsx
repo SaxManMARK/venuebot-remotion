@@ -87,6 +87,29 @@ const Title = ({
   </h1>
 );
 
+// Approved chip entrance: one peach sheen sweeps through as it lands, then a
+// gentle breathing glow. Frame-driven, mirrors ChipRow in StudioModuleSection.
+const CaptionChip = ({at, children}: {at: number; children: React.ReactNode}) => {
+  const frame = useCurrentFrame();
+  const pop = interpolate(frame, [at, at + seconds(0.42)], [0, 1], {...clamp, easing: ease});
+  const sweep = interpolate(frame, [at + seconds(0.18), at + seconds(1.15)], [-35, 135], clamp);
+  const breathe = 0.5 + Math.sin(frame / 17) * 0.5;
+
+  return (
+    <div
+      className="scene-bottom-caption"
+      style={{
+        opacity: pop,
+        transform: `translateX(-50%) translateY(${(1 - pop) * 26}px) scale(${0.92 + pop * 0.08 + breathe * 0.008})`,
+        backgroundImage: `linear-gradient(105deg, transparent ${sweep - 10}%, rgba(255, 230, 180, 0.26) ${sweep}%, transparent ${sweep + 10}%)`,
+        boxShadow: `0 18px ${40 + breathe * 10}px rgba(47, 31, 41, ${0.32 + breathe * 0.1}), inset 0 1px 0 rgba(255, 255, 255, 0.14)`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
 const SceneFlash = ({at, className = ""}: {at: number; className?: string}) => {
   const frame = useCurrentFrame();
   const opacity = interpolate(frame, [at - seconds(0.08), at + seconds(0.12), at + seconds(0.72)], [0, 0.52, 0], clamp);
@@ -534,7 +557,9 @@ export const Intro = () => {
 
         <section className="film-scene cards-scene" style={{opacity: saSceneE}}>
           <ShortlistCards asset={plates.shortlist} start={cue.saVenueCards} />
-          <div className="scene-bottom-caption">Nearly 70% decide after visiting 3 venues or fewer.</div>
+          <CaptionChip at={cue.saVenueCards + seconds(0.8)}>
+            Nearly 70% decide after visiting 3 venues or fewer.
+          </CaptionChip>
         </section>
 
         <section className="film-scene clock-scene" style={{opacity: saSceneF}}>
