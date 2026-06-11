@@ -204,7 +204,8 @@ export const HeadlineReveal = ({
             key={index}
             style={{
               display: "inline-block",
-              marginRight: "0.26em",
+              // No trailing margin on the last word - it pushes centered headlines off optical center.
+              marginRight: index === words.length - 1 ? 0 : "0.26em",
               opacity: progress,
               filter: `blur(${(1 - progress) * 12}px)`,
               transform: `translateY(${(1 - progress) * 38}px)`,
