@@ -65,15 +65,19 @@ const ChipRow = ({
 
   return (
     <div className="studio-sd-chips" style={{opacity: rowOpacity}}>
-      {chips.map((chip) => {
+      {chips.map((chip, index) => {
         const pop = reveal(frame, seconds(chip.at), seconds(0.42));
+        const sweep = (((frame + index * 26) % 105) / 105) * 170 - 35;
+        const breathe = 0.5 + Math.sin((frame + index * 19) / 17) * 0.5;
 
         return (
           <span
             key={chip.label}
             style={{
               opacity: pop,
-              transform: `translateY(${(1 - pop) * 26}px) scale(${0.92 + pop * 0.08})`,
+              transform: `translateY(${(1 - pop) * 26}px) scale(${0.92 + pop * 0.08 + breathe * 0.008})`,
+              backgroundImage: `linear-gradient(105deg, transparent ${sweep - 9}%, rgba(255, 246, 228, ${0.1 + breathe * 0.08}) ${sweep}%, transparent ${sweep + 9}%)`,
+              boxShadow: `0 18px ${40 + breathe * 10}px rgba(47, 31, 41, ${0.32 + breathe * 0.1}), inset 0 1px 0 rgba(255, 255, 255, 0.14)`,
             }}
           >
             {chip.label}

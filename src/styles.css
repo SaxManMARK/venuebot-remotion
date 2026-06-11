@@ -6297,7 +6297,7 @@ body {
   font-size: 21px;
   font-weight: 540;
   letter-spacing: 0.04em;
-  background: rgba(56, 45, 52, 0.84);
+  background-color: rgba(56, 45, 52, 0.72);
   backdrop-filter: blur(18px) saturate(1.1);
   box-shadow:
     0 18px 44px rgba(47, 31, 41, 0.38),
