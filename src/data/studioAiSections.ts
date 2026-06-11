@@ -87,7 +87,7 @@ export const m1Sf: ModuleSectionConfig = {
     // -- Part A: the problem, the research, build vs audit, configuration --
     // (0-17.6: editorial problem beat, no screen)
     // "We analysed wedding industry research..." (18.0-28.0) over the 60+ sources banner
-    {src: "proof/studio-ai/m1-sf-research.mp4", at: 17.8, until: 29.8, zoom: 1.68, origin: "49% 48%"},
+    {src: "proof/studio-ai/m1-sf-research-v2.mp4", at: 17.8, until: 29.8, zoom: 1.68, origin: "49% 48%"},
     // "Already have a nurture sequence? Audit it." (30.0-37.8)
     {src: "proof/studio-ai/m1-sf-audit.mp4", at: 29.8, until: 38.8, zoom: 1},
     // "Starting from scratch... automatically" (39.2-45.2)
