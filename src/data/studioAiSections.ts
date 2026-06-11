@@ -216,7 +216,7 @@ export const m1Sg: ModuleSectionConfig = {
   clips: [
     // (0-12.6: editorial open - sofa / partner / shortlist)
     // "Yet most brochures are never reviewed..." + "Studio AI changes that." (13.0-24.4)
-    {src: "proof/studio-ai/m1-sg-landing.mp4", at: 12.6, until: 25.0, zoom: 1.15},
+    {src: "proof/studio-ai/m1-sg-research-v4.mp4", at: 12.6, until: 25.0, zoom: 1, fit: "contain"},
     // "We've analysed wedding buyer behaviour..." (25.6-38.3) - hold on the 45+ sources banner
     {src: "proof/studio-ai/m1-sg-research-v4.mp4", at: 25.0, until: 39.5, zoom: 1, fit: "contain"},
     // "Simply upload your existing brochure..." (39.5-46.2)
@@ -230,9 +230,9 @@ export const m1Sg: ModuleSectionConfig = {
     // Part B: "identifies what's missing..." (B 0-17.9) - Needs Work cards
     {src: "proof/studio-ai/m1-sg-weaknesses.mp4", at: sgB, until: sgB + 18.6, zoom: 1.42},
     // "improved version, side by side" + "nothing is hidden" (B 19.2-32.4)
-    {src: "proof/studio-ai/m1-sg-sidebyside.mp4", at: sgB + 18.6, until: sgB + 33, zoom: 1},
+    {src: "proof/studio-ai/m1-sg-sidebyside-v2.mp4", at: sgB + 18.6, until: sgB + 33, zoom: 1, fit: "contain"},
     // "the goal isn't to replace your voice..." (B 33.5-43.7)
-    {src: "proof/studio-ai/m1-sg-rewrite.mp4", at: sgB + 33, until: sgB + 45, zoom: 1},
+    {src: "proof/studio-ai/m1-sg-rewrite-v2.mp4", at: sgB + 33, until: sgB + 45, zoom: 1, fit: "contain"},
     // "approve it... request a revision... download" (B 45.3-55.5)
     {src: "proof/studio-ai/m1-sg-approve.mp4", at: sgB + 45, until: sgB + 56.2, zoom: 1.42},
     // (B 56.2-76: editorial close)
