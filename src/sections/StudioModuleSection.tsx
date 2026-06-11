@@ -41,6 +41,9 @@ export type StampLine = {
   at: number;
   /** Typographic voice for editorial variety. */
   variant?: "serif" | "serif-italic" | "caps" | "thin-caps" | "display";
+  /** Render this line as an image (staticFile path) instead of text, e.g. a wordmark. */
+  image?: string;
+  imageWidth?: number;
 };
 
 export type Stamp = {
@@ -187,6 +190,22 @@ const StampOverlay = ({stamp}: {stamp: Stamp}) => {
       ) : null}
       {stamp.lines.map((line) => {
         const pop = reveal(frame, seconds(line.at), seconds(0.5));
+
+        if (line.image) {
+          return (
+            <Img
+              alt={line.text}
+              key={line.text}
+              src={staticFile(line.image)}
+              style={{
+                width: line.imageWidth ?? 620,
+                margin: "16px 0",
+                opacity: pop,
+                transform: `translateY(${(1 - pop) * 30}px) scale(${0.96 + pop * 0.04})`,
+              }}
+            />
+          );
+        }
 
         return (
           <strong

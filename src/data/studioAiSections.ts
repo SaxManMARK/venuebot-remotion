@@ -603,7 +603,9 @@ export const m1Si: ModuleSectionConfig = {
       mode: "full",
       lines: [
         {text: "Seeing the gap is half the job.", at: 133.4, variant: "serif"},
-        {text: "Closing it is where Convert comes in.", at: 136.2, variant: "serif-italic"},
+        {text: "Closing it is where", at: 136.2, variant: "serif-italic"},
+        {text: "VenueBot Convert", at: 137.3, image: "brand/venuebot-convert-logo.png", imageWidth: 640},
+        {text: "comes in.", at: 137.8, variant: "serif-italic"},
       ],
     },
   ],
