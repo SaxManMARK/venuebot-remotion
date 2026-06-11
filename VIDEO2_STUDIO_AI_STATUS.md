@@ -1,6 +1,10 @@
 # Video 2: Studio AI — Build Status
 
-Last updated: 2026-06-10 (overnight build session). Everything below is committed and pushed to `main`.
+Last updated: 2026-06-11 (edit iteration). Everything below is committed and pushed to `main`.
+
+## Edit iteration status
+
+Mark approved the first cut and is reviewing via rendered MP4s (per-section files in `out/`, ~3 min renders each — NOT Studio preview, which is unreliable for media-heavy timelines on this machine). Rounds 1-2 applied: the "2026 polish pass" (frosted-glass card system, non-headline Inter 900 -> 560-680, agave kickers, serif-italic six-tools lead-in, lighter chips, HeadlineReveal true-centering). More edit batches expected before Video 2 sign-off; Convert (M2) and Care (M3) follow. Permissions: `.claude/settings.local.json` carries a broad allowlist + acceptEdits so iteration doesn't prompt.
 
 ## Watch it
 
