@@ -51,6 +51,7 @@ before writing any code.
 | `src/styles.css` | Design system. The authoritative layer is the final "2026 polish pass" block + chip/spotlight styles at the end. Non-headline Inter stays 540–680 weight. |
 | `public/audio/<video>/`, `public/proof/<video>/`, `public/brand/`, `public/plates/` | Assets by type. Use `convert/` and `care/` subfolders for new sections. Convert logo: `public/brand/venuebot-convert-logo.png`. |
 | `transcripts/` | Word-level timings for ALL VO files, including M2/M3. `.words.csv` for exact word times, `.cue.md` for human reading. |
+| `out/` | Renders (gitignored — they live on disk only). Final approved Video 2 film: `out/studio-ai-full-v2.mp4`. Create review renders here. |
 | `scripts/qa-sections.py` | Automated config audit — run after every timing change. Extend its section regex (`m1S\w+`) to match new config names. |
 | `scripts/transcribe-local.py` | Local re-transcription if new VO arrives (`.venv-whisper/bin/python`, no API key). |
 | `PRODUCTION_TRACKER.md` | Repo snapshot of the production sheet: section IDs, visual plans, VO scripts. |
@@ -62,7 +63,7 @@ before writing any code.
    `.words.csv`. Plan beats: which moments are recording-led, which are editorial
    typographic stamps, which need chips.
 2. **Cut proof clips** with the venv ffmpeg (`.venv-whisper/bin/ffmpeg`): pre-trimmed 30fps
-   re-encodes into `public/proof/<video>/` (`-an -r 30 -c:v libx264 -crf 18 -preset medium
+   re-encodes into `public/proof/convert/` (create it; audio into `public/audio/convert/`) (`-an -r 30 -c:v libx264 -crf 18 -preset medium
    -movflags +faststart`, `tpad=stop_mode=clone` to extend freezes). **Never seek long source
    files at runtime** — Studio hangs.
 3. **Write the section config**, every `at`/`from` a transcript word time.
