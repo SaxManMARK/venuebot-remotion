@@ -6543,7 +6543,7 @@ body {
 
 .convert-tl-daylabel {
   position: absolute;
-  top: 30px;
+  top: 36px;
   transform: translateX(-50%);
   color: rgba(81, 67, 76, 0.58);
   font-size: 20px;
@@ -6616,4 +6616,27 @@ body {
 
 .convert-tl-daylabel {
   white-space: nowrap;
+}
+
+/* Timeline stage architecture (cadence from NURTURE_SEQUENCE_V3.md) */
+.convert-tl-stage {
+  position: absolute;
+  top: -78px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.convert-tl-stage span {
+  color: rgba(81, 67, 76, 0.56);
+  font-size: 17px;
+  font-weight: 660;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.convert-tl-stage i {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(81, 67, 76, 0.3), rgba(81, 67, 76, 0.06));
 }

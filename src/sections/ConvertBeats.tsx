@@ -102,8 +102,36 @@ const AfterHoursClock: FC<{beat: SectionBeat}> = ({beat}) => {
 };
 
 /** M2-SM: the 50-day nurture journey. The rail draws on as the VO says
- *  "more than 50 days"; channel pills land on "email, SMS and WhatsApp". */
-const timelineDays = [1, 3, 6, 10, 15, 21, 28, 36, 50];
+ *  "more than 50 days"; channel pills land on "email, SMS and WhatsApp".
+ *  Touchpoints are the real no-tour cadence from NURTURE_SEQUENCE_V3.md:
+ *  the Day-0 trio (E1.1/E1.2/E1.3), pre-tour nurture D3-D14, recovery D18-D50. */
+type Channel = "email" | "sms" | "whatsapp";
+
+const touchpoints: {day: number; channel: Channel; dy?: number; label?: string}[] = [
+  {day: 0, channel: "email", dy: -17, label: "Hours"},
+  {day: 0, channel: "sms", dy: 0},
+  {day: 0, channel: "email", dy: 17},
+  {day: 3, channel: "email", label: "Day 3"},
+  {day: 5, channel: "email"},
+  {day: 7, channel: "sms", label: "Day 7"},
+  {day: 9, channel: "email"},
+  {day: 12, channel: "whatsapp", label: "Day 12"},
+  {day: 14, channel: "email"},
+  {day: 18, channel: "email", label: "Day 18"},
+  {day: 25, channel: "sms", label: "Day 25"},
+  {day: 35, channel: "email", label: "Day 35"},
+  {day: 50, channel: "email", label: "Day 50"},
+];
+
+const stages = [
+  {from: 0, to: 0, label: "Enquiry response"},
+  {from: 3, to: 14, label: "Pre-tour nurture"},
+  {from: 18, to: 50, label: "Recovery"},
+];
+
+// Square-root day scale: the dense early cadence gets room, Day 50 stays the horizon.
+const dayPos = (day: number) => Math.sqrt(day / 50);
+
 const channelOrder = ["email", "sms", "whatsapp"] as const;
 const channelLabel = {email: "Email", sms: "SMS", whatsapp: "WhatsApp"};
 const channelColor = {email: "#6A5A60", sms: "#C08E7C", whatsapp: "#7C918A"};
@@ -134,31 +162,47 @@ const NurtureTimeline: FC<{beat: SectionBeat}> = ({beat}) => {
         <div className="convert-tl-track">
           <div className="convert-tl-line" style={{transform: `scaleX(${draw})`}} />
         </div>
-        {timelineDays.map((day, index) => {
-          const pos = (day - 1) / 49;
-          const channel = channelOrder[index % 3];
+        {stages.map((stage) => {
+          const a = dayPos(stage.from);
+          const b = dayPos(stage.to);
+          const on = interpolate(draw, [Math.min(b * 0.92 + 0.06, 0.98), Math.min(b * 0.92 + 0.12, 1)], [0, 1], clamp);
+          return (
+            <div className="convert-tl-stage" key={stage.label} style={{left: `${a * 100}%`, opacity: on}}>
+              <span>{stage.label}</span>
+              {b > a ? <i style={{width: `${(b - a) * 1320}px`}} /> : null}
+            </div>
+          );
+        })}
+        {touchpoints.map((tp, index) => {
+          const pos = dayPos(tp.day);
           // Reveal window compressed so the Day 50 node still lands before draw hits 1.
           const on = interpolate(draw, [pos * 0.92, pos * 0.92 + 0.06], [0, 1], clamp);
-          const lit = frame >= eventFrame(beat, channel);
+          const lit = frame >= eventFrame(beat, tp.channel);
           return (
             <div
               className="convert-tl-node"
-              key={day}
+              key={index}
               style={{
                 left: `${pos * 100}%`,
+                top: -9 + (tp.dy ?? 0),
                 opacity: on,
                 transform: `translateX(-50%) scale(${0.7 + on * 0.3})`,
-                backgroundColor: lit ? channelColor[channel] : "rgba(81, 67, 76, 0.28)",
+                backgroundColor: lit ? channelColor[tp.channel] : "rgba(81, 67, 76, 0.28)",
               }}
             />
           );
         })}
-        <em className="convert-tl-daylabel" style={{left: "0%", opacity: interpolate(draw, [0, 0.06], [0, 1], clamp)}}>
-          Day 1
-        </em>
-        <em className="convert-tl-daylabel" style={{left: "100%", opacity: interpolate(draw, [0.96, 1], [0, 1], clamp)}}>
-          Day 50+
-        </em>
+        {touchpoints
+          .filter((tp) => tp.label)
+          .map((tp) => {
+            const pos = dayPos(tp.day);
+            const on = interpolate(draw, [pos * 0.92, pos * 0.92 + 0.06], [0, 1], clamp);
+            return (
+              <em className="convert-tl-daylabel" key={tp.label} style={{left: `${pos * 100}%`, opacity: on}}>
+                {tp.label}
+              </em>
+            );
+          })}
       </div>
 
       <div className="convert-tl-legend">
