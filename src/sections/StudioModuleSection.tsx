@@ -12,6 +12,7 @@ import type {CSSProperties} from "react";
 import {seconds} from "../data/video";
 import {font, palette} from "../theme";
 import {HeadlineReveal, LightMotes, drift, reveal} from "./StudioAI";
+import {beatRenderers} from "./ConvertBeats";
 
 const clamp = {
   extrapolateLeft: "clamp" as const,
@@ -56,6 +57,17 @@ export type Stamp = {
   logo?: string;
 };
 
+export type BeatEvent = {id: string; at: number};
+
+/** A bespoke animated beat (clock, timeline, ...) rendered by the registry in ConvertBeats. */
+export type SectionBeat = {
+  type: "after-hours-clock" | "nurture-timeline";
+  from: number;
+  until: number;
+  /** Word-timed anchors the beat component reads by id. */
+  events?: BeatEvent[];
+};
+
 export type Spotlight = {
   from: number;
   until: number;
@@ -71,6 +83,14 @@ export type ModuleSectionConfig = {
   moduleNumber: string;
   title: string;
   tagline: string;
+  /** Product name for the kicker/header, e.g. "Convert". Default "Studio AI". */
+  product?: string;
+  /** Accent theme class suffix, e.g. "convert" applies .theme-convert overrides. */
+  theme?: string;
+  /** Background plate (staticFile path). Default is the Studio AI planning-table plate. */
+  plate?: string;
+  /** Bespoke animated beats for editorial sections without recordings. */
+  beats?: SectionBeat[];
   audio: string;
   /** Additional VO files for sections recorded in multiple parts. `at` in seconds. */
   audioMore?: {src: string; at: number}[];
@@ -233,7 +253,7 @@ const ModuleChapter = ({config}: {config: ModuleSectionConfig}) => {
   return (
     <AbsoluteFill className="studio-sd-chapter" style={{opacity}}>
       <span className="studio-sd-chapter-kicker" style={{opacity: reveal(frame, seconds(0.2))}}>
-        Studio AI · Module {config.moduleNumber}
+        {config.product ?? "Studio AI"} · Module {config.moduleNumber}
       </span>
       <h1 style={{fontFamily: font.title}}>
         <HeadlineReveal from={seconds(0.55)}>{config.title}</HeadlineReveal>
@@ -283,11 +303,11 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
         </Sequence>
       ))}
 
-      <AbsoluteFill className="studio-sd-stage">
+      <AbsoluteFill className={`studio-sd-stage${config.theme ? ` theme-${config.theme}` : ""}`}>
         <Img
           alt="Premium wedding venue atmosphere"
           className="studio-sd-plate"
-          src={staticFile("plates/studio-ai/couple-planning-table.png")}
+          src={staticFile(config.plate ?? "plates/studio-ai/couple-planning-table.png")}
           style={{
             transform: `translate3d(${drift(frame, 12, 6)}px, ${drift(frame, 40, 4)}px, 0) scale(1.07)`,
           }}
@@ -296,7 +316,7 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
         <LightMotes />
 
         <div className="studio-sd-header" style={{opacity: reveal(frame, seconds(config.chapterUntil))}}>
-          <span>Studio AI</span>
+          <span>{config.product ?? "Studio AI"}</span>
           <strong>
             {config.moduleNumber} — {config.title}
           </strong>
@@ -338,6 +358,11 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
         {(config.spotlights ?? []).map((spot, index) => (
           <SpotlightOverlay key={index} spot={spot} />
         ))}
+
+        {(config.beats ?? []).map((beat, index) => {
+          const Beat = beatRenderers[beat.type];
+          return <Beat beat={beat} key={index} />;
+        })}
 
         {(config.chipGroups ?? []).map((group, index) => (
           <ChipRow group={group} key={index} />

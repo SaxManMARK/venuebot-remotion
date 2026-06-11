@@ -15,7 +15,11 @@ import subprocess
 import sys
 from pathlib import Path
 
-SRC = Path("src/data/studioAiSections.ts").read_text()
+SRC = "\n".join(
+    Path(p).read_text()
+    for p in ["src/data/studioAiSections.ts", "src/data/convertSections.ts"]
+    if Path(p).exists()
+)
 FFPROBE = ".venv-whisper/bin/ffprobe"
 
 # Evaluate the const offsets used in the file (sfB, sgB).
@@ -38,7 +42,7 @@ def clip_len(path: str) -> float:
     return float(out.stdout.strip()) if out.returncode == 0 and out.stdout.strip() else -1.0
 
 issues = []
-sections = re.split(r"export const (m1S\w+): ModuleSectionConfig = ", SRC)[1:]
+sections = re.split(r"export const (m\dS\w+): ModuleSectionConfig = ", SRC)[1:]
 for name, body in zip(sections[0::2], sections[1::2]):
     dur = float(re.search(r"duration: ([\d.]+)", body).group(1))
 
@@ -73,8 +77,19 @@ for name, body in zip(sections[0::2], sections[1::2]):
                 issues.append(f"{name}: clip overlap {gap:.2f}s at {c['src']}")
         prev_end = c["until"]
 
+    # bespoke beats (Convert editorial sections) cover the frame like clips do
+    beats = [
+        {"type": m.group(1), "at": to_seconds(m.group(2)), "until": to_seconds(m.group(3))}
+        for m in re.finditer(r'type: "([\w-]+)",\s*\n\s*from: ([^,\n]+),\s*\n\s*until: ([^,\n]+),', body)
+    ]
+    for b in beats:
+        if b["until"] > dur + 0.01:
+            issues.append(f"{name}: beat {b['type']} runs past duration ({b['until']} > {dur})")
+
     def covered(t: float) -> bool:
         if any(c["at"] - 0.05 <= t <= c["until"] + 0.05 for c in clips):
+            return True
+        if any(b["at"] - 0.05 <= t <= b["until"] + 0.05 for b in beats):
             return True
         for sm in re.finditer(r"from: ([^,\n]+),\s*\n\s*until: ([^,\n]+),\s*\n\s*mode: \"full\"", body):
             if to_seconds(sm.group(1)) - 0.05 <= t <= to_seconds(sm.group(2)) + 0.05:

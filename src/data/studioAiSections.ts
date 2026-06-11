@@ -228,7 +228,7 @@ export const m1Sg: ModuleSectionConfig = {
     // "analysed across the factors..." + the eight categories (76.2-95.2)
     {src: "proof/studio-ai/m1-sg-categories.mp4", at: 75.8, until: sgB, zoom: 1},
     // Part B: "identifies what's missing..." (B 0-17.9) - Needs Work cards
-    {src: "proof/studio-ai/m1-sg-weaknesses.mp4", at: sgB, until: sgB + 18.6, zoom: 1.42},
+    {src: "proof/studio-ai/m1-sg-weaknesses-v2.mp4", at: sgB, until: sgB + 18.6, zoom: 1, fit: "contain"},
     // "improved version, side by side" + "nothing is hidden" (B 19.2-32.4)
     {src: "proof/studio-ai/m1-sg-sidebyside-v2.mp4", at: sgB + 18.6, until: sgB + 33, zoom: 1, fit: "contain"},
     // "the goal isn't to replace your voice..." (B 33.5-43.7)

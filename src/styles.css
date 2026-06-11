@@ -6319,3 +6319,299 @@ body {
   border-radius: 14px;
   pointer-events: none;
 }
+
+/* ===== Video 3: Convert (M2) =============================================
+   Accent identity: Engagement (dusty rose #D5A798 + peach #FFE6B4).
+   Same glass language as the 2026 polish pass above.
+   ========================================================================= */
+
+.theme-convert {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(255, 230, 180, 0.32), transparent 26%),
+    radial-gradient(circle at 84% 86%, rgba(213, 167, 152, 0.26), transparent 32%),
+    linear-gradient(135deg, rgba(255, 250, 243, 0.96), rgba(244, 240, 237, 0.82));
+}
+
+.theme-convert .studio-sd-chapter {
+  background:
+    radial-gradient(circle at 22% 24%, rgba(255, 230, 180, 0.36), transparent 30%),
+    radial-gradient(circle at 80% 82%, rgba(213, 167, 152, 0.28), transparent 34%),
+    linear-gradient(135deg, rgba(255, 250, 243, 0.985), rgba(244, 240, 237, 0.97));
+}
+
+.theme-convert .studio-sd-chapter-rule {
+  background: linear-gradient(90deg, transparent, #d5a798, transparent);
+}
+
+.theme-convert .studio-sd-chips span {
+  border-color: rgba(255, 230, 180, 0.22);
+}
+
+/* --- Bespoke beats ------------------------------------------------------- */
+
+.convert-beat {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+}
+
+/* After-hours clock (M2-SL) */
+.convert-clock-card {
+  position: absolute;
+  left: 50%;
+  top: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 780px;
+  padding: 52px 70px 46px;
+  border: 1px solid rgba(81, 67, 76, 0.12);
+  border-radius: 28px;
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.84), rgba(250, 244, 238, 0.68));
+  backdrop-filter: blur(22px) saturate(1.12);
+  box-shadow:
+    0 26px 64px rgba(81, 67, 76, 0.16),
+    0 2px 8px rgba(81, 67, 76, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.convert-clock-kicker {
+  color: #c08e7c;
+  font-size: 21px;
+  font-weight: 660;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.convert-clock-time {
+  color: var(--plum);
+  font-family: "Playfair Display", serif;
+  font-size: 224px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.convert-wait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.convert-wait-track {
+  width: 480px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(81, 67, 76, 0.12);
+  overflow: hidden;
+}
+
+.convert-wait-bar {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #d5a798, #b1572e);
+  transform-origin: left;
+}
+
+.convert-wait em {
+  color: rgba(81, 67, 76, 0.64);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 560;
+}
+
+.convert-side-card {
+  position: absolute;
+  top: 706px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 520px;
+  padding: 26px 34px;
+  border: 1px solid rgba(81, 67, 76, 0.12);
+  border-radius: 22px;
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.88), rgba(250, 244, 238, 0.72));
+  backdrop-filter: blur(22px) saturate(1.12);
+  box-shadow:
+    0 22px 54px rgba(81, 67, 76, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.convert-side-card span {
+  font-size: 15px;
+  font-weight: 660;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c08e7c;
+}
+
+.convert-side-card strong {
+  color: #382d34;
+  font-size: 27px;
+  font-weight: 640;
+}
+
+.convert-side-card em {
+  color: rgba(81, 67, 76, 0.55);
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 560;
+}
+
+.convert-notify {
+  left: 50%;
+  margin-left: -560px;
+}
+
+.convert-reply {
+  left: 50%;
+  margin-left: 40px;
+  border-color: rgba(255, 230, 180, 0.65);
+  background: linear-gradient(168deg, rgba(255, 246, 228, 0.92), rgba(255, 236, 198, 0.74));
+}
+
+.convert-reply span {
+  color: #b1572e;
+}
+
+/* Nurture timeline (M2-SM) */
+.convert-tl-stat-wrap {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.convert-tl-stat-wrap span {
+  color: rgba(81, 67, 76, 0.66);
+  font-size: 23px;
+  font-weight: 640;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.convert-tl-stat-wrap strong {
+  color: var(--plum);
+  font-family: "Playfair Display", serif;
+  font-size: 168px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.convert-tl-rail {
+  position: absolute;
+  left: 50%;
+  top: 584px;
+  width: 1320px;
+  margin-left: -660px;
+}
+
+.convert-tl-track {
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(81, 67, 76, 0.14);
+  overflow: hidden;
+}
+
+.convert-tl-line {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #d5a798, #c08e7c);
+  transform-origin: left;
+}
+
+.convert-tl-node {
+  position: absolute;
+  top: -9px;
+  width: 23px;
+  height: 23px;
+  border: 2px solid rgba(255, 253, 250, 0.95);
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(81, 67, 76, 0.24);
+}
+
+.convert-tl-daylabel {
+  position: absolute;
+  top: 30px;
+  transform: translateX(-50%);
+  color: rgba(81, 67, 76, 0.58);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 620;
+  letter-spacing: 0.06em;
+}
+
+.convert-tl-legend {
+  position: absolute;
+  top: 692px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.convert-tl-legend span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 26px;
+  border: 1px solid rgba(81, 67, 76, 0.13);
+  border-radius: 999px;
+  color: #41353d;
+  font-size: 21px;
+  font-weight: 620;
+  letter-spacing: 0.05em;
+  background: rgba(255, 253, 250, 0.84);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 34px rgba(81, 67, 76, 0.14);
+}
+
+.convert-tl-legend i {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+}
+
+.convert-tl-line-copy {
+  position: absolute;
+  top: 798px;
+  left: 0;
+  right: 0;
+  display: grid;
+  justify-items: center;
+}
+
+.convert-tl-line-copy strong {
+  grid-area: 1 / 1;
+  color: var(--plum);
+  font-family: "Playfair Display", serif;
+  font-size: 47px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Convert stamp lines can run long: keep wrapped lines centred, off the edges. */
+.theme-convert .studio-sd-stamp strong {
+  max-width: 1700px;
+  text-align: center;
+}
+
+/* The chip row shrink-fits to half the stage when absolutely positioned;
+   force full-content width so pills never crush into circles. */
+.theme-convert .studio-sd-chips {
+  width: max-content;
+}
+
+.convert-tl-daylabel {
+  white-space: nowrap;
+}
