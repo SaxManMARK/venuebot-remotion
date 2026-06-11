@@ -6108,3 +6108,198 @@ body {
   font-size: 30px;
   font-weight: 650;
 }
+
+/* ===== 2026 polish pass (Mark's review notes, 2026-06-11) =================
+   One design system for every overlay card family:
+   - Non-headline Inter drops from 900/920 to 600-680
+   - Opaque cream slabs become frosted glass with hairline borders
+   - No peach/yellow text on light surfaces (legibility)
+   ========================================================================= */
+
+/* --- Typography: kickers and captions lose the black-bold weight -------- */
+.studio-intelligence-copy span,
+.studio-copy span,
+.studio-knowledge-title span,
+.studio-five-slide-copy span {
+  color: #c08e7c;
+  font-weight: 680;
+  letter-spacing: 0.2em;
+}
+
+/* --- 00:12 Intelligence stat cards --------------------------------------- */
+.studio-intelligence-stat-card {
+  border: 1px solid rgba(81, 67, 76, 0.12);
+  border-radius: 22px;
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.82), rgba(250, 244, 238, 0.66));
+  backdrop-filter: blur(22px) saturate(1.12);
+  box-shadow:
+    0 24px 60px rgba(81, 67, 76, 0.16),
+    0 2px 8px rgba(81, 67, 76, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.studio-intelligence-stat-card span {
+  font-weight: 640;
+  letter-spacing: 0.13em;
+  color: rgba(81, 67, 76, 0.78);
+}
+
+/* --- 00:32 Journey cards (Discover -> Enquire) --------------------------- */
+.studio-knowledge-node {
+  border: 1px solid rgba(81, 67, 76, 0.11);
+  border-radius: 24px;
+  background: linear-gradient(170deg, rgba(255, 253, 250, 0.8), rgba(249, 243, 236, 0.62));
+  backdrop-filter: blur(20px) saturate(1.1);
+  box-shadow:
+    0 26px 64px rgba(81, 67, 76, 0.15),
+    0 2px 8px rgba(81, 67, 76, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.studio-knowledge-node.is-proof {
+  border-color: rgba(124, 145, 138, 0.45);
+  background: linear-gradient(170deg, rgba(234, 240, 237, 0.88), rgba(214, 226, 221, 0.66));
+}
+
+.studio-knowledge-node span {
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  color: #41353d;
+}
+
+.studio-knowledge-node em {
+  font-weight: 620;
+  color: rgba(81, 67, 76, 0.42);
+}
+
+.studio-knowledge-node .studio-line-icon {
+  color: #5d7268;
+}
+
+/* --- Five areas cards (same family) -------------------------------------- */
+.studio-area-card {
+  border: 1px solid rgba(81, 67, 76, 0.11);
+  border-radius: 24px;
+  background: linear-gradient(170deg, rgba(255, 253, 250, 0.8), rgba(249, 243, 236, 0.62));
+  backdrop-filter: blur(20px) saturate(1.1);
+  box-shadow:
+    0 26px 64px rgba(81, 67, 76, 0.15),
+    0 2px 8px rgba(81, 67, 76, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.studio-area-card span {
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  color: #41353d;
+}
+
+.studio-area-card em {
+  font-weight: 620;
+}
+
+/* --- 00:42 Proof cards + mini journey pills ------------------------------ */
+.studio-proof-card {
+  border: 1px solid rgba(81, 67, 76, 0.12);
+  border-radius: 20px;
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.88), rgba(250, 244, 238, 0.72));
+  backdrop-filter: blur(22px) saturate(1.12);
+  box-shadow:
+    0 22px 54px rgba(81, 67, 76, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.studio-proof-card span {
+  color: #6f8379;
+  font-weight: 660;
+  letter-spacing: 0.16em;
+}
+
+.studio-proof-card strong {
+  font-weight: 640;
+  color: #382d34;
+}
+
+.studio-proof-callouts strong {
+  font-weight: 660;
+}
+
+.studio-proof-callouts span {
+  font-weight: 560;
+}
+
+.studio-journey-mini span {
+  border: 1px solid rgba(81, 67, 76, 0.13);
+  color: #51434c;
+  font-weight: 620;
+  letter-spacing: 0.08em;
+  background: rgba(255, 253, 250, 0.82);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 34px rgba(81, 67, 76, 0.14);
+}
+
+/* --- 00:55 Six tools: prominent serif lead-in + glass tiles -------------- */
+.studio-tools-copy span {
+  color: #51434c;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.studio-tool-card {
+  border: 1px solid rgba(81, 67, 76, 0.11);
+  border-radius: 24px;
+  background: linear-gradient(170deg, rgba(255, 253, 250, 0.82), rgba(249, 243, 236, 0.64));
+  backdrop-filter: blur(20px) saturate(1.1);
+  box-shadow:
+    0 26px 64px rgba(81, 67, 76, 0.16),
+    0 2px 8px rgba(81, 67, 76, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* The terracotta top bar reads dated - replace with a soft agave underline
+   beneath the disc. */
+.studio-tool-card::before {
+  top: auto;
+  bottom: 24px;
+  left: 50%;
+  width: 36px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, rgba(124, 145, 138, 0.1), rgba(124, 145, 138, 0.7), rgba(124, 145, 138, 0.1));
+  transform: translateX(-50%);
+}
+
+.studio-tool-card span {
+  font-weight: 660;
+  letter-spacing: 0.09em;
+  color: #382d34;
+}
+
+.studio-tool-card em {
+  font-weight: 620;
+  color: rgba(81, 67, 76, 0.45);
+}
+
+.studio-tool-card .studio-line-icon {
+  background: rgba(124, 145, 138, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(124, 145, 138, 0.35);
+}
+
+/* --- 01:14 chips: from web buttons to frosted editorial pills ------------ */
+.studio-sd-chips span {
+  padding: 13px 26px;
+  border: 1px solid rgba(81, 67, 76, 0.14);
+  color: #51434c;
+  font-size: 19px;
+  font-weight: 620;
+  letter-spacing: 0.04em;
+  background: rgba(255, 253, 250, 0.85);
+  backdrop-filter: blur(18px) saturate(1.1);
+  box-shadow:
+    0 16px 38px rgba(81, 67, 76, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}

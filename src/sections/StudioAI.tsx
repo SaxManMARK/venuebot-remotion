@@ -566,7 +566,8 @@ const UnderstandingSequence = ({start}: {start: number}) => {
               key={step}
               style={{
                 opacity: item,
-                transform: `translateY(${(1 - pop) * 30 + drift(frame, index * 13, 3)}px) scale(${scale})`,
+                filter: `blur(${(1 - item) * 9}px)`,
+                transform: `perspective(900px) translateY(${(1 - pop) * 34 + drift(frame, index * 13, 3)}px) rotateX(${(1 - pop) * 14}deg) scale(${scale})`,
                 ...sparkStyle(frame, item, cardStart),
               }}
             >
@@ -748,7 +749,8 @@ const SixTools = ({start}: {start: number}) => {
               key={tool.label}
               style={{
                 opacity: item,
-                transform: `translateY(${(1 - pop) * 24}px) scale(${scale})`,
+                filter: `blur(${(1 - item) * 8}px)`,
+                transform: `perspective(900px) translateY(${(1 - pop) * 34}px) rotateX(${(1 - pop) * 16}deg) rotateZ(${(1 - pop) * (index % 2 === 0 ? -2.4 : 2.4)}deg) scale(${scale})`,
                 ...sparkStyle(frame, item, cardStart),
               }}
             >
