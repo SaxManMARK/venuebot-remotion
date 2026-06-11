@@ -1,10 +1,10 @@
 # Video 2: Studio AI — Build Status
 
-Last updated: 2026-06-11 (edit iteration). Everything below is committed and pushed to `main`.
+Last updated: 2026-06-11 — **VIDEO 2 APPROVED.** All six module sections signed off by Mark individually (SF, SG, SH, SI explicitly; SC/SD/SE carry all polish rounds). Final approved master render: `out/studio-ai-full-v2.mp4`. Orphaned clip versions swept; QA clean.
 
-## Edit iteration status
+**Next: Video 3 (Convert) and Video 4 (Care) in fresh threads — see `VIDEO3_CONVERT_HANDOFF.md`** for the complete handover (context, build plan, design system, workflow rules, asset status). Key headline: Convert/Care Drive folders have VO only, no recordings — Convert is largely motion-design-buildable now; Care needs Mark to record ScreenStudio captures first.
 
-Mark approved the first cut and is reviewing via rendered MP4s (per-section files in `out/`, ~3 min renders each — NOT Studio preview, which is unreliable for media-heavy timelines on this machine). Rounds 1-2 applied: the "2026 polish pass" (frosted-glass card system, non-headline Inter 900 -> 560-680, agave kickers, serif-italic six-tools lead-in, lighter chips, HeadlineReveal true-centering). More edit batches expected before Video 2 sign-off; Convert (M2) and Care (M3) follow. Permissions: `.claude/settings.local.json` carries a broad allowlist + acceptEdits so iteration doesn't prompt.
+Edit-iteration history: rounds 1-5 applied Mark's notes — the "2026 polish pass" (frosted-glass cards, non-headline Inter 900 -> 540-680, plum chips with single peach entrance sheen, HeadlineReveal true-centring), spotlight system (SF 60+ / SG 45+ banners), whole-screen reveals, Titchwell Manor leakage patched out of SG, Convert wordmark ending on M1-SI. Permissions: `.claude/settings.local.json` carries a broad allowlist + acceptEdits.
 
 ## Watch it
 
