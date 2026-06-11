@@ -29,6 +29,8 @@ export type ModuleClip = {
   origin?: string;
   /** "contain" letterboxes the full frame inside the card (for full-width statements). Default "cover". */
   fit?: "cover" | "contain";
+  /** "phone" renders in the right-side phone bezel instead of the wide screen card. */
+  mode?: "screen" | "phone";
 };
 
 export type ChipGroup = {
@@ -57,11 +59,18 @@ export type Stamp = {
   logo?: string;
 };
 
-export type BeatEvent = {id: string; at: number};
+export type BeatEvent = {
+  id: string;
+  at: number;
+  /** Display copy for callout-style beats. */
+  label?: string;
+  /** Typographic treatment for callout-style beats. */
+  variant?: string;
+};
 
 /** A bespoke animated beat (clock, timeline, ...) rendered by the registry in ConvertBeats. */
 export type SectionBeat = {
-  type: "after-hours-clock" | "nurture-timeline";
+  type: "after-hours-clock" | "nurture-timeline" | "side-callouts" | "tour-diary" | "channel-grid";
   from: number;
   until: number;
   /** Word-timed anchors the beat component reads by id. */
@@ -264,13 +273,11 @@ const ModuleChapter = ({config}: {config: ModuleSectionConfig}) => {
   );
 };
 
-export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => {
-  const frame = useCurrentFrame();
-
-  // The screen card bows out during editorial typographic beats (gaps in clip coverage).
+const coverageOpacity = (frame: number, clips: ModuleClip[], duration: number) => {
+  // The container bows out during editorial typographic beats (gaps in clip coverage).
   // Merge contiguous clips into coverage intervals, then fade at each interval's edges.
   const intervals: {start: number; end: number}[] = [];
-  for (const clip of [...config.clips].sort((a, b) => a.at - b.at)) {
+  for (const clip of [...clips].sort((a, b) => a.at - b.at)) {
     const last = intervals[intervals.length - 1];
     if (last && clip.at - last.end < 0.02) {
       last.end = Math.max(last.end, clip.until);
@@ -278,17 +285,55 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
       intervals.push({start: clip.at, end: clip.until});
     }
   }
-  const screenOpacity = Math.max(
+  return Math.max(
     0,
     ...intervals.map((iv) =>
       interpolate(
         frame,
         [seconds(iv.start), seconds(iv.start + 0.45), seconds(iv.end - 0.45), seconds(iv.end)],
-        [iv.start === 0 ? 1 : 0, 1, 1, iv.end >= config.duration - 0.05 ? 1 : 0],
+        [iv.start === 0 ? 1 : 0, 1, 1, iv.end >= duration - 0.05 ? 1 : 0],
         clamp,
       ),
     ),
   );
+};
+
+const ClipLayer = ({clip, clips, frame}: {clip: ModuleClip; clips: ModuleClip[]; frame: number}) => {
+  const index = clips.indexOf(clip);
+  const fadeIn =
+    clip.at === 0 ? 1 : interpolate(frame, [seconds(clip.at), seconds(clip.at + crossfade)], [0, 1], clamp);
+  const next = clips[index + 1];
+  const holdTail = next && Math.abs(next.at - clip.until) < 0.01 ? crossfade : 0;
+
+  return (
+    <Sequence from={seconds(clip.at)} durationInFrames={seconds(clip.until - clip.at + holdTail)}>
+      <OffthreadVideo
+        muted
+        src={staticFile(clip.src)}
+        style={
+          clip.mode === "phone"
+            ? {width: "100%", opacity: fadeIn}
+            : {
+                width: "100%",
+                height: "100%",
+                objectFit: clip.fit ?? "cover",
+                opacity: fadeIn,
+                transform: `scale(${clip.zoom})`,
+                transformOrigin: clip.origin ?? "50% 46%",
+              }
+        }
+      />
+    </Sequence>
+  );
+};
+
+export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => {
+  const frame = useCurrentFrame();
+
+  const screenClips = config.clips.filter((clip) => clip.mode !== "phone");
+  const phoneClips = config.clips.filter((clip) => clip.mode === "phone");
+  const screenOpacity = coverageOpacity(frame, screenClips, config.duration);
+  const phoneOpacity = coverageOpacity(frame, phoneClips, config.duration);
 
   const closingOpacity = config.closing
     ? interpolate(frame, [seconds(config.closing.at), seconds(config.closing.at + 0.5)], [0, 1], clamp)
@@ -322,38 +367,29 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
           </strong>
         </div>
 
-        <div className="studio-sd-screen" style={{opacity: screenOpacity}}>
-          {config.clips.map((clip, index) => {
-            const fadeIn =
-              clip.at === 0
-                ? 1
-                : interpolate(frame, [seconds(clip.at), seconds(clip.at + crossfade)], [0, 1], clamp);
-            const next = config.clips[index + 1];
-            const holdTail = next && Math.abs(next.at - clip.until) < 0.01 ? crossfade : 0;
+        {screenClips.length > 0 ? (
+          <div className="studio-sd-screen" style={{opacity: screenOpacity}}>
+            {screenClips.map((clip) => (
+              <ClipLayer clip={clip} clips={screenClips} frame={frame} key={`${clip.src}-${clip.at}`} />
+            ))}
+            <div className="studio-sd-screen-ring" />
+          </div>
+        ) : null}
 
-            return (
-              <Sequence
-                from={seconds(clip.at)}
-                durationInFrames={seconds(clip.until - clip.at + holdTail)}
-                key={`${clip.src}-${clip.at}`}
-              >
-                <OffthreadVideo
-                  muted
-                  src={staticFile(clip.src)}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: clip.fit ?? "cover",
-                    opacity: fadeIn,
-                    transform: `scale(${clip.zoom})`,
-                    transformOrigin: clip.origin ?? "50% 46%",
-                  }}
-                />
-              </Sequence>
-            );
-          })}
-          <div className="studio-sd-screen-ring" />
-        </div>
+        {phoneClips.length > 0 ? (
+          <div
+            className="convert-phone"
+            style={{
+              opacity: phoneOpacity,
+              transform: `translateY(${(1 - Math.min(1, phoneOpacity)) * 60}px)`,
+            }}
+          >
+            {phoneClips.map((clip) => (
+              <ClipLayer clip={clip} clips={phoneClips} frame={frame} key={`${clip.src}-${clip.at}`} />
+            ))}
+            <div className="convert-phone-ring" />
+          </div>
+        ) : null}
 
         {(config.spotlights ?? []).map((spot, index) => (
           <SpotlightOverlay key={index} spot={spot} />

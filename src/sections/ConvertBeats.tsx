@@ -225,7 +225,149 @@ const NurtureTimeline: FC<{beat: SectionBeat}> = ({beat}) => {
   );
 };
 
+/** M2-SN: word-timed editorial copy stacked in the left column while the
+ *  phone demo plays on the right. Variants: line / italic / caps / big / chip. */
+const SideCallouts: FC<{beat: SectionBeat}> = ({beat}) => {
+  const frame = useCurrentFrame();
+
+  return (
+    <AbsoluteFill className="convert-beat" style={{opacity: beatOpacity(frame, beat)}}>
+      <div className="convert-callouts">
+        {(beat.events ?? [])
+          .filter((event) => event.label)
+          .map((event) => {
+            const pop = reveal(frame, seconds(event.at), seconds(0.5));
+            const cls = `convert-callout-${event.variant ?? "line"}`;
+            return (
+              <strong
+                className={cls}
+                key={event.id}
+                style={{opacity: pop, transform: `translateY(${(1 - pop) * 26}px)`}}
+              >
+                {event.label}
+              </strong>
+            );
+          })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** M2-SN: "the moment a couple chooses a time, the tour is in your diary."
+ *  A week strip; the Saturday 10:00 tour card drops in on the "slot" event,
+ *  then confirmation/notification cards land for couple and team. */
+const weekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+const TourDiary: FC<{beat: SectionBeat}> = ({beat}) => {
+  const frame = useCurrentFrame();
+  const slotF = eventFrame(beat, "slot");
+  const confirmF = eventFrame(beat, "confirm");
+  const notifyF = eventFrame(beat, "notify");
+
+  const cardPop = reveal(frame, seconds(beat.from + 0.1), seconds(0.7));
+  const slotPop = reveal(frame, slotF, seconds(0.55));
+  const confirmPop = reveal(frame, confirmF, seconds(0.5));
+  const notifyPop = reveal(frame, notifyF, seconds(0.5));
+
+  return (
+    <AbsoluteFill className="convert-beat" style={{opacity: beatOpacity(frame, beat)}}>
+      <div
+        className="convert-diary-card"
+        style={{opacity: cardPop, transform: `translateX(-50%) translateY(${(1 - cardPop) * 30}px)`}}
+      >
+        <span className="convert-clock-kicker">Your venue tour diary</span>
+        <div className="convert-diary-week">
+          {weekDays.map((day) => (
+            <div className={`convert-diary-day${day === "Sat" ? " is-tour" : ""}`} key={day}>
+              <em>{day}</em>
+              {day === "Sat" ? (
+                <div
+                  className="convert-diary-slot"
+                  style={{opacity: slotPop, transform: `translateY(${(1 - slotPop) * 22}px)`}}
+                >
+                  <strong>Venue tour</strong>
+                  <span>Emma &amp; James</span>
+                  <span>10:00</span>
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div
+        className="convert-side-card convert-notify"
+        style={{opacity: confirmPop, transform: `translateY(${(1 - confirmPop) * 26}px)`}}
+      >
+        <span>To the couple</span>
+        <strong>Tour confirmed · Saturday 10:00</strong>
+        <em>Confirmation sent automatically</em>
+      </div>
+
+      <div
+        className="convert-side-card convert-reply"
+        style={{opacity: notifyPop, transform: `translateY(${(1 - notifyPop) * 26}px)`}}
+      >
+        <span>To your team</span>
+        <strong>New tour booked</strong>
+        <em>Diary updated · notification sent</em>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** M2-SO: the same AI on every channel. Four stylised chat surfaces land
+ *  word-timed as each channel is named, then caption lines carry "trained on
+ *  your venue... around the clock". */
+const channels = [
+  {id: "website", name: "Website · Live chat", color: "#6A5A60", q: "Is 14 June 2027 available?", a: "It is! Shall I pencil it in?"},
+  {id: "facebook", name: "Facebook · Messenger", color: "#7587A3", q: "How many guests can you host?", a: "120 by day, 170 by evening."},
+  {id: "instagram", name: "Instagram · DM", color: "#D5A798", q: "Can we see the Walled Garden?", a: "Of course. Book a tour below."},
+  {id: "whatsapp", name: "WhatsApp", color: "#7C918A", q: "Can our dog join the ceremony?", a: "Absolutely. Dogs are welcome."},
+];
+
+const ChannelGrid: FC<{beat: SectionBeat}> = ({beat}) => {
+  const frame = useCurrentFrame();
+  const line1F = eventFrame(beat, "line1");
+  const line2F = eventFrame(beat, "line2");
+  const line1On = reveal(frame, line1F, seconds(0.5)) * (1 - reveal(frame, line2F - seconds(0.3), seconds(0.4)));
+  const line2On = reveal(frame, line2F, seconds(0.5));
+
+  return (
+    <AbsoluteFill className="convert-beat" style={{opacity: beatOpacity(frame, beat)}}>
+      <div className="convert-grid">
+        {channels.map((channel) => {
+          const pop = reveal(frame, eventFrame(beat, channel.id), seconds(0.55));
+          return (
+            <div
+              className="convert-grid-card"
+              key={channel.id}
+              style={{opacity: pop, transform: `translateY(${(1 - pop) * 34}px) scale(${0.97 + pop * 0.03})`}}
+            >
+              <header>
+                <i style={{backgroundColor: channel.color}} />
+                <span>{channel.name}</span>
+              </header>
+              <div className="convert-grid-q">{channel.q}</div>
+              <div className="convert-grid-a" style={{borderColor: channel.color}}>
+                {channel.a}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="convert-grid-copy">
+        <strong style={{opacity: line1On}}>Trained on your venue.</strong>
+        <strong style={{opacity: line2On}}>Around the clock.</strong>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 export const beatRenderers: Record<SectionBeat["type"], FC<{beat: SectionBeat}>> = {
   "after-hours-clock": AfterHoursClock,
   "nurture-timeline": NurtureTimeline,
+  "side-callouts": SideCallouts,
+  "tour-diary": TourDiary,
+  "channel-grid": ChannelGrid,
 };

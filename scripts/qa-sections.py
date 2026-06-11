@@ -47,7 +47,7 @@ for name, body in zip(sections[0::2], sections[1::2]):
     dur = float(re.search(r"duration: ([\d.]+)", body).group(1))
 
     clips = []
-    for m in re.finditer(r'\{src: "([^"]+)", at: ([^,]+), until: ([^,]+), zoom: ([\d.]+)\}', body):
+    for m in re.finditer(r'\{src: "([^"]+)", at: ([^,]+), until: ([^,]+), zoom: ([\d.]+)(?:, [^}]*)?\}', body):
         clips.append({
             "src": m.group(1),
             "at": to_seconds(m.group(2)),
