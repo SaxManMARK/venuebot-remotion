@@ -2,30 +2,37 @@ import {introSplashDurationFrames, seconds} from "./video";
 
 const withSplash = (frame: number) => frame + introSplashDurationFrames;
 
+// Seconds of VO removed by the "Think about that for a moment" cut (audio
+// [32.6, 36.4] of the V3 voiceover). Every cue after the line subtracts this.
+const CUT = 3.8;
+
 export const introCuePoints = {
-  // V3 source of truth: Vox M1-SA-SB v3.mp3
-  // Timings are rebuilt from word-level transcription of the 152.2s V3 voiceover.
+  // V3 source of truth: Vox M1-SA-SB v3.mp3 → cut to v4 (intro-m1-sa-sb-v4.mp3).
+  // Timings rebuilt from word-level transcription of the 152.2s V3 voiceover.
+  // CUT (2026-06-15): the line "Think about that for a moment" was removed
+  // (audio [32.6, 36.4] = 3.8s). Original V3 numbers kept visible with `- CUT`
+  // so every cue from saJourneyMoments on stays word-synced to the v4 audio.
   saMoreEnquiries: withSplash(seconds(0)),
   saMomentsMatter: withSplash(seconds(6.28)),
   saLeakingOpportunities: withSplash(seconds(12.06)),
   saStat81: withSplash(seconds(17.18)),
   saVenueCards: withSplash(seconds(22.16)),
   saStat68: withSplash(seconds(27.04)),
-  saJourneyMoments: withSplash(seconds(37.06)),
-  saCompetitorRisk: withSplash(seconds(52.08)),
-  saConversionGap: withSplash(seconds(58.98)),
-  saMissedFollowUps: withSplash(seconds(64.96)),
-  saBuiltVenueBot: withSplash(seconds(73.66)),
-  saOut: withSplash(seconds(76.98)),
+  saJourneyMoments: withSplash(seconds(37.06 - CUT)),
+  saCompetitorRisk: withSplash(seconds(52.08 - CUT)),
+  saConversionGap: withSplash(seconds(58.98 - CUT)),
+  saMissedFollowUps: withSplash(seconds(64.96 - CUT)),
+  saBuiltVenueBot: withSplash(seconds(73.66 - CUT)),
+  saOut: withSplash(seconds(76.98 - CUT)),
 
-  sbNotChatbot: withSplash(seconds(76.98)),
-  sbSystem: withSplash(seconds(81.08)),
-  sbModules: withSplash(seconds(86.08)),
-  sbStudioAi: withSplash(seconds(96.56)),
-  sbConvert: withSplash(seconds(111.82)),
-  sbCare: withSplash(seconds(125.4)),
-  sbFinalReveal: withSplash(seconds(143.84)),
-  sbOut: withSplash(seconds(152.2)),
+  sbNotChatbot: withSplash(seconds(76.98 - CUT)),
+  sbSystem: withSplash(seconds(81.08 - CUT)),
+  sbModules: withSplash(seconds(86.08 - CUT)),
+  sbStudioAi: withSplash(seconds(96.56 - CUT)),
+  sbConvert: withSplash(seconds(111.82 - CUT)),
+  sbCare: withSplash(seconds(125.4 - CUT)),
+  sbFinalReveal: withSplash(seconds(143.84 - CUT)),
+  sbOut: withSplash(seconds(152.2 - CUT)),
 } as const;
 
 export const introCueNotes = [

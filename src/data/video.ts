@@ -10,9 +10,10 @@ export const introScenes = [
   {
     id: "M1-SA-SB-V3",
     title: "Intro positioning film",
-    audio: "audio/intro-m1-sa-sb-v3.mp3",
+    // v4 = v3 with "Think about that for a moment" cut (3.8s removed). See introCuePoints.ts.
+    audio: "audio/intro-m1-sa-sb-v4.mp3",
     start: introSplashDurationFrames,
-    duration: seconds(152.2),
+    duration: seconds(148.4),
   },
 ] as const;
 
