@@ -26,7 +26,8 @@ Last updated: 2026-06-11 (evening). **All four sections built and self-QA'd; ful
 
 ## Audio facts
 
-- `m2-sk-sm` trimmed at 78.8s (clean), `m2-sn` at 70.6s (clean), **`m2-so-sp` at 59.2s — speech truly ends at 58.96s; the transcript's trailing "No missed. No missed." was a Whisper hallucination over the silent tail, and an earlier 58.45s trim clipped the word "first." (caught by Mark at 3:31). Tail-audit every trim against silencedetect, not Whisper word ends**, `m2-sq-t2` at 27.95s (clean). All padded `.m4a` in `public/audio/convert/`.
+- `m2-sk-sm` trimmed at 78.8s (clean), `m2-sn` at 70.6s (clean), **`m2-so-sp` → now `m2-so-sp-tail-v3.m4a` (60s)**, `m2-sq-t2` at 27.95s (clean). All padded `.m4a` in `public/audio/convert/`.
+- **M2-SO re-record (2026-06-15):** Mark flagged "enquiries" at 2:39 as oddly delivered and re-recorded the opening clause ("The same AI can support enquiries through your website") — Drive `Convert/Vox/COnnvert Part 3 explainer video edit VOX.mp3`. A donor-word splice from the same take was rejected (excess room tone between words). Final fix = splice the clean re-record over the original at the "SMS." and "website,|Facebook" **pauses** (seams hidden in silence; re-record voice for the troublesome word, original take for the channel list onward), then re-anchor all M2-SO events/stamps to the rebuilt audio's transcript (channel list sits ~1s earlier than the original). **Lesson: prefer a clean re-record over mid-phrase donor splices; vowel-initial words (enquiries) splice badly. Seam at clause-boundary pauses, not mid-phrase.**
 
 ## QA performed per section (Video 2 standard)
 
