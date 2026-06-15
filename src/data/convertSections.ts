@@ -256,72 +256,77 @@ export const m2So: ModuleSectionConfig = {
   product: "Convert",
   theme: "convert",
   plate: "plates/venuebot-after-hours.png",
-  audio: "audio/convert/m2-so-sp-tail.m4a",
-  duration: 62,
-  chapterUntil: 2.8, // "The same AI can support..." starts at 3.1
+  // v3 audio: the opening clause "The same AI can support enquiries through your
+  // website" is Mark's clean re-record (COnnvert Part 3 edit VOX), spliced over
+  // the original at the "SMS." and "website,|Facebook" pauses; the rest is the
+  // original take. All anchors below re-read from the rebuilt audio's transcript
+  // (the channel list onward sits ~1s earlier than the original).
+  audio: "audio/convert/m2-so-sp-tail-v3.m4a",
+  duration: 60,
+  chapterUntil: 2.8, // "And it isn't only SMS." over the chapter; "The same AI..." at 3.0
   clips: [],
   beats: [
     {
       // "your website, Facebook, Instagram, WhatsApp and other messaging
-      // channels... trained on your venue... around the clock" (3.1-26.1)
+      // channels... trained on your venue... around the clock"
       type: "channel-grid",
       from: 2.8,
-      until: 26.6,
+      until: 26.0,
       events: [
-        {id: "website", at: 6.62},
-        {id: "facebook", at: 7.5},
-        {id: "instagram", at: 8.6},
-        {id: "whatsapp", at: 9.6},
-        {id: "line1", at: 17.86}, // "trained on your venue and how you actually talk"
-        {id: "line2", at: 24.7}, // "around the clock"
+        {id: "website", at: 5.64},
+        {id: "facebook", at: 6.5},
+        {id: "instagram", at: 7.5},
+        {id: "whatsapp", at: 8.42},
+        {id: "line1", at: 18.16}, // "trained on your venue"
+        {id: "line2", at: 24.12}, // "around the clock"
       ],
     },
   ],
   stamps: [
     {
       // "More conversations, more venue tours, more opportunities progressing
-      // through your pipeline." (27.2-33.9)
-      from: 26.6,
-      until: 35.2,
+      // through your pipeline."
+      from: 26.0,
+      until: 35.0,
       mode: "full",
       lines: [
-        {text: "More conversations.", at: 27.24, variant: "serif"},
-        {text: "More venue tours.", at: 29.4, variant: "serif"},
-        {text: "More momentum in your pipeline.", at: 31.02, variant: "serif-italic"},
+        {text: "More conversations.", at: 27.08, variant: "serif"},
+        {text: "More venue tours.", at: 29.18, variant: "serif"},
+        {text: "More momentum in your pipeline.", at: 31.12, variant: "serif-italic"},
       ],
     },
     {
-      // "tour conversion rates increase by 30 to 50%" (36.4-42.9)
-      from: 35.2,
-      until: 43.8,
+      // "tour conversion rates increase by 30 to 50%"
+      from: 35.0,
+      until: 43.0,
       mode: "full",
       lines: [
-        {text: "30–50%", at: 41.32, variant: "display"},
-        {text: "Typical tour conversion increase", at: 42.3, variant: "caps"},
+        {text: "30–50%", at: 40.26, variant: "display"},
+        {text: "Typical tour conversion increase", at: 41.9, variant: "caps"},
       ],
     },
     {
       // "Not because they suddenly receive more enquiries, but because fewer
-      // enquiries are lost." (44.1-50.0)
-      from: 43.8,
-      until: 50.6,
+      // enquiries are lost."
+      from: 43.0,
+      until: 50.0,
       mode: "full",
       lines: [
-        {text: "Not more enquiries.", at: 44.5, variant: "serif"},
-        {text: "Fewer enquiries lost.", at: 47.98, variant: "serif-italic"},
+        {text: "Not more enquiries.", at: 43.1, variant: "serif"},
+        {text: "Fewer enquiries lost.", at: 47.26, variant: "serif-italic"},
       ],
     },
     {
       // "No missed opportunities. No forgotten follow-up. No couple booking
-      // another venue simply because they replied first." (51.2-58.3)
-      from: 50.6,
-      until: 61.4,
+      // another venue simply because they replied first."
+      from: 50.0,
+      until: 60.0,
       mode: "full",
       lines: [
-        {text: "No missed opportunities.", at: 51.2, variant: "serif"},
-        {text: "No forgotten follow-up.", at: 53.48, variant: "serif"},
-        {text: "No couple booking another venue", at: 55.12, variant: "serif-italic"},
-        {text: "because they replied first.", at: 57.32, variant: "serif-italic"},
+        {text: "No missed opportunities.", at: 50.86, variant: "serif"},
+        {text: "No forgotten follow-up.", at: 52.8, variant: "serif"},
+        {text: "No couple booking another venue", at: 54.38, variant: "serif-italic"},
+        {text: "because they replied first.", at: 56.84, variant: "serif-italic"},
       ],
     },
   ],
