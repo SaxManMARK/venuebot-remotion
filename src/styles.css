@@ -7,7 +7,12 @@
   --blush: #efc5ba;
   --sage: #9fb1aa;
   --mauve: #8b7079;
-  --ink: #14201e;
+  /* Warmed toward the website body ink (#2e2a2b) for cross-surface continuity
+     (was #14201e, a cooler green-black). Subtle warm shift on near-black text. */
+  --ink: #2e2a2b;
+  --ink-soft: rgba(46, 42, 43, 0.78);
+  --line-web: rgba(106, 90, 96, 0.18);
+  --shadow-web: 0 24px 60px rgba(46, 42, 43, 0.08);
   --deep-plum: #51434c;
   --fresh-agave: #a7beb7;
   --clean-rose: #f1b8ad;
@@ -7175,4 +7180,72 @@ body {
 
 .fork-chip-competitor svg {
   color: rgba(213, 167, 152, 0.6);
+}
+
+/* ===== Website continuity pass (2026-06-15) ==============================
+   Mirrors /Projects/venuebot-website tokens + texture without touching VO,
+   on-screen copy, or timing. See WEBSITE_CONTINUITY_AUDIT.md.
+   Scope: framework headline surfaces (all videos) + Convert beats. Per-product
+   kicker accents kept (Mark's call). Cream/global-easing/dark-hero deferred.
+   ========================================================================= */
+
+/* --- A. Signature Playfair tracking (site headlines are -0.045em / lh ~1.0).
+   Set on containers so HeadlineReveal's `.studio-rw` (letter-spacing:inherit)
+   picks it up. caps/thin-caps stamp variants keep their inline positive
+   tracking (uppercase wants it), so they're unaffected. --------------------- */
+.studio-sd-chapter h1,
+.studio-sd-closing,
+.studio-sd-stamp strong {
+  letter-spacing: -0.042em;
+}
+
+.convert-clock-time,
+.convert-tl-stat-wrap strong {
+  letter-spacing: -0.045em;
+}
+
+.convert-callout-line,
+.convert-callout-italic,
+.convert-callout-big,
+.convert-grid-copy strong,
+.convert-tl-line-copy strong {
+  letter-spacing: -0.038em;
+}
+
+/* --- B. Crisper body/caption ink on the new Convert surfaces (matches the
+   site's warm near-black body text). Headlines stay plum; dark frosted chips
+   keep their light text. Scoped to Convert so approved Video 2 is untouched. - */
+.convert-callout-caps {
+  color: var(--ink-soft);
+}
+
+.convert-diary-day em,
+.convert-grid-card header span {
+  color: var(--ink-soft);
+}
+
+/* --- C/E. Airier, ink-based depth + hairline on the Convert glass cards,
+   matching the site's --shadow (8% ink). The screen-card and phone bezel keep
+   their heavier shadows (defined earlier) for separation over busy plates. --- */
+.convert-clock-card,
+.convert-side-card,
+.convert-diary-card,
+.convert-grid-card,
+.convert-tl-legend span {
+  border-color: var(--line-web);
+  box-shadow:
+    var(--shadow-web),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* --- J. Unified dot/rail kit across the cadence/diary/grid beats, matching
+   the site's ringed dots + rose->agave gradient rails (cv-cadence / care-pipe). */
+.convert-tl-track {
+  background: linear-gradient(90deg, rgba(213, 167, 152, 0.22), rgba(124, 145, 138, 0.18));
+}
+
+.convert-tl-node {
+  box-shadow:
+    0 0 0 4px rgba(213, 167, 152, 0.14),
+    0 8px 20px rgba(46, 42, 43, 0.16);
 }

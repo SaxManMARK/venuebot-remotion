@@ -123,7 +123,7 @@ const lineStyle: Record<NonNullable<StampLine["variant"]>, CSSProperties> = {
   caps: {fontFamily: font.body, fontWeight: 900, textTransform: "uppercase", letterSpacing: "0.14em", fontSize: "54px"},
   "thin-caps": {fontFamily: font.body, fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.3em", fontSize: "50px"},
   // Oversized stat punch, e.g. "30-50%"
-  display: {fontFamily: font.title, fontWeight: 900, fontSize: "190px", letterSpacing: "-0.01em"},
+  display: {fontFamily: font.title, fontWeight: 900, fontSize: "190px", letterSpacing: "-0.045em"},
 };
 
 const SpotlightOverlay = ({spot}: {spot: Spotlight}) => {

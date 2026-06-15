@@ -115,6 +115,30 @@ Our videos are light-register throughout.
 - **Re-render + QA**: any approved change re-runs the full Video-2-standard QA on affected sections
   (tsc, qa-sections, full-res still crops, half-scale render, contact sheet) before presenting.
 
+## 4b. APPLIED 2026-06-15 (Mark approved "best improvement, least risk")
+Applied via the system layer (`theme.ts`-level token in `styles.css :root` + a
+"Website continuity pass" block at the end of `styles.css`; one shared inline
+constant in `StudioModuleSection.tsx`). **No `Intro.tsx` edit** — the in-flight
+Video 1 inherits the shared changes automatically.
+- **A** Playfair tracking −0.038…−0.045em on framework headline surfaces
+  (chapter h1, stamp serif lines, closing) + all Convert headline beats + the
+  shared `display` stat constant. caps/thin-caps keep their inline positive tracking.
+- **B** Warmed shared `--ink` #14201e→#2e2a2b; new `--ink-soft`; applied to Convert
+  caption surfaces (callout caps, diary labels, grid headers). Video 2 plum captions
+  left as-is (kept blast radius small).
+- **C/E** Airier ink-based `--shadow-web` + `--line-web` on Convert glass cards;
+  screen-card + phone bezel keep their heavier shadows for plate separation.
+- **J** Ringed dots + rose→agave gradient rail on the timeline (matches `cv-cadence`).
+Verified: tsc + qa-sections clean; full-res stills across chapter cards, display
+stats, timeline, channel grid, clock, and the two bespoke M1 scenes — no clipping,
+no Video 2 regression.
+
+**HELD/DEFERRED:** cream swap (1D), global easing constants (2H), deep-green CTA
+(1G), and the dark cinematic hero / Cormorant two-register open (Tier 3 — wants its
+own pilot on Convert). Per-product kicker accents kept (not unified to agave).
+Follow-up: the M1-SC/M1-SD bespoke scene headlines were not tracked in this pass
+(framework + Convert only) — a small follow-up if uniformity is wanted.
+
 ## 5. Video 4 (Care) forward-note
 Care (M3) is the next build (after recordings). Mine `care.css` + `care-hero.css` directly: the
 control panel, **pipeline rail** (`care-pipe` stage dots is a ready-made section beat), follow-up
