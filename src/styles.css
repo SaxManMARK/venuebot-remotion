@@ -7299,3 +7299,62 @@ body {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
+
+/* ===== Series consistency pass (2026-06-16) ==============================
+   Propagate the Convert treatments to Video 2 + the SHARED PremiumSceneSystem
+   surfaces (which also serve Video 1) via the style layer only — no Intro.tsx
+   edits (parallel session owns it). Intro-only cards (mg-*, laptop-card,
+   notification-card, phone-waiting, fork-chip-*) remain held for that session.
+   ========================================================================= */
+
+/* --- Headline tracking: studio-rw (HeadlineReveal) is V2/V3-only, so this
+   tightens every Studio AI headline incl. the bespoke M1-SC/M1-SD scenes to
+   match Convert. Was `inherit !important`. --------------------------------- */
+.studio-rw {
+  letter-spacing: -0.04em !important;
+}
+
+/* Bespoke Playfair card headings in the shared scene system (gentler). */
+.opportunity-card strong,
+.opportunity-journey-card strong,
+.shortlist-race-heading,
+.luxury-shortlist-meta strong,
+.capability-copy strong,
+.capability-outcome span,
+.studio-tools-copy span {
+  letter-spacing: -0.03em;
+}
+
+/* --- Flicker hardening: opaque-base + no backdrop-filter on the V2 + shared
+   glass cards (same fix Mark approved on Convert). An opaque cream base layers
+   UNDER each card's existing translucent gradient (tint preserved), so the
+   drifting LightMotes can't shimmer through a live blur. ------------------- */
+.studio-knowledge-node,
+.studio-proof-card,
+.studio-tool-card,
+.studio-area-card,
+.studio-intelligence-card,
+.studio-intelligence-stat-card,
+.studio-proof-topbar,
+.studio-proof-callouts div,
+.studio-couple-map span,
+.studio-journey-mini span,
+.product-screen-topbar,
+.stat-card,
+.opportunity-card,
+.opportunity-journey-card,
+.shortlist-race-tile,
+.luxury-shortlist-card,
+.soft-ui-hint,
+.product-callout {
+  background-color: rgba(250, 244, 238, 0.97);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Studio AI module chip row (V2) — opaque like the Convert chips. */
+.studio-sd-chips span {
+  background-color: rgba(56, 45, 52, 0.93);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
