@@ -7358,3 +7358,39 @@ body {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
+
+/* ===== Video 1 (Intro) polish — consistency pass (2026-06-16) =============
+   Completes the series-consistency work for the Intro. The Intro's shared
+   PremiumSceneSystem cards (opportunity/shortlist/luxury/soft-ui) + warm --ink
+   were already updated earlier and land on re-render; this adds the two
+   remaining pieces: headline tracking + hardening the last glass cards
+   (fork chips + problem callout) against backdrop-filter playback shimmer.
+   ========================================================================= */
+
+/* Headline tracking to match Videos 2 & 3 (Intro headlines are cream-on-dark,
+   styled inline with Playfair/Inter; letter-spacing not set inline, so these win). */
+.cinematic-intro-copy h1,
+.problem-copy h2,
+.shortlist-race-heading,
+.stat-reveal strong {
+  letter-spacing: -0.035em;
+}
+
+.intro-title {
+  letter-spacing: -0.025em; /* this one is Inter 950 — gentler */
+}
+
+/* Flicker-harden the remaining Intro glass cards: opaque base (matching each
+   card's own light/dark tone) + no live backdrop-filter. */
+.fork-chip-booking {
+  background-color: rgba(250, 244, 238, 0.97);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.fork-chip-competitor,
+.problem-callout:not(.opportunity-card) {
+  background-color: rgba(56, 45, 52, 0.94);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
