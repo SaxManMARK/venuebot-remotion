@@ -7249,3 +7249,53 @@ body {
     0 0 0 4px rgba(213, 167, 152, 0.14),
     0 8px 20px rgba(46, 42, 43, 0.16);
 }
+
+/* ===== Convert card flicker hardening (2026-06-16) =======================
+   Mark saw Facebook/WhatsApp (M2-SO) and a couple of M2-SK cards flicker in
+   playback. Rendered frames measure pixel-identical at those points (diffed
+   across a full twinkle cycle) — the cause is `backdrop-filter` live-sampling
+   the drifting LightMotes (a Studio-preview/Chromium artifact). Fix: make the
+   Convert beat cards near-opaque frosted panels and drop backdrop-filter, so
+   there is no live backdrop to flicker. Look is preserved (high-alpha cream +
+   hairline + inset highlight + soft shadow). Scoped to Convert; Video 2 glass
+   cards untouched.
+   ========================================================================= */
+.convert-clock-card,
+.convert-diary-card,
+.convert-grid-card {
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.975), rgba(250, 244, 238, 0.95));
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.convert-side-card {
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.97), rgba(250, 244, 238, 0.95));
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.convert-reply {
+  background: linear-gradient(168deg, rgba(255, 246, 228, 0.975), rgba(255, 236, 198, 0.95));
+}
+
+.convert-tl-legend span {
+  background: rgba(255, 253, 250, 0.97);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Dark frosted callout chips: make the plum solid so the motes can't shimmer
+   through the blur. */
+.convert-callout-chip {
+  background-color: rgba(56, 45, 52, 0.94);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Convert chip row (M2-SK "Evenings/Weekends/...") — same hardening, scoped to
+   Convert so Video 2's shared chips keep their live frost. */
+.theme-convert .studio-sd-chips span {
+  background-color: rgba(56, 45, 52, 0.93);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
