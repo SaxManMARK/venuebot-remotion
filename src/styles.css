@@ -7394,3 +7394,725 @@ body {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
+
+/* ===== Video 4: Care (M3) ================================================
+   Accent identity: Control (smoky plum #6A5A60 + agave #7C918A), dusty rose /
+   peach used sparingly. Mirrors the website Care vocabulary (care.css /
+   care-hero.css). Cards are OPAQUE (no live backdrop-filter) from the start —
+   the playback-flicker fix Mark approved on Convert / Video 2.
+   ========================================================================= */
+
+.theme-care {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(124, 145, 138, 0.26), transparent 30%),
+    radial-gradient(circle at 84% 84%, rgba(106, 90, 96, 0.24), transparent 34%),
+    linear-gradient(135deg, rgba(250, 247, 244, 0.95), rgba(244, 240, 237, 0.82));
+}
+
+.theme-care .studio-sd-chapter {
+  background:
+    radial-gradient(circle at 22% 22%, rgba(124, 145, 138, 0.3), transparent 32%),
+    radial-gradient(circle at 80% 82%, rgba(106, 90, 96, 0.26), transparent 36%),
+    linear-gradient(135deg, rgba(250, 247, 244, 0.985), rgba(244, 240, 237, 0.97));
+}
+
+.theme-care .studio-sd-chapter-rule {
+  background: linear-gradient(90deg, transparent, #7c918a, transparent);
+}
+
+/* Care stamp lines can run long: keep wrapped lines centred, off the edges. */
+.theme-care .studio-sd-stamp strong {
+  max-width: 1700px;
+  text-align: center;
+}
+
+/* Opaque chips (no live frost) — same hardening as Convert. */
+.theme-care .studio-sd-chips {
+  width: max-content;
+}
+.theme-care .studio-sd-chips span {
+  background-color: rgba(56, 45, 52, 0.93);
+  border-color: rgba(124, 145, 138, 0.3);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Care closing line leans plum. */
+.theme-care .studio-sd-closing {
+  color: var(--plum);
+}
+
+/* --- Shared beat layer --------------------------------------------------- */
+.care-beat {
+  position: absolute;
+  inset: 0;
+  z-index: 9;
+}
+
+/* Opaque editorial card base shared across Care beats. */
+.care-src-card,
+.care-ctrl,
+.care-ctrl-tile,
+.care-lockup-col,
+.care-evolve,
+.care-limit-card,
+.care-integ {
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.985), rgba(250, 244, 238, 0.96));
+  border: 1px solid rgba(106, 90, 96, 0.14);
+  box-shadow:
+    0 22px 54px rgba(46, 42, 43, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+/* =========================================================================
+   M3-SR — scattered sources collapse into one source of truth
+   ========================================================================= */
+.care-sr-kicker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 58px;
+  letter-spacing: -0.02em;
+  color: var(--plum);
+}
+
+.care-src-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 336px;
+  padding: 26px 30px 28px;
+  border-left: 3px solid var(--plum);
+  border-radius: 20px;
+}
+
+.care-src-ic {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  background: rgba(106, 90, 96, 0.1);
+  color: var(--plum);
+}
+
+.care-src-ic svg {
+  width: 30px;
+  height: 30px;
+}
+
+.care-src-card strong {
+  font-size: 28px;
+  font-weight: 660;
+  color: #382d34;
+}
+
+.care-src-card span {
+  font-size: 19px;
+  font-weight: 520;
+  color: rgba(46, 42, 43, 0.55);
+}
+
+.care-ctrl {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 800px;
+  padding: 44px 52px 48px;
+  border-left: 3px solid var(--agave);
+  border-radius: 30px;
+}
+
+.care-ctrl-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(106, 90, 96, 0.12);
+}
+
+.care-ctrl-badge {
+  font-size: 22px;
+  font-weight: 680;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--agave);
+}
+
+.care-ctrl-meta {
+  font-size: 20px;
+  font-weight: 540;
+  letter-spacing: 0.04em;
+  color: rgba(46, 42, 43, 0.5);
+}
+
+.care-ctrl-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 22px 0 26px;
+}
+
+.care-ctrl-lines em {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: var(--plum);
+}
+
+.care-ctrl-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.care-ctrl-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 18px 22px;
+  border-left: 3px solid var(--agave);
+  border-radius: 14px;
+}
+
+.care-ctrl-tile span {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--agave);
+}
+
+.care-ctrl-tile strong {
+  font-size: 25px;
+  font-weight: 620;
+  color: #382d34;
+}
+
+.care-sr-resolve {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 118px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -0.015em;
+  color: var(--plum);
+}
+
+/* =========================================================================
+   M3-SDD — three-product lockup -> VenueBot + tagline
+   ========================================================================= */
+.care-lockup {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 56px;
+}
+
+.care-lockup-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  width: 460px;
+  padding: 34px 30px 30px;
+  border-top: 3px solid var(--agave);
+  border-radius: 22px;
+}
+
+.care-lockup-logo {
+  width: auto;
+  height: 78px;
+}
+
+.care-lockup-col span {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 560;
+  line-height: 1.4;
+  color: rgba(46, 42, 43, 0.72);
+}
+
+.care-lockup-summary {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.care-lockup-summary em {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -0.015em;
+  color: rgba(46, 42, 43, 0.7);
+}
+
+.care-lockup-summary strong {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 70px;
+  letter-spacing: -0.03em;
+  color: var(--plum);
+}
+
+.care-master {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+
+.care-master-logo {
+  width: 660px;
+  height: auto;
+}
+
+.care-master-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.care-master-tag span {
+  font-size: 32px;
+  font-weight: 560;
+  color: rgba(46, 42, 43, 0.62);
+}
+
+.care-master-tag strong {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 56px;
+  letter-spacing: -0.025em;
+  color: var(--plum);
+}
+
+/* =========================================================================
+   M3-SAB — weekly release cadence -> smarter / faster / more productive
+   ========================================================================= */
+.care-evolve {
+  position: absolute;
+  left: 50%;
+  top: 248px;
+  transform: translateX(-50%);
+  width: 760px;
+  padding: 34px 40px 38px;
+  border-top: 3px solid var(--agave);
+  border-radius: 24px;
+}
+
+.care-evolve-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(106, 90, 96, 0.12);
+}
+
+.care-evolve-badge {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--agave);
+}
+
+.care-evolve-head em {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 620;
+  color: var(--plum);
+}
+
+.care-evolve-kicker {
+  margin: 20px 0 18px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: -0.015em;
+  color: var(--plum);
+}
+
+.care-evolve-feed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.care-evolve-feed li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 27px;
+  font-weight: 580;
+  color: #382d34;
+}
+
+.care-evolve-feed i {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--agave);
+  box-shadow: 0 0 0 5px rgba(124, 145, 138, 0.16);
+}
+
+.care-evolve-arc {
+  position: absolute;
+  left: 50%;
+  top: 720px;
+  transform: translateX(-50%);
+  width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.care-evolve-arc-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+}
+
+.care-evolve-arc-row span {
+  flex: none;
+  font-size: 21px;
+  font-weight: 620;
+  letter-spacing: 0.04em;
+  color: rgba(46, 42, 43, 0.55);
+}
+
+.care-evolve-track {
+  flex: 1;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(106, 90, 96, 0.14);
+  overflow: hidden;
+}
+
+.care-evolve-track > div {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--agave), var(--plum));
+  transform-origin: left;
+}
+
+.care-evolve-gains {
+  display: flex;
+  gap: 26px;
+}
+
+.care-evolve-gains strong {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 62px;
+  letter-spacing: -0.03em;
+  color: var(--plum);
+}
+
+/* =========================================================================
+   M3-SBB — White Glove
+   ========================================================================= */
+.care-glove-kicker {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 250px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -0.015em;
+  color: rgba(46, 42, 43, 0.66);
+}
+
+.care-glove-verbs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  gap: 18px;
+}
+
+.care-glove-verbs span {
+  padding: 18px 36px;
+  border: 1px solid rgba(124, 145, 138, 0.4);
+  border-radius: 14px;
+  background: rgba(124, 145, 138, 0.12);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: -0.01em;
+  color: var(--plum);
+}
+
+.care-glove-result {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.care-glove-eyebrow {
+  font-size: 24px;
+  font-weight: 720;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--agave);
+}
+
+.care-glove-pills {
+  display: flex;
+  gap: 18px;
+}
+
+.care-glove-pills strong {
+  padding: 16px 34px;
+  border-radius: 999px;
+  background: rgba(106, 90, 96, 0.1);
+  font-size: 34px;
+  font-weight: 640;
+  color: var(--plum);
+}
+
+.care-glove-split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.care-glove-split em {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: -0.02em;
+  color: var(--plum);
+}
+
+/* =========================================================================
+   M3-SCC — no limits + 99% integrations
+   ========================================================================= */
+.care-limits {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 1280px;
+}
+
+.care-limits-kicker {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -0.015em;
+  color: var(--plum);
+}
+
+.care-limits-row {
+  display: flex;
+  gap: 22px;
+}
+
+.care-limit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 320px;
+  padding: 30px 24px 28px;
+  border-top: 3px solid var(--agave);
+  border-radius: 20px;
+}
+
+.care-limit-card strong {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 0.9;
+  color: var(--agave);
+}
+
+.care-limit-card span {
+  font-size: 25px;
+  font-weight: 600;
+  color: #382d34;
+}
+
+.care-limits-nos {
+  display: flex;
+  gap: 18px;
+}
+
+.care-limits-nos em {
+  padding: 13px 28px;
+  border-radius: 999px;
+  background: rgba(213, 167, 152, 0.18);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 620;
+  color: #b06a55;
+}
+
+.care-integ {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 1100px;
+  padding: 40px 56px 44px;
+  border-top: 3px solid var(--agave);
+  border-radius: 28px;
+}
+
+.care-integ-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.care-integ-stat strong {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 168px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: var(--plum);
+}
+
+.care-integ-stat strong i {
+  font-size: 72px;
+  font-style: normal;
+  margin-top: 14px;
+  color: var(--agave);
+}
+
+.care-integ-stat span {
+  font-size: 26px;
+  font-weight: 580;
+  letter-spacing: 0.02em;
+  color: rgba(46, 42, 43, 0.6);
+}
+
+.care-integ-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 920px;
+}
+
+.care-integ-grid span {
+  padding: 12px 24px;
+  border: 1px solid rgba(106, 90, 96, 0.16);
+  border-radius: 999px;
+  background: rgba(124, 145, 138, 0.1);
+  font-size: 24px;
+  font-weight: 600;
+  color: #41353d;
+}
+
+.care-integ-fits {
+  margin-top: 4px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: -0.015em;
+  color: var(--plum);
+}
+
+/* Holding slate for recording-led sections awaiting captures. */
+.studio-sd-holding {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 1180px;
+  height: 600px;
+  justify-content: center;
+  border: 2px dashed rgba(106, 90, 96, 0.35);
+  border-radius: 28px;
+  background: linear-gradient(168deg, rgba(255, 253, 250, 0.6), rgba(250, 244, 238, 0.5));
+}
+
+.studio-sd-holding-label {
+  font-size: 22px;
+  font-weight: 720;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--agave);
+}
+
+.studio-sd-holding strong {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 76px;
+  letter-spacing: -0.03em;
+  color: var(--plum);
+}
+
+.studio-sd-holding em {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 540;
+  color: rgba(46, 42, 43, 0.55);
+}

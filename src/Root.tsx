@@ -6,8 +6,10 @@ import {StudioAIVenueIntelligence} from "./sections/StudioAIVenueIntelligence";
 import {StudioModuleSection} from "./sections/StudioModuleSection";
 import {StudioAIFull, studioAiFullDuration} from "./sections/StudioAIFull";
 import {ConvertFull, convertFullDuration} from "./sections/ConvertFull";
+import {CareFull, careFullDuration} from "./sections/CareFull";
 import {m1Se, m1Sf, m1Sg, m1Sh, m1Si} from "./data/studioAiSections";
 import {m2Sk, m2Sn, m2So, m2Sq} from "./data/convertSections";
+import {m3Sr, m3SsSv, m3SwSx, m3SySz, m3Saa, m3Sab, m3Sdd} from "./data/careSections";
 import {seconds} from "./data/video";
 import {
   chapterCardDurationFrames,
@@ -172,6 +174,77 @@ export const Root = () => {
           description: "Instant response, consistent nurture, and booked tours across every enquiry channel.",
           tone: "conversion",
         }}
+      />
+      <Composition
+        id="Care-Full"
+        component={CareFull}
+        durationInFrames={careFullDuration}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+      />
+      <Composition
+        id="Care-M3-SR"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3Sr.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3Sr}}
+      />
+      <Composition
+        id="Care-M3-SS-SV"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3SsSv.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3SsSv}}
+      />
+      <Composition
+        id="Care-M3-SW-SX"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3SwSx.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3SwSx}}
+      />
+      <Composition
+        id="Care-M3-SY-SZ"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3SySz.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3SySz}}
+      />
+      <Composition
+        id="Care-M3-SAA"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3Saa.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3Saa}}
+      />
+      <Composition
+        id="Care-M3-SAB-SCC"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3Sab.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3Sab}}
+      />
+      <Composition
+        id="Care-M3-SDD"
+        component={StudioModuleSection}
+        durationInFrames={seconds(m3Sdd.duration)}
+        fps={videoFps}
+        width={videoWidth}
+        height={videoHeight}
+        defaultProps={{config: m3Sdd}}
       />
       <Composition
         id="Care"

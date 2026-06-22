@@ -399,7 +399,7 @@ const ChannelGrid: FC<{beat: SectionBeat}> = ({beat}) => {
   );
 };
 
-export const beatRenderers: Record<SectionBeat["type"], FC<{beat: SectionBeat}>> = {
+export const beatRenderers: Record<string, FC<{beat: SectionBeat}>> = {
   "after-hours-clock": AfterHoursClock,
   "nurture-timeline": NurtureTimeline,
   "side-callouts": SideCallouts,

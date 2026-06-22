@@ -17,7 +17,7 @@ from pathlib import Path
 
 SRC = "\n".join(
     Path(p).read_text()
-    for p in ["src/data/studioAiSections.ts", "src/data/convertSections.ts"]
+    for p in ["src/data/studioAiSections.ts", "src/data/convertSections.ts", "src/data/careSections.ts"]
     if Path(p).exists()
 )
 FFPROBE = ".venv-whisper/bin/ffprobe"

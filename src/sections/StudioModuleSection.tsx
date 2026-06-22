@@ -13,6 +13,9 @@ import {seconds} from "../data/video";
 import {font, palette} from "../theme";
 import {HeadlineReveal, LightMotes, drift, reveal} from "./StudioAI";
 import {beatRenderers} from "./ConvertBeats";
+import {careBeatRenderers} from "./CareBeats";
+
+const allBeatRenderers = {...beatRenderers, ...careBeatRenderers};
 
 const clamp = {
   extrapolateLeft: "clamp" as const,
@@ -70,7 +73,17 @@ export type BeatEvent = {
 
 /** A bespoke animated beat (clock, timeline, ...) rendered by the registry in ConvertBeats. */
 export type SectionBeat = {
-  type: "after-hours-clock" | "nurture-timeline" | "side-callouts" | "tour-diary" | "channel-grid";
+  type:
+    | "after-hours-clock"
+    | "nurture-timeline"
+    | "side-callouts"
+    | "tour-diary"
+    | "channel-grid"
+    | "care-scatter-collapse"
+    | "three-product-lockup"
+    | "evolving-cadence"
+    | "white-glove"
+    | "no-limits";
   from: number;
   until: number;
   /** Word-timed anchors the beat component reads by id. */
@@ -108,6 +121,10 @@ export type ModuleSectionConfig = {
   /** When the chapter overlay finishes fading and the recording owns the frame. */
   chapterUntil: number;
   clips: ModuleClip[];
+  /** Holding slate for recording-led sections awaiting captures: renders a
+   *  "screen capture to be added" card over the full VO so timing/pacing can be
+   *  reviewed before the footage exists. Ignored once `clips` are present. */
+  placeholder?: boolean;
   chipGroups?: ChipGroup[];
   stamps?: Stamp[];
   /** Dim the frame around a region of the recording and ring it with a warm glow. */
@@ -391,12 +408,20 @@ export const StudioModuleSection = ({config}: {config: ModuleSectionConfig}) => 
           </div>
         ) : null}
 
+        {config.placeholder && config.clips.length === 0 ? (
+          <div className="studio-sd-holding" style={{opacity: reveal(frame, seconds(config.chapterUntil))}}>
+            <span className="studio-sd-holding-label">Screen capture</span>
+            <strong>{config.title}</strong>
+            <em>Recording to be dropped in</em>
+          </div>
+        ) : null}
+
         {(config.spotlights ?? []).map((spot, index) => (
           <SpotlightOverlay key={index} spot={spot} />
         ))}
 
         {(config.beats ?? []).map((beat, index) => {
-          const Beat = beatRenderers[beat.type];
+          const Beat = allBeatRenderers[beat.type];
           return <Beat beat={beat} key={index} />;
         })}
 
